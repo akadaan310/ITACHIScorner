@@ -15,14 +15,14 @@ This envelope is the target persistence contract. The executable lineage structu
 | Graph | Principal nodes and edges | Baseline status |
 | --- | --- | --- |
 | Source/provenance | Video `HAS_TRACK` track; track `HAS_VERSION` transcript version; version `CONTAINS` segment; annotation `ANNOTATES` segment; correction `SUPERSEDES` prior version. | Import records and immutable hashes establish software provenance. Permission and authenticity still require external evidence. |
-| Dialogue/temporal | Turn `NEXT_UNAMBIGUOUS` turn; turn `OVERLAPS` turn; proposed act `ANNOTATES` turn. | Deterministic ordering/overlap and proposed structural transitions. Reply-to and interruption intent are not inferred merely from sort order. |
+| Dialogue/temporal | Target turn model: turn `NEXT_UNAMBIGUOUS` turn; turn `OVERLAPS` turn; proposed act `ANNOTATES` turn. | Current observations are transcript segments, not aggregated speaker turns. Segment ordering/overlap and proposed transitions do not establish reply-to or interruption intent. |
 | Argument | Claim `SUPPORTED_BY` premise; objection `CHALLENGES` claim; rebuttal `RESPONDS_TO` objection; scope change `QUALIFIES` claim. | Reserved typed semantics. The baseline does not reliably extract argument structure. |
-| Evidence/quotation | Quotation `REFERS_TO` source; citation `PROPOSES_LOCUS` reference; reviewed match `VERIFIES_MATCH` exact edition/text. | A citation heuristic is a proposal only. Exact Qur'an matching, editions and theological interpretation are not implemented by cue detection. |
+| Evidence/quotation | Quotation `REFERS_TO` source; citation `PROPOSES_LOCUS` reference; reviewed match `VERIFIES_MATCH` exact edition/text. | A citation heuristic is a proposal only. A separate versioned, approved-index adapter is scaffolding for exact-text source matching; no approved index or scripture has been acquired. It does not verify interpretation or integrate the ISNAAD repository. |
 | Technique/motif | Candidate `OBSERVED_IN` interval; candidate `COUNTEREXAMPLE_IN` interval; candidate `TESTED_BY` control result; result `ESTIMATED_BY` bootstrap run. | Contiguous structural motif proposals and narrow sequence falsification. No approved teaching technique is implied. |
 | Learning dependency | Objective `REQUIRES` prerequisite; unit `TEACHES` objective; activity `ASSESSES` objective; unit `DERIVED_FROM` reviewed finding. | Empty and blocked until Gates 3–4 pass. No learning relationships are fabricated. |
 | Causal hypothesis | Hypothesis `PROPOSES_EFFECT_OF` intervention; confounder `MAY_CONFOUND` relationship; test `EVALUATES` hypothesis. | Reserved, explicitly hypothetical. Temporal adjacency and Markov likelihood are not causal evidence. |
 
-Cross-graph links preserve the graph/type distinction. For example, an observed sequence can link to source turns without creating a claim-support relationship. Counterexamples have source lineage and eligibility/censoring reasons just like supporting observations.
+Cross-graph links preserve the graph/type distinction. For example, an observed sequence can link to source segments without creating a claim-support relationship. Counterexamples have source lineage and eligibility/censoring reasons just like supporting observations.
 
 ## Candidate record
 
@@ -38,9 +38,11 @@ alternative_explanations, reviewer_status, reviewed_by, decision_at,
 derived_substrate_ids[], pedagogy_eligible
 ```
 
-The executable baseline may serialize intermediate candidates rather than this complete editorial record. Missing scientific/review fields remain pending, not approved defaults. Track independent `recording_id` support separately from occurrences, video count and episode count; a recording is not automatically a separately segmented debate episode. `contrast_set` must state that no authorized matched baseline is present. A missing uncertainty estimate is unavailable, not zero uncertainty. `reviewed_by` and `decision_at` remain unset until an authoritative human review exists. Analysis never sets `pedagogy_eligible` true.
+The executable baseline may serialize intermediate candidates rather than this complete editorial record. Missing scientific/review fields remain pending, not approved defaults. Distinguish `supplied_recording_group_count` from `verified_independent_recording_count`, occurrences, video count and episode count; a recording is not automatically a separately segmented debate episode. The latter field reflects `independence_verified` assertions supplied in the manifest, not a remote verification by this harness. `contrast_set` must state that no authorized matched baseline is present. A missing uncertainty estimate is unavailable, not zero uncertainty. `reviewed_by` and `decision_at` remain unset until an authoritative human review exists. Analysis never sets `pedagogy_eligible` true.
 
-Every supporting/counterexample interval identifies video, selected track, immutable transcript version, segment/turn IDs, exact `[start_ms, end_ms)`, extraction version and evidence confidence/status. A video deep link alone cannot recover a precise source span or correction history.
+Every supporting/counterexample interval identifies video, selected track, immutable transcript version, segment ID, exact `[start_ms, end_ms)`, source checksum, original speaker/role, `original_text` and `extraction_version`. `speaker_confidence` preserves the supplied annotation score. Evidence confidence remains explicitly unassessed: `evidence_confidence: null` and `evidence_confidence_status: "unassessed"`; it must not inherit the speaker score.
+
+Main `supporting_intervals`/`counterexample_intervals` and counts describe training observations. `heldout_supporting_intervals`, `heldout_counterexample_intervals`, `heldout_opportunities` and `heldout_censored` describe the separate held-out partition. Undated/excluded observations retain lineage but are absent from these comparison counts. Hypotheses specify `horizon_segments`; there is no turn aggregation. A video deep link alone cannot recover a precise source span or correction history.
 
 ## Lineage DAG
 
@@ -59,7 +61,7 @@ exact source bytes + safe manifest + source-selection metadata
 
 Code/configuration, tokenizer/rule versions and every input in a discovery run are dependencies even if their source contains no support for a selected motif. Correcting a negative example can change candidate selection, transition probabilities, null statistics or review conclusions. Hashing only supporting quotes is insufficient.
 
-Validate endpoint existence and reject cycles before accepting a DAG. Given changed source/version IDs or hashes, traverse outgoing dependencies to mark all reachable descendants stale. Preserve immutable historical artifacts, attach a reason and queue revalidation. Reviews of an older snapshot cannot silently approve a corrected snapshot. A downstream finding derived from another finding must carry both its own sources and the upstream dependency chain.
+Validate endpoint existence and reject cycles before accepting a DAG. Given changed source/version, manifest, code or configuration nodes, traverse outgoing dependencies to identify all reachable descendants. Preserve immutable historical artifacts. Import appends a private invalidation overlay at `evidence/{old_analysis_run}/invalidations/{new_import_run}.json` when a source correction or canonical manifest snapshot change affects earlier analyses. It contains `stale_node_ids` and `revalidation_queue`; a changed snapshot conservatively affects the full prior corpus analysis. Stored historical candidate flags are not rewritten. Consumers must combine the immutable artifact with its overlays before treating a result as current, and revalidation requires a new run and review. Reviews of an older snapshot cannot silently approve a corrected snapshot. A downstream finding derived from another finding must carry both its own sources and the upstream dependency chain.
 
 ## Database adapter boundary
 
