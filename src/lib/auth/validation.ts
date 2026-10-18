@@ -41,3 +41,7 @@ export function parseHandle(value: unknown): string | null {
   const handle = value.trim();
   return /^@?[\p{L}\p{N}_.-]{1,60}$/u.test(handle) ? handle : null;
 }
+
+export function authServiceUnavailable(error: { name?: string; status?: number }): boolean {
+  return error.name !== "AuthSessionMissingError" && (!error.status || error.status >= 500 || error.status === 429);
+}

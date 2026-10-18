@@ -5,6 +5,8 @@ import { getAccountContext } from "@/lib/auth/session";
 import { POST as requestEmail } from "@/app/auth/request/route";
 import { POST as verifyCode } from "@/app/auth/verify/route";
 import { POST as logout } from "@/app/auth/logout/route";
+import { GET as callback } from "@/app/auth/callback/route";
+import { GET as confirm } from "@/app/auth/confirm/route";
 import { GET as exportAccount } from "@/app/api/account/export/route";
 import { POST as deleteAccount } from "@/app/api/account/delete/route";
 
@@ -47,10 +49,15 @@ describe("auth and privacy HTTP boundaries", () => {
     expect(response.status).toBe(303); expect(new URL(response.headers.get("location")!).searchParams.get("notice")).toBe("send-failed");
   });
   it("keeps an expired OTP signed out and never follows an external next target", async () => {
-    backend.client = { auth: { verifyOtp: async () => ({ error: { message: "expired" } }) } };
+    backend.client = { auth: { verifyOtp: async () => ({ error: { message: "expired", status: 400 } }) } };
     const response = await verifyCode(post("/auth/verify", { email: "member@example.test", token: "123456", next: "https://hostile.test" }));
     expect(response.status).toBe(303); expect(new URL(response.headers.get("location")!).origin).toBe("https://corner.test");
     expect(new URL(response.headers.get("location")!).searchParams.get("notice")).toBe("expired-code");
+  });
+  it("reports OTP and link provider outages as unavailable rather than expired credentials", async () => {
+    backend.client = { auth: { verifyOtp: async () => ({ error: { status: 503 } }), exchangeCodeForSession: async () => ({ error: { status: 429 } }) } };
+    const responses = [await verifyCode(post("/auth/verify", { email: "member@example.test", token: "123456" })), await callback(new Request("https://corner.test/auth/callback?code=opaque")), await confirm(new Request("https://corner.test/auth/confirm?token_hash=opaque"))];
+    for (const response of responses) expect(new URL(response.headers.get("location")!).searchParams.get("notice")).toBe("unavailable");
   });
   it("deletes the revalidated user only after revocation, ignoring submitted IDs", async () => {
     const accounts = new Set(["member-a", "member-b"]); let revoked = false;

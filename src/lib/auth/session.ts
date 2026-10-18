@@ -1,4 +1,5 @@
 import { createServerSupabase } from "@/lib/supabase/server";
+import { authServiceUnavailable } from "@/lib/auth/validation";
 
 export type StaffRole = "reviewer" | "creator" | "admin";
 export interface MemberProfile { id: string; nickname: string }
@@ -12,7 +13,7 @@ export async function getAccountContext(): Promise<AccountContext> {
   if (!client) return { status: "unconfigured" };
   try {
     const { data: { user }, error } = await client.auth.getUser();
-    if (error) return { status: error.name === "AuthSessionMissingError" || (error.status && error.status >= 400 && error.status < 500 && error.status !== 429) ? "signed-out" : "unavailable" };
+    if (error) return { status: authServiceUnavailable(error) ? "unavailable" : "signed-out" };
     if (!user || user.is_anonymous) return { status: "signed-out" };
     const [profile, preferences, staff] = await Promise.all([
       client.from("profiles").select("id,nickname").eq("id", user.id).maybeSingle(),

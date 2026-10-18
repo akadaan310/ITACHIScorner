@@ -10,13 +10,19 @@ export async function GET(request: Request) {
     const records: Record<string, unknown[]> = {};
     for (const table of OWNER_TABLES) {
       const rows: unknown[] = [];
+      let cursor: string | null = null;
       for (let page = 0; page < 100; page++) {
         const key = table === "profiles" ? "id" : "user_id";
         const order = table === "member_preferences" ? "user_id" : "id";
-        const { data, error } = await session.client.from(table).select("*").eq(key, session.user.id).order(order).range(page * 500, page * 500 + 499);
+        let query = session.client.from(table).select("*").eq(key, session.user.id).order(order).limit(500);
+        if (cursor) query = query.gt(order, cursor);
+        const { data, error } = await query;
         if (error || !data) throw new Error("Export query failed");
         rows.push(...data);
         if (data.length < 500) break;
+        const last = data[data.length - 1]?.[order];
+        if (typeof last !== "string") throw new Error("Export cursor unavailable");
+        cursor = last;
         if (page === 99) throw new Error("Export too large for synchronous download");
       }
       records[table] = rows;

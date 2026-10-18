@@ -12,7 +12,7 @@ export default async function SettingsPage({ searchParams }: { searchParams: Pro
   const client = (await createServerSupabase())!;
   const [links, consents] = await Promise.all([
     client.from("account_links").select("id,platform,handle,verification").eq("user_id", context.user.id).order("created_at", { ascending: false }),
-    client.from("consents").select("scope,granted,recorded_at").eq("user_id", context.user.id).order("recorded_at", { ascending: false }).limit(100),
+    client.from("consents").select("scope,granted,recorded_at").eq("user_id", context.user.id).eq("scope", "community-publication").order("recorded_at", { ascending: false }).limit(1),
   ]);
   if (links.error || consents.error) return <AccountFrame title="Settings & privacy"><p role="alert" className="card p-6 text-cream">Some settings could not be loaded. Please try again later.</p></AccountFrame>;
   const deletionReady = Boolean(process.env.SUPABASE_SECRET_KEY?.trim());
