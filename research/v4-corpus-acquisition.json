@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-18",
+  "scope": "separate_provisional_metadata_discovery_only",
+  "official_identity": {
+    "hub_url": "https://linktr.ee/dawahxdialogues",
+    "hub_sha256": "1f3cf21444934ac29c47dbc97d029acd0bb674f3cf7f96f7f9a918e00423760f",
+    "youtube_handle_url": "https://www.youtube.com/@dawahxdialogues",
+    "channel_id": "UCCGfMjDueUZ7PhrZHjcFnGw",
+    "channel_url": "https://www.youtube.com/channel/UCCGfMjDueUZ7PhrZHjcFnGw",
+    "cached_channel_title": "itachii",
+    "basis": [
+      "visible official hub link",
+      "public hub JSON-LD mainEntity.sameAs",
+      "public hub __NEXT_DATA__ YouTube metaData.title"
+    ],
+    "embedded_video_ids": [],
+    "selected_content": [],
+    "social_feeds": [],
+    "snapshot_written_at": "2026-10-18T04:02:00.089Z"
+  },
+  "inventory_denominator": null,
+  "inventory_completeness": "unknown",
+  "denominator_proof": "No exhaustive official listing or terminal pagination obtained; search results are a discovery subset, not a denominator.",
+  "counters": {
+    "official_items_verified": 0,
+    "inventoried_total": 9,
+    "indexed_metadata_candidates": 9,
+    "public_available_currently_verified": 0,
+    "official_public_available_total": null,
+    "not_accessible_official_item_total": null,
+    "candidate_watch_pages_blocked_on_attempt": 6,
+    "candidate_watch_pages_not_retried_after_origin_block": 3,
+    "official_listing_endpoints_blocked": 7,
+    "transcripts_retrieved": 0,
+    "transcript_tracks": 0,
+    "successful_validated_metadata_import_records": 9,
+    "successful_validated_transcript_imports": 0,
+    "eligible_real_transcripts": 0,
+    "inferred_speaker_roles_unknown_in_imported_segments": 0,
+    "source_records_with_speaker_roles_unassessed": 9,
+    "known_coverage_gap_categories": 10,
+    "excluded_related_candidates": 9,
+    "synthetic_records": 0
+  },
+  "counter_scope": "inventoried_total counts only provisional display-name candidates. It is not an official-channel item count; inaccessible official item totals remain unknown.",
+  "known_coverage_gaps": [
+    {
+      "id": "exhaustive_inventory",
+      "affected_count": null,
+      "detail": "Official uploads, Shorts, streams and playlists cannot be enumerated; no pagination/exhaustion proof."
+    },
+    {
+      "id": "stable_uploader_binding",
+      "affected_count": 9,
+      "detail": "Indexed uploader display name matches official hub cached name; stable per-video channel ID is unavailable."
+    },
+    {
+      "id": "current_playability",
+      "affected_count": 9,
+      "detail": "An indexed page does not establish current public playback, private/deleted status, or geographical availability."
+    },
+    {
+      "id": "exact_publication_date",
+      "affected_count": 9,
+      "detail": "Only relative index labels available; no guessed RFC3339 dates."
+    },
+    {
+      "id": "duration",
+      "affected_count": 9,
+      "detail": "Full duration unavailable; chapter timestamps are not video durations."
+    },
+    {
+      "id": "content_type",
+      "affected_count": 9,
+      "detail": "Watch URL/title cannot reliably distinguish video, Short, or archived stream."
+    },
+    {
+      "id": "playlist_membership",
+      "affected_count": null,
+      "detail": "No official playlist IDs or membership listing obtained."
+    },
+    {
+      "id": "recording_lineage",
+      "affected_count": 9,
+      "detail": "Clip-to-parent and recording independence unverified; unresolved IDs are placeholders, not independent-recording assertions."
+    },
+    {
+      "id": "captions_and_rights",
+      "affected_count": null,
+      "detail": "No caption track list, owner authorization or permitted timed-text acquisition established."
+    },
+    {
+      "id": "speaker_annotations",
+      "affected_count": 9,
+      "detail": "No transcript segments; source speaker roles remain unassessed."
+    }
+  ],
+  "acquisition_methods": [
+    {
+      "method": "public_https_get_official_hub",
+      "result": "HTTP 200; visible link, JSON-LD stable channel ID and cached title extracted; no embedded video IDs."
+    },
+    {
+      "method": "public_https_get_youtube_listing_tabs",
+      "result": "Environment proxy tunnel 403; no alternate routing, proxy, credentials, or access-control bypass attempted."
+    },
+    {
+      "method": "web_open_official_youtube_listings_and_feed",
+      "result": "Online fetch throttled; denied result retained."
+    },
+    {
+      "method": "public_search_index",
+      "result": "Nine canonical YouTube metadata candidates explicitly indexed By: itachii; stable uploader IDs absent. Multiple repeated query hits deduplicated by video ID."
+    },
+    {
+      "method": "official_youtube_data_api",
+      "result": "No configured API credential found by credential variable names; no authenticated API request or quota spend made."
+    },
+    {
+      "method": "official_caption_api_documentation",
+      "result": "Caption list needs OAuth; download also requires edit permission on the video. No caption API call or transcript retrieval attempted."
+    }
+  ],
+  "private_import": {
+    "import_run_id": "import-e52dd470510b7687a0eb1696",
+    "analysis_run_id": "analysis-fa5be34402a76efaba173d01",
+    "source_manifest_bytes_sha256": "b33426f6a4a3ec875dbe902fa01f60dfe1b0126baa359d87cefaf39a0d768145",
+    "canonical_manifest_sha256": "f0580bfeea925b7647ab360bc296d13694cc41ea053bd5bc3ad8c67537718ffa",
+    "extractor_commit": "7a8ce5efda461ebab717a03ed1d9c73528f92c9d",
+    "pipeline_sha256": "b748a27dbfa314eb6e6d49c84bbaa22c60beefa88ac65cb0a7060093b917a7be",
+    "analysis_candidates": 0,
+    "evaluation_status": "insufficient_data",
+    "pedagogy_eligible": false,
+    "scope": "quarantined provisional metadata; CLI validates contracts/checksums, not platform membership, rights, transcript content or coverage"
+  },
+  "rights": {
+    "permission_status": "pending",
+    "caption_download_documentation": "https://developers.google.com/youtube/data/reference/rest/v3/captions/download",
+    "caption_list_documentation": "https://developers.google.com/youtube/data/reference/rest/v3/captions/list",
+    "next_non_delegable_request": "With Itachi’s authorization, provide one private owner/authorized-manager export for channel UCCGfMjDueUZ7PhrZHjcFnGw containing the complete upload/Short/stream/playlist inventory (IDs, status, publication dates, durations and playlist membership), original timestamped SRT/VTT caption files and a written private research permission reference. No passwords or account tokens are requested."
+  },
+  "publication": {
+    "approved_source_previews": 0,
+    "transcript_bodies_in_git": 0,
+    "hosted_database_writes": 0,
+    "paid_processing_calls": 0,
+    "curriculum_or_book_findings": 0
+  }
+}

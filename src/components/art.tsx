@@ -32,43 +32,13 @@ export function starPath(n: number, R: number, r: number, cx = 0, cy = 0, rot = 
 
 /* ── Brand ──────────────────────────────────────────────────── */
 
-/** Hex badge (v1 identity) carrying an eight-point Cairo star (celestial identity). */
+/** Unendorsed signature study; UI names remain readable text. */
 export function Mark({ size = 40, className = "", title = "Itachi's Corner" }: { size?: number; className?: string; title?: string }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 64 64" className={className} role={title ? "img" : undefined} aria-label={title || undefined} aria-hidden={title ? undefined : true}>
-      <defs>
-        <linearGradient id="mk-hex" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#FF6A80" />
-          <stop offset="1" stopColor="#C42E48" />
-        </linearGradient>
-        <linearGradient id="mk-gold" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0" stopColor="#FFF0CC" />
-          <stop offset="1" stopColor="#E2B66B" />
-        </linearGradient>
-      </defs>
-      <path d="M32 3 L57 17.5 V46.5 L32 61 L7 46.5 V17.5 Z" fill="url(#mk-hex)" />
-      <path d="M32 8 L52.5 20 V44 L32 56 L11.5 44 V20 Z" fill="none" stroke="#16070b" strokeOpacity="0.35" strokeWidth="1.2" />
-      <rect x="21" y="21" width="22" height="22" fill="none" stroke="url(#mk-gold)" strokeWidth="2.4" />
-      <rect x="21" y="21" width="22" height="22" fill="none" stroke="url(#mk-gold)" strokeWidth="2.4" transform="rotate(45 32 32)" />
-      <path d={starPath(4, 6, 1.8, 32, 32)} fill="#16070b" />
-    </svg>
-  );
+  return <svg width={size} height={size} viewBox="0 0 128 128" className={className} role={title ? "img" : undefined} aria-label={title || undefined} aria-hidden={title ? undefined : true}><image href="/brand/v4/favicon-study.svg" width="128" height="128" /></svg>;
 }
 
 export function Wordmark({ compact = false }: { compact?: boolean }) {
-  return (
-    <span className="flex items-center gap-2.5">
-      <Mark size={compact ? 34 : 40} title="" />
-      <span className="flex flex-col leading-none">
-        <span className="font-display text-[1.45rem] uppercase tracking-[0.04em] text-cream sm:text-[1.6rem]">
-          Itachi&rsquo;s <span className="text-coral">Corner</span>
-        </span>
-        {!compact && (
-          <span className="mt-0.5 font-mono text-[0.58rem] uppercase tracking-[0.2em] text-gold/80">Faith // Knowledge // Reason</span>
-        )}
-      </span>
-    </span>
-  );
+  return <span className={`corner-wordmark ${compact ? "corner-wordmark-compact" : ""}`}><svg width="112" height="43" viewBox="0 0 334 128" aria-hidden="true"><image href="/brand/v4/itachi-signature-dark.svg" width="334" height="128" /></svg><span><span className="sr-only">Itachi&rsquo;s </span>Corner</span></span>;
 }
 
 /* ── Sky ────────────────────────────────────────────────────── */
@@ -312,4 +282,9 @@ export function ArchFrame({ className = "", stroke = "#D7AD65" }: { className?: 
       <path d={starPath(8, 16, 8, 100, 74)} fill="none" stroke={stroke} strokeWidth="1.4" />
     </svg>
   );
+}
+
+/** Small direction cue drawn in SVG so it does not depend on font glyph coverage. */
+export function Arrow() {
+  return <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14" /></svg>;
 }

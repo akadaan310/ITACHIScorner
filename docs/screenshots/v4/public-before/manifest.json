@@ -1,0 +1,99 @@
+{
+  "capturedAt": "2026-10-18T04:03:22.251Z",
+  "url": "https://itachi-scorner.vercel.app",
+  "source": "Repository homepage discovered by parent via authorized GitHub API",
+  "deploymentSHA": null,
+  "productionBranch": null,
+  "verification": "Public alias only; deployment SHA and production branch unverified. Not proof of feature deployment.",
+  "browser": "154.0.8037.57",
+  "records": [
+    {
+      "file": "home-390-fold.jpg",
+      "sha256": "02de312868bc49e671276b68d0bc0c80099e876c4a2cc0278c1e230ac9820587"
+    },
+    {
+      "file": "home-390-full.jpg",
+      "sha256": "13a30cb07cf0caec9b9a12408ed324208768e087d63e4ad3d985b969f31c11dd"
+    },
+    {
+      "width": 390,
+      "url": "https://itachi-scorner.vercel.app/",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "22341",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Sun, 18 Oct 2026 04:03:14 GMT",
+        "etag": "W/\"e40a915e286984de01a919e3da9e957a\"",
+        "server": "envoy",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "x-envoy-upstream-service-time": "344",
+        "x-matched-path": "/",
+        "x-nextjs-prerender": "1",
+        "x-nextjs-stale-time": "300",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "cle1::s5r6h-1792296194877-92cd106fc8c2"
+      },
+      "title": "Itachi's Corner — Where Truth Meets Dialogue",
+      "headings": [
+        "Where truthmeets dialogue.",
+        "Three worlds. One night sky.",
+        "Live tonight",
+        "Recent battles of ideas",
+        "Today’s discovery & a 30-second challenge",
+        "Welcome home, new Muslim ☾",
+        "Train.",
+        "Choose your rank",
+        "Stories, told by their owners."
+      ]
+    },
+    {
+      "file": "home-1440-fold.jpg",
+      "sha256": "e3647d2d85074111909a0302d6dda44c60e47d44cd7c81c0d895e30ea92c1ac9"
+    },
+    {
+      "file": "home-1440-full.jpg",
+      "sha256": "35a3750ba7b196a56302dafb5dd9460556315bf71473dac9e41a55f3ab851e55"
+    },
+    {
+      "width": 1440,
+      "url": "https://itachi-scorner.vercel.app/",
+      "status": 200,
+      "headers": {
+        "access-control-allow-origin": "*",
+        "age": "22345",
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-disposition": "inline",
+        "content-encoding": "br",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Sun, 18 Oct 2026 04:03:18 GMT",
+        "etag": "W/\"e40a915e286984de01a919e3da9e957a\"",
+        "server": "envoy",
+        "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+        "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+        "x-envoy-upstream-service-time": "209",
+        "x-matched-path": "/",
+        "x-nextjs-prerender": "1",
+        "x-nextjs-stale-time": "300",
+        "x-vercel-cache": "HIT",
+        "x-vercel-id": "cle1::2r8bn-1792296198595-40e83b8607ac"
+      },
+      "title": "Itachi's Corner — Where Truth Meets Dialogue",
+      "headings": [
+        "Where truthmeets dialogue.",
+        "Three worlds. One night sky.",
+        "Live tonight",
+        "Recent battles of ideas",
+        "Today’s discovery & a 30-second challenge",
+        "Welcome home, new Muslim ☾",
+        "Train.",
+        "Choose your rank",
+        "Stories, told by their owners."
+      ]
+    }
+  ]
+}

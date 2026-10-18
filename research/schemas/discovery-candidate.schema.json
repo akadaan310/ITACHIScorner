@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/discovery-candidate.schema.json",
+  "title": "Pending discovery candidate v1",
+  "description": "Machine output is a pending proposal. Authenticated, hash-bound editorial publication is a separate service. Effective staleness also includes private invalidation overlays.",
+  "type": "object",
+  "properties": {
+    "substrate_id": {
+      "type": "string"
+    },
+    "label_internal": {
+      "type": "string"
+    },
+    "definition": {
+      "type": "string"
+    },
+    "observation_schema": {
+      "type": "string"
+    },
+    "extraction_algorithm": {
+      "type": "string"
+    },
+    "code_commit": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "data_manifest_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "corpus_snapshot": {
+      "type": "string"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "supporting_intervals": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-span.schema.json"
+      }
+    },
+    "counterexample_intervals": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-span.schema.json"
+      }
+    },
+    "heldout_supporting_intervals": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-span.schema.json"
+      }
+    },
+    "heldout_counterexample_intervals": {
+      "type": "array",
+      "items": {
+        "$ref": "evidence-span.schema.json"
+      }
+    },
+    "cross_episode_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "supplied_recording_group_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "verified_independent_recording_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "contrast_set": {
+      "type": "null"
+    },
+    "estimated_stability": {
+      "type": "object"
+    },
+    "uncertainty": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confounders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hypothesis": {
+      "type": "object",
+      "required": [
+        "antecedent",
+        "predicted_suffix",
+        "horizon_segments",
+        "opportunities",
+        "censored"
+      ]
+    },
+    "alternative_explanations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reviewer_status": {
+      "const": "pending"
+    },
+    "reviewed_by": {
+      "type": "null"
+    },
+    "decision_at": {
+      "type": "null"
+    },
+    "derived_substrate_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pedagogy_eligible": {
+      "const": false
+    },
+    "discrimination_status": {
+      "const": "unestablished"
+    },
+    "publication_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "controls": {
+      "type": "object",
+      "required": [
+        "shuffle",
+        "role_swap",
+        "citation_ablation",
+        "asr_noise"
+      ]
+    }
+  },
+  "required": [
+    "substrate_id",
+    "label_internal",
+    "definition",
+    "observation_schema",
+    "extraction_algorithm",
+    "code_commit",
+    "config_hash",
+    "data_manifest_hash",
+    "corpus_snapshot",
+    "run_id",
+    "supporting_intervals",
+    "counterexample_intervals",
+    "heldout_supporting_intervals",
+    "heldout_counterexample_intervals",
+    "cross_episode_count",
+    "supplied_recording_group_count",
+    "verified_independent_recording_count",
+    "contrast_set",
+    "estimated_stability",
+    "uncertainty",
+    "confounders",
+    "hypothesis",
+    "alternative_explanations",
+    "reviewer_status",
+    "reviewed_by",
+    "decision_at",
+    "derived_substrate_ids",
+    "pedagogy_eligible",
+    "discrimination_status",
+    "publication_blockers",
+    "synthetic",
+    "controls"
+  ],
+  "additionalProperties": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "lint",
+    "command": "npm run lint",
+    "exitCode": 0,
+    "durationSeconds": 5.86,
+    "log": "logs/lint.log"
+  },
+  {
+    "name": "typecheck",
+    "command": "npm run typecheck",
+    "exitCode": 0,
+    "durationSeconds": 4.52,
+    "log": "logs/typecheck.log"
+  },
+  {
+    "name": "vitest",
+    "command": "npm test",
+    "exitCode": 0,
+    "durationSeconds": 0.85,
+    "log": "logs/vitest.log"
+  },
+  {
+    "name": "build",
+    "command": "npm run build",
+    "exitCode": 0,
+    "durationSeconds": 12.2,
+    "log": "logs/build.log"
+  }
+]

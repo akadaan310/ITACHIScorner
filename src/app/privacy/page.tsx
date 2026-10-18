@@ -1,31 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChapterHeader } from "@/components/ui";
-
+import { PublicHeader } from "@/components/public-content";
 export const metadata: Metadata = { title: "Privacy" };
-
-export default function PrivacyPage() {
-  return (
-    <div className="pb-10">
-      <ChapterHeader eyebrow="Transparent policy" title={<>Your data <em className="text-teal">stays with you.</em></>}>Plain-language privacy for the demo.</ChapterHeader>
-      <div className="shell">
-        <div className="prose-soft max-w-3xl">
-        <h2>What the demo stores</h2>
-        <p>Your nickname, choices, progress, journal, notes and settings are saved in your browser&rsquo;s localStorage under one key. Nothing is sent to a server. There are no analytics, cookies, trackers or ads.</p>
-        <h2>Platform handles</h2>
-        <p>If you type a TikTok or YouTube handle, it is labelled “self-entered”. It is never used to read comments, track viewing or infer attendance, and you can unbind it at any time.</p>
-        <h2>Live comments &amp; attendance</h2>
-        <p>The demo collects none. Any future collection would require lawful authority, platform-compliant access, explicit consent, data minimisation and deletion on request.</p>
-        <h2>Sensitive information</h2>
-        <ul>
-          <li>Religious identity or conversion history is never displayed publicly.</li>
-          <li>Reverts HQ notes and questions are private by default; wall questions are anonymous by default.</li>
-          <li>Leaderboards are opt-in and pseudonymous.</li>
-        </ul>
-        <h2>Export &amp; delete</h2>
-        <p>Use <Link href="/me/settings">Settings</Link> to download everything as JSON or erase it completely.</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+export default function PrivacyPage() { return <div className="public-page"><PublicHeader label="Privacy" title={<>Your questions.<br /><em>Your privacy.</em></>}><p>Privacy information for this project under development.</p></PublicHeader><div className="shell"><article className="public-prose"><h2>Account availability</h2><p>Account features depend on a configured authentication and storage service. My Corner shows their current availability. Without that configuration, sign-in and cloud storage are unavailable.</p><h2>What an account can hold</h2><p>When enabled, an account stores the information you choose to provide, preferences, notes and saved questions. Sensitive account information is private by default. Staff access is restricted to authorized roles.</p><h2>External identities</h2><p>A handle you enter yourself does not verify account ownership. It is never used to infer livestream attendance or silently collect comments.</p><h2>Community</h2><p>Public questions and discussions are not currently open. Moderation, consent, retention and reporting controls must be ready before submissions are enabled.</p><h2>Export and deletion</h2><p>Account data controls are in <Link href="/me/settings">My Corner settings</Link>. Export and deletion require an authenticated account and a configured backend. Their current status is shown there.</p><h2>Earlier browser profiles</h2><p>An earlier version stored a local concept profile under the key <code>itachis-corner-demo-v1</code>. It is not a real account and is not used by this version. You can remove it through your browser&rsquo;s site storage controls.</p><h2>Before public release</h2><p>A final policy identifying the data controller, contact route, processors, retention periods and applicable rights must be reviewed before public launch.</p></article></div></div>; }

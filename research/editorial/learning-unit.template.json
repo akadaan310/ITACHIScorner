@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "draft_kind": "learning_unit",
+  "unit_id": null,
+  "state": "blocked_on_corpus",
+  "instructional_claim": null,
+  "learning_objective": null,
+  "evidence_pack_refs": [],
+  "counterexample_refs": [],
+  "uncertainty_statement": null,
+  "exercise": null,
+  "assessment_rubric": [],
+  "prerequisite_finding_ids": [],
+  "content_review": {
+    "state": "not_requested",
+    "reviewer_id": null,
+    "decision_at": null,
+    "decision_reference": null
+  },
+  "creator_authorization": {
+    "state": "not_requested",
+    "reviewer_id": null,
+    "decision_at": null,
+    "decision_reference": null
+  },
+  "scholarly_review": {
+    "state": "not_requested",
+    "reviewer_id": null,
+    "decision_at": null,
+    "decision_reference": null
+  },
+  "attributed_to_creator": false,
+  "pedagogy_eligible": false,
+  "publication_allowed": false
+}

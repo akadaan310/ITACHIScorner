@@ -1,56 +1,25 @@
 # Product flows
 
-State lives in a persisted Zustand store (`src/lib/store.ts`, key `itachis-corner-demo-v1`). Every flow below is covered by Playwright (`e2e/flows.spec.ts`).
+This supersedes the browser-only demo flows. The [constitution](PRODUCT_CONSTITUTION.md) forbids fictional public content even when labelled demo.
 
-## First-time visitor (≤3 taps to something playable)
+## Visitor
 
-Home hero → **Enter the Corner** (`/discover`) or the 30-second challenge on Home (no sign-up) → pick a star path → **Join the Ranks** to keep progress.
+Home introduces the independent creator concept with one dominant **Explore a question** hero action and a contextual About link. Its scroll explains source readiness, offers a temporary writing desk for the visitor's own question/reflection, and gives distinct contextual paths to Learn, Practice, Community and My Corner. The desk sends no input to a server, uses no browser storage, gives no answer/score and loses its draft when the page is left or refreshed; copying is an explicit visitor action. It is not an Itachi-derived exercise.
 
-## Join the Ranks (`/join` → `/onboarding`)
+Explore searches only approved source summaries. If none exist, it explains the missing verified conversations without fabricated results. Learn and Practice explain preparation/review status without lesson previews or pretend assessments and offer the visitor-owned question desk as something usable now. Community explains its principles and moderation readiness, with no invented people or open submission control.
 
-1. Nickname (2–20 chars, validated) + optional invite code (cosmetic flair only).
-2. Intention: Curious · Student · Dialogue Explorer · New Muslim · Returning Learner · Something else (private).
-3. Languages (multi-select).
-4. Starting constellation: The Lantern · The Compass · The Nile Arc · The Dawn Gate.
-5. **Explorer's Star Card** reveal (seeded constellation, downloadable SVG). +20 credits. Role becomes `new-member`.
+Primary navigation is Home · Explore · Learn · Practice · Community. My Corner is secondary. No persistent live banner or streaming host is present. About carries modest external public-channel links. Support describes inactive optional support without prices, ranks or fabricated creator benefits.
 
-No account, email or OAuth is created. A "Load demo profile" option exists for signed-out reviewers.
+## Account
 
-## Afterglow
+My Corner → email sign-in → provider-delivered link/code → callback verification → own account. Configuration absence and provider errors are explicit. A localStorage demo profile cannot create an account or staff session. Email delivery depends on the selected project's configuration.
 
-```
-Before (/afterglow/before)          During (/afterglow/live)                    After (/afterglow/episodes/:id)
-sample schedule + countdown   →     demo clock (minute 0–75)              →     episode constellation
-reminder toggle                     in-app check-in (+15, verified)             moments (save ★ +3 each)
-"I'll be there" (intent only)       self-report (+5, self-entered)              references (Qur'an)
-prompt poll                         First-30 trivia                             recap card (download/share)
-anticipation constellation          question queue · discussion · bookmarks     journal prompts (+10)
-                                    opt-in ranks board                          unlocked challenges · participation compare
-```
+Authenticated members manage private profile/preferences/consent/self-entered handles and inspect their own records. Export and deletion use authenticated server endpoints. Deletion needs server-only administrative credentials and provider confirmation. A typed handle is not OAuth verification or attendance evidence.
 
-### First-30 trivia state machine
+## Staff
 
-`intro` → (window open && Begin) → `question[i]` → (lock answer | timer hits 0 → void) → `reveal[i]` → … → `results`
+Studio → verified request session → trusted database role lookup → private workspace or denied/unconfigured state. Browser state, input and user-editable metadata cannot provision staff access. Private findings point to exact source intervals/hashes; content review, theological review and creator authorization are distinct. No unpublished transcript appears in public results.
 
-- 6 questions, 20 s each, one answer per question; a late answer is never correct.
-- Window: minutes 0–29 on the demo clock. Afterwards only **Practice mode** is offered.
-- Official attempt: +10 per correct answer, +10 for completion. Credits are idempotent by key, so resetting and replaying can't farm them.
-- Practice attempts: never award credits.
-- "Reset demo attempt" clears the attempt for repeat testing.
-- Keyboard: arrow keys within the radio group, Enter submits/advances.
+## Evidence handoff
 
-## Dawah Simulator path (`/dojo/path`)
-
-Setup → choose the next question (+ optional private reasoning) → spot the hidden assumption → match evidence to claim → reply with care → reflection checkpoint (saved to the journal, +50, Careful Listener badge) → `/dojo/result`. Each step gives feedback on clarity, fair representation, evidence and careful listening, with an illustrated path of reasoning. `?step=n` deep-links drills.
-
-## Night Atlas
-
-Select a star (click, tap, Tab + Enter, mobile card) → station card (question, summary, path, "you already…", connected stars, passage, **Enter this star**). Visiting 5 stars earns Star Cartographer. Reset restores the full view; `?star=id` deep-links.
-
-## Member states (Settings → Demo states, or `/studio`)
-
-`signed-out` · `new-member` · `return-member` (seeded history, return ritual) · `free-member` · `patron-preview` (cosmetic flair) · `moderator` (creator console unlocked).
-
-## Privacy
-
-Settings → visibility (private default), opt-in board, mute rankings/achievements, reduce motion, self-entered handles with unbind, consent toggle (inert), adapter status, **Export JSON**, **Delete everything**.
+Authorized private export → deterministic validation/import → coverage/gaps → discovery and null controls → private review → approved learning dependency work → separate release. This mission builds the machinery without skipping corpus/approval gates or writing a purported method. Legacy paths redirect as listed in [REFACTOR_MAP.md](REFACTOR_MAP.md).

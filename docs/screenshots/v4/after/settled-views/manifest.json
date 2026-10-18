@@ -1,0 +1,2222 @@
+{
+  "capturedAt": "2026-10-18T04:23:42.394Z",
+  "baseURL": "http://127.0.0.1:4001",
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "sourceState": "Committed V4 implementation at sourceCommit during this settled-view capture. All 131 recorded source/brand/tool hashes matched that committed tree throughout the run; the capture helper was corrected after this run.",
+  "sourceCommit": "783a0180adb59f47b0393d154bbeb9223c086685",
+  "sourceHashes": {
+    "package-lock.json": "6180694655adbae34fcfa4c0640774632d4d2c058b91a04cfd785b4997f34685",
+    "scripts/capture-v4.mjs": "0efa829b0a04ab17c4395356601b9c66d1ea00ec71fb51afdd3c95d04e26473e",
+    "src/app/about/page.tsx": "e6597670e32206a4b4b3c4d02f05f6a5d2f4ef8170e74ebae1e8978304b023b5",
+    "src/app/afterglow/before/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/afterglow/episodes/[id]/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/afterglow/gallery/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/afterglow/live/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/afterglow/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/afterglow/vault/page.tsx": "5537dd050a72568c9a1ad7b2fadd6e4e33723b9532bb4ebd0dea5e561f3c96f1",
+    "src/app/api/account/consent/route.ts": "eb8c5eb144b3b9bb4a92f3d2dcba57de4812a374282febefc7f050ad7aead586",
+    "src/app/api/account/delete/route.ts": "3a1761fa7a98d2b1aa13e42611a931357fcfe3f56b39f0102c44332defb6fa55",
+    "src/app/api/account/export/route.ts": "375bfcfbb4c512a5df1aa16b9ec322c21eb04f532cfd7f4b09e69fd328d9f8f1",
+    "src/app/api/account/links/route.ts": "20b74e39864380c99bd67afac0fa54824bac316d67b70aa520ae0da45b95022c",
+    "src/app/api/account/notes/route.ts": "2a9c01051ec513bb40692b9e9095b9857de16d1172890bf46c448b5b7797126f",
+    "src/app/api/account/preferences/route.ts": "11a47a16a21bb68b41f06fbd1f5d849ba7b85fab27983cdd7d7d78526ded9f0d",
+    "src/app/api/account/profile/route.ts": "49492ee13699cc9a47a3f775062e821cc0144abf6b2c31997186ac6c8a112f10",
+    "src/app/api/account/saved-questions/route.ts": "42a6252673d904aab6fd7c8c64e2ae5b8facb0c4883467bdd41c7c1b23cb4e6d",
+    "src/app/atlas/page.tsx": "f7cbc3078e66898f135473aad15f0bf9af08144d8389c37ae4971f4a6391f03d",
+    "src/app/auth/callback/route.ts": "394bd43294f33bbea835922526fffe613fb16fb64c1dece7ba0ff12e90755d53",
+    "src/app/auth/confirm/route.ts": "ac862299e690fa51296ba4c56f198753739f5ef7d91b042b703fcdcb460479b7",
+    "src/app/auth/logout/route.ts": "8bd346667e936e71a085f5d971bd3b095a0176f1b2576f5ab481b9462fbbf6ec",
+    "src/app/auth/request/route.ts": "6e2e9a6262ebf6ea832067af10951d008830699c92d9f252253049cd84bddd76",
+    "src/app/auth/verify/route.ts": "8e179412d25aaba66386b7c4397bb8c2c01e50fd6cf7531f2cbe45987a1b1e85",
+    "src/app/community/page.tsx": "3a44bd85fddfab3d7a3f3c374ed11313699db88027ba27aff7119c8cdb5fac7c",
+    "src/app/discover/page.tsx": "f7cbc3078e66898f135473aad15f0bf9af08144d8389c37ae4971f4a6391f03d",
+    "src/app/dojo/page.tsx": "f81daa73f02265a2021f8a1941d8c90c020839ded7fc343f03aa551516c86fc2",
+    "src/app/dojo/path/page.tsx": "f81daa73f02265a2021f8a1941d8c90c020839ded7fc343f03aa551516c86fc2",
+    "src/app/dojo/result/page.tsx": "f81daa73f02265a2021f8a1941d8c90c020839ded7fc343f03aa551516c86fc2",
+    "src/app/events/page.tsx": "a6b425e216e6f6ad6242cdef9419b7f5a8d62f76440c447065ad4ff0270fcc99",
+    "src/app/explore/page.tsx": "e2b164b4905b4351dd81931d6fb735d993b95293f43a917819778c69b2073738",
+    "src/app/faq/page.tsx": "3cfd28d7ad0d70bd0dde384d8032e46854414bbb7f75ab49290816e4aeb791e8",
+    "src/app/globals.css": "e66dbe05dfa2490ca400500f313d4f7a0dbe15a69d696ede4decb96dab4641f3",
+    "src/app/icon.svg": "965da18f0609a81e4ab6ea889df71d165986ffacd2b1deff06938b1a13d777bd",
+    "src/app/join/page.tsx": "a70f064d707c84f369fea01533b43f314d8270094c701f37f5669c8d02e420c6",
+    "src/app/layout.tsx": "700d5bcfba5f352e89180f7c81be60fafa1f0371697e306e641b1f448cfef269",
+    "src/app/learn/page.tsx": "803cb5ef7b0b316801b85a63d15e87ed8da10cc8b486c7e2401c03f472dea6fb",
+    "src/app/library/page.tsx": "c08a910ef5027dc14c8e966980c0047bda5477649990523c171cdd858e1356b9",
+    "src/app/library/preview/page.tsx": "12436d57eccb207e449987977766e59999f640b16640b39a4e83c5d0cb26bb31",
+    "src/app/manifest.ts": "f7720e1c2c32221cbf4e720e74be03200196c200b2bbfb47e23de6762e7eac4b",
+    "src/app/me/afterglow/page.tsx": "2573e4c4ba0a9757c18280b47717039e710aa6ccf05a6d5a81174813f61216a7",
+    "src/app/me/constellation/page.tsx": "2573e4c4ba0a9757c18280b47717039e710aa6ccf05a6d5a81174813f61216a7",
+    "src/app/me/journal/page.tsx": "ff212367727782365df6efd85a11420627189089a8f69f57adbd752b1f7cc4e3",
+    "src/app/me/page.tsx": "14a8386ce0f109575ca5f3947fff9b03a888f0c83719b5f4260c411bd4b3aacb",
+    "src/app/me/quests/page.tsx": "2573e4c4ba0a9757c18280b47717039e710aa6ccf05a6d5a81174813f61216a7",
+    "src/app/me/settings/page.tsx": "30b05b6ec542f29edd62d475685b6ce3eba067b2f603aace87ecb63cf8c67e60",
+    "src/app/membership/page.tsx": "4c17209705998947195479ba423001d2b55162ea392084f82f39126f0046ea2d",
+    "src/app/not-found.tsx": "7774fac4a067003d3a2285b0880bc7f014737cac626cb377d03e4b7f3fa74494",
+    "src/app/onboarding/page.tsx": "324b8a4f33859ff67508207d84a445b2647a203f4b80f6916b40c6cbc512b372",
+    "src/app/opengraph-image.tsx": "568b55c1fc5a3beca1244ee29baf8ee17d91139edbcc9d4945d3596be2996360",
+    "src/app/page.tsx": "8f9679642d32bef049d9912c73ee899ea0c0d110fa17061b333e1722160577ea",
+    "src/app/practice/page.tsx": "af6c1be98efc04fc9a1160c4808f0b58b702cbc73ccfee91fbe30a640a161c6e",
+    "src/app/privacy/page.tsx": "839377ed8497892cdbfe63eb212d81833228508a0d32ece6ab5cff501dc7c559",
+    "src/app/reverts/ask/[id]/page.tsx": "d68b1913c9149ec03b2338ba8bc9c0c35e57253efbdc8dc629618df1694e0c93",
+    "src/app/reverts/page.tsx": "5192072c9ef5c81344a62fc7d09898d965ecd440758ee51d6d037c2c74c65e71",
+    "src/app/session-notes/page.tsx": "e006f69793bd12b1c9c0bbb0a06b2646b40cadcfe3774adc308184d38d3696f4",
+    "src/app/stories/page.tsx": "d68b1913c9149ec03b2338ba8bc9c0c35e57253efbdc8dc629618df1694e0c93",
+    "src/app/studio/creator/page.tsx": "635564dddbb1ac5399e36c7f13daf1baad2bb4e0c77c4a046ddb1b29bd2728d8",
+    "src/app/studio/page.tsx": "943215611e15d2fdf8809a66e19593041dbc2b228e92d4fa97bf71f0064adcfa",
+    "src/app/support/page.tsx": "e1eb57c809e1bb893b9a2e9bfe2835f8079f580da555f0a3df5533b112c289c9",
+    "src/app/terms/page.tsx": "b0764ad20bfee61669492f595af73f4c91c0ec7ad5e7ff65710edf333f7c650b",
+    "src/app/v4-interactions.css": "54a2933aabb743348eda54ea7abc29d38e1ba0efa6b445d3906a1e9d727f592a",
+    "src/app/watch/page.tsx": "f7cbc3078e66898f135473aad15f0bf9af08144d8389c37ae4971f4a6391f03d",
+    "src/components/account/activity.tsx": "84c9b3da7d421d448faaf857b5c3fbecf28d310efde1f743b23302db04223750",
+    "src/components/account/frame.tsx": "c656eb3debb3f925af00cfb012c78d9cbca007d0fae4b32f846b48c84261eb2d",
+    "src/components/account/saved-questions.tsx": "e69bb5174a339c32b6d2f3a383ff9f08de0422b1723690ae3121916e82256a51",
+    "src/components/afterglow/before.tsx": "1b446c5fdbc8acf75d60e89a6cc2037ac0f4a451f91327c8657466d3b9126319",
+    "src/components/afterglow/dock.tsx": "07235ca0e06e0100d85acc2b335eb6f86b81b7a9914c7ba4bafc7d68456c71b5",
+    "src/components/afterglow/recap.tsx": "a6715d6f9fa531f33fa6a553a08834acc3e173fd8cf76bc385a93d6e0f9239e5",
+    "src/components/afterglow/trivia.tsx": "c370dd76449b6117a8f512614a6a18de1c2d6178ea9d0d7991aa187fa9f158cb",
+    "src/components/arsenal.tsx": "ae8c2967bd5940ac9c2562d397df3abeb18e1ee638fae91870784f058ff993a9",
+    "src/components/art.tsx": "3cfa9f049897d4131bf060250fa0a57f65b042ac645618d7423e3d90fa8d59b3",
+    "src/components/atlas.tsx": "5c6c7b705ac411549bf21ec3c95f41ca390d5252d10f85e483f430bd9e82833a",
+    "src/components/book.tsx": "cff871068631a2c46091743f6bed8617858c412fe3d11adb24a8bad134e74ef1",
+    "src/components/creator-console.tsx": "48cefb752e1a6ba47d27124e42f255a0ee36cc04c6a7d254beb14790cf87fb77",
+    "src/components/creator-portrait.tsx": "4da0b340abdba866171ac21977bf50cf2dfd3db95352cb5a6652eae49a81e8f8",
+    "src/components/dojo-result.tsx": "07f992ac44376efa35d1dfe39656927a6e83b53b277386408b83fc013b11bc8e",
+    "src/components/dojo.tsx": "132c06431f915471e35472768ec2e186f8c2fde4634a2661799e9f5c8fd865a1",
+    "src/components/footer.tsx": "fe7dbc68da5bab4d8e394926017663d3c423b6ede49f532cca10465fa320ca43",
+    "src/components/hero.tsx": "944efbe5db6aa5792007851309d154eb76816f46602a71082d77c19397a6d75e",
+    "src/components/live-bits.tsx": "10b44d9a81b0c5e8b49df5f8d3b6f3d72f3d5133719dd6c65379857197708057",
+    "src/components/member.tsx": "c3420f8fc7616c7ce273df06df4cdad07da2c8cc294c49a645ba5d688e168995",
+    "src/components/onboarding.tsx": "83f2ee25789f970ab5fca3e6ddc9323d62b3cfb3380aa171ad99c98fbc346352",
+    "src/components/practice-composer.tsx": "ff36a31eb8ff8a4c70f9a92340c3a6e2d238c50695cfa40547f1f5328831b660",
+    "src/components/public-content.tsx": "d79f24aa8d4f2d10fbd68b9274a0ad6539e51f946de9a04db3a8212bd3acf13b",
+    "src/components/question-desk.tsx": "c8ea1b19dca42b2801ce19400b810b5675b5d7bb9e1693e081e298ecd9d58339",
+    "src/components/question-journey.tsx": "56d628c14586e7a71c50bcd483a1772fdb3be71f742c09114b6f8f375575e605",
+    "src/components/sanctuary.tsx": "553aa21f50205cdb6179aa5163739971d76cd10b542dbe9c0b7253a3512d2dc4",
+    "src/components/shell.tsx": "7f057b22fa0a307c8d858bba09c401425cff19e8020b8978b2a7fb76c96399e2",
+    "src/components/sim-stats.tsx": "31f6049312b704bf1a492613df477006711afcde4c831368f69abe8fdb8fa6e8",
+    "src/components/source-preview.tsx": "6df7d9cdedc8358b7f1f1fbb2d0601074afff0be0f3017abada436c71573cc76",
+    "src/components/star-card.tsx": "709233982be06135a772dcdebaa5a740572a7af6c6aa8dd1e2b89c771fd1104b",
+    "src/components/ui.tsx": "41722283bff35a18cd41a7f1829dbf06d8e972ff914307ce9d4d06f3e5483b71",
+    "src/lib/adapters/index.ts": "a4f020a978bb8a7c464504b9dd3f231acb31938fcb74882281a187daaad3dc61",
+    "src/lib/auth/http.ts": "bca0d8a4369bb7597bbecc721ecd69d284de5b6a784f80769f36e7534bd23738",
+    "src/lib/auth/session.ts": "6566925eda3cb1a5b65706a367c56300201fc459eb80cbaa289884f03afb163e",
+    "src/lib/auth/validation.ts": "2b2f41aed0e12e216e752b40638a57af151914d068f62da001bc89abd36ed0be",
+    "src/lib/config/creator.ts": "083ba82bf08d2381486ec2e095f7a08137e1a6328a5ed807d177c181b0671b1e",
+    "src/lib/fixtures/atlas.ts": "603a1106f8d91709f283a260423bcba6cff8f06cc6c0b7efdd5d9a186287fcf4",
+    "src/lib/fixtures/content.ts": "646ff28c233c0304a33883848eb4161ce45648ea8b6fc506cdbb6826b8d2cb2f",
+    "src/lib/fixtures/dojo.ts": "57f764ad5d8dd4f80ecf89faa5ec132b7532c5c5f967f84c7c549d5113578ce6",
+    "src/lib/fixtures/events.ts": "bc137c7ec65b05a7d70ef1a3289300ef4d53791e8d7943ad26811438da290e18",
+    "src/lib/fixtures/quran.ts": "3fc194259f4161feda0affdbe7f3d5afbc70e0c83d93c272689f2b1936d09274",
+    "src/lib/fixtures/trivia.ts": "2b2b4d26292a6790ffea81b6cc4a1013b6f7270794c2e4f95d273df5da21f903",
+    "src/lib/progression.ts": "0bc1a8b943f915f589f04b1b1a503709e17c76157a1dc6dcee3a8f33b4dea21a",
+    "src/lib/published-content.ts": "8ff99f51d1618ba3bb70392dc13ecbff9f8a845ed0d29b658858aa4f80007b19",
+    "src/lib/store.ts": "275959c24e33384bc90ec31ff916ef82243c2c92d2c95d02693f6b9dd236dd3e",
+    "src/lib/supabase/config.ts": "389b6bc6e063c29506c706532c12c049791c8fe82a6e861eab4a2cf8a3f8314b",
+    "src/lib/supabase/proxy.ts": "37db04cf5d923d2f0a771eabfbd1a038163e4a4c23921a357c8769e1bc69511f",
+    "src/lib/supabase/server.ts": "3fba2e08621a768d1f42bdc250da54d71fb3326b701cece4253f0e2b72a0e887",
+    "src/lib/types.ts": "3ad12165692be213d64eb0e0d3507518995a0b512633e69ad9e97d6b56d26285",
+    "src/proxy.ts": "23fdc1637457f6cb16f9393c02233d0baaf7c1db25f8b32812de64654d218b54",
+    "public/brand/itachi-masked-portrait.jpg": "35e14eda0ed6700bf8087b3535df65d23a5ba365666f5d943aed30a7173322e4",
+    "public/brand/v4/asset-manifest.json": "8bb0ee591acf6f14427ef1e27807c85988ee42e93af5b98425b826ef3bf84bff",
+    "public/brand/v4/brand-application-specimen.png": "8c3ff64e1d1e13c407d929b2433acbd2ba5ab848ac343587479be68b78d16b00",
+    "public/brand/v4/brand-application-specimen.svg": "e9d15ae70811895a60a65ac20af73f3f7669311c54868167dfd963eec55da828",
+    "public/brand/v4/brand-application-specimen.webp": "31e1880a37062cc1d840b8c306dda75accde2ac59911a95b06196fe18532d89b",
+    "public/brand/v4/favicon-study.png": "34add16413bcc58c3f0b66591cf2fdbe21c7c01733b05d0794b577d23b00dec1",
+    "public/brand/v4/favicon-study.svg": "965da18f0609a81e4ab6ea889df71d165986ffacd2b1deff06938b1a13d777bd",
+    "public/brand/v4/favicon-study.webp": "f379aa2085d4b32a6edfeb522e7c9190386fba7b72fad2b385884952ad222a09",
+    "public/brand/v4/itachi-signature-dark.png": "3d215f427561c035fc2a36dbc7c19a286b1f4eaa081db83de475404029d5ce97",
+    "public/brand/v4/itachi-signature-dark.svg": "091862cbedab6c237f1fdde5327e0f434d45efdab2d3ae17eb6b2d8d4922712e",
+    "public/brand/v4/itachi-signature-dark.webp": "4012b6d7270bf4eda437ea2e3d0daad6fa13c829185898586d13f513f95bc2ae",
+    "public/brand/v4/itachi-signature-ivory.png": "1b18e4c74464524d8fa14599809e4f029b7fbb434438907533d5016664fc5581",
+    "public/brand/v4/itachi-signature-ivory.svg": "8ca3534303325419552bbc81871b7de3e008c4d6bdb81a9753a613e307f04375",
+    "public/brand/v4/itachi-signature-ivory.webp": "40df2fba4dddf1b32cedb332379a19e66769b21e36d718f5aa48b01fb8bad84d",
+    "public/brand/v4/itachi-signature-light.png": "a2addb58cfd81c4772780c605ea46b694fba5ab41cacf8034a27c16e64cd74db",
+    "public/brand/v4/itachi-signature-light.svg": "a83f6549e17abfe8809af135a963d8840dca10573cded8e31b014a9876e077a2",
+    "public/brand/v4/itachi-signature-light.webp": "2c90bdc2db6705a3a1bdc7cc28a5f490643f0804b3e4545ea62565c3204f3901",
+    "public/brand/v4/itachi-signature-study.png": "ebdd7c34004db3850541aeb4e7ef05566c225d7e6c538d4d752fab6c9be12faa",
+    "public/brand/v4/itachi-signature-study.svg": "5326c3247f58609bce6643c7fe21f61795de4b19365588d762c22b10cb103245",
+    "public/brand/v4/itachi-signature-study.webp": "efd8bd4768960577065975d316f8623457baccee487800ac4ee57332e6fc4335"
+  },
+  "browser": "154.0.8037.57",
+  "methodology": "Correction for viewport-only artifacts: CSS smooth scrolling caused some earlier fold/transition images to capture mid-scroll. Earlier files preserved. These authoritative viewport captures set behavior:instant, await two animation frames, assert actual scrollY against the bounded target, then capture. Full-page evidence, route/action/fold coordinates and interaction results remain in original manifest. Product sources verified unchanged before and after this supplementary run.",
+  "records": [
+    {
+      "name": "home",
+      "route": "/",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 1,
+      "label": "hero-title",
+      "requestedY": 63.609375,
+      "scrollY": 64,
+      "file": "home-360-section-1.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 2,
+      "label": "source-title",
+      "requestedY": 667.140625,
+      "scrollY": 667,
+      "file": "home-360-section-2.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 3,
+      "label": "desk-title",
+      "requestedY": 1533.921875,
+      "scrollY": 1534,
+      "file": "home-360-section-3.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 4,
+      "label": "learning-title",
+      "requestedY": 3571.390625,
+      "scrollY": 3571,
+      "file": "home-360-section-4.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 5,
+      "label": "personal-title",
+      "requestedY": 4943.65625,
+      "scrollY": 4944,
+      "file": "home-360-section-5.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 6,
+      "label": "community-title",
+      "requestedY": 5938.0625,
+      "scrollY": 5938,
+      "file": "home-360-section-6.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 360,
+      "index": 7,
+      "label": "closing-title",
+      "requestedY": 6499.03125,
+      "scrollY": 6499,
+      "file": "home-360-section-7.jpg"
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/practice",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/community",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/about",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "creator",
+      "route": "/studio/creator",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "studio",
+      "route": "/studio",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "source",
+      "route": "/watch",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "archive",
+      "route": "/afterglow/vault",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "onboarding",
+      "route": "/onboarding",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "book-preview",
+      "route": "/library/preview",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me/settings",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "journal",
+      "route": "/me/journal",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me/journal",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/support",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "faq",
+      "route": "/faq",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/faq",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/privacy",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/terms",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "new-muslims",
+      "route": "/reverts",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 1,
+      "label": "hero-title",
+      "requestedY": 48,
+      "scrollY": 48,
+      "file": "home-390-section-1.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 2,
+      "label": "source-title",
+      "requestedY": 621.265625,
+      "scrollY": 621,
+      "file": "home-390-section-2.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 3,
+      "label": "desk-title",
+      "requestedY": 1414.34375,
+      "scrollY": 1414,
+      "file": "home-390-section-3.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 4,
+      "label": "learning-title",
+      "requestedY": 3375.890625,
+      "scrollY": 3376,
+      "file": "home-390-section-4.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 5,
+      "label": "personal-title",
+      "requestedY": 4722.265625,
+      "scrollY": 4722,
+      "file": "home-390-section-5.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 6,
+      "label": "community-title",
+      "requestedY": 5695.453125,
+      "scrollY": 5695,
+      "file": "home-390-section-6.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 390,
+      "index": 7,
+      "label": "closing-title",
+      "requestedY": 6256.421875,
+      "scrollY": 6256,
+      "file": "home-390-section-7.jpg"
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/practice",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/community",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/about",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "creator",
+      "route": "/studio/creator",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "studio",
+      "route": "/studio",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "source",
+      "route": "/watch",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "archive",
+      "route": "/afterglow/vault",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "onboarding",
+      "route": "/onboarding",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "book-preview",
+      "route": "/library/preview",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me/settings",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "journal",
+      "route": "/me/journal",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/me/journal",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/support",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "faq",
+      "route": "/faq",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/faq",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/privacy",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/terms",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "new-muslims",
+      "route": "/reverts",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 1,
+      "label": "hero-title",
+      "requestedY": 48,
+      "scrollY": 48,
+      "file": "home-768-section-1.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 2,
+      "label": "source-title",
+      "requestedY": 858.4375,
+      "scrollY": 858,
+      "file": "home-768-section-2.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 3,
+      "label": "desk-title",
+      "requestedY": 1603.203125,
+      "scrollY": 1603,
+      "file": "home-768-section-3.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 4,
+      "label": "learning-title",
+      "requestedY": 3413.75,
+      "scrollY": 3414,
+      "file": "home-768-section-4.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 5,
+      "label": "personal-title",
+      "requestedY": 4315.046875,
+      "scrollY": 4315,
+      "file": "home-768-section-5.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 6,
+      "label": "community-title",
+      "requestedY": 5257.640625,
+      "scrollY": 5258,
+      "file": "home-768-section-6.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 768,
+      "index": 7,
+      "label": "closing-title",
+      "requestedY": 5780.046875,
+      "scrollY": 5780,
+      "file": "home-768-section-7.jpg"
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/practice",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/community",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/me",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/about",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "creator",
+      "route": "/studio/creator",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "studio",
+      "route": "/studio",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "source",
+      "route": "/watch",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "archive",
+      "route": "/afterglow/vault",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "onboarding",
+      "route": "/onboarding",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "book-preview",
+      "route": "/library/preview",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/me/settings",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "journal",
+      "route": "/me/journal",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/me/journal",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/support",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "faq",
+      "route": "/faq",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/faq",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/privacy",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/terms",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "new-muslims",
+      "route": "/reverts",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 1,
+      "label": "hero-title",
+      "requestedY": 48,
+      "scrollY": 48,
+      "file": "home-1280-section-1.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 2,
+      "label": "source-title",
+      "requestedY": 793.125,
+      "scrollY": 793,
+      "file": "home-1280-section-2.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 3,
+      "label": "desk-title",
+      "requestedY": 1448.09375,
+      "scrollY": 1448,
+      "file": "home-1280-section-3.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 4,
+      "label": "learning-title",
+      "requestedY": 2938.59375,
+      "scrollY": 2939,
+      "file": "home-1280-section-4.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 5,
+      "label": "personal-title",
+      "requestedY": 3921.078125,
+      "scrollY": 3921,
+      "file": "home-1280-section-5.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 6,
+      "label": "community-title",
+      "requestedY": 4549.421875,
+      "scrollY": 4549,
+      "file": "home-1280-section-6.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1280,
+      "index": 7,
+      "label": "closing-title",
+      "requestedY": 4992.3125,
+      "scrollY": 4992,
+      "file": "home-1280-section-7.jpg"
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/practice",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/community",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/about",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "creator",
+      "route": "/studio/creator",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "studio",
+      "route": "/studio",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "source",
+      "route": "/watch",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "archive",
+      "route": "/afterglow/vault",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "onboarding",
+      "route": "/onboarding",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "book-preview",
+      "route": "/library/preview",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me/settings",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "journal",
+      "route": "/me/journal",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me/journal",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/support",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "faq",
+      "route": "/faq",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/faq",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/privacy",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/terms",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "new-muslims",
+      "route": "/reverts",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 1,
+      "label": "hero-title",
+      "requestedY": 48,
+      "scrollY": 48,
+      "file": "home-1440-section-1.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 2,
+      "label": "source-title",
+      "requestedY": 793.125,
+      "scrollY": 793,
+      "file": "home-1440-section-2.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 3,
+      "label": "desk-title",
+      "requestedY": 1448.09375,
+      "scrollY": 1448,
+      "file": "home-1440-section-3.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 4,
+      "label": "learning-title",
+      "requestedY": 2938.59375,
+      "scrollY": 2939,
+      "file": "home-1440-section-4.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 5,
+      "label": "personal-title",
+      "requestedY": 3921.078125,
+      "scrollY": 3921,
+      "file": "home-1440-section-5.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 6,
+      "label": "community-title",
+      "requestedY": 4549.421875,
+      "scrollY": 4549,
+      "file": "home-1440-section-6.jpg"
+    },
+    {
+      "name": "home-transition",
+      "width": 1440,
+      "index": 7,
+      "label": "closing-title",
+      "requestedY": 4992.3125,
+      "scrollY": 4992,
+      "file": "home-1440-section-7.jpg"
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/practice",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/community",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/about",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "creator",
+      "route": "/studio/creator",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "studio",
+      "route": "/studio",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/studio/creator",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "source",
+      "route": "/watch",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/explore",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "archive",
+      "route": "/afterglow/vault",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/session-notes",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "onboarding",
+      "route": "/onboarding",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/join",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "book-preview",
+      "route": "/library/preview",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/library",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me/settings",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "journal",
+      "route": "/me/journal",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/me/journal",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/support",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "faq",
+      "route": "/faq",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/faq",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/privacy",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/terms",
+      "scrollY": 0,
+      "overflow": 0
+    },
+    {
+      "name": "new-muslims",
+      "route": "/reverts",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "finalPath": "/learn",
+      "scrollY": 0,
+      "overflow": 0
+    }
+  ],
+  "issues": [],
+  "files": [
+    {
+      "file": "home-360-fold.jpg",
+      "sha256": "f65481165a534736f32cbe34069b9b7666b79f1edc86c26d1b2a2d41ff099122"
+    },
+    {
+      "file": "home-360-section-1.jpg",
+      "sha256": "0ee22f898bde054789779bfc101e4d82e7d3b4cdf510881297a9c3d589be313b"
+    },
+    {
+      "file": "home-360-section-2.jpg",
+      "sha256": "60cae79eefa1f7a83db3f7bd2423e26f495007f96e331c3bebd9ffbc539e94f8"
+    },
+    {
+      "file": "home-360-section-3.jpg",
+      "sha256": "38a666511c73446ada16643459f20a987ebcf478babfb9b4cc37255ef58582cc"
+    },
+    {
+      "file": "home-360-section-4.jpg",
+      "sha256": "54c4c7e719422b98b303e84a140894c2b74aa7eccdd0e8a25b11ecb33bf7265a"
+    },
+    {
+      "file": "home-360-section-5.jpg",
+      "sha256": "5d0176860cb0ff0fb0d6e4cd08ecd564a6eed46c3560d4a41471ce571c20ed8f"
+    },
+    {
+      "file": "home-360-section-6.jpg",
+      "sha256": "00d25cc3f09e943d7ad489b578f2762537ad87a349d63c085caaa850b82b59ec"
+    },
+    {
+      "file": "home-360-section-7.jpg",
+      "sha256": "5019bb960a838db57ae5f175227f5b25ecd33b5e8026b8d20893de629f4e601e"
+    },
+    {
+      "file": "explore-360-fold.jpg",
+      "sha256": "1ee5b2ace2c24322d56379d3d9a1a49ed8c032193405ad1816971b2dd1a1e6fd"
+    },
+    {
+      "file": "learn-360-fold.jpg",
+      "sha256": "e357c3d081c0160bb14f4e2a51048060aae728adba1ac70e42141576061bf8cc"
+    },
+    {
+      "file": "practice-360-fold.jpg",
+      "sha256": "9b3c8e33ee0b683819476dc3642f115460cde2f4004d6bbebadd5f76ebc4269d"
+    },
+    {
+      "file": "community-360-fold.jpg",
+      "sha256": "e9b6a99999d73c0623793dabef1ec6adb483339f702a12ee0b445d7675224f67"
+    },
+    {
+      "file": "my-corner-360-fold.jpg",
+      "sha256": "4bd78b073a60ff7807910586b525a44bf8da774dfc315f7dc091155bda0cfbb4"
+    },
+    {
+      "file": "about-360-fold.jpg",
+      "sha256": "a91fd5a72803805f76d07178a3e260a5d82fbfc28dea63fdf63a27214cda590b"
+    },
+    {
+      "file": "creator-360-fold.jpg",
+      "sha256": "dccd53aa8bdd7f77966bec170559d62c4fa0674ca50e67ff2ba915d99c67b526"
+    },
+    {
+      "file": "studio-360-fold.jpg",
+      "sha256": "dccd53aa8bdd7f77966bec170559d62c4fa0674ca50e67ff2ba915d99c67b526"
+    },
+    {
+      "file": "source-360-fold.jpg",
+      "sha256": "1ee5b2ace2c24322d56379d3d9a1a49ed8c032193405ad1816971b2dd1a1e6fd"
+    },
+    {
+      "file": "archive-360-fold.jpg",
+      "sha256": "ed485bdb1992dca95c9ec7841e03593bf4cc4a71375f9e92c8fb29e968f2c756"
+    },
+    {
+      "file": "session-notes-360-fold.jpg",
+      "sha256": "ed485bdb1992dca95c9ec7841e03593bf4cc4a71375f9e92c8fb29e968f2c756"
+    },
+    {
+      "file": "join-360-fold.jpg",
+      "sha256": "3ff7c3e244fe8999d441f338a722eab5a820e962c5148f0ba5249f226cebe943"
+    },
+    {
+      "file": "onboarding-360-fold.jpg",
+      "sha256": "3ff7c3e244fe8999d441f338a722eab5a820e962c5148f0ba5249f226cebe943"
+    },
+    {
+      "file": "library-360-fold.jpg",
+      "sha256": "d88b7acea6eaa00bac701f4ff2a0d22dfbefeb002d0e52668f27454337ff6d9c"
+    },
+    {
+      "file": "book-preview-360-fold.jpg",
+      "sha256": "d88b7acea6eaa00bac701f4ff2a0d22dfbefeb002d0e52668f27454337ff6d9c"
+    },
+    {
+      "file": "settings-360-fold.jpg",
+      "sha256": "788d5eb6b9d99e5de16239acd95b460d4eafbae7c260567e3b41054459efa158"
+    },
+    {
+      "file": "journal-360-fold.jpg",
+      "sha256": "9c00ac3159848b385b047e48239daa225170a1a008aa279d50d5da8f661960f5"
+    },
+    {
+      "file": "support-360-fold.jpg",
+      "sha256": "1818467294e7719dff57b27d488257646b877c7a55d8c602907de54e49bef416"
+    },
+    {
+      "file": "faq-360-fold.jpg",
+      "sha256": "b76113214bb5d2d7ef9a0a3b3394059630cecac15060d99d380f2dbc5b627fa2"
+    },
+    {
+      "file": "privacy-360-fold.jpg",
+      "sha256": "a1fb5eb229d0734a87ea6a80ff5ec64e27bfc3e74a2a789c283ba72c4cda5ab1"
+    },
+    {
+      "file": "terms-360-fold.jpg",
+      "sha256": "67990bd34cc09092c16564f9c22d61ff1c33535cbc49fd03386f9bb5de332ece"
+    },
+    {
+      "file": "new-muslims-360-fold.jpg",
+      "sha256": "e357c3d081c0160bb14f4e2a51048060aae728adba1ac70e42141576061bf8cc"
+    },
+    {
+      "file": "home-390-fold.jpg",
+      "sha256": "a80b6dbdd9d0d55fafcd4ec9a3a971f1b614a515114b93b74f51cd4193fa6b5e"
+    },
+    {
+      "file": "home-390-section-1.jpg",
+      "sha256": "cb9e5ea2e2c49fb61408f4e21e05b5ccd9be65af7f7a468574b823de0fcb3d9a"
+    },
+    {
+      "file": "home-390-section-2.jpg",
+      "sha256": "38e7646156ac5e09f39bc82a19d0e23138f74d98abad1710deb0159c8ad0e1bc"
+    },
+    {
+      "file": "home-390-section-3.jpg",
+      "sha256": "d65e1efcb230e7d98dcbf72ca2e239ab220abb458174fe428d57ece42c86523a"
+    },
+    {
+      "file": "home-390-section-4.jpg",
+      "sha256": "22e6d7fd2e180e8d21425aac4dc3e5b415e46208d6ccfc1f356aeb6105dead7c"
+    },
+    {
+      "file": "home-390-section-5.jpg",
+      "sha256": "fb75bf0d44d65be7ac918b0770e65c4eb953be87b71660d01e81c20de842c768"
+    },
+    {
+      "file": "home-390-section-6.jpg",
+      "sha256": "a69163fd8608c60b5749d2c521b9b0ac1f3a33d751af677c521d6d05d55a25f4"
+    },
+    {
+      "file": "home-390-section-7.jpg",
+      "sha256": "c2eda2cde5425a07601012d80e0ed1aa617f9e251dc4c9b7e5a2c8274db2aed2"
+    },
+    {
+      "file": "explore-390-fold.jpg",
+      "sha256": "55deae4fa654929a415903671c07674c57e15603ee5878850f94235e3454a1fd"
+    },
+    {
+      "file": "learn-390-fold.jpg",
+      "sha256": "44be02facedc9f2d5f218aa885317cd289d83cf5b51e8d8b6ba76fa13b4284ee"
+    },
+    {
+      "file": "practice-390-fold.jpg",
+      "sha256": "632e11696f454688f4362c066d18ed1db55e9299409dce4b929f6ff90d1388ec"
+    },
+    {
+      "file": "community-390-fold.jpg",
+      "sha256": "5b4dc4e677d5f162994ba80f5d31feba82700f9256cc4b47fab3303182fad178"
+    },
+    {
+      "file": "my-corner-390-fold.jpg",
+      "sha256": "498047da1642d86e73c1003c50bdca2ae2c3ca3d8cc37aa1ba7f4b2bc3072171"
+    },
+    {
+      "file": "about-390-fold.jpg",
+      "sha256": "f2237b2cd698c2d3f38bb560de79eff5670ab93fefb23afdd1ec1721e6e1f127"
+    },
+    {
+      "file": "creator-390-fold.jpg",
+      "sha256": "641f83c9604946544e806616fcea3d7fe15b5182035efa52e25bf9265666d509"
+    },
+    {
+      "file": "studio-390-fold.jpg",
+      "sha256": "641f83c9604946544e806616fcea3d7fe15b5182035efa52e25bf9265666d509"
+    },
+    {
+      "file": "source-390-fold.jpg",
+      "sha256": "55deae4fa654929a415903671c07674c57e15603ee5878850f94235e3454a1fd"
+    },
+    {
+      "file": "archive-390-fold.jpg",
+      "sha256": "06b96638b3e1fc7d0b5216440763bbc32009975611d1087ab1e3a4038678afda"
+    },
+    {
+      "file": "session-notes-390-fold.jpg",
+      "sha256": "06b96638b3e1fc7d0b5216440763bbc32009975611d1087ab1e3a4038678afda"
+    },
+    {
+      "file": "join-390-fold.jpg",
+      "sha256": "c3e7896d0516c64c5410d8cd52373ce26b03c43f99fe93a138277f68d8f1cfb9"
+    },
+    {
+      "file": "onboarding-390-fold.jpg",
+      "sha256": "c3e7896d0516c64c5410d8cd52373ce26b03c43f99fe93a138277f68d8f1cfb9"
+    },
+    {
+      "file": "library-390-fold.jpg",
+      "sha256": "06e2d45b81f04c9fe5e5782474048ea0887b3bdb8f5767a60fe12c9aba3e2fb4"
+    },
+    {
+      "file": "book-preview-390-fold.jpg",
+      "sha256": "06e2d45b81f04c9fe5e5782474048ea0887b3bdb8f5767a60fe12c9aba3e2fb4"
+    },
+    {
+      "file": "settings-390-fold.jpg",
+      "sha256": "289518d22c80228d2f00c26364ceb8b041b5b67715627cbe954dcba59a8c2020"
+    },
+    {
+      "file": "journal-390-fold.jpg",
+      "sha256": "1d410ad94f8d79659ddd110e9e45cec296ef3d9108f9d81dcb1ab5cf2c84ebc5"
+    },
+    {
+      "file": "support-390-fold.jpg",
+      "sha256": "e45fd223d890ee1478ca205f1dd6a50548969eb1d0dfe65e136881a48b953ae4"
+    },
+    {
+      "file": "faq-390-fold.jpg",
+      "sha256": "abae7ec3d88e259dd5fa9acfd8173a6776dd4ba19cbf0cf9c22a0856d8bbeb27"
+    },
+    {
+      "file": "privacy-390-fold.jpg",
+      "sha256": "096d770b6a52b4a70689a465079f60b7ff05a68b286a63e07f871b37a2cee4be"
+    },
+    {
+      "file": "terms-390-fold.jpg",
+      "sha256": "7a2b30745f0c1991206ff2e32937d1a3fa4c0f8cd034e97b67e995632d8fef3b"
+    },
+    {
+      "file": "new-muslims-390-fold.jpg",
+      "sha256": "44be02facedc9f2d5f218aa885317cd289d83cf5b51e8d8b6ba76fa13b4284ee"
+    },
+    {
+      "file": "home-768-fold.jpg",
+      "sha256": "103d2ead9933bd2e8c2ed652cb62b6ed9dd86f8a4199ac7b66c025372dc74a24"
+    },
+    {
+      "file": "home-768-section-1.jpg",
+      "sha256": "6ff185d0762cd0c005dc79fd2565a301660196e146a42e3eb4a1c1b993597533"
+    },
+    {
+      "file": "home-768-section-2.jpg",
+      "sha256": "ae8d0a2d66ae0cbb3d39cce85a4f5239a391a3548522f9c17e6246277b2b2530"
+    },
+    {
+      "file": "home-768-section-3.jpg",
+      "sha256": "2b8a72820e98617d6d6ee5e1acdf12daa24751574615d6cf74920b054ac8f36b"
+    },
+    {
+      "file": "home-768-section-4.jpg",
+      "sha256": "9d8162f8077977ff6a3e8077b21d40feb5cb6242bdecc02f5655365f8fd16c8d"
+    },
+    {
+      "file": "home-768-section-5.jpg",
+      "sha256": "330437f53d685f2dfaedb13540180d04921d7efb3dd825510d30e68ceef9e118"
+    },
+    {
+      "file": "home-768-section-6.jpg",
+      "sha256": "1d11c07d9110f05c394d1dbce12784926280399a6cbb1ebc2123307efa77e879"
+    },
+    {
+      "file": "home-768-section-7.jpg",
+      "sha256": "dd5bbca1aaa9663ae071ea2f308923baa7d9262de94c3677744b3b3e8f13fc3b"
+    },
+    {
+      "file": "explore-768-fold.jpg",
+      "sha256": "a85795ef752f6b293621256480dfdd80919ef2741e32887568a8bc9a16f577d0"
+    },
+    {
+      "file": "learn-768-fold.jpg",
+      "sha256": "fb6483ef1aef268f86a1d8514bccfee5643bc795496ad46584e8045147b90503"
+    },
+    {
+      "file": "practice-768-fold.jpg",
+      "sha256": "d2b906874685cd9509c4530f28d1e0c7110b8876209c8ab725ff1e674360ca15"
+    },
+    {
+      "file": "community-768-fold.jpg",
+      "sha256": "597ece910a93fa393ba9bc75cf88a1090d0c0a9d74ccbc7c42c2b74aaeb2f7cb"
+    },
+    {
+      "file": "my-corner-768-fold.jpg",
+      "sha256": "bd3ac107e55441d3c47a1b34a6283aa15043b0cf90590979317956252f6b732f"
+    },
+    {
+      "file": "about-768-fold.jpg",
+      "sha256": "29257b82a81d060934fa8b403caef99057c0c9b0805a57e7364695e82c9dfa3c"
+    },
+    {
+      "file": "creator-768-fold.jpg",
+      "sha256": "169ab9883ea3caec1822e2fb48f328aa59ce0922276bd02f09c40132cee35126"
+    },
+    {
+      "file": "studio-768-fold.jpg",
+      "sha256": "169ab9883ea3caec1822e2fb48f328aa59ce0922276bd02f09c40132cee35126"
+    },
+    {
+      "file": "source-768-fold.jpg",
+      "sha256": "a85795ef752f6b293621256480dfdd80919ef2741e32887568a8bc9a16f577d0"
+    },
+    {
+      "file": "archive-768-fold.jpg",
+      "sha256": "d15d96c8a8926d940566f699fc67345a0cfdf74d9cae926961227c36806a65cc"
+    },
+    {
+      "file": "session-notes-768-fold.jpg",
+      "sha256": "d15d96c8a8926d940566f699fc67345a0cfdf74d9cae926961227c36806a65cc"
+    },
+    {
+      "file": "join-768-fold.jpg",
+      "sha256": "a2146dfdd746e9fbbc1d20b10fc0b4007b5557833f10725bdd53500c68630c95"
+    },
+    {
+      "file": "onboarding-768-fold.jpg",
+      "sha256": "a2146dfdd746e9fbbc1d20b10fc0b4007b5557833f10725bdd53500c68630c95"
+    },
+    {
+      "file": "library-768-fold.jpg",
+      "sha256": "667a7b58bcff22f53dddf3de94d91beb6d8f127c905cb15521576b55323d015f"
+    },
+    {
+      "file": "book-preview-768-fold.jpg",
+      "sha256": "667a7b58bcff22f53dddf3de94d91beb6d8f127c905cb15521576b55323d015f"
+    },
+    {
+      "file": "settings-768-fold.jpg",
+      "sha256": "f4dc863c062a88618d79bd1807bdc66dd2754db60215dd328b400f4c17bc4dea"
+    },
+    {
+      "file": "journal-768-fold.jpg",
+      "sha256": "d82ddc6129a9f1f64a30f2c154c59f57acb09a91b9a059ae8ca1dc8a96349dd2"
+    },
+    {
+      "file": "support-768-fold.jpg",
+      "sha256": "d9910c4e8de4fa4f986b4e4569e2a97ec8f1f52c83f04f9b6aa7dd9cd4afbc3d"
+    },
+    {
+      "file": "faq-768-fold.jpg",
+      "sha256": "4a80c456518fb6db902bb8ddb52e9682dcde0aba785a87ccb4b6d6b6de95ed4c"
+    },
+    {
+      "file": "privacy-768-fold.jpg",
+      "sha256": "d6b4cf198e53804f406378fc737be03dbc49464e8ea7a40be47681041e2ec59c"
+    },
+    {
+      "file": "terms-768-fold.jpg",
+      "sha256": "408247d71de2f4f0c23fcc0ae76f021359d49551b08a7ca6e26a03c25025528b"
+    },
+    {
+      "file": "new-muslims-768-fold.jpg",
+      "sha256": "fb6483ef1aef268f86a1d8514bccfee5643bc795496ad46584e8045147b90503"
+    },
+    {
+      "file": "home-1280-fold.jpg",
+      "sha256": "bb83b78a8919b66e1bff9956d14a767a2ed733b453a5b98b0ddec83df3efeb1b"
+    },
+    {
+      "file": "home-1280-section-1.jpg",
+      "sha256": "dc1660391bf83efeec391e516f3f7613402b998f6dd62eaf3f33764e2fb565a6"
+    },
+    {
+      "file": "home-1280-section-2.jpg",
+      "sha256": "6f38e44db85603b99a42ad4b447ec56206bf5fdd9e90808fc74ce8533a42f66c"
+    },
+    {
+      "file": "home-1280-section-3.jpg",
+      "sha256": "07924ee5ff3b872b6475c52542cd32eb639b348968e4df7f6dd31754de5c3fcd"
+    },
+    {
+      "file": "home-1280-section-4.jpg",
+      "sha256": "972703e92ac84d167335264a6618493118674f9e82f6b08f96f72a39cb23df64"
+    },
+    {
+      "file": "home-1280-section-5.jpg",
+      "sha256": "f366f83bdcc7db582195cbdf78604134c8b7aa219d3c888c06e6aa5ebd6cb5fc"
+    },
+    {
+      "file": "home-1280-section-6.jpg",
+      "sha256": "3688a5f043ee363d9e3c7256262cc8fec65387f2aa615f916f9b597e392d6882"
+    },
+    {
+      "file": "home-1280-section-7.jpg",
+      "sha256": "7508dfdabe55fdd1d64993fb46b3c484e0cc9c757941121ebe2fdaffcf372841"
+    },
+    {
+      "file": "explore-1280-fold.jpg",
+      "sha256": "2b0e01d36e30ce3f55255d63e369069c8b7dd628fca564fc401666fa800e2f74"
+    },
+    {
+      "file": "learn-1280-fold.jpg",
+      "sha256": "301014bd58ade7ba7d0d45bfc038e3c758442c1a4d325013aa5da2c1f01da3f2"
+    },
+    {
+      "file": "practice-1280-fold.jpg",
+      "sha256": "52514f6e7342e0fea24573510870d9497143139b98e94be3d0a88ecc33f449f0"
+    },
+    {
+      "file": "community-1280-fold.jpg",
+      "sha256": "21c366943a16b28dd4174f1571164469ebc975a9e24cc69849c45d205584e6db"
+    },
+    {
+      "file": "my-corner-1280-fold.jpg",
+      "sha256": "a4bdc7a630eb04fc50a3f8c821dbf12d3df3615bc83c84272ebc57a5ad53db4f"
+    },
+    {
+      "file": "about-1280-fold.jpg",
+      "sha256": "ab9c2289d7b9684321cfe5adf7bb6150ba0912a891a99b02579310877e824359"
+    },
+    {
+      "file": "creator-1280-fold.jpg",
+      "sha256": "489bdfe8397193a4cb1f158bc4a8161083412b439094c84d16615c62ad9fedc8"
+    },
+    {
+      "file": "studio-1280-fold.jpg",
+      "sha256": "489bdfe8397193a4cb1f158bc4a8161083412b439094c84d16615c62ad9fedc8"
+    },
+    {
+      "file": "source-1280-fold.jpg",
+      "sha256": "2b0e01d36e30ce3f55255d63e369069c8b7dd628fca564fc401666fa800e2f74"
+    },
+    {
+      "file": "archive-1280-fold.jpg",
+      "sha256": "e13c40140c8c48a8d30067b3c3c477a541feb5ca26a54be5134fc74d02608818"
+    },
+    {
+      "file": "session-notes-1280-fold.jpg",
+      "sha256": "e13c40140c8c48a8d30067b3c3c477a541feb5ca26a54be5134fc74d02608818"
+    },
+    {
+      "file": "join-1280-fold.jpg",
+      "sha256": "6c895cdd807f37fc7e2ac29810432b887740b885370035983dd8e47b3b7d9fc6"
+    },
+    {
+      "file": "onboarding-1280-fold.jpg",
+      "sha256": "6c895cdd807f37fc7e2ac29810432b887740b885370035983dd8e47b3b7d9fc6"
+    },
+    {
+      "file": "library-1280-fold.jpg",
+      "sha256": "fc249e59d960e4a660c29dffca686aa6d0061fcfb10d972944e5f45d19a9f97e"
+    },
+    {
+      "file": "book-preview-1280-fold.jpg",
+      "sha256": "fc249e59d960e4a660c29dffca686aa6d0061fcfb10d972944e5f45d19a9f97e"
+    },
+    {
+      "file": "settings-1280-fold.jpg",
+      "sha256": "86ceb6320fa796af1680512d9ab30bc3d591e88937c2c3798701fcf810b07ff0"
+    },
+    {
+      "file": "journal-1280-fold.jpg",
+      "sha256": "3f6748aa98a885679b49091f23332c276fc4c58c231877e1143740b004129985"
+    },
+    {
+      "file": "support-1280-fold.jpg",
+      "sha256": "103178a15252a8206e6bcb348ef303a59a64ae4f32351ee20b869c7db65c1087"
+    },
+    {
+      "file": "faq-1280-fold.jpg",
+      "sha256": "63d491107b4505bd61e6b85e17388f67aea2be465022833394b500f55ee4a580"
+    },
+    {
+      "file": "privacy-1280-fold.jpg",
+      "sha256": "a2ceca4453f89925ca2f508a367c17e286983458c51ffc4e1cd6d84f6f8ec677"
+    },
+    {
+      "file": "terms-1280-fold.jpg",
+      "sha256": "80d1ee1d576158958fa435e9380846a84feea03eff463f54b8645ceaf8ab9fe0"
+    },
+    {
+      "file": "new-muslims-1280-fold.jpg",
+      "sha256": "301014bd58ade7ba7d0d45bfc038e3c758442c1a4d325013aa5da2c1f01da3f2"
+    },
+    {
+      "file": "home-1440-fold.jpg",
+      "sha256": "93f0a6acc66acf0bdb2d0c1d8528425c4e576dd3841f6d0c5c7f2f6c61cf7948"
+    },
+    {
+      "file": "home-1440-section-1.jpg",
+      "sha256": "0dab5412e9d1e649bdd1903b78477cd5d178a3f6691abc038c2c64f573db2737"
+    },
+    {
+      "file": "home-1440-section-2.jpg",
+      "sha256": "51ba33e80c3ebdf56858b907689b6eb2f85cac1a13ebfb6418e3d1a2d3bdcf7c"
+    },
+    {
+      "file": "home-1440-section-3.jpg",
+      "sha256": "40279d88b5d4261ab80138b73579a16e47df376aa0ca646da6ef682e6daffb32"
+    },
+    {
+      "file": "home-1440-section-4.jpg",
+      "sha256": "1a9bb69df56de1ddd2bc075c9c3550c30f1f2ae1aaf00aebd01393d3f3590ce6"
+    },
+    {
+      "file": "home-1440-section-5.jpg",
+      "sha256": "fca623c172e8f75be6e16b3e1b0a089128c21547167e783e37e60b0140249476"
+    },
+    {
+      "file": "home-1440-section-6.jpg",
+      "sha256": "8446a745aa9bde771fedd091398318ba274096308e3f596d6e8ab13830e68a9e"
+    },
+    {
+      "file": "home-1440-section-7.jpg",
+      "sha256": "ea49d7dc7dbc8de50036181d3f872f8398f8ccbc8682017948a11075702d45af"
+    },
+    {
+      "file": "explore-1440-fold.jpg",
+      "sha256": "8caff5d55004269376255e632f4559482aa89238ecf9885e64b5565c73996a55"
+    },
+    {
+      "file": "learn-1440-fold.jpg",
+      "sha256": "9c540db7ea9680415ee950556f16ee3ce27dd238c375ccf3f5bc4c2886d636eb"
+    },
+    {
+      "file": "practice-1440-fold.jpg",
+      "sha256": "89cb1f71d460797b2a33ddb7860f4af5fd9437ca4a259019664afafb5ee9523e"
+    },
+    {
+      "file": "community-1440-fold.jpg",
+      "sha256": "ce7cfecf213fecec7e17a7c61ad2adddd73aac34af7363e26f89ff07bd396875"
+    },
+    {
+      "file": "my-corner-1440-fold.jpg",
+      "sha256": "f3d789202926f8e631a256627e5a4dd65dedd8d795c3c3e611bccc2baafb6380"
+    },
+    {
+      "file": "about-1440-fold.jpg",
+      "sha256": "a509acc590e422342e7a474e999be82b0d2fb61599636466c5cac94a541be6c7"
+    },
+    {
+      "file": "creator-1440-fold.jpg",
+      "sha256": "9debaa996099624eb207089665b08d6f2afa67bc8d03c0ba42221ca997df5751"
+    },
+    {
+      "file": "studio-1440-fold.jpg",
+      "sha256": "9debaa996099624eb207089665b08d6f2afa67bc8d03c0ba42221ca997df5751"
+    },
+    {
+      "file": "source-1440-fold.jpg",
+      "sha256": "8caff5d55004269376255e632f4559482aa89238ecf9885e64b5565c73996a55"
+    },
+    {
+      "file": "archive-1440-fold.jpg",
+      "sha256": "1c4e857c9a586020db88047358f481ddf1044fa4978d8be14fced3ef08617a02"
+    },
+    {
+      "file": "session-notes-1440-fold.jpg",
+      "sha256": "1c4e857c9a586020db88047358f481ddf1044fa4978d8be14fced3ef08617a02"
+    },
+    {
+      "file": "join-1440-fold.jpg",
+      "sha256": "2a44fdee30cd04d6fbf44a2b6b6c12c0210c53b9c4785a885150f4209bf6f4d5"
+    },
+    {
+      "file": "onboarding-1440-fold.jpg",
+      "sha256": "2a44fdee30cd04d6fbf44a2b6b6c12c0210c53b9c4785a885150f4209bf6f4d5"
+    },
+    {
+      "file": "library-1440-fold.jpg",
+      "sha256": "7621e5d480f59ec2ddd8f1de6da69f739c3128c0bd7f672766816295f5e1bc0d"
+    },
+    {
+      "file": "book-preview-1440-fold.jpg",
+      "sha256": "7621e5d480f59ec2ddd8f1de6da69f739c3128c0bd7f672766816295f5e1bc0d"
+    },
+    {
+      "file": "settings-1440-fold.jpg",
+      "sha256": "215af091b552717db04f68590fc661e4fa77308c3a0bc1b80cd71f3abeadff45"
+    },
+    {
+      "file": "journal-1440-fold.jpg",
+      "sha256": "c1a836d78c55b74bf6ef8a69b9afcd1e9bd8101f95d851f8dfc3964567745a6e"
+    },
+    {
+      "file": "support-1440-fold.jpg",
+      "sha256": "bddc7eca562ea27f141b7ff48ce00c9f21941113d1bed5a2143cbeedb0e25fce"
+    },
+    {
+      "file": "faq-1440-fold.jpg",
+      "sha256": "e4bf4868d8cf608bcd0c69dea807d210122eee4daf14284e24c710a77647eb0d"
+    },
+    {
+      "file": "privacy-1440-fold.jpg",
+      "sha256": "48261b36cc7fcd9d421ac26d11a153e68e1c486cebaad3b2d010ffb158f62887"
+    },
+    {
+      "file": "terms-1440-fold.jpg",
+      "sha256": "53e680d12cd0caae2463ee75f717e96e73f7689c61508a664264adb33824ca4e"
+    },
+    {
+      "file": "new-muslims-1440-fold.jpg",
+      "sha256": "9c540db7ea9680415ee950556f16ee3ce27dd238c375ccf3f5bc4c2886d636eb"
+    },
+    {
+      "file": "capture-method.txt",
+      "sha256": "74dbe2bd3691546530b359b56d000331167938a80fd7bcac5e54425a82b0b0cf"
+    }
+  ],
+  "originalCaptureProvenance": {
+    "manifest": "../manifest.json",
+    "sourceCommit": "7a8ce5efda461ebab717a03ed1d9c73528f92c9d",
+    "sourceState": "Uncommitted V4 working tree based on sourceCommit; all src/public-brand hashes and build ID identify actual rendering, not a committed V4 HEAD.",
+    "relationship": "Original full-page and interaction capture occurred while V4 was uncommitted. This later settled-view run occurred after implementation commit 783a018 and preserves the identical recorded source hashes."
+  }
+}

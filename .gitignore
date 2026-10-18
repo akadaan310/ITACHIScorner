@@ -1,4 +1,4 @@
-node_modules/
+node_modules
 .next/
 out/
 build/
@@ -9,3 +9,9 @@ next-env.d.ts
 playwright-report/
 test-results/
 .DS_Store
+/private/
+/.superpowers/
+__pycache__/
+*.pyc
+
+test-results-*/

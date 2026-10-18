@@ -1,0 +1,561 @@
+{
+  "phase": "after",
+  "capturedAt": "2026-10-18T02:45:26.976Z",
+  "baseURL": "http://127.0.0.1:3900",
+  "sourceCommit": "9f7be34a5dfb407ed476d5cfc23a9340c62c4e02",
+  "productionBuildId": "VNjUchI-JwEZnwPHq6tmm",
+  "sourceHashes": {
+    "package-lock.json": "6180694655adbae34fcfa4c0640774632d4d2c058b91a04cfd785b4997f34685",
+    "src/app/page.tsx": "6ac82ca0aaaa475f0433c8caad6cc4d1dee6afc9343e5799b8c32f66f38e7ed6",
+    "src/app/globals.css": "6741531e961cf9d6cf8ef9a9e711c63d233e9a42feea936dc14205141aea9cdd",
+    "src/components/hero.tsx": "fa51f4133cac23eebf2adfcfde3123b5c8118574b601375e3c055bb7bc23ea42",
+    "src/components/question-desk.tsx": "c8ea1b19dca42b2801ce19400b810b5675b5d7bb9e1693e081e298ecd9d58339",
+    "src/components/shell.tsx": "d9f25fc11959789af6583a1e38154510708539322e9fce6b61a89ab4e870096e",
+    "scripts/capture-recovery.mjs": "9e383dea73d6a48d755277a9da8571a8b885f33febe37bb04688d2d2538fe745"
+  },
+  "browser": "154.0.8037.57",
+  "widths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "routes": [
+    [
+      "home",
+      "/"
+    ],
+    [
+      "explore",
+      "/explore"
+    ],
+    [
+      "learn",
+      "/learn"
+    ],
+    [
+      "practice",
+      "/practice"
+    ],
+    [
+      "community",
+      "/community"
+    ],
+    [
+      "session-notes",
+      "/session-notes"
+    ],
+    [
+      "library",
+      "/library"
+    ],
+    [
+      "support",
+      "/support"
+    ],
+    [
+      "join",
+      "/join"
+    ],
+    [
+      "my-corner",
+      "/me"
+    ],
+    [
+      "private-notes",
+      "/me/journal"
+    ],
+    [
+      "settings",
+      "/me/settings"
+    ],
+    [
+      "about",
+      "/about"
+    ],
+    [
+      "creator-denied",
+      "/studio/creator"
+    ]
+  ],
+  "methodology": "Fresh local production rendering. One browser context per width; fonts and finite document animations settled; 1x device scale. Route first folds, full homepage, each home section transition and open mobile menus. Visible action instances, unique targets, repeated instances, navigation, form submissions and transient interactions counted separately. Disabled controls counted visibly and individually marked. After-phase draft state captures use explicitly labeled, generic QA visitor input; these are tool checks, never creator or corpus content.",
+  "files": [
+    {
+      "file": "home-fold-360.jpg",
+      "sha256": "ceae2decf08b6daf6afb09fb5e4a0d73fa5478784992a05dde2faf82a5d340e8"
+    },
+    {
+      "file": "home-360.jpg",
+      "sha256": "5737a59f83890b7dadadbec9a93de4ced75e9ad3cbdd54fba1d9869fdfe89f6f"
+    },
+    {
+      "file": "home-transition-01-360.jpg",
+      "sha256": "e1fa3c77ddad4f0842d475ce237d0f5121d48d84932913b4b7eae4869cd0ab6e"
+    },
+    {
+      "file": "home-transition-02-360.jpg",
+      "sha256": "45847cb66f1a25944d136a53c400d1140fcea3632fa3dc0dc68fbb572fca2a7b"
+    },
+    {
+      "file": "home-transition-03-360.jpg",
+      "sha256": "7f51bcda5e805050051ca3057a118ca0ff2ab50c3f609c9d03589e1caa88a75c"
+    },
+    {
+      "file": "home-transition-04-360.jpg",
+      "sha256": "9ebc4232817671bd53e41be60cd81b7136ea99a64ab8ad2fef6cf84eb1b9b3c8"
+    },
+    {
+      "file": "home-transition-05-360.jpg",
+      "sha256": "8f67c5b3d04d6e507567b02b8bda079e1efc1eb2a9a3d451d14a8a2badd93bab"
+    },
+    {
+      "file": "explore-fold-360.jpg",
+      "sha256": "ad23f6e3c2fff73fe19b5f1cdd78f4fd529d4705020c56aa91654398e1153763"
+    },
+    {
+      "file": "learn-fold-360.jpg",
+      "sha256": "f491f34e3c8f40144c905918e9db696f9eea5ba737940f6bb5855a2abe7588b0"
+    },
+    {
+      "file": "practice-fold-360.jpg",
+      "sha256": "45fd172ce082c49268f4d46fe3a9986ac99ed0596800e9e5977d427c2c5b611b"
+    },
+    {
+      "file": "community-fold-360.jpg",
+      "sha256": "26d9936dfed8fc3c0e278b6bfb9a6205457739bdbfcec43b4f1147549ca1ac66"
+    },
+    {
+      "file": "session-notes-fold-360.jpg",
+      "sha256": "05a2990cbd24debf575c9ceba8674aea599ac0819bebe24c897a8ec2a016b307"
+    },
+    {
+      "file": "library-fold-360.jpg",
+      "sha256": "58d71580e85f74de845c360d078d8bbebbcd9e61403700f77856a705311e8c27"
+    },
+    {
+      "file": "support-fold-360.jpg",
+      "sha256": "1303426f5b3051b4eef993f605579d94509c407cc7cb9e3618545ecd8b93f5c1"
+    },
+    {
+      "file": "join-fold-360.jpg",
+      "sha256": "d51ba1309f434b026585fe0a9635c1237fd9f59b9acca2201aef5755c20283c2"
+    },
+    {
+      "file": "my-corner-fold-360.jpg",
+      "sha256": "ae8a554d0dd93477991fd45617d9f0d82ec5bcbb8e26079f857d6cb906f6306c"
+    },
+    {
+      "file": "private-notes-fold-360.jpg",
+      "sha256": "74c6c7f04f3b00bc83a21327a4ba06a99e014fd2d08055d993ea0e9036c2029d"
+    },
+    {
+      "file": "settings-fold-360.jpg",
+      "sha256": "f3abac059a893d19094f45980823dd66a8220d3294d9da38480663b9fbe5d0d3"
+    },
+    {
+      "file": "about-fold-360.jpg",
+      "sha256": "46bae08bffd3cfa49350aea6a3e1fcb37d3d6d1f28b1975f03d43964164193dc"
+    },
+    {
+      "file": "creator-denied-fold-360.jpg",
+      "sha256": "7f7268b9eee286f6dbcb8a22378b19b0468dd93eb7af6fb65e4547ce97b41c1a"
+    },
+    {
+      "file": "navigation-open-360.jpg",
+      "sha256": "d0d1c4fb6f544fb7286a084d98aab3f9e676bb90a5859080aa654442cc1a6282"
+    },
+    {
+      "file": "rendered-audit-360.json",
+      "sha256": "9af5dfe2d66efbaf9c931f4f6f381eb5fb3e3620d3ff7ffb8afc5e84225249a4"
+    },
+    {
+      "file": "home-fold-390.jpg",
+      "sha256": "ea6b5d3f6917286deb5e8aa5305addb8a4e110736a8b96e6515284a195d6ffe9"
+    },
+    {
+      "file": "home-390.jpg",
+      "sha256": "7180d63f5d2540c0b94f425ec32b3c07af4b736e1056cf90c552b8cbcbbeaadd"
+    },
+    {
+      "file": "home-transition-01-390.jpg",
+      "sha256": "9dbc9d95aa1337fa089217231fbef95a2565f3cca8c35f083eab74c5b310ab73"
+    },
+    {
+      "file": "home-transition-02-390.jpg",
+      "sha256": "64eeaa7a51f5aa70aab95759017cd683a57aafced2820bc681fe479c2c9d7920"
+    },
+    {
+      "file": "home-transition-03-390.jpg",
+      "sha256": "e7b29eb49a361c7347e2bc6c256543904d77f1d851531155c85228319b331721"
+    },
+    {
+      "file": "home-transition-04-390.jpg",
+      "sha256": "e6cebe03f8f6d9747dd46e0f54c211367bba034b2d9a7c841e3a535039a927bb"
+    },
+    {
+      "file": "home-transition-05-390.jpg",
+      "sha256": "58a286d3cede45b62b138dc65a8f51bd2770dfdfbe5104871a4f6a30a9357084"
+    },
+    {
+      "file": "explore-fold-390.jpg",
+      "sha256": "1d89d99320b763e6d92dfd6558203c0b1215161f5fe1e80b17962a48c4cd5ba3"
+    },
+    {
+      "file": "learn-fold-390.jpg",
+      "sha256": "dc7ddd50bc3b7dbc1a229d486e75aa7553f2da875f00a4d80830e5d41cfc4218"
+    },
+    {
+      "file": "practice-fold-390.jpg",
+      "sha256": "02e48ad53e68bfd4197b0a09588f463b2e94bd08e3aedc081ba2945dd7017b7e"
+    },
+    {
+      "file": "community-fold-390.jpg",
+      "sha256": "a78e3ef1762331e90e7efa02c064520fc918f689c29942fb54439b76133f724b"
+    },
+    {
+      "file": "session-notes-fold-390.jpg",
+      "sha256": "ff148c222076e402a0fe2a5fe23780b87d88aa4640fb376e3ec5cf5d2945b107"
+    },
+    {
+      "file": "library-fold-390.jpg",
+      "sha256": "e77dd1b9796e54653b44db6d9cc8fa45ac259226a6d41811d42b87352533a3f3"
+    },
+    {
+      "file": "support-fold-390.jpg",
+      "sha256": "35984496042b021953352893f66e39d61e7f6133b40dfd5e5c71ec006de0d48e"
+    },
+    {
+      "file": "join-fold-390.jpg",
+      "sha256": "791c1d253840fbedbb9c95c05b129e3a91058c9f0df33e88d3dc8f5720b1848d"
+    },
+    {
+      "file": "my-corner-fold-390.jpg",
+      "sha256": "d7915b749e1889670a8e17727f5fd3f59f2b54688892a82de0f650e1b3f31260"
+    },
+    {
+      "file": "private-notes-fold-390.jpg",
+      "sha256": "33eddb362fff12d89bcc2650d80df9f7abcb0ec6f59ec2f8d6c8e33587b75382"
+    },
+    {
+      "file": "settings-fold-390.jpg",
+      "sha256": "abdf7037088162ac8f5d8161de0ca5c5eceb9f0562507785c74789f0a87b9ae9"
+    },
+    {
+      "file": "about-fold-390.jpg",
+      "sha256": "527660d7605b9e659e64b4dc69b4cef216d4f2664430faf418bdb800e4b9c406"
+    },
+    {
+      "file": "creator-denied-fold-390.jpg",
+      "sha256": "fa6a0acbf8bc766077f398e42517388ddfbf1f7d454d868bd7e8115c2e8d89ef"
+    },
+    {
+      "file": "navigation-open-390.jpg",
+      "sha256": "a9d242541093119aa94694e32ab19ca21141aef6c8ab53e376d0027930c3afeb"
+    },
+    {
+      "file": "question-desk-editing-390.jpg",
+      "sha256": "3703b7a9567a9a1700c58910fab510a94c8c40d2c530c91a74e5789cf7593343"
+    },
+    {
+      "file": "question-desk-reviewed-390.jpg",
+      "sha256": "9a16df4f0be7d910b7292131429bf116946243bd8e37241a7c7cd94983f0dc5a"
+    },
+    {
+      "file": "question-desk-cleared-390.jpg",
+      "sha256": "ff0f7d54a74a0069317da945748739f9ad5a2a10c5e93c68ca63cd3f6d90ec8d"
+    },
+    {
+      "file": "rendered-audit-390.json",
+      "sha256": "77b72d44f9c4b05699b52bc8f1373fbcd5879f5cb511405a2a6ab05c3f66d861"
+    },
+    {
+      "file": "home-fold-768.jpg",
+      "sha256": "420210c8603c29c160e879d54b5c854a823c0f70b71a4c22ed54dca1269ed28b"
+    },
+    {
+      "file": "home-768.jpg",
+      "sha256": "77efc1044c1d33537ffb34848246a4903d0559a1d37a710ccb33056e8a5c683e"
+    },
+    {
+      "file": "home-transition-01-768.jpg",
+      "sha256": "ff8e4ce086f6e49eb7b25a424f56bfd583743a1b78f4f65871c7827e9860f333"
+    },
+    {
+      "file": "home-transition-02-768.jpg",
+      "sha256": "bc6d937a901e5eb17313a76236f0e44fabe2ddee77af815382d8b9ecf0d1899c"
+    },
+    {
+      "file": "home-transition-03-768.jpg",
+      "sha256": "1a5a944dea2049fb568d9e1122ed5302e9e905bc7ddc9f781c5162a9b48cb93c"
+    },
+    {
+      "file": "home-transition-04-768.jpg",
+      "sha256": "89de7db3c5ebd97de05f12b042b0c8b8e218e98f6d334fd240a07165e99db7b3"
+    },
+    {
+      "file": "home-transition-05-768.jpg",
+      "sha256": "7fa4d64f321bfa6fac7e1c729e6e497e4ad55ac089d2f917bf744aa27abff528"
+    },
+    {
+      "file": "explore-fold-768.jpg",
+      "sha256": "063f69f3055a25338b51ab5d5f9f5a1095648de8fc2c196db8fcf46ebb3974cb"
+    },
+    {
+      "file": "learn-fold-768.jpg",
+      "sha256": "03d065038f5a9b6d3a896a16f40d51328d5ce970eb93245e64a05ff94de3543e"
+    },
+    {
+      "file": "practice-fold-768.jpg",
+      "sha256": "b89a4369d63039fc89e3b3c1711ecd0e53769bd714434bdd5e665b404ce3d7ef"
+    },
+    {
+      "file": "community-fold-768.jpg",
+      "sha256": "a1ac8024164c121e5776695e33fc46ae26a6f4130c1b7270a8d661e7d14eb3f7"
+    },
+    {
+      "file": "session-notes-fold-768.jpg",
+      "sha256": "ffc4f9ce55c61fd5d0ef0e65293e6b81d51c47c025847bc8450de16c6f47fbd7"
+    },
+    {
+      "file": "library-fold-768.jpg",
+      "sha256": "8f420466bbb8b3af2e2adca3d26058bb60b1824478b637f78126cdc8b75a0fe7"
+    },
+    {
+      "file": "support-fold-768.jpg",
+      "sha256": "751e7901ea63086474aed5eee134812d8876670caa9af173d09c11f97025dbb7"
+    },
+    {
+      "file": "join-fold-768.jpg",
+      "sha256": "9a7d8651e7c71c17749991bd409de62a6b52e037248ddde6a1bd0267ecf0a8cd"
+    },
+    {
+      "file": "my-corner-fold-768.jpg",
+      "sha256": "75be742ab73723f02abe31e36d41842689350e233b74552b13ae8e9f5d7de721"
+    },
+    {
+      "file": "private-notes-fold-768.jpg",
+      "sha256": "c4044ee4a29bb7804c5f6fae0333d222533ba4f5801fb4a2c412a763ad58e47c"
+    },
+    {
+      "file": "settings-fold-768.jpg",
+      "sha256": "c3429f8eb4dcf61b9e20dfe27db0a3a2d693f1df1cafdf05f3f1b2b811c9aa6a"
+    },
+    {
+      "file": "about-fold-768.jpg",
+      "sha256": "aa9ca5cc646098da20df6583a0f0e792d76c11a80c36e98c8167f529f420a812"
+    },
+    {
+      "file": "creator-denied-fold-768.jpg",
+      "sha256": "bd40ce405f74fe675e9849bf78b2d48f66b1fe777beadc79fab88cdc5cf35f69"
+    },
+    {
+      "file": "navigation-open-768.jpg",
+      "sha256": "1fb58ba7a1213b397ded86dbb44ada6b6f6f93be2424fa922ca43b1331584a59"
+    },
+    {
+      "file": "rendered-audit-768.json",
+      "sha256": "d17be4400acd02a56b2c213bc037ca3bc7dbecd4e8453b07e572b00431fd49ee"
+    },
+    {
+      "file": "home-fold-1280.jpg",
+      "sha256": "1d96e923f4cf8288d30e310a56b84c9668b2333cc2f47f5e611984c86fa4d893"
+    },
+    {
+      "file": "home-1280.jpg",
+      "sha256": "410c0538e8b13555905e7b433a0197e15cc50d14d5e14a904a5a4bb79d88e61f"
+    },
+    {
+      "file": "home-transition-01-1280.jpg",
+      "sha256": "020c1f8fb47846571ef7fc2d24748a206636740d1ca923afcd5b3f2cdf237522"
+    },
+    {
+      "file": "home-transition-02-1280.jpg",
+      "sha256": "e674234ae963cdfc687085caacce5ceb332aedaad562ea0120603510a59dbe53"
+    },
+    {
+      "file": "home-transition-03-1280.jpg",
+      "sha256": "0a4d86bfd6303ac31a59d68af4060dc038633eb26403de3393ac25387984bd0a"
+    },
+    {
+      "file": "home-transition-04-1280.jpg",
+      "sha256": "70c63b8ae5a8488619b7e0d2e0b77c8accba7bd966ad5e95745fe29334e8b04e"
+    },
+    {
+      "file": "home-transition-05-1280.jpg",
+      "sha256": "760026eeab3f386c2a4a24a1d8a722d5d9552166dca22000f60ac3dc1060caaa"
+    },
+    {
+      "file": "explore-fold-1280.jpg",
+      "sha256": "9b82330a9d62fe4ef6f4b47ea120144397b1bfabf49112107afc85c1bb06c51f"
+    },
+    {
+      "file": "learn-fold-1280.jpg",
+      "sha256": "d46f41d18d4390c6d06396e1bf5f5fa34f87617dd78275e3679ac5a73a707589"
+    },
+    {
+      "file": "practice-fold-1280.jpg",
+      "sha256": "dbe301f8c532c72932f5f6f6264d3f7a70ff5cb828e84b39971caef1def56bf3"
+    },
+    {
+      "file": "community-fold-1280.jpg",
+      "sha256": "77856014a885d6ee80dc4582c59989cc30ab45fdcbd56cbadee4ac38a0dafd87"
+    },
+    {
+      "file": "session-notes-fold-1280.jpg",
+      "sha256": "3a33f593c1b833bddfe4aba3d7db51bb7794926b7f3337b770c93330118d2bb0"
+    },
+    {
+      "file": "library-fold-1280.jpg",
+      "sha256": "944865ee0aa82c8cae5383e21daa175687d7fdea7f6946838239462ddf8c5185"
+    },
+    {
+      "file": "support-fold-1280.jpg",
+      "sha256": "e766d198e83b16cbc1a3f22e9cb5e8b37bc77ca18c4d9b0c531fbeca74193e0b"
+    },
+    {
+      "file": "join-fold-1280.jpg",
+      "sha256": "3acc441888b9dbea5aaabdf509432f12576fc707d53c6e57c0630a4aba463da9"
+    },
+    {
+      "file": "my-corner-fold-1280.jpg",
+      "sha256": "677771378d0977664e3fe9efce149985d501760d56a3b0298a62b33cf524cb3e"
+    },
+    {
+      "file": "private-notes-fold-1280.jpg",
+      "sha256": "d0325472d248f24a8e8c975cd2b15958b68aaf25b06b23fe5603d0c856b5c6a8"
+    },
+    {
+      "file": "settings-fold-1280.jpg",
+      "sha256": "6dc47f1f7633a14a41dedc41fbb42a6375f37ac9a875663492afaae0f0b678ca"
+    },
+    {
+      "file": "about-fold-1280.jpg",
+      "sha256": "3f5af57212bafded951494fe35c96026a1eb93a08a0d0266fb3726382cf15d2b"
+    },
+    {
+      "file": "creator-denied-fold-1280.jpg",
+      "sha256": "34f71ea157b2a3861e2562457122250567a61e88d0a58ff9685349db834ac497"
+    },
+    {
+      "file": "question-desk-editing-1280.jpg",
+      "sha256": "b23ac9c3185c7002e032361fa542a03425039a8a29aaea9804b27b5c33c30785"
+    },
+    {
+      "file": "question-desk-reviewed-1280.jpg",
+      "sha256": "02384fd4993ab8f37eb481868ba8665a68cc3deae9b125569d44fbe557fb416b"
+    },
+    {
+      "file": "question-desk-cleared-1280.jpg",
+      "sha256": "35129a159a1164c1f5fce0eb26d2df53c711d2a9f7ad8739e3ed36e2251dde42"
+    },
+    {
+      "file": "rendered-audit-1280.json",
+      "sha256": "5d0780c30c3d9e714360e34c83f5adb63526a160d9c98c8623a51c764bfdb9b8"
+    },
+    {
+      "file": "home-fold-1440.jpg",
+      "sha256": "1558268e3a8e3e815958be46817d0e83b302d59939e3efecc3c3856671a27c31"
+    },
+    {
+      "file": "home-1440.jpg",
+      "sha256": "2e9aedf146e068ef4438efacd8f8931102b94d1a450e9277a099fbc7638c7fd4"
+    },
+    {
+      "file": "home-transition-01-1440.jpg",
+      "sha256": "27d23ab63a8ae7647ba941acf4bd3f91ebde7ae787e43287752b83f23a9c444c"
+    },
+    {
+      "file": "home-transition-02-1440.jpg",
+      "sha256": "4c2369bec55d92a1dab0af0fd3938d292f8701cc99d8f1dfb7bfcc71b19170f9"
+    },
+    {
+      "file": "home-transition-03-1440.jpg",
+      "sha256": "1ccc341517f23fb22a4ea2804f40eb5a020e8c90c972588674a861d14de4642d"
+    },
+    {
+      "file": "home-transition-04-1440.jpg",
+      "sha256": "4d41f0b39ad5d6d862f8a9bfc8bff34b2e691502b9e83f26a33ec3c07649188d"
+    },
+    {
+      "file": "home-transition-05-1440.jpg",
+      "sha256": "4fb10326f7aae54af1390d8c9cd8ad5c6d93a2fe223ee16394efac36d05ccbbe"
+    },
+    {
+      "file": "explore-fold-1440.jpg",
+      "sha256": "3ce7d91116ce9c5201ad5da060c9e2fc760684392d2f7958d044700547eabd5a"
+    },
+    {
+      "file": "learn-fold-1440.jpg",
+      "sha256": "8b3eb7c9efd1f1c9421a6b191bd00522afbb2741fcc0260fdd8c3000e376a7ca"
+    },
+    {
+      "file": "practice-fold-1440.jpg",
+      "sha256": "fb179e5deaf9f851231a1e91fb762aef328aefe2cb1a3f1398a6bd35f1a85b66"
+    },
+    {
+      "file": "community-fold-1440.jpg",
+      "sha256": "323c1aea3ed64f36fcc07039461804d94a118b104b3a2d2b29a7ceb222ec08c4"
+    },
+    {
+      "file": "session-notes-fold-1440.jpg",
+      "sha256": "c478b680c53d2502e9906efa174a28716a7dfc64f3d94a555634f5bf07156bb8"
+    },
+    {
+      "file": "library-fold-1440.jpg",
+      "sha256": "796e4b5612b0c9678696eb6472eeb8aae2635cf8b486199bfb4f5e7cabd22a0a"
+    },
+    {
+      "file": "support-fold-1440.jpg",
+      "sha256": "2e4ca0ef8dd952502f5bd280e4df01b0e4d5204f66af2ba3133b20668ac67bc2"
+    },
+    {
+      "file": "join-fold-1440.jpg",
+      "sha256": "2616bc8669ba0b23ffd8775d568d2bc381cf1a9aafd92caa5ef90d9ea3ab5b6c"
+    },
+    {
+      "file": "my-corner-fold-1440.jpg",
+      "sha256": "8a6f12d92df1cf424c9d203f7319c1aaa7883f992618f35ccf0656d07a5fa53c"
+    },
+    {
+      "file": "private-notes-fold-1440.jpg",
+      "sha256": "7ff55fd3fa5c2f1edccf4b33aac30d4374fd8da0908fa2b779634aeb35b899e9"
+    },
+    {
+      "file": "settings-fold-1440.jpg",
+      "sha256": "d2e576f87e4bd6afaaa0e532d961409bc6d20681a4c371d4f93de003160d2d8e"
+    },
+    {
+      "file": "about-fold-1440.jpg",
+      "sha256": "160531c633960a55d14b910dc72035edd38195783870df467b3b39f368913929"
+    },
+    {
+      "file": "creator-denied-fold-1440.jpg",
+      "sha256": "77d20f2ec307fef78883f451fb22cb5572cb3d1ada880e2d6360d001838cfc19"
+    },
+    {
+      "file": "rendered-audit-1440.json",
+      "sha256": "634c93b5d75d89ab757ef7dd3466d7c0f09d4d2152ec5569886d9265914feadc"
+    },
+    {
+      "file": "review-copy-failure-360-reduce.png",
+      "sha256": "e00e98fc36102c75bb74a31b287c6a14b1f3b4eed1395ac8a4b29decc0fa85fc"
+    },
+    {
+      "file": "review-arrow-360-reduce.png",
+      "sha256": "8fd6929fa2b00ccc15ad29d7910e3651b07aa4377db94701e1291829d2ee6ef0"
+    },
+    {
+      "file": "font-fallback-loaded-contact.jpg",
+      "sha256": "783b30400296aca0e76a951ade16647f7050d39292e3de05a4c6812964c5acb9"
+    }
+  ],
+  "implementationCommit": "9f7be34a5dfb407ed476d5cfc23a9340c62c4e02",
+  "publicUiCommit": "9f7be34a5dfb407ed476d5cfc23a9340c62c4e02",
+  "sourceState": "Application, research implementation and font regression committed; the capture utility has five reviewed lines for closing the menu before tool-state capture and including independent review/font proof images. Generated evidence and documentation await the final delivery commit.",
+  "independentReviewProofProvenance": {
+    "review-copy-failure-360-reduce.png": "Generic visitor input, independent reviewer capture against pre-font-fix public UI22cd2a69; the final122-test run revalidates this unchanged behavior after the typography-only fix.",
+    "review-arrow-360-reduce.png": "Generic visitor input, independent reviewer capture against pre-font-fix public UI22cd2a69; the final122-test run revalidates this unchanged behavior after the typography-only fix.",
+    "font-fallback-loaded-contact.jpg": "Independent UI review capture of final public UI9f7be34 at all five widths before and after font arrival."
+  }
+}

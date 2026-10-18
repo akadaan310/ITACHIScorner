@@ -1,0 +1,18 @@
+{
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "browserServer": "http://localhost:4001",
+  "backend": "intentionally unconfigured",
+  "sourceHashes": {
+    "src/app/page.tsx": "8f9679642d32bef049d9912c73ee899ea0c0d110fa17061b333e1722160577ea",
+    "src/app/explore/page.tsx": "e2b164b4905b4351dd81931d6fb735d993b95293f43a917819778c69b2073738",
+    "src/app/learn/page.tsx": "803cb5ef7b0b316801b85a63d15e87ed8da10cc8b486c7e2401c03f472dea6fb",
+    "src/app/practice/page.tsx": "af6c1be98efc04fc9a1160c4808f0b58b702cbc73ccfee91fbe30a640a161c6e",
+    "src/app/community/page.tsx": "3a44bd85fddfab3d7a3f3c374ed11313699db88027ba27aff7119c8cdb5fac7c",
+    "src/app/globals.css": "e66dbe05dfa2490ca400500f313d4f7a0dbe15a69d696ede4decb96dab4641f3",
+    "src/app/v4-interactions.css": "54a2933aabb743348eda54ea7abc29d38e1ba0efa6b445d3906a1e9d727f592a",
+    "src/components/question-journey.tsx": "56d628c14586e7a71c50bcd483a1772fdb3be71f742c09114b6f8f375575e605",
+    "src/components/practice-composer.tsx": "ff36a31eb8ff8a4c70f9a92340c3a6e2d238c50695cfa40547f1f5328831b660",
+    "src/components/source-preview.tsx": "6df7d9cdedc8358b7f1f1fbb2d0601074afff0be0f3017abada436c71573cc76",
+    "src/components/account/activity.tsx": "84c9b3da7d421d448faaf857b5c3fbecf28d310efde1f743b23302db04223750"
+  }
+}

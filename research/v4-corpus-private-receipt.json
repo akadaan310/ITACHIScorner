@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "archive_name": "v4-corpus-private-2026-10-18.zip",
+  "sha256": "e332f611d98ec92f97417711b73138b1c7df2f293b630ddca2630d11ca9c01de",
+  "bytes": 320893,
+  "entries": 68,
+  "verified_zip_crc": true,
+  "created_at": "2026-10-18T04:08:31.605Z",
+  "contents": "private public-metadata discovery receipts and quarantined metadata-only immutable CLI outputs; no transcript bodies",
+  "metadata_records": 9,
+  "verified_official_memberships": 0,
+  "transcripts": 0,
+  "eligible_real_transcripts": 0,
+  "import_run_id": "import-e52dd470510b7687a0eb1696",
+  "analysis_run_id": "analysis-fa5be34402a76efaba173d01"
+}

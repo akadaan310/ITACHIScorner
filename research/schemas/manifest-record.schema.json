@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/manifest-record.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "platform": {
+      "const": "youtube"
+    },
+    "video_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "recording_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "independence_verified": {
+      "type": "boolean",
+      "description": "Supplied assertion; not authenticated by the importer."
+    },
+    "canonical_url": {
+      "type": "string",
+      "pattern": "^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "published_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "duration_ms": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "discovered_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "content_type": {
+      "enum": [
+        "video",
+        "short",
+        "livestream",
+        "unknown"
+      ]
+    },
+    "status": {
+      "enum": [
+        "transcribed",
+        "caption_unavailable",
+        "rights_pending",
+        "private",
+        "deleted",
+        "retryable_error",
+        "not_transcribed"
+      ]
+    },
+    "permission": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "enum": [
+            "creator_authorized",
+            "licensed",
+            "pending",
+            "synthetic_test"
+          ]
+        },
+        "reference": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "status",
+        "reference"
+      ],
+      "additionalProperties": false
+    },
+    "tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "track_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{1,128}$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9_-]{1,128}$"
+          },
+          "relative_path": {
+            "type": "string",
+            "pattern": "^videos/[A-Za-z0-9_-]+/tracks/[A-Za-z0-9_-]+/[A-Za-z0-9_-]+\\.jsonl$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "source_format": {
+            "type": "string",
+            "minLength": 1
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "analysis": {
+            "type": "boolean"
+          },
+          "supersedes_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "track_id",
+          "version",
+          "relative_path",
+          "sha256",
+          "source_format",
+          "languages",
+          "analysis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "platform",
+    "video_id",
+    "recording_id",
+    "independence_verified",
+    "canonical_url",
+    "title",
+    "published_at",
+    "duration_ms",
+    "discovered_at",
+    "content_type",
+    "status",
+    "permission",
+    "tracks"
+  ],
+  "additionalProperties": false,
+  "title": "Safe source manifest record v1",
+  "description": "One record per NDJSON line. Runtime additionally validates canonical URL/ID equality, exact track paths, zoned calendar dates, duplicates and checksum/rights constraints.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {
+            "const": "transcribed"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "tracks": {
+            "minItems": 1,
+            "contains": {
+              "properties": {
+                "analysis": {
+                  "const": true
+                }
+              },
+              "required": [
+                "analysis"
+              ]
+            },
+            "minContains": 1,
+            "maxContains": 1
+          },
+          "permission": {
+            "properties": {
+              "status": {
+                "not": {
+                  "const": "pending"
+                }
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "tracks": {
+            "maxItems": 0
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "synthetic": {
+            "const": true
+          }
+        },
+        "required": [
+          "synthetic"
+        ]
+      },
+      "else": {
+        "properties": {
+          "video_id": {
+            "pattern": "^[A-Za-z0-9_-]{11}$"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -16,8 +16,10 @@ export const creator = {
    * original and obtain the creator's written approval before any public launch.
    */
   portrait: {
+    /** Keep false for all likeness-free previews; does not change approval status. */
+    enabled: process.env.NEXT_PUBLIC_CREATOR_PORTRAITS !== "false",
     src: "/brand/itachi-masked-portrait.jpg",
-    alt: "Itachi in her signature black face covering, embroidered with her red Itachi script",
+    alt: "Masked portrait from an owner-supplied design exploration; creator approval pending",
     suppliedBy: "project owner (v1 design exploration)",
     creatorApproved: false,
   },

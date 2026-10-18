@@ -1,0 +1,109 @@
+{
+  "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+  "checks": [
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "log": "logs/lint-final.log"
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "logs/typecheck-final.log"
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "testsPassed": 105,
+      "log": "logs/vitest-final.log",
+      "verifiedBy": "integrator checkout at the verified app commit; authoritative log copied unchanged"
+    },
+    {
+      "command": "E2E_PORT=3400 E2E_REUSE_SERVER=1 npm run test:e2e",
+      "exitCode": 0,
+      "testsPassed": 114,
+      "skipped": 0,
+      "flaky": 0,
+      "durationSeconds": 79.789,
+      "log": "logs/playwright-final.log"
+    },
+    {
+      "command": "PERF_BASE_URL=http://127.0.0.1:3400 node e2e/performance.mjs",
+      "exitCode": 0,
+      "samples": 24,
+      "log": "logs/performance-final.log"
+    },
+    {
+      "command": "E2E_PORT=3400 E2E_REUSE_SERVER=1 npx playwright test e2e/quality.spec.ts --project=desktop --grep \"fonts arrive late\"",
+      "exitCode": 0,
+      "testsPassed": 1,
+      "log": "logs/slow-font-focused.log"
+    }
+  ],
+  "productionBuild": {
+    "command": "npm run build",
+    "verifiedBy": "integrator production build; QA used that running build",
+    "appCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+    "log": "logs/build-final.log"
+  },
+  "preliminaryRun": {
+    "appCommit": "18c7513d49c43c9c6bbb760b473dc9835deee93d",
+    "passed": 108,
+    "failed": 1,
+    "reason": "Stale test required direct TikTok/YouTube links; About correctly uses supplied public link hub. Selector fixed while retaining exact destination and new-tab protections.",
+    "focusedRecheckPassed": 1,
+    "log": "logs/playwright-initial.log"
+  },
+  "preHeadingFixRun": {
+    "appCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+    "passed": 113,
+    "phoneExploreMedianLayoutShift": 0.151,
+    "log": "logs/playwright-a45f4c2.log",
+    "performance": "pre-font-fix-performance.json"
+  },
+  "headingFixRegression": {
+    "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+    "route": "/explore",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "fontDelayMs": 800,
+    "threshold": 0.1,
+    "fullSuite": {
+      "passed": 114,
+      "observedLayoutShift": 0.008710143412587202
+    },
+    "focusedRecheck": {
+      "passed": 1,
+      "observedLayoutShift": 0.0033271481939666616
+    },
+    "preFixPhoneColdLoadMedian": 0.151,
+    "methodology": "Layout-shift observer, no recent-input entries, document.fonts.ready plus two animation frames; fresh contexts and 800ms delayed woff2 network responses."
+  },
+  "databaseVerification": {
+    "localPostgresVersion": "17.6",
+    "sqlAssertionsPassed": 118,
+    "script": "bash scripts/test-rls.sh",
+    "hostedProject": "frxufmwwbegconolevkw",
+    "migrations": [
+      "20261018013721",
+      "20261018014553"
+    ],
+    "tablesWithRls": 60,
+    "privateBucket": true,
+    "verifiedVideos": 0,
+    "verifiedTranscriptVersions": 0,
+    "publicCollectionAnonymousHttp": 200,
+    "publicCollectionRows": 0,
+    "researchSchemaHttp": 406,
+    "anonymousProfilesHttp": 401,
+    "anonymousEditorialHttp": 401,
+    "securityAdvisorFindings": 0,
+    "missingForeignKeyIndexFindings": 0,
+    "multiplePermissivePolicyFindings": 0,
+    "unusedIndexInfo": 72,
+    "hostedAuthDeliveryVerified": false,
+    "hostedAccountDeletionVerified": false
+  }
+}

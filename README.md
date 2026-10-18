@@ -1,85 +1,51 @@
-# Itachi's Corner — Where Truth Meets Dialogue
+# Itachi's Corner
 
-> **Independent concept — unaffiliated and not yet endorsed.** This is an unsolicited creative concept for the public creator known as Itachi / Da'wah x Dialogues. It is not her official website, has not been approved by her and does not speak for her.
+**Independent concept — unaffiliated and not yet endorsed.** A creator-first application for da'wah, learning and dialogue, with a private evidence-first research foundation. Creator approval, authorized corpus inputs, editorial review and hosted account lifecycle verification remain release gates.
 
-A fully navigable, responsive product demo that blends the **v1 "Pocket Warrior" arsenal identity** (black/coral, condensed caps, hex badges, `//` HUD labels, persistent red live bar, bottom tab bar) with the **Celestial Majlis** concept (Cairo by night, eight-point stars, constellations as navigation, exquisite Arabic). The masked portrait is the main hero image.
+Public pages contain no fictional catalogue, course, book, practice scenarios, event activity or members. V4 restores a creator-visible phone hero, hand-traced signature study, seven homepage movements, interactive question walkthrough, source search/view selection, a separate private writing practice and owner-scoped account activity. Five primary destinations are Explore, Learn, Practice, Community and My Corner; Home is the logo. The writing desk holds only the visitor's own words in memory; it supplies no religious answer or attributed method. Existing demo journeys redirect to truthful destinations. Accounts use real configurable Supabase Auth; browser demo profiles cannot sign in or unlock staff tools.
 
-Lives stay on Itachi's official **TikTok** and **YouTube**. This app is the before / alongside / after companion: the **Afterglow**.
+Current mission: [V4 creator-first](docs/MISSION_V4_CREATOR_FIRST.md). [Rendered before/after audit](docs/UX_ARCHITECTURE_AUDIT_V4.md) · [Brand study](docs/BRAND_IDENTITY_V4.md) · [GitHub/Vercel evidence](docs/VERCEL_GITHUB_VERIFICATION_V4.md). Production branch and deployed SHA require authenticated Vercel configuration; an existing public alias is not proof of this branch's deployment.
 
-## Run it
+## Local development
+
+Use Node 22.18+ (Node 24 used for this branch).
 
 ```bash
-npm install
-npm run dev          # http://localhost:3000
+npm ci
+npm run dev
 ```
 
-No credentials, API keys or services are needed. All member data lives in the browser (`localStorage`, key `itachis-corner-demo-v1`) and can be exported or erased from **/me/settings**.
+The site works without credentials and clearly explains account availability. The selected project is `itachis-corner` (`frxufmwwbegconolevkw`) in ACT AI Protocol on the Free plan; both reviewed migrations are installed. Follow [AUTH_PRIVACY_SETUP.md](docs/AUTH_PRIVACY_SETUP.md) for configuration. Never use an unrelated project or put a server secret in a `NEXT_PUBLIC_` variable. Remote SMTP/OAuth and account lifecycle actions must be verified before claiming integration readiness.
 
-| Script | What it does |
-| --- | --- |
-| `npm run lint` | ESLint (Next.js core-web-vitals + TypeScript flat config) |
-| `npm run typecheck` | `tsc --noEmit`, strict mode with `noUncheckedIndexedAccess` |
-| `npm test` | Vitest unit tests (progression, scoring, streaks, content integrity, adapters) |
-| `npm run build` | Production build (all 43 routes prerender statically) |
-| `npm run test:e2e` | Playwright: navigation, flows, privacy, Atlas, axe accessibility, no-JS, reduced motion, mobile |
-| `npm run screenshots` | Regenerates `docs/screenshots/*` at 360 / 390 / 768 / 1280 / 1440 |
+## Checks
 
-Playwright starts `next start` on port 3200, so run `npm run build` first. In the Claude Code cloud container it uses the pre-installed Chromium automatically. Elsewhere, run `npx playwright install chromium` once.
+```bash
+npm run lint
+npm run typecheck
+npm test
+npm run build
+npm run test:e2e
+```
 
-## Stack
+Playwright uses a production build on port 3200. The screenshot project captures 360, 390, 768, 1280 and 1440 px into the V4 archive, preserving earlier evidence-first and recovery images. See [VERIFICATION_V4.md](docs/VERIFICATION_V4.md) for current checks and [RECOVERY_VERIFICATION.md](docs/RECOVERY_VERIFICATION.md) for the earlier delivery. Synthetic research fixtures are test-only and never render in the application.
 
-Next.js 16 App Router · React 19 · TypeScript strict · Tailwind CSS 4 · Zustand (persisted) · self-hosted OFL fonts via Fontsource (Bebas Neue, Fraunces, Inter, JetBrains Mono, Amiri) · all artwork is original SVG/CSS generated in code (`src/components/art.tsx`). No WebGL is used; motion is CSS, including scroll-driven parallax, and it respects `prefers-reduced-motion` plus an in-app "Reduce motion" setting.
+## Evidence workflow
 
-## Feature map
+Codex owns acquisition as well as import and analysis. The V4 run verified the official hub and stable channel, attempted the official listings and captions path, and imported **9 provisional indexed metadata records** privately using the existing CLI. Those records are not verified official-channel memberships: **0 verified official items, 0 transcripts and 0 real findings**. Official listing access is blocked; the channel denominator remains unknown. No task has been assigned to Dot.
 
-| World (v1 name) | Route(s) | What works |
-| --- | --- | --- |
-| Home | `/` | Portrait hero in a celestial orbit with five star links to real destinations, red ticker, Your Dawah Arsenal, Live Tonight countdown, three-act Afterglow explainer, recent battles (sample), 30-second challenge, Welcome Home, Dawah Simulator, Choose Your Rank, Shahadah Stories |
-| Explore | `/discover` | All eight worlds, today's discovery (3:190), star paths |
-| **Afterglow** (signature) | `/afterglow`, `/afterglow/before`, `/afterglow/live`, `/afterglow/episodes/[id]`, `/afterglow/vault`, `/afterglow/gallery` | Before: sample schedule, demo countdown, reminder, "I'll be there", poll, anticipation constellation. During: companion dock with demo clock, simulated timeline, in-app check-in, self-report, **timed First-30 trivia** (one answer per question, 20 s each, late answers void, window closes at minute 30, practice mode, reset), question queue, discussion, bookmarks, opt-in board. After: episode constellation, saveable moments, Qur'an references, recap card (download/share), journal prompts, unlocked challenges, participation comparison, vault calendar, state gallery |
-| Live Tonight | `/events` | Official destinations (TikTok, backup TikTok, YouTube), schedule |
-| Search the Arsenal | `/watch` | Client-side search and filters over a clearly labelled **sample** catalogue |
-| Dawah Simulator | `/dojo`, `/dojo/path`, `/dojo/result` | "Train." hub, three drill types, fictional personas, a **six-step path** (setup, choose the next question, spot the hidden assumption, match evidence to claim, reply with care, reflection checkpoint) scored on clarity, fair representation, evidence and careful listening; credits and journal note persist; learning result view |
-| Night Atlas | `/atlas` | SVG star map with drag, wheel and pinch zoom, keyboard controls (arrows, +/−, 0), focusable stars, station card with "Enter this star", minimap, reset, deep links (`?star=`), swipeable mobile cards, full list fallback |
-| Reverts HQ | `/reverts`, `/reverts/ask/[id]` | Lavender/ivory light world: gentle journeys, 2:186, resources (planned), No Silly Questions wall (anonymous by default, pending review), mentor request (demo only), private notes, sample Q&A |
-| Shahadah Stories | `/stories` | Consent-only principles. Intentionally empty, never counted |
-| Library | `/library`, `/library/preview` | Parchment book room, 3D book mockup, *The Itachi Method* as a **planned concept**, an eight-page interactive preview with page turns, keyboard, chapter nav and bookmarks |
-| Choose Your Rank | `/membership`, `/join`, `/onboarding` | Scout (free forever) · Supporter · Champion (concept previews, **no prices, no billing**), level ladder, membership constellation, link to her existing official Patreon. Onboarding: nickname → intention → languages → constellation → **Explorer's Star Card** |
-| My Profile | `/me`, `/me/constellation`, `/me/quests`, `/me/afterglow`, `/me/journal`, `/me/settings` | Star card, rank and credits, truthful streak trio, badges, return-visit ritual, notices, personal constellation, credits ledger, quests, attendance history with evidence, saved moments, journal, settings (visibility, opt-in board, mute rankings/achievements, reduce motion, **self-entered handles with unbind**, consent, adapters, export/delete, demo-state switcher) |
-| Studio (internal) | `/studio`, `/studio/creator` | Living design system; demo-gated creator console (event builder, trivia composer, Afterglow approval + provenance, moderation queue, integrations) |
-| Trust | `/about`, `/faq`, `/privacy`, `/terms` | Disclosure, FAQ, plain-language privacy, concept terms |
+See [actual acquisition coverage](docs/CORPUS_ACQUISITION_V4.md) and [portable private-package receipt](research/v4-corpus-private-receipt.json). Restricted text stays outside public Git. Creator permission, exact source lineage, qualified editorial review and representative real data remain prerequisites for any attributed curriculum or book. No substantive manuscript or course has been written.
 
-## What is demo, connected, or aspirational
+The existing offline importer remains authoritative. A separate Node-only, permission-aware PostgreSQL adapter adds private persistence without exposing the research schema or transcript bodies through public REST. Hosted transfer requires a verified private operator connection and current source permissions; local test success does not establish hosted transfer readiness. See [the adapter contract](research/adapters/README.md).
 
-- **Connected (real):** links to official public channels, checked against <https://linktr.ee/dawahxdialogues> on 2026-10-17 (payment and affiliate links deliberately not mirrored); Qur'an Arabic from the Tanzil simple text and Saheeh International translations, retrieved via api.alquran.cloud and marked *pending editor review*.
-- **Demo (labelled in the UI):** every event, episode, trivia set, moment, catalogue row, practice dialogue, persona, leaderboard name, poll and number. The "live" is a simulation with a demo clock.
-- **Not built / aspirational:** accounts and OAuth, billing, YouTube live-chat or TikTok integrations, platform-verified attendance, real mentorship, real stories, the book. See `docs/LIVE_INTEGRATIONS.md` and `docs/RELEASE_GATES.md`.
+## Documentation
 
-## Creator approval required before launch
+- [STATUS.md](STATUS.md): delivery and separate corpus/credentials/creator blockers.
+- [What happens next](docs/WHAT_HAPPENS_NEXT.md), [recovery mission](docs/MISSION_RECOVERY_AND_CORPUS.md), [decision map](docs/RECOVERY_DECISION_MAP.md), [corpus discovery](docs/CORPUS_DISCOVERY.md).
+- [Mission](docs/MISSION_EVIDENCE_FIRST.md), [constitution](docs/PRODUCT_CONSTITUTION.md), [architecture](docs/EVIDENCE_FIRST_ARCHITECTURE.md).
+- [UX audit](docs/UX_AUDIT.md), [refactor map](docs/REFACTOR_MAP.md), [asset provenance](docs/ASSET_PROVENANCE.md).
+- [Research methodology](research/methodology.md), [graph schema](research/graph_schema.md), [limitations](research/limitations.md), [coverage](research/coverage_report.md).
+- [Release gates](docs/RELEASE_GATES.md), [auth/privacy setup](docs/AUTH_PRIVACY_SETUP.md), [monetization architecture](docs/MONETIZATION_ARCHITECTURE.md).
 
-1. Written approval from Itachi for the concept, name usage and public identity (`creator.endorsed` in `src/lib/config/creator.ts`).
-2. **Portrait:** `public/brand/itachi-masked-portrait.jpg` was cropped by the project owner from their own v1 design exploration (a low-resolution mockup) with its UI overlays removed. Replace it with an original high-resolution file and get the creator's written approval (`creator.portrait.creatorApproved`).
-3. Editorial review of every Qur'an passage, translation licence confirmation and scholarly review of Reverts HQ answers.
+Next.js App Router · React · strict TypeScript · Tailwind · Supabase SSR/Postgres/RLS · Vitest · Playwright/axe. Existing self-hosted typography and masked concept asset are preserved with provenance and approval restrictions.
 
-## Screenshots
-
-`docs/screenshots/` holds `home`, `menu`, `onboarding`, `star-card`, `afterglow`, `afterglow-live-challenge`, `afterglow-result`, `afterglow-recap`, `member-profile`, `atlas`, `dojo`, `sanctuary`, `membership`, `book-preview` and `arsenal`, each at 360, 390, 768, 1280 and 1440 px (`<name>-<width>.jpg`; the 390 and 1440 home shots are full-page).
-
-## Docs
-
-- `docs/DESIGN_SYSTEM.md`: tokens, typography, patterns, motion, components (also live at `/studio`)
-- `docs/PRODUCT_FLOWS.md`: journeys and state machines
-- `docs/LIVE_INTEGRATIONS.md`: adapters, schema and platform limits
-- `docs/RELEASE_GATES.md`: what must be true before any public launch
-- `docs/MISSION_GODSEED_UX_V1.md`: the original brief
-
-## Roadmap
-
-1. Creator conversation and approval; swap in the approved portrait and logo assets.
-2. Supabase (or similar) behind the existing store interface: accounts, consented profile sync, moderation queue.
-3. Editorially sourced Afterglow episodes with real public replay links and sourced timestamps.
-4. A `YouTubeLiveChatAdapter` limited to creator-authorised broadcasts and consented account binding.
-5. A verified source catalogue for Search the Arsenal, plus Qur'an reading and ISNAAD-style study tools.
-6. The book, written from sourced works with editorial approval.
-
-**Deployment:** none performed. This is a standard Next.js app (`npm run build && npm start`) with no required environment variables. Do not deploy publicly until the release gates pass.
+**Execution boundary:** commit/push a feature branch only. No deployment, paid inference, Modal spending, payment activation, marketing or transcript publication.

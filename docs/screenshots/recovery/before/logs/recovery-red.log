@@ -1,0 +1,201 @@
+
+Running 5 tests using 1 worker
+
+(node:54750) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/5] [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions
+  1) [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('section[aria-labelledby=\'hero-title\']').getByRole('link', { name: 'Explore a question', exact: true })
+    Expected: "/explore"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" locator('section[aria-labelledby=\'hero-title\']').getByRole('link', { name: 'Explore a question', exact: true }) with timeout 5000ms
+      - waiting for locator('section[aria-labelledby=\'hero-title\']').getByRole('link', { name: 'Explore a question', exact: true })
+
+
+       5 |   const hero = page.locator("section[aria-labelledby='hero-title']");
+       6 |   const primary = hero.getByRole("link", { name: "Explore a question", exact: true });
+    >  7 |   await expect(primary).toHaveAttribute("href", "/explore");
+         |                         ^
+       8 |   await expect(primary).toHaveAttribute("data-testid", "home-primary");
+       9 |   expect(await hero.locator("a,button").count()).toBeLessThanOrEqual(2);
+      10 |   await expect(hero).not.toContainText(/Watch live|\bLive\b|Afterglow|Constellation/i);
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:7:25
+
+    Error Context: test-results/recovery-hero-invites-a-qu-61643--than-two-competing-actions-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/recovery-hero-invites-a-qu-61643--than-two-competing-actions-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/recovery-hero-invites-a-qu-61643--than-two-competing-actions-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:54902) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[2/5] [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story
+  2) [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story 
+
+    Error: expect(locator).toHaveAttribute(expected) failed
+
+    Locator: locator('main').getByRole('link', { name: 'Explore a question', exact: true })
+    Expected: "/explore"
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveAttribute" locator('main').getByRole('link', { name: 'Explore a question', exact: true }) with timeout 5000ms
+      - waiting for locator('main').getByRole('link', { name: 'Explore a question', exact: true })
+
+
+      20 |     ["Make room for each other", "/community"],
+      21 |     ["Visit My Corner", "/me"],
+    > 22 |   ] as const) await expect(main.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", href);
+         |                                                                         ^
+      23 |   await expect(main.locator("a[href='/about']")).toHaveCount(1);
+      24 |   await expect(page.locator("#question-desk").getByRole("heading", { name: "Your question. Your own words.", exact: true })).toBeVisible();
+      25 | });
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:22:73
+
+    Error Context: test-results/recovery-homepage-offers-d-f2526-urneys-throughout-its-story-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/recovery-homepage-offers-d-f2526-urneys-throughout-its-story-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/recovery-homepage-offers-d-f2526-urneys-throughout-its-story-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:55052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[3/5] [desktop] › e2e/recovery.spec.ts:27:5 › visitor can keep, edit, copy and clear only their own draft
+  3) [desktop] › e2e/recovery.spec.ts:27:5 › visitor can keep, edit, copy and clear only their own draft 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: locator('#question-desk').getByRole('textbox', { name: 'Your question', exact: true })
+    Expected: ""
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" locator('#question-desk').getByRole('textbox', { name: 'Your question', exact: true }) with timeout 5000ms
+      - waiting for locator('#question-desk').getByRole('textbox', { name: 'Your question', exact: true })
+
+
+      31 |   const question = desk.getByRole("textbox", { name: "Your question", exact: true });
+      32 |   const reflection = desk.getByRole("textbox", { name: "Your reflection", exact: true });
+    > 33 |   await expect(question).toHaveValue("");
+         |                          ^
+      34 |   await expect(reflection).toHaveValue("");
+      35 |   await question.fill("How can I make more time to listen?");
+      36 |   await reflection.fill("My own thought: pause before I respond.");
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:33:26
+
+    Error Context: test-results/recovery-visitor-can-keep--bec3b--clear-only-their-own-draft-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/recovery-visitor-can-keep--bec3b--clear-only-their-own-draft-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/recovery-visitor-can-keep--bec3b--clear-only-their-own-draft-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:55207) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[4/5] [desktop] › e2e/recovery.spec.ts:51:5 › draft never uses browser storage, sends visitor text or produces a server answer
+  4) [desktop] › e2e/recovery.spec.ts:51:5 › draft never uses browser storage, sends visitor text or produces a server answer 
+
+    Test timeout of 10000ms exceeded.
+
+    Error: locator.fill: Test timeout of 10000ms exceeded.
+    Call log:
+      - waiting for locator('#question-desk').getByRole('textbox', { name: 'Your question', exact: true })
+
+
+      61 |   });
+      62 |   const desk = page.locator("#question-desk");
+    > 63 |   await desk.getByRole("textbox", { name: "Your question", exact: true }).fill(marker);
+         |                                                                           ^
+      64 |   await desk.getByRole("textbox", { name: "Your reflection", exact: true }).fill("These are my words, held only in this tab.");
+      65 |   await desk.getByRole("button", { name: "Review draft", exact: true }).click();
+      66 |   await expect(desk).toContainText(/your.*words|your.*draft|own.*words/i);
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:63:75
+
+    Error Context: test-results/recovery-draft-never-uses--e5048-or-produces-a-server-answer-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/recovery-draft-never-uses--e5048-or-produces-a-server-answer-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/recovery-draft-never-uses--e5048-or-produces-a-server-answer-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+(node:55372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/5] [desktop] › e2e/recovery.spec.ts:77:5 › gated learning, practice and community explain a useful next action
+  5) [desktop] › e2e/recovery.spec.ts:77:5 › gated learning, practice and community explain a useful next action 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('main').locator('a[href=\'/#question-desk\']')
+    Expected: 1
+    Received: 0
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('main').locator('a[href=\'/#question-desk\']') with timeout 5000ms
+      - waiting for locator('main').locator('a[href=\'/#question-desk\']')
+        14 × locator resolved to 0 elements
+           - unexpected value "0"
+
+
+      80 |     const main = page.locator("main");
+      81 |     await expect(main).toContainText(/review|approval|moderation|permission/i);
+    > 82 |     await expect(main.locator("a[href='/#question-desk']")).toHaveCount(1);
+         |                                                             ^
+      83 |     await main.locator("a[href='/#question-desk']").click();
+      84 |     await expect(page).toHaveURL(/\/#question-desk$/);
+      85 |     await expect(page.locator("#question-desk").getByRole("textbox", { name: "Your question", exact: true })).toBeVisible();
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:82:61
+
+    Error Context: test-results/recovery-gated-learning-pr-311e4-xplain-a-useful-next-action-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/recovery-gated-learning-pr-311e4-xplain-a-useful-next-action-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/recovery-gated-learning-pr-311e4-xplain-a-useful-next-action-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  5 failed
+    [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions 
+    [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story 
+    [desktop] › e2e/recovery.spec.ts:27:5 › visitor can keep, edit, copy and clear only their own draft 
+    [desktop] › e2e/recovery.spec.ts:51:5 › draft never uses browser storage, sends visitor text or produces a server answer 
+    [desktop] › e2e/recovery.spec.ts:77:5 › gated learning, practice and community explain a useful next action 

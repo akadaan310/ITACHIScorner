@@ -1,0 +1,26 @@
+{
+  "archive_sha256": "d94c4c691d794b824e17b2b8ff54472c8fa18bfb44b40d972e776122e99e0da1",
+  "verified_extracted_files_match_latest_attachment": true,
+  "entries": [
+    {
+      "file": "START_HERE.txt",
+      "sha256": "f2fc325628e781defe9aa74ca33a8114c2d0597f9d73fc951957e4c4fcc0b257"
+    },
+    {
+      "file": "ITACHI_CODEX_V4_CREATOR_FIRST_RECOVERY.md",
+      "sha256": "b116ad2a782c154786bc2e3db042635d0775705fe169b350d0b1cc3718f7ca1e"
+    },
+    {
+      "file": "reference/itachi-youtube-creator-image.jpg",
+      "sha256": "68ac80ffcd92a8260681095ecbca207f57dcd65116c49f8d62d04fd3b947300d"
+    },
+    {
+      "file": "reference/itachi-mask-screen-captures.jpg",
+      "sha256": "9ac67c19dc62d9744f4c15f9903421b70680c6ae4607ecfc812036e81bb5a7d7"
+    },
+    {
+      "file": "reference/mask-lettering-closeup.jpg",
+      "sha256": "768f2479403dc61fe06765ceb4153a3790b3e89b8a43cf82413cbf8e67bbf569"
+    }
+  ]
+}

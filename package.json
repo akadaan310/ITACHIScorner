@@ -2,7 +2,7 @@
   "name": "itachis-corner",
   "version": "0.1.0",
   "private": true,
-  "description": "Itachi's Corner — The Celestial Majlis. Independent concept demo, unaffiliated and not yet endorsed.",
+  "description": "Itachi's Corner — evidence-first learning and dialogue foundation. Independent, unaffiliated and not yet endorsed.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +19,8 @@
     "@fontsource/amiri": "^5.3.0",
     "@fontsource/bebas-neue": "^5.3.0",
     "@fontsource/jetbrains-mono": "^5.3.0",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.118.0",
     "next": "^16.4.2",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
@@ -33,6 +35,7 @@
     "@types/react-dom": "^19.3.0",
     "eslint": "^9.39.5",
     "eslint-config-next": "^16.4.2",
+    "supabase": "2.121.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
     "vitest": "^3.2.7"

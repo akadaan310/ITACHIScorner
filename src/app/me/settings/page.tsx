@@ -1,12 +1,29 @@
 import type { Metadata } from "next";
-import { MemberFrame, SettingsView } from "@/components/member";
+import Link from "next/link";
+import { AccountFrame, AccountNotice, AccountUnavailable } from "@/components/account/frame";
+import { getAccountContext } from "@/lib/auth/session";
+import { createServerSupabase } from "@/lib/supabase/server";
 
-export const metadata: Metadata = { title: "Settings & privacy" };
+export const metadata: Metadata = { title: "Settings & privacy", robots: { index: false } };
 
-export default function Page() {
-  return (
-    <MemberFrame title="Settings & privacy" allowGuest>
-      <SettingsView />
-    </MemberFrame>
-  );
+export default async function SettingsPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const context = await getAccountContext(), params = await searchParams;
+  if (context.status !== "authenticated") return <AccountFrame title="Settings & privacy"><AccountNotice code={params.notice} /><AccountUnavailable context={context} /></AccountFrame>;
+  const client = (await createServerSupabase())!;
+  const [links, consents] = await Promise.all([
+    client.from("account_links").select("id,platform,handle,verification").eq("user_id", context.user.id).order("created_at", { ascending: false }),
+    client.from("consents").select("scope,granted,recorded_at").eq("user_id", context.user.id).eq("scope", "community-publication").order("recorded_at", { ascending: false }).limit(1),
+  ]);
+  if (links.error || consents.error) return <AccountFrame title="Settings & privacy"><p role="alert" className="card p-6 text-cream">Some settings could not be loaded. Please try again later.</p></AccountFrame>;
+  const deletionReady = Boolean(process.env.SUPABASE_SECRET_KEY?.trim());
+  return <AccountFrame title="Settings & privacy"><AccountNotice code={params.notice} /><Link href="/me" className="text-sm text-coral underline">Back to My Corner</Link>
+    <form action="/api/account/preferences" method="post" className="card space-y-4 p-6"><h2 className="text-3xl text-cream">Your preferences</h2><label className="block text-sm text-cream" htmlFor="languages">Preferred languages, separated by commas</label><input id="languages" name="languages" className="field" defaultValue={context.preferences?.languages.join(", ") ?? ""} maxLength={400} /><label className="flex items-center gap-3 text-sm text-cream"><input type="checkbox" name="reduced_motion" defaultChecked={context.preferences?.reduced_motion ?? false} />Prefer reduced motion</label><label className="flex items-center gap-3 text-sm text-cream"><input type="checkbox" name="email_updates" defaultChecked={context.preferences?.email_updates ?? false} />Allow future product updates</label><p className="text-sm text-cream/65">Update delivery has not been enabled. This saves your preference only.</p><button className="btn btn-primary" type="submit">Save preferences</button></form>
+    <section className="card space-y-4 p-6"><h2 className="text-3xl text-cream">Handles you enter</h2><p className="text-sm text-cream/75">A typed handle does not prove ownership, identity or attendance. Provider connections are not available yet.</p>
+      {(links.data ?? []).length === 0 ? <p className="text-sm text-cream/65">No handles saved.</p> : <ul className="space-y-3">{links.data!.map((link) => <li key={link.id} className="flex flex-wrap items-center justify-between gap-3 text-sm text-cream"><span>{link.platform}: {link.handle} · {link.verification === "self-entered" ? "Self-entered" : "Connected by provider"}</span><form action="/api/account/links" method="post"><input type="hidden" name="action" value="remove" /><input type="hidden" name="id" value={link.id} /><button type="submit" className="btn btn-ghost">Remove handle</button></form></li>)}</ul>}
+      <form action="/api/account/links" method="post" className="space-y-3"><label className="block text-sm text-cream" htmlFor="handle-platform">Platform</label><select id="handle-platform" name="platform" className="field"><option value="youtube">YouTube</option><option value="tiktok">TikTok</option></select><label className="block text-sm text-cream" htmlFor="handle">Self-entered handle</label><input id="handle" name="handle" className="field" maxLength={61} required /><button className="btn btn-ghost" type="submit">Save self-entered handle</button></form>
+    </section>
+    <section className="card space-y-4 p-6"><h2 className="text-3xl text-cream">Consent is your choice</h2><p className="text-sm text-cream/75">Permission to consider a community contribution for publication is separate from creating an account. A contribution still requires moderation.</p><form action="/api/account/consent" method="post" className="space-y-4"><input type="hidden" name="scope" value="community-publication" /><label className="flex items-start gap-3 text-sm text-cream"><input className="mt-1" type="checkbox" name="granted" defaultChecked={consents.data?.find((entry) => entry.scope === "community-publication")?.granted ?? false} />Allow my future community contributions to be considered for publication</label><button className="btn btn-ghost" type="submit">Save consent choice</button></form><p className="text-sm text-cream/65">Withdraw by clearing the choice and saving. This records your decision; it does not publish anything.</p></section>
+    <section className="card space-y-4 p-6"><h2 className="text-3xl text-cream">Export your account</h2><p className="text-sm text-cream/75">Download your profile, preferences, consents and other personal records as JSON. Private research and other members’ data are excluded.</p><a href="/api/account/export" className="btn btn-ghost">Download my data</a></section>
+    <section className="card space-y-4 p-6"><h2 className="text-3xl text-cream">Delete your account</h2><p className="text-sm text-cream/75">This permanently removes your account and its personal records, including private notes and submissions. You will be signed out on all devices.</p>{deletionReady ? <form action="/api/account/delete" method="post" className="space-y-4"><label className="block text-sm text-cream" htmlFor="delete-confirmation">Type DELETE to confirm</label><input id="delete-confirmation" name="confirmation" className="field" autoComplete="off" pattern="DELETE" required /><button className="btn btn-primary" type="submit">Permanently delete my account</button></form> : <p className="text-sm text-cream/75">Account deletion is temporarily unavailable. Your account has not been erased.</p>}</section>
+  </AccountFrame>;
 }

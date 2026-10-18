@@ -1,0 +1,158 @@
+{
+  "capturedAt": "2026-10-18T04:16:49.879Z",
+  "baseURL": "http://127.0.0.1:4002",
+  "mode": "Next development server with isolated .next/dev output; not production or remote lifecycle evidence",
+  "projectRef": "frxufmwwbegconolevkw",
+  "configuration": "Existing intended-project URL and publishable key only; portraits false; no server secret",
+  "methodology": "Real configured signed-out rendering; browser intercepts email submission before the server. No account created, provider email sent, privileged operation or remote member-lifecycle claim.",
+  "records": [
+    {
+      "width": 390,
+      "path": "/",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 2,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "path": "/about",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "path": "/learn",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "path": "/library",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "path": "/studio/creator",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "path": "/join",
+      "emailFormRendered": true,
+      "submissionIntercepted": true,
+      "providerEmailSent": false,
+      "anonymousExportStatus": 401,
+      "anonymousExportCache": "private, no-store"
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 2,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "path": "/about",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "path": "/learn",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "path": "/library",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "path": "/studio/creator",
+      "status": 200,
+      "portraitImages": 0,
+      "fallbacks": 1,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "path": "/join",
+      "emailFormRendered": true,
+      "submissionIntercepted": true,
+      "providerEmailSent": false,
+      "anonymousExportStatus": 401,
+      "anonymousExportCache": "private, no-store"
+    }
+  ],
+  "files": [
+    {
+      "file": "home-390-full.jpg",
+      "sha256": "bf502d1c355b1c2d9dff88da4e4347004c24db9ec841e415a1c9aa82887161b1"
+    },
+    {
+      "file": "about-390-full.jpg",
+      "sha256": "02ad149b483532b64273fef5cd8fe6e8da15d9927ca8cd13297e9b129a4f3050"
+    },
+    {
+      "file": "learn-390-full.jpg",
+      "sha256": "71d0adfb53df51e56df3977bb982388689431e4daa78a547e6a0028930556369"
+    },
+    {
+      "file": "library-390-full.jpg",
+      "sha256": "5c80fb3ab6dd2cbbd5489f7b3e7b5f152e211c748cba8e87fed297dcdce5ee02"
+    },
+    {
+      "file": "studio-390-full.jpg",
+      "sha256": "1d907e098a3c6282624aad03225d529f7b11447e3ecbe9250ff072a0c4b6c96a"
+    },
+    {
+      "file": "sign-in-390.jpg",
+      "sha256": "0067ee3b689710acc1c10b4bc6696842539c19003e440b2e0715d12eba782efb"
+    },
+    {
+      "file": "home-1440-full.jpg",
+      "sha256": "3511e2d61551f49911f037f40efdc1de9ccf2da461d5030778ed1e496f605056"
+    },
+    {
+      "file": "about-1440-full.jpg",
+      "sha256": "f9cf660acc098ff401394ea09789a4b73be94d3a0c48439deba99a0e62abfa3c"
+    },
+    {
+      "file": "learn-1440-full.jpg",
+      "sha256": "9788a4842e7ae40c9d85c0682ccfcc2238be845593fb16ff4f7d9f473a157818"
+    },
+    {
+      "file": "library-1440-full.jpg",
+      "sha256": "60d98b697604692b109c9f6c9212229fc5d17f54581ec66a9e14e6a706fdd5e4"
+    },
+    {
+      "file": "studio-1440-full.jpg",
+      "sha256": "5356cfa5e440df007e8e224beefea9f8c19380f2c57194ab21df94ec8942915e"
+    },
+    {
+      "file": "sign-in-1440.jpg",
+      "sha256": "c808c49fd89ea979c4523de9b7ad445a6db2d18113338150c80d29105d1d2bb7"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+
+> itachis-corner@0.1.0 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 21ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 1561ms
+  Running TypeScript ...
+  Finished TypeScript in 5.1s ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/55) ...
+  Generating static pages using 4 workers (13/55) 
+  Generating static pages using 4 workers (27/55) 
+  Generating static pages using 4 workers (41/55) 
+✓ Generating static pages using 4 workers (55/55) in 894ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /afterglow
+├ ○ /afterglow/before
+├ ƒ /afterglow/episodes/[id]
+├ ○ /afterglow/gallery
+├ ○ /afterglow/live
+├ ○ /afterglow/vault
+├ ƒ /api/account/consent
+├ ƒ /api/account/delete
+├ ƒ /api/account/export
+├ ƒ /api/account/links
+├ ƒ /api/account/notes
+├ ƒ /api/account/preferences
+├ ƒ /api/account/profile
+├ ƒ /api/account/saved-questions
+├ ○ /atlas
+├ ƒ /auth/callback
+├ ƒ /auth/confirm
+├ ƒ /auth/logout
+├ ƒ /auth/request
+├ ƒ /auth/verify
+├ ○ /community
+├ ○ /discover
+├ ○ /dojo
+├ ○ /dojo/path
+├ ○ /dojo/result
+├ ○ /events
+├ ƒ /explore
+├ ○ /faq
+├ ○ /icon.svg
+├ ƒ /join
+├ ○ /learn
+├ ○ /library
+├ ○ /library/preview
+├ ○ /manifest.webmanifest
+├ ƒ /me
+├ ○ /me/afterglow
+├ ○ /me/constellation
+├ ƒ /me/journal
+├ ○ /me/quests
+├ ƒ /me/settings
+├ ○ /membership
+├ ○ /onboarding
+├ ○ /opengraph-image
+├ ○ /practice
+├ ○ /privacy
+├ ○ /reverts
+├ ƒ /reverts/ask/[id]
+├ ○ /session-notes
+├ ○ /stories
+├ ○ /studio
+├ ƒ /studio/creator
+├ ○ /support
+├ ○ /terms
+└ ○ /watch
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

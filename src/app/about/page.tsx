@@ -1,38 +1,6 @@
+import { Arrow } from "@/components/art";
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ChapterHeader } from "@/components/ui";
+import { CreatorPortrait } from "@/components/creator-portrait";
 import { creator } from "@/lib/config/creator";
-
-export const metadata: Metadata = { title: "About this concept", description: creator.disclosureLong };
-
-export default function AboutPage() {
-  return (
-    <div className="pb-10">
-      <ChapterHeader eyebrow="About Itachi's Corner" title={<>An independent concept, <em className="text-gold">made as a gift.</em></>}>
-        {creator.disclosureLong}
-      </ChapterHeader>
-      <div className="shell">
-        <div className="prose-soft max-w-3xl">
-        <h2>What this is</h2>
-        <p>A fully navigable product demo imagining a companion for the community around Da&rsquo;wah x Dialogues: before, during and after the lives that happen on TikTok and YouTube. It is unaffiliated and has not been endorsed. It does not speak for Itachi and never invents her words.</p>
-        <h2>What is real, and what is demo</h2>
-        <ul>
-          <li>Real: links to her official public channels (checked {creator.linksCheckedAt}), the Qur&rsquo;an text (Tanzil) and translation (Saheeh International), all pending editorial review.</li>
-          <li>Demo: every event, episode, trivia set, catalogue entry, practice dialogue, persona, leaderboard name and number — each one labelled.</li>
-          <li>Not built: billing, accounts, OAuth, live-chat or attendance integrations, mentorship, the book.</li>
-        </ul>
-        <h2>The portrait</h2>
-        <p>The masked portrait used as the main image was supplied by the project owner from an earlier design exploration. It must be replaced with an original, high-resolution file and approved in writing by the creator before any public launch.</p>
-        <h2>Principles</h2>
-        <ul>
-          <li>Learning is free. Levels measure app participation — never faith, piety or conversions.</li>
-          <li>Truthful data: a typed handle proves nothing; attendance always names its evidence.</li>
-          <li>Dignity for sacred text: exact Arabic, no ornament over it, sources shown.</li>
-          <li>Kind dialogue: the Simulator rewards clarity, fairness, evidence and listening.</li>
-        </ul>
-        <p><Link href="/faq">Read the FAQ</Link> · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Concept terms</Link></p>
-        </div>
-      </div>
-    </div>
-  );
-}
+export const metadata: Metadata = { title: "About Itachi", description: creator.disclosureLong };
+export default function AboutPage() { return <div className="public-page"><header className="shell about-opening"><div><p className="public-eyebrow">The person behind the conversation</p><h1>ITACHI.<br /><em>Da&rsquo;wah<br />x Dialogues.</em></h1><p>Questions about belief deserve time, care and room for a real conversation.</p><p className="about-disclosure">{creator.disclosureLong}</p></div><CreatorPortrait variant="about" /></header><div className="shell about-body"><article className="public-prose"><h2>A Corner around the conversations</h2><p>Itachi is the public creator known as Da&rsquo;wah x Dialogues. This project is a creative gift inspired by her public work: a place to follow original sources, collect questions and write your own reflections.</p><p>The creator has not approved this site. Follow her original channels for her own words and updates.</p><h2>Curiosity, with care</h2><p>Good questions do not need a scoreboard. Participation here is never a measure of faith or piety. For personal religious guidance, speak with a qualified teacher you trust.</p><h2 id="image-provenance">About the design studies</h2><p>Every portrait placement uses a different crop of one owner-supplied image from an earlier design exploration. It is not an approved documentary photograph. The signature is a vector study inspired by the mask lettering, not an authorized logo. Creator permission and original approved imagery are required before release.</p></article><aside id="channels" className="channel-panel"><p className="public-eyebrow">The original channels</p><h2>Meet her<br /><em>where she speaks.</em></h2><p>Watch original conversations on Itachi&rsquo;s own platforms. Live video stays there.</p><a href={creator.links.hub} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Visit the public link hub <Arrow /></a><p className="channel-footnote">Da&rsquo;wah x Dialogues · external website</p></aside></div></div>; }

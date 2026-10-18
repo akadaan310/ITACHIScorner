@@ -1,0 +1,377 @@
+{
+  "samples": [
+    {
+      "width": 360,
+      "delay": 0,
+      "run": 1,
+      "cls": 0.0076412188598888415,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 360,
+      "delay": 800,
+      "run": 1,
+      "cls": 0.0076412188598888415,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 0,
+      "run": 1,
+      "cls": 0,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 0,
+      "run": 2,
+      "cls": 0,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 0,
+      "run": 3,
+      "cls": 0.008710143412587202,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 800,
+      "run": 1,
+      "cls": 0.008710143412587202,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 800,
+      "run": 2,
+      "cls": 0.0033271481939666616,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 390,
+      "delay": 800,
+      "run": 3,
+      "cls": 0.0033271481939666616,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 188.125
+    },
+    {
+      "width": 768,
+      "delay": 0,
+      "run": 1,
+      "cls": 0.07559099945186945,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 225.75
+    },
+    {
+      "width": 768,
+      "delay": 800,
+      "run": 1,
+      "cls": 0.07406885632875057,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 225.75
+    },
+    {
+      "width": 1280,
+      "delay": 0,
+      "run": 1,
+      "cls": 0.05119446840286255,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 258.703125
+    },
+    {
+      "width": 1280,
+      "delay": 800,
+      "run": 1,
+      "cls": 0.05119446840286255,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 258.703125
+    },
+    {
+      "width": 1440,
+      "delay": 0,
+      "run": 1,
+      "cls": 0,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 258.703125
+    },
+    {
+      "width": 1440,
+      "delay": 800,
+      "run": 1,
+      "cls": 0.04044995034300251,
+      "overflow": 0,
+      "heading": "Every good conversationbegins with a question.",
+      "height": 258.703125
+    }
+  ],
+  "home": [
+    {
+      "width": 360,
+      "before": {
+        "heading": {
+          "x": 16,
+          "y": 190.828125,
+          "width": 328,
+          "height": 209.75,
+          "top": 190.828125,
+          "right": 344,
+          "bottom": 400.578125,
+          "left": 16
+        },
+        "cta": {
+          "x": 16,
+          "y": 528.109375,
+          "width": 211.484375,
+          "height": 48,
+          "top": 528.109375,
+          "right": 227.484375,
+          "bottom": 576.109375,
+          "left": 16
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      },
+      "after": {
+        "heading": {
+          "x": 16,
+          "y": 190.828125,
+          "width": 328,
+          "height": 209.75,
+          "top": 190.828125,
+          "right": 344,
+          "bottom": 400.578125,
+          "left": 16
+        },
+        "cta": {
+          "x": 16,
+          "y": 528.109375,
+          "width": 211.484375,
+          "height": 48,
+          "top": 528.109375,
+          "right": 227.484375,
+          "bottom": 576.109375,
+          "left": 16
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      }
+    },
+    {
+      "width": 390,
+      "before": {
+        "heading": {
+          "x": 16,
+          "y": 175.21875,
+          "width": 358,
+          "height": 227.25,
+          "top": 175.21875,
+          "right": 374,
+          "bottom": 402.46875,
+          "left": 16
+        },
+        "cta": {
+          "x": 16,
+          "y": 530,
+          "width": 211.484375,
+          "height": 48,
+          "top": 530,
+          "right": 227.484375,
+          "bottom": 578,
+          "left": 16
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      },
+      "after": {
+        "heading": {
+          "x": 16,
+          "y": 175.21875,
+          "width": 358,
+          "height": 227.25,
+          "top": 175.21875,
+          "right": 374,
+          "bottom": 402.46875,
+          "left": 16
+        },
+        "cta": {
+          "x": 16,
+          "y": 530,
+          "width": 211.484375,
+          "height": 48,
+          "top": 530,
+          "right": 227.484375,
+          "bottom": 578,
+          "left": 16
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      }
+    },
+    {
+      "width": 768,
+      "before": {
+        "heading": {
+          "x": 24,
+          "y": 195.21875,
+          "width": 720,
+          "height": 261.65625,
+          "top": 195.21875,
+          "right": 744,
+          "bottom": 456.875,
+          "left": 24
+        },
+        "cta": {
+          "x": 24,
+          "y": 558.5625,
+          "width": 211.484375,
+          "height": 48,
+          "top": 558.5625,
+          "right": 235.484375,
+          "bottom": 606.5625,
+          "left": 24
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      },
+      "after": {
+        "heading": {
+          "x": 24,
+          "y": 195.21875,
+          "width": 720,
+          "height": 261.65625,
+          "top": 195.21875,
+          "right": 744,
+          "bottom": 456.875,
+          "left": 24
+        },
+        "cta": {
+          "x": 24,
+          "y": 558.5625,
+          "width": 211.484375,
+          "height": 48,
+          "top": 558.5625,
+          "right": 235.484375,
+          "bottom": 606.5625,
+          "left": 24
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      }
+    },
+    {
+      "width": 1280,
+      "before": {
+        "heading": {
+          "x": 64,
+          "y": 244.625,
+          "width": 606.53125,
+          "height": 270.703125,
+          "top": 244.625,
+          "right": 670.53125,
+          "bottom": 515.328125,
+          "left": 64
+        },
+        "cta": {
+          "x": 64,
+          "y": 619.703125,
+          "width": 211.484375,
+          "height": 48,
+          "top": 619.703125,
+          "right": 275.484375,
+          "bottom": 667.703125,
+          "left": 64
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      },
+      "after": {
+        "heading": {
+          "x": 64,
+          "y": 244.625,
+          "width": 606.53125,
+          "height": 270.703125,
+          "top": 244.625,
+          "right": 670.53125,
+          "bottom": 515.328125,
+          "left": 64
+        },
+        "cta": {
+          "x": 64,
+          "y": 619.703125,
+          "width": 211.484375,
+          "height": 48,
+          "top": 619.703125,
+          "right": 275.484375,
+          "bottom": 667.703125,
+          "left": 64
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      }
+    },
+    {
+      "width": 1440,
+      "before": {
+        "heading": {
+          "x": 144,
+          "y": 244.625,
+          "width": 606.53125,
+          "height": 270.703125,
+          "top": 244.625,
+          "right": 750.53125,
+          "bottom": 515.328125,
+          "left": 144
+        },
+        "cta": {
+          "x": 144,
+          "y": 619.703125,
+          "width": 211.484375,
+          "height": 48,
+          "top": 619.703125,
+          "right": 355.484375,
+          "bottom": 667.703125,
+          "left": 144
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      },
+      "after": {
+        "heading": {
+          "x": 144,
+          "y": 244.625,
+          "width": 606.53125,
+          "height": 270.703125,
+          "top": 244.625,
+          "right": 750.53125,
+          "bottom": 515.328125,
+          "left": 144
+        },
+        "cta": {
+          "x": 144,
+          "y": 619.703125,
+          "width": 211.484375,
+          "height": 48,
+          "top": 619.703125,
+          "right": 355.484375,
+          "bottom": 667.703125,
+          "left": 144
+        },
+        "font": "\"Bebas Neue\", Oswald, Impact, \"Arial Narrow\", sans-serif"
+      }
+    }
+  ]
+}

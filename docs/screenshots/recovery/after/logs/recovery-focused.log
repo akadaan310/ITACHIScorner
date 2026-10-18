@@ -1,0 +1,67 @@
+
+Running 13 tests using 2 workers
+
+(node:58155) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:58156) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/13] [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions
+[2/13] [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript
+[3/13] [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story
+[4/13] [desktop] › e2e/recovery.spec.ts:27:5 › visitor can review, edit, copy and clear only their own draft
+[5/13] [desktop] › e2e/recovery.spec.ts:55:5 › draft never uses browser storage, sends visitor text or produces a server answer
+  1) [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#question-desk')
+    Expected substring: "This scratchpad needs JavaScript"
+    Received string:    "A small place to begin · available nowYour question.Your own words.You don’t need a finished thought to start. Put what’s on your mind into words, then give yourself room to reflect.This is a scratchpad for your own writing. It gives no religious answers, feedback or scores. Your words are not Itachi’s words or a teaching method.Pause.Think.Put it into words.Your writing desk✧Just this visitOnly in this page’s memory. Nothing is sent or saved. Refreshing or leaving this page loses your draft; copy it first if you want to keep it.Your questionYour reflection (optional)Review draft↗Copy draftClear draft"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" locator('#question-desk') with timeout 5000ms
+      - waiting for locator('#question-desk')
+        13 × locator resolved to <section id="question-desk" aria-labelledby="desk-title" class="question-desk-section">…</section>
+           - unexpected value "A small place to begin · available nowYour question.Your own words.You don’t need a finished thought to start. Put what’s on your mind into words, then give yourself room to reflect.This is a scratchpad for your own writing. It gives no religious answers, feedback or scores. Your words are not Itachi’s words or a teaching method.Pause.Think.Put it into words.Your writing desk✧Just this visitOnly in this page’s memory. Nothing is sent or saved. Refreshing or leaving this page loses your draft; copy it first if you want to keep it.Your questionYour reflection (optional)Review draft↗Copy draftClear draft"
+
+
+      23 |   await page.goto("/");
+      24 |   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    > 25 |   await expect(page.locator("#question-desk")).toContainText("This scratchpad needs JavaScript");
+         |                                                ^
+      26 |   await expect(page.locator("#question-desk").getByRole("textbox", { name: "Your question", exact: true })).toBeHidden();
+      27 |   await page.locator("main").getByRole("link", { name: "Explore a question", exact: true }).click();
+      28 |   await expect(page).toHaveURL(/\/explore$/);
+        at /workspace/itachi-recovery/e2e/quality.spec.ts:25:48
+
+    Error Context: test-results/quality-public-story-and-l-75812-ion-work-without-JavaScript-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/quality-public-story-and-l-75812-ion-work-without-JavaScript-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/quality-public-story-and-l-75812-ion-work-without-JavaScript-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[6/13] [desktop] › e2e/recovery.spec.ts:81:5 › clipboard denial preserves the visitor draft and explains manual copying
+(node:58901) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[7/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 360px
+[8/13] [desktop] › e2e/recovery.spec.ts:95:5 › gated learning, practice and community explain a useful next action
+[9/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 390px
+[10/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 768px
+[11/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1280px
+[12/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1440px
+[13/13] [mobile] › e2e/mobile.spec.ts:22:5 › phone menu supports touch, escape, focus return and all five destinations
+  1 failed
+    [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript 
+  12 passed (19.0s)

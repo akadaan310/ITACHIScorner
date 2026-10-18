@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/lineage.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "source",
+              "manifest",
+              "config",
+              "code",
+              "features",
+              "run",
+              "candidate",
+              "review",
+              "learning_unit"
+            ]
+          },
+          "parents": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "id",
+          "kind",
+          "parents"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "stale": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "revalidation_queue": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "nodes",
+    "stale",
+    "revalidation_queue"
+  ],
+  "additionalProperties": false,
+  "description": "Runtime validates unique IDs, all parent references and acyclic dependencies. Effective old-run status additionally requires invalidation overlays."
+}

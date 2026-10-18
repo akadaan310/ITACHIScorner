@@ -1,0 +1,1150 @@
+{
+  "stats": {
+    "startTime": "2026-10-18T04:14:27.003Z",
+    "duration": 136399.1,
+    "expected": 126,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "server": "http://localhost:4001",
+  "backend": "intentionally unconfigured",
+  "command": "E2E_PORT=4001 E2E_REUSE_SERVER=1 PLAYWRIGHT_JSON_OUTPUT_FILE=test-results-v4/results.json npx playwright test --output=test-results-v4 --reporter=list,json --max-failures=1",
+  "cases": [
+    {
+      "title": "hostile Origin is rejected before mutation at /auth/request",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /auth/verify",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /auth/logout",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/profile",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/preferences",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/consent",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/links",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/delete",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/notes",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hostile Origin is rejected before mutation at /api/account/saved-questions",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "anonymous export fails closed and cannot be shared-cached",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/profile reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/preferences reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/consent reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/links reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/delete reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/notes reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /api/account/saved-questions reports unavailable without claiming success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /auth/request cannot create an authenticated success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /auth/verify cannot create an authenticated success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured same-origin /auth/logout cannot create an authenticated success",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/callback keeps hostile next=https://hostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/callback keeps hostile next=//hostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/callback keeps hostile next=/%2fhostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/confirm keeps hostile next=https://hostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/confirm keeps hostile next=//hostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "invalid /auth/confirm keeps hostile next=/%2fhostile-origin.invalid local and signed out",
+      "file": "account-api.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "public navigation offers five clear destinations",
+      "file": "evidence-first.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Explore cannot publish invented content when the source backend is unconfigured",
+      "file": "evidence-first.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "practice offers private writing while creator-derived teaching awaits review",
+      "file": "evidence-first.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "empty search returns no invented sources or conversations",
+      "file": "evidence-first.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Learn publishes no curriculum before evidence and creator approval",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconfigured Community never claims to submit or publish a question",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "missing auth configuration disables sign-in honestly",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unconnected account and privacy controls expose no fabricated personal data",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "browser-controlled demo data cannot unlock the creator workspace",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "secondary Creator Studio link preserves the private editorial access boundary",
+      "file": "flows.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /discover leads to truthful /explore",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /watch leads to truthful /explore",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /atlas leads to truthful /explore",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /dojo leads to truthful /practice",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /dojo/path leads to truthful /practice",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /dojo/result leads to truthful /practice",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/before leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/live leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/vault leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/gallery leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/episodes/sample-episode-01 leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /afterglow/episodes/sample-episode-02 leads to truthful /session-notes",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /events leads to truthful /about",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /reverts leads to truthful /learn",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /reverts/ask/q-silly leads to truthful /community",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /stories leads to truthful /community",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /library/preview?page=4 leads to truthful /library",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /membership leads to truthful /support",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /onboarding leads to truthful /join",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /me/constellation leads to truthful /me",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /me/quests leads to truthful /me",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "legacy /me/afterglow leads to truthful /me",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/ renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/explore renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/learn renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/practice renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/community renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/session-notes renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/library renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/support renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/about renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/faq renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/privacy renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/terms renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/join renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/me renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/me/journal renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/me/settings renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/studio renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "/studio/creator renders without browser errors or demo content",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unknown routes return a useful 404",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "every internal public link resolves",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "the supplied public channel hub retains new-tab protections",
+      "file": "navigation.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /explore",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /learn",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /practice",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /community",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /session-notes",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /library",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /support",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /about",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /faq",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /privacy",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /terms",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /join",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /me",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /me/journal",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /me/settings",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /studio",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "axe: no serious or critical accessibility violations on /studio/creator",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "public story and legacy navigation work without JavaScript",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "reduced motion prevents continuously animated decoration",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "unapproved sacred text is absent from public learning surfaces",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Explore stays below 0.1 layout shift when phone fonts arrive late",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Home stays below 0.1 layout shift when desktop fonts arrive late",
+      "file": "quality.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "hero invites a question with no more than two competing actions",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "homepage offers distinct contextual journeys throughout its story",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "visitor can review, edit, copy and clear only their own draft",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "draft never uses browser storage, sends visitor text or produces a server answer",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "clipboard denial preserves the visitor draft and explains manual copying",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "draft copy feedback stays fully above fixed phone navigation",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "Learn, Practice and Community offer distinct useful present actions",
+      "file": "recovery.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "V4 mobile navigation makes the five journeys clear",
+      "file": "v4.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "question journey keeps visitor writing through all four steps without sending it",
+      "file": "v4.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "practice is useful private writing with reversible self checks and honest clipboard failure",
+      "file": "v4.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "approved source preview labels remain readable on their ivory surface",
+      "file": "v4.spec.ts",
+      "project": "desktop",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home primary action fits the first fold and public routes fit 360px",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home primary action fits the first fold and public routes fit 390px",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home primary action fits the first fold and public routes fit 768px",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home primary action fits the first fold and public routes fit 1280px",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "home primary action fits the first fold and public routes fit 1440px",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "phone menu supports touch, escape, focus return and all five destinations",
+      "file": "mobile.spec.ts",
+      "project": "mobile",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture reviewed public folds at 360px",
+      "file": "screenshots.spec.ts",
+      "project": "screens",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture reviewed public folds at 390px",
+      "file": "screenshots.spec.ts",
+      "project": "screens",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture reviewed public folds at 768px",
+      "file": "screenshots.spec.ts",
+      "project": "screens",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture reviewed public folds at 1280px",
+      "file": "screenshots.spec.ts",
+      "project": "screens",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture reviewed public folds at 1440px",
+      "file": "screenshots.spec.ts",
+      "project": "screens",
+      "status": "expected",
+      "outcomes": [
+        "passed"
+      ]
+    }
+  ]
+}

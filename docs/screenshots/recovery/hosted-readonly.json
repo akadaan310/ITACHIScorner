@@ -1,0 +1,48 @@
+{
+  "project_ref": "frxufmwwbegconolevkw",
+  "organization": "ACT AI Protocol",
+  "plan": "free",
+  "migrations": [
+    "20261018013721",
+    "20261018014553"
+  ],
+  "inventory": {
+    "videos": 0,
+    "transcript_versions": 0,
+    "transcript_segments": 0,
+    "private_corpus_objects": 0,
+    "private_bucket": true,
+    "inventory_denominator": null
+  },
+  "missing_public_research_rls": 0,
+  "security_advisor_findings": 0,
+  "performance_advisor": [
+    {
+      "name": "unused_index",
+      "level": "INFO",
+      "count": 72
+    }
+  ],
+  "anonymous_rest_checks": [
+    {
+      "check": "approved_collection",
+      "status": 200,
+      "rows": 0,
+      "code": null
+    },
+    {
+      "check": "private_research_schema",
+      "status": 406,
+      "rows": null,
+      "code": "PGRST106"
+    },
+    {
+      "check": "private_account",
+      "status": 401,
+      "rows": null,
+      "code": "42501"
+    }
+  ],
+  "scope": "Read-only hosted metadata and anonymous access checks; no real account lifecycle or private write verified.",
+  "checked_at_utc": "2026-10-18"
+}

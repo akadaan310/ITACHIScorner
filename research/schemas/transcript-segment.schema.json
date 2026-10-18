@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/transcript-segment.schema.json",
+  "type": "object",
+  "properties": {
+    "segment_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "start_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "end_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "speaker": {
+      "type": "object",
+      "properties": {
+        "speaker_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "creator",
+            "guest",
+            "moderator",
+            "unknown"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "required": [
+        "speaker_id",
+        "role",
+        "confidence"
+      ],
+      "additionalProperties": false
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "instantaneous": {
+      "type": "boolean"
+    },
+    "correction_of": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "segment_id",
+    "start_ms",
+    "end_ms",
+    "text",
+    "speaker",
+    "languages"
+  ],
+  "additionalProperties": false,
+  "description": "Private JSONL only. Runtime checks end_ms>start_ms, end_ms<=duration, instantaneous=>end=start+1, unique IDs, preserved overlap. Original text offsets are UTF-16 in derived features."
+}

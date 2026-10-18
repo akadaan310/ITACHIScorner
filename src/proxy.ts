@@ -1,0 +1,5 @@
+import type { NextRequest } from "next/server";
+import { updateSession } from "@/lib/supabase/proxy";
+
+export function proxy(request: NextRequest) { return updateSession(request); }
+export const config = { matcher: ["/me/:path*", "/join", "/auth/:path*", "/api/account/:path*", "/studio/:path*"] };

@@ -1,0 +1,20 @@
+{
+  "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+  "route": "/explore",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fontDelayMs": 800,
+  "threshold": 0.1,
+  "fullSuite": {
+    "passed": 114,
+    "observedLayoutShift": 0.008710143412587202
+  },
+  "focusedRecheck": {
+    "passed": 1,
+    "observedLayoutShift": 0.0033271481939666616
+  },
+  "preFixPhoneColdLoadMedian": 0.151,
+  "methodology": "Layout-shift observer, no recent-input entries, document.fonts.ready plus two animation frames; fresh contexts and 800ms delayed woff2 network responses."
+}

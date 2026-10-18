@@ -1,42 +1,38 @@
 # Release gates
 
-Nothing below is optional. Until every gate passes, the site stays a private concept demo with the disclosure visible.
+This branch is unendorsed; production deployment is unverified. Existing Vercel preview checks are documented separately. Local tests do not grant creator rights, complete the corpus, validate theology or authorize spend. Keep noindex/disclosure until a separately authorized release.
 
-## 1. Creator consent
+## Creator and assets
 
-- [ ] Written approval from Itachi for the concept, the name "Itachi's Corner", and every use of her name and branding.
-- [ ] Flip `creator.endorsed` only after approval, then soften the disclosure copy with her agreement.
-- [ ] **Portrait:** replace `public/brand/itachi-masked-portrait.jpg` (cropped from the project owner's low-resolution v1 mockup, UI overlays removed) with an original, high-resolution file supplied or approved by her. Set `creator.portrait.creatorApproved = true` only then.
-- [ ] Confirm the mask embroidery and any background artwork carry no third-party IP (the brief forbids Naruto/Uchiha emblems).
-- [ ] Approved logo/wordmark (the current hex-star mark is original concept art).
+- [ ] Written approval for name, likeness, signature, logo, excerpts and public concept.
+- [ ] Original high-resolution approved masked image replaces altered design-exploration crop; review mask marks/IP.
+- [ ] Creator approval for attribution of any future learning work. Keep creator, editorial and scholarly decisions distinct.
 
-## 2. Religious and editorial review
+## Sources and educational publication
 
-- [ ] Every Qur'an passage verified against Tanzil by a qualified editor (`reviewStatus` → `editor-reviewed`).
-- [ ] Translation licence confirmed for Saheeh International, or swap to a licensed translation.
-- [ ] Reverts HQ answers reviewed by a qualified scholar; keep the "not a ruling" notice.
-- [ ] Trivia and Simulator content reviewed for accuracy and fair representation of other faiths.
+- [ ] Authorized corpus locator/archive checksum and source-rights records supplied.
+- [ ] Canonical channel/playlists/shorts/archives reconciled; inaccessible/deleted/private/rights gaps categorized.
+- [ ] Adequate transcript coverage with exact speaker/span/interval/version/confidence and checked source links.
+- [ ] Reproducible candidates with counterexamples, null controls, independent video/time splits, uncertainty and revalidation of corrected sources.
+- [ ] Multiple real intervals support techniques; distinguish general fundamentals from demonstrated creator approach.
+- [ ] Human content review, qualified theological review, exact Arabic/edition and translation licensing complete.
+- [ ] Unit evidence pack/objective/uncertainty/exercise/rubric approved; creator attribution and release authorized.
+- [ ] No substantive curriculum/book writing before the preceding corpus/discovery/approval gates. Private transcripts stay private.
 
-## 3. Truthful data
+## Accounts and moderation
 
-- [ ] Replace sample events, episodes and catalogue rows with sourced entries (public replay URLs; timestamps only when sourced).
-- [ ] Keep `Sample` / `Demo` labels on anything still illustrative.
-- [ ] No viewer counts, conversion counts or follower metrics unless sourced and approved. Shahadah Stories only with explicit, revocable consent.
+- [x] Separate creator project selected; migrations/private storage/RLS checked on hosted configuration (`frxufmwwbegconolevkw`).
+- [ ] Actual email/callback/expiry/session/logout/export/delete tested with real accounts.
+- [ ] Trusted staff provisioning; anon/member/reviewer/creator/admin isolation verified. No user_metadata/localStorage authorization.
+- [ ] Moderation staffing, reporting/retention/deletion/consent ready before public participation.
+- [ ] Privacy/terms reviewed for actual jurisdiction/operator; no fabricated mentor availability.
 
-## 4. Integrations (if any)
+## Technical and costs
 
-- [ ] Platform-compliant API access, creator authorisation, member OAuth consent, a privacy impact assessment, retention limits and deletion on request.
-- [ ] Never infer identity or attendance from a typed handle.
-
-## 5. Accounts, privacy and legal
-
-- [ ] Real auth with no fake OAuth; data export/delete wired to the backend; a published privacy policy and terms reviewed by counsel.
-- [ ] Moderation staffing for the wall and discussion before enabling them publicly.
-- [ ] Billing only after approval, with no paywalled basic learning, no pay-to-win and no loot boxes.
-
-## 6. Quality
-
-- [ ] `npm run lint && npm run typecheck && npm test && npm run build && npm run test:e2e` green.
-- [ ] axe: zero serious or critical issues on every route (enforced in e2e).
-- [ ] Re-validate official links against the public hub.
-- [ ] Remove `robots: noindex` only at launch.
+- [ ] Delivery lint/typecheck/Vitest/build/SQL-RLS/Playwright pass; axe/keyboard/no-JS/reduced-motion/mobile screenshots reviewed.
+- [ ] Public nav ≤5, one page primary CTA, no live banner/obsolete public labels/demo content.
+- [ ] Private data never shared-cacheable; public reads least-privilege; privileged keys server-only.
+- [ ] Actual corpus token counts/current provider prices and low/medium/high cost scenarios reviewed.
+- [ ] Explicit paid inference approval. Modal ceiling ≤$30 is not authorization to spend.
+- [ ] Optional support/credits proposal privately approved; XP non-purchasable and unrelated to spiritual standing.
+- [ ] Separate explicit deployment authorization. This mission creates no checkout, Stripe product, marketing send, paid job or deployment.

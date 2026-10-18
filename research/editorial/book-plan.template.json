@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "template_only": true,
+  "draft_kind": "book_plan",
+  "state": "blocked_on_corpus",
+  "requested_page_target": {
+    "minimum": 300,
+    "maximum": 400,
+    "scope_requires_validated_evidence": true
+  },
+  "approved_title": null,
+  "chapters": [],
+  "manuscript_reference": null,
+  "source_snapshot": null,
+  "creator_authorization": {
+    "state": "not_requested",
+    "reviewer_id": null,
+    "decision_at": null,
+    "decision_reference": null
+  },
+  "content_review": {
+    "state": "not_requested",
+    "reviewer_id": null,
+    "decision_at": null,
+    "decision_reference": null
+  },
+  "publication_allowed": false
+}

@@ -1,0 +1,74 @@
+
+> itachis-corner@0.1.0 build
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 23ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.6s
+  Running TypeScript ...
+  Finished TypeScript in 4.9s ...
+  Collecting page data using 4 workers ...
+  Generating static pages using 4 workers (0/43) ...
+  Generating static pages using 4 workers (10/43) 
+  Generating static pages using 4 workers (21/43) 
+  Generating static pages using 4 workers (32/43) 
+✓ Generating static pages using 4 workers (43/43) in 1018ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /afterglow
+├ ○ /afterglow/before
+├   /afterglow/episodes/[id]
+│ ├ ● /afterglow/episodes/sample-episode-01
+│ └ ● /afterglow/episodes/sample-episode-02
+├ ○ /afterglow/gallery
+├ ○ /afterglow/live
+├ ○ /afterglow/vault
+├ ○ /atlas
+├ ○ /discover
+├ ○ /dojo
+├ ○ /dojo/path
+├ ○ /dojo/result
+├ ○ /events
+├ ○ /faq
+├ ○ /icon.svg
+├ ○ /join
+├ ○ /library
+├ ○ /library/preview
+├ ○ /manifest.webmanifest
+├ ○ /me
+├ ○ /me/afterglow
+├ ○ /me/constellation
+├ ○ /me/journal
+├ ○ /me/quests
+├ ○ /me/settings
+├ ○ /membership
+├ ○ /onboarding
+├ ○ /opengraph-image
+├ ○ /privacy
+├ ○ /reverts
+├   /reverts/ask/[id]
+│ ├ ● /reverts/ask/q-quran-language
+│ ├ ● /reverts/ask/q-family
+│ ├ ● /reverts/ask/q-mistakes
+│ └ ● /reverts/ask/q-silly
+├ ○ /stories
+├ ○ /studio
+├ ○ /studio/creator
+├ ○ /terms
+└ ○ /watch
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

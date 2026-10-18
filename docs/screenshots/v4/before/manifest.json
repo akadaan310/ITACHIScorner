@@ -1,0 +1,1225 @@
+{
+  "phase": "before",
+  "capturedAt": "2026-10-18T04:03:46.685Z",
+  "baseURL": "http://127.0.0.1:4000",
+  "sourceCommit": "7a8ce5efda461ebab717a03ed1d9c73528f92c9d",
+  "productionBuildId": "Yn1xtFyXlCt8v7q0GwXa_",
+  "sourceHashes": {
+    "package-lock.json": "6180694655adbae34fcfa4c0640774632d4d2c058b91a04cfd785b4997f34685",
+    "src/app/page.tsx": "6ac82ca0aaaa475f0433c8caad6cc4d1dee6afc9343e5799b8c32f66f38e7ed6",
+    "src/app/globals.css": "6741531e961cf9d6cf8ef9a9e711c63d233e9a42feea936dc14205141aea9cdd",
+    "src/components/hero.tsx": "fa51f4133cac23eebf2adfcfde3123b5c8118574b601375e3c055bb7bc23ea42",
+    "src/components/question-desk.tsx": "c8ea1b19dca42b2801ce19400b810b5675b5d7bb9e1693e081e298ecd9d58339",
+    "src/components/shell.tsx": "d9f25fc11959789af6583a1e38154510708539322e9fce6b61a89ab4e870096e",
+    "scripts/capture-v4.mjs": "d4318c995539a4cc4ebef9f4d2aee064297823b548ad9c8b22ca611b77d62aaa"
+  },
+  "browser": "154.0.8037.57",
+  "widths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "routes": [
+    [
+      "home",
+      "/"
+    ],
+    [
+      "explore",
+      "/explore"
+    ],
+    [
+      "learn",
+      "/learn"
+    ],
+    [
+      "practice",
+      "/practice"
+    ],
+    [
+      "community",
+      "/community"
+    ],
+    [
+      "my-corner",
+      "/me"
+    ],
+    [
+      "about",
+      "/about"
+    ],
+    [
+      "creator",
+      "/studio/creator"
+    ],
+    [
+      "studio",
+      "/studio"
+    ],
+    [
+      "source",
+      "/watch"
+    ],
+    [
+      "archive",
+      "/afterglow/vault"
+    ],
+    [
+      "session-notes",
+      "/session-notes"
+    ],
+    [
+      "join",
+      "/join"
+    ],
+    [
+      "onboarding",
+      "/onboarding"
+    ],
+    [
+      "library",
+      "/library"
+    ],
+    [
+      "book-preview",
+      "/library/preview"
+    ],
+    [
+      "settings",
+      "/me/settings"
+    ],
+    [
+      "journal",
+      "/me/journal"
+    ],
+    [
+      "support",
+      "/support"
+    ],
+    [
+      "faq",
+      "/faq"
+    ],
+    [
+      "privacy",
+      "/privacy"
+    ],
+    [
+      "terms",
+      "/terms"
+    ],
+    [
+      "new-muslims",
+      "/reverts"
+    ]
+  ],
+  "methodology": "Fresh browser contexts; actual Chromium production rendering. All core routes captured both full-page and first fold at five widths. Full scroll and image decode before captures. Navigation clicked, source details expanded, question draft review/copy/clear tested, sign-in attempted safely with auth submission interception, keyboard and reduced-motion checked. Generic QA input is visitor-owned test text, never creator material. Local unconfigured auth cannot prove hosted lifecycle.",
+  "files": [
+    {
+      "file": "home-360-full.jpg",
+      "sha256": "b4de6be7a630aa25c84f6302a2ead421f7f8c308eb22699d42175ba56724b4da"
+    },
+    {
+      "file": "home-360-fold.jpg",
+      "sha256": "b2fad075c71356dbf846707c2e17c7875310f1055c2ff1ea4ddf16bee65ab1d7"
+    },
+    {
+      "file": "home-360-section-1.jpg",
+      "sha256": "98f9a08c0a7407de40e02131edeb1e546d66362db477a86c95f530bc33f83895"
+    },
+    {
+      "file": "home-360-section-2.jpg",
+      "sha256": "2f60d91ac7fa39a3611acedaace4170177d9308e1c0aa8f0933ccb8e1ee8e484"
+    },
+    {
+      "file": "home-360-section-3.jpg",
+      "sha256": "dc8e13a8a0917259e3ff40cc418e41852459acd1387dd858c35a0315ddaa8e19"
+    },
+    {
+      "file": "home-360-section-4.jpg",
+      "sha256": "fb86300737c460db4e05140e0eb25abe04a923c8dc2e28650c8e8c7262c14fba"
+    },
+    {
+      "file": "home-360-section-5.jpg",
+      "sha256": "7d7f2b54a70619251ab4dfe787f756a0d6be32869210d480c1c206b88019b15a"
+    },
+    {
+      "file": "home-360-section-6.jpg",
+      "sha256": "779584e4278ddb984f5b805d4dcd7dbed5c33f54fff62f958fd1b3ffd3768a59"
+    },
+    {
+      "file": "explore-360-full.jpg",
+      "sha256": "113795886b7b99a94a99f48baf5fb31cf871b59080c3a3c90fb6d911b58c5954"
+    },
+    {
+      "file": "explore-360-fold.jpg",
+      "sha256": "f0e315cac4ea3d65c761802fdd6bd2e1f346ceee4259320fd283f1d0e474e1c1"
+    },
+    {
+      "file": "learn-360-full.jpg",
+      "sha256": "ee2e42bb9ac4f4906921c0c1409ae7e9669004a8b543c74ff90f65fbce407388"
+    },
+    {
+      "file": "learn-360-fold.jpg",
+      "sha256": "f6bf17ca8ec9e0a127f632de77e187e85eba6df62337550a428292164fe70c4f"
+    },
+    {
+      "file": "practice-360-full.jpg",
+      "sha256": "e0b7c73771a5b408cb0bd26a985ec6f6016297efc180ca0f064dbfe5f8e66c64"
+    },
+    {
+      "file": "practice-360-fold.jpg",
+      "sha256": "2a6dac1c1e8ed92a2ce4ca984894afb486a8a08e474e9f4ec34218a7d1e03d5e"
+    },
+    {
+      "file": "community-360-full.jpg",
+      "sha256": "eb85c59527966976e0e1b89a2d907a8a37537a40fe54526fbe07b0806e16a15a"
+    },
+    {
+      "file": "community-360-fold.jpg",
+      "sha256": "4801f1e018b84a5d488c173fa17c59eddc6b07c5f5c1fb6f85c88729c8264f18"
+    },
+    {
+      "file": "my-corner-360-full.jpg",
+      "sha256": "2617521003b97ecf10ced4a4622ec6c82a417008c8d4a632b8e7501f847884a7"
+    },
+    {
+      "file": "my-corner-360-fold.jpg",
+      "sha256": "8901712b695716c278aad8a7fd9f812b5b58dd1d44bcf852b01a93bf1895f809"
+    },
+    {
+      "file": "about-360-full.jpg",
+      "sha256": "2c2fe1c8a334541a34d58884121b155aac59aa352240ff8fcbe9caeeaf90fe70"
+    },
+    {
+      "file": "about-360-fold.jpg",
+      "sha256": "f9dbf88d4fd6a7d107e7db97e5b4585ab27a7a31bc02ea7e7928c8d515297e21"
+    },
+    {
+      "file": "creator-360-full.jpg",
+      "sha256": "22dcba5c0152ceb0ed3dfaa8d7614bae10dd7d1fea83c1c0fc096e1af8a3b943"
+    },
+    {
+      "file": "creator-360-fold.jpg",
+      "sha256": "0184e653bf5bbbcbfbddf4a16f2e988f1415d29fedab4af10738a556065d660d"
+    },
+    {
+      "file": "studio-360-full.jpg",
+      "sha256": "8d5e8346cf4de28bc516ad2c22c8281aa3be51b00845af6bbbc32c095c4af486"
+    },
+    {
+      "file": "studio-360-fold.jpg",
+      "sha256": "5b479f4606b6bbe64a204f4d57e8ef83377a83ef6acbfcd6530a34b8fe04f03e"
+    },
+    {
+      "file": "source-360-full.jpg",
+      "sha256": "6934d6eaac1259665fd312a5161b58215d199647a3b421a612211ae5c2e7774b"
+    },
+    {
+      "file": "source-360-fold.jpg",
+      "sha256": "f0e315cac4ea3d65c761802fdd6bd2e1f346ceee4259320fd283f1d0e474e1c1"
+    },
+    {
+      "file": "archive-360-full.jpg",
+      "sha256": "67e48658ad286c3249e884ff9b682998d89c7f74f5dc9323bcce58c56b1819cd"
+    },
+    {
+      "file": "archive-360-fold.jpg",
+      "sha256": "0b93cb3fc6485138f3ce9bf4b139cbdda7a18f6a1dc68471d470e896881ca3f5"
+    },
+    {
+      "file": "session-notes-360-full.jpg",
+      "sha256": "8a08f15cc746e07ed7b048a617fb3fa14fc103575a273daf9c18389e4cae2d6a"
+    },
+    {
+      "file": "session-notes-360-fold.jpg",
+      "sha256": "7da58154ffd76b70a839bcec71d8c07a88944d43d07076b31b1d902e6343dbeb"
+    },
+    {
+      "file": "join-360-full.jpg",
+      "sha256": "7b076ac28cd877af9ca31ab6a7ffb33de262092faf00ad3bfb4f001646326040"
+    },
+    {
+      "file": "join-360-fold.jpg",
+      "sha256": "6c2369cff395399aa38f508bc4f2d6e0016ac2b6e81e0e2df65ceab9ff8dff1b"
+    },
+    {
+      "file": "onboarding-360-full.jpg",
+      "sha256": "7b076ac28cd877af9ca31ab6a7ffb33de262092faf00ad3bfb4f001646326040"
+    },
+    {
+      "file": "onboarding-360-fold.jpg",
+      "sha256": "6c2369cff395399aa38f508bc4f2d6e0016ac2b6e81e0e2df65ceab9ff8dff1b"
+    },
+    {
+      "file": "library-360-full.jpg",
+      "sha256": "796720ad3d65f8af31258d759ef7bdcf0a0db580df62edf2bcf7e255c2f224eb"
+    },
+    {
+      "file": "library-360-fold.jpg",
+      "sha256": "669f08df09375feacd547d16922d1e12bc8168d7fa24cc0bf9297bc30957b711"
+    },
+    {
+      "file": "book-preview-360-full.jpg",
+      "sha256": "09f4ed567673a15a6f5da2182cd9fbbee6e347f804035a73d649801e559ca24f"
+    },
+    {
+      "file": "book-preview-360-fold.jpg",
+      "sha256": "739e2ac2cb8a1be0e0b80dcb9ea47d3adbbb503c5d53171aeb04155dd34fd429"
+    },
+    {
+      "file": "settings-360-full.jpg",
+      "sha256": "264dda4ef683eb39cad73f2a39821408456028e9a3d19902ef7be77a1e0448d6"
+    },
+    {
+      "file": "settings-360-fold.jpg",
+      "sha256": "d52405b292836b9fb8384187305bfee15def2e3c3f49d1d1d16f915531e710e4"
+    },
+    {
+      "file": "journal-360-full.jpg",
+      "sha256": "740bdf98dfdabbf31b2c699b20b7cbea3efa51d70d9492f5b6176de3ad23a752"
+    },
+    {
+      "file": "journal-360-fold.jpg",
+      "sha256": "bca0513087135a35ef008e0c7ee7c8252c667c2a7c3b33f549cc099f71bf369c"
+    },
+    {
+      "file": "support-360-full.jpg",
+      "sha256": "9613d625fee41f5be81156f903a354314780f3151731459a3127fc675070e4d6"
+    },
+    {
+      "file": "support-360-fold.jpg",
+      "sha256": "1c952a0716172b90dffba0463d666f34af944f6a6fbcc4b2d2d9fcb2e984b6fd"
+    },
+    {
+      "file": "faq-360-full.jpg",
+      "sha256": "591a967037a8ae44435ca873b51e80f533fb29c3d12f04595757990e279d2194"
+    },
+    {
+      "file": "faq-360-fold.jpg",
+      "sha256": "7518f05ab23b9c480494239e59cab2ee08f1e09ce3f9ffee12cbfc3fe9b2beac"
+    },
+    {
+      "file": "privacy-360-full.jpg",
+      "sha256": "dd3167ced9e3b33d260f7fb0fd1131c135e4f38d6c762c877aadd0cc8a05878b"
+    },
+    {
+      "file": "privacy-360-fold.jpg",
+      "sha256": "a9e48ed738a9feeec7775eb38b8f4390d2654c3b5382f9a629c17541deee87e9"
+    },
+    {
+      "file": "terms-360-full.jpg",
+      "sha256": "1897a92ad48b71b7b73aea754793729ad1ce5674b1fb8d7865ac1e85633199d2"
+    },
+    {
+      "file": "terms-360-fold.jpg",
+      "sha256": "e7974a7ca7e8b4553aab3967a5bf38db21ce5b6224089ae04bee9f08cb604ce1"
+    },
+    {
+      "file": "new-muslims-360-full.jpg",
+      "sha256": "101ec0639e70e0166719c537e66f4bd1f0dc0c240a0488572172ea93cb2d8d07"
+    },
+    {
+      "file": "new-muslims-360-fold.jpg",
+      "sha256": "cef544717ad65bf661b39476c047e78d0c204b428fdf21b5c6ca2398e8128201"
+    },
+    {
+      "file": "home-390-full.jpg",
+      "sha256": "da3c50d82981eed8c79174374cf973a8ae5e28a2c09dad5b414c84311fef78c0"
+    },
+    {
+      "file": "home-390-fold.jpg",
+      "sha256": "56c611d0d0be66e54a562d3b16e3e029c4f3eddefe1d12c686e6c0ef801a18a3"
+    },
+    {
+      "file": "home-390-section-1.jpg",
+      "sha256": "36c595f8a584124a6576588637c06fe4d17b8f7dde4ad59feffcd3b389aaac30"
+    },
+    {
+      "file": "home-390-section-2.jpg",
+      "sha256": "8e91855e344d083bed0fdddb1e096d7b33d63a3c03cf3db995a44ddd59015b87"
+    },
+    {
+      "file": "home-390-section-3.jpg",
+      "sha256": "c72a5c364768ad87a4ec0faf925c9c9f0797d8e2063f57e4c61a05992f1fa06a"
+    },
+    {
+      "file": "home-390-section-4.jpg",
+      "sha256": "8f9f44d931ec987934b2270a23ab66dafc53068f47e8a7ca2a1a7fcdf64cdd2a"
+    },
+    {
+      "file": "home-390-section-5.jpg",
+      "sha256": "49f7c33fa4353a073127a230d07c9035ab41f15757acae082910c6ced72d93f4"
+    },
+    {
+      "file": "home-390-section-6.jpg",
+      "sha256": "1bee766e5d70b1699237d7cacfa523e8dbfc153ca47be4fec33028891b27fd59"
+    },
+    {
+      "file": "explore-390-full.jpg",
+      "sha256": "974b6fea955fd13f26e82fda434f6a1018ae242e80ef22b747e98abd4b6cb66f"
+    },
+    {
+      "file": "explore-390-fold.jpg",
+      "sha256": "65578b4c2f4090921d0e068c42219c9f1f958253a4c7e03eec439d3efec35a7b"
+    },
+    {
+      "file": "learn-390-full.jpg",
+      "sha256": "ce5b1dc86ab9c93764a770c594de01e764fe2d8e3d6b09a05ce335c74dddfd37"
+    },
+    {
+      "file": "learn-390-fold.jpg",
+      "sha256": "9ae34b167e088211b37cee6334a2cfc7ebae83f2f13ca7d52aad3aceca51f839"
+    },
+    {
+      "file": "practice-390-full.jpg",
+      "sha256": "f10fa26b9949e3109cc740bf900f724013e5ceefede1afa0d0c4d7b1c77e5b9b"
+    },
+    {
+      "file": "practice-390-fold.jpg",
+      "sha256": "20d82c7baf5ccfaf52e3d6db0ef595dc5d4c21bd7c48c780c5a040cd30f1341b"
+    },
+    {
+      "file": "community-390-full.jpg",
+      "sha256": "0bfa611277c9d1ea65965b902e46ab92807012bfd7e76e7ab1f60d560f3c724e"
+    },
+    {
+      "file": "community-390-fold.jpg",
+      "sha256": "531987aa983ccdaac1553b761a877dcff3d1d3fd8d6946a11a79b65da0121d8b"
+    },
+    {
+      "file": "my-corner-390-full.jpg",
+      "sha256": "4b2d96c072beae77b4892c5ccc10db453558cecc833620faadaddef0f1b8ed14"
+    },
+    {
+      "file": "my-corner-390-fold.jpg",
+      "sha256": "1956a049048159857eff5618b5368d86ac4258060d1af4c64dc29807a6ce211a"
+    },
+    {
+      "file": "about-390-full.jpg",
+      "sha256": "6012d6e73683221d759331268314ffc11fa32bcdadd71fcdbd12fb931b45043e"
+    },
+    {
+      "file": "about-390-fold.jpg",
+      "sha256": "dcbb4c0101452f55b92903f5cb99c90c082775cfe9c504997a9c82526a0d731e"
+    },
+    {
+      "file": "creator-390-full.jpg",
+      "sha256": "315fa65b43c552577d4e2375e32d90b9cbbdb7382475f1afc5fd3e7afa3b3ee0"
+    },
+    {
+      "file": "creator-390-fold.jpg",
+      "sha256": "17363cb1ac2f872335f8ccbedcad87468e9e07a512ff1f5a9662ada45fc0580b"
+    },
+    {
+      "file": "studio-390-full.jpg",
+      "sha256": "8b7b008ca16d34e5c7938df8ad7158314e149934f3a11fb897f442b1183b18a0"
+    },
+    {
+      "file": "studio-390-fold.jpg",
+      "sha256": "1f87d3fc00063a9f0f39a0f0bf174f6db291eacc5574582f7096c1fdb261b916"
+    },
+    {
+      "file": "source-390-full.jpg",
+      "sha256": "610780b52e30310457b4c2d929aa20a796b46b68967b7ce33f0c5fb369079e85"
+    },
+    {
+      "file": "source-390-fold.jpg",
+      "sha256": "3c9f5f1762f180e5fa977d82d6287845be62cb388acbcf139bd9ce390cd98b84"
+    },
+    {
+      "file": "archive-390-full.jpg",
+      "sha256": "4ef6cb05c4678f77867e5b7032494130f259cbc194dc09902cb261ee896e4cbb"
+    },
+    {
+      "file": "archive-390-fold.jpg",
+      "sha256": "ce9c2fd727617bc2733d05c665919e2031440c578be301251360c098d3e65df3"
+    },
+    {
+      "file": "session-notes-390-full.jpg",
+      "sha256": "4ef6cb05c4678f77867e5b7032494130f259cbc194dc09902cb261ee896e4cbb"
+    },
+    {
+      "file": "session-notes-390-fold.jpg",
+      "sha256": "78cdf0181cf1998341998705bf2c8e04bf7479ab00571a0a7dafa29d9cf70bbc"
+    },
+    {
+      "file": "join-390-full.jpg",
+      "sha256": "4bf0c754392e1162630d8a645863f2aa2e00bedf8463201d5efb84f6f0c3b3bc"
+    },
+    {
+      "file": "join-390-fold.jpg",
+      "sha256": "1347ce4d0525f28d2b06f71393cf69c0752c721c184a2126c73d55e3bab0169e"
+    },
+    {
+      "file": "onboarding-390-full.jpg",
+      "sha256": "6e019a2821d51e4d152a165bb6b2b6d070d53e138d93f3a237c04d9e6aea8484"
+    },
+    {
+      "file": "onboarding-390-fold.jpg",
+      "sha256": "570fe5ff187caa766bb98eff74113d4c5b8b0c83faf93afe69d602360b52d8ed"
+    },
+    {
+      "file": "library-390-full.jpg",
+      "sha256": "8bf362d47ad117ba68f4bef3a6c548278caf1dd0d37d59fb0bb8b391679b7180"
+    },
+    {
+      "file": "library-390-fold.jpg",
+      "sha256": "d1be345f4c90f1812bed4bcefaefa967daff213da528fe5a754d983c6fbc7160"
+    },
+    {
+      "file": "book-preview-390-full.jpg",
+      "sha256": "aad55bbc822823fbdb2443d6611b43b0480ed9d66ff8b832d70e5aebb5a67bc3"
+    },
+    {
+      "file": "book-preview-390-fold.jpg",
+      "sha256": "af18369586b7bbb9f565f6e5ab8197f51bb5fa5f1570dca09e87099b14924b2f"
+    },
+    {
+      "file": "settings-390-full.jpg",
+      "sha256": "679aacb50595444947ba5e4dfd6ad351de2c18395f0e5618f36c0d17b2bbb8de"
+    },
+    {
+      "file": "settings-390-fold.jpg",
+      "sha256": "ba2ee491da1917eddced6ddff8affa77efb247360add77a18cda08d45e83b2fc"
+    },
+    {
+      "file": "journal-390-full.jpg",
+      "sha256": "4b490719617f727e040b46a9d48f20f7f4d6c7d136c705dbf91c3c7c92599c7d"
+    },
+    {
+      "file": "journal-390-fold.jpg",
+      "sha256": "ba697e17ce06c173bf2b425ac0134dd5a254e79e0f8cce5230b1f9d19c618a62"
+    },
+    {
+      "file": "support-390-full.jpg",
+      "sha256": "7a2ad0eedfe2b45181e58a8ea99cc358edee8eda901af73a844e036a5c1f9752"
+    },
+    {
+      "file": "support-390-fold.jpg",
+      "sha256": "7dca6b48d1aa87d927f8fbbc4dc1ac45eee707fff1c13241152368ec565d03ff"
+    },
+    {
+      "file": "faq-390-full.jpg",
+      "sha256": "3601c4adac131569494566ed26f66f665961d323c5e56bbe0b1ab1971be64519"
+    },
+    {
+      "file": "faq-390-fold.jpg",
+      "sha256": "2286cb39babcd1bbc69fd4c93554bfd5b3c36ed1d96bb31ac22d7b9b88895d52"
+    },
+    {
+      "file": "privacy-390-full.jpg",
+      "sha256": "7eb0dcb1d72382dadb8d340671e7993c75b522622c8cdbe791e931444d3eac4d"
+    },
+    {
+      "file": "privacy-390-fold.jpg",
+      "sha256": "4c3a493887e694c4436a0957ebd30fb048c51edb2c12f8dca6b4a6351f2532d7"
+    },
+    {
+      "file": "terms-390-full.jpg",
+      "sha256": "713fb516a75a9d94330cfe771b863ce2bdcb4612e378fa39ff42e4aa6c849909"
+    },
+    {
+      "file": "terms-390-fold.jpg",
+      "sha256": "bd69c4d6451dd861978c75c3b5752e9f010b1edff9885cebf23f7ece89fb1188"
+    },
+    {
+      "file": "new-muslims-390-full.jpg",
+      "sha256": "ec8471361e163c10dd5e64e6ce801e3b9cc0f586fca9ccb67b223a27e785344d"
+    },
+    {
+      "file": "new-muslims-390-fold.jpg",
+      "sha256": "850767dfdd8eaef592c09c0b39292f0e3356da9924317efa31892fb9c06e0a7c"
+    },
+    {
+      "file": "navigation-390-open.jpg",
+      "sha256": "50de630d3c77c184a93b6fb5338da7cbd9f913e49790a537756cd743a8237ff9"
+    },
+    {
+      "file": "disclosures-390-open.jpg",
+      "sha256": "774f6b799d05c29a90bea7c1d1b0669e65087fb75e54c5af28833400a06a0e60"
+    },
+    {
+      "file": "question-desk-390-editing.jpg",
+      "sha256": "6c3ff553bd8d1af29a1a1568859b96efa1028da47603e564f635abcc937dbb1b"
+    },
+    {
+      "file": "question-desk-390-review.jpg",
+      "sha256": "b643a7437c3dda87a7aeeed688dfa1a1f9c7391551a716a871ec5bdc3fb25209"
+    },
+    {
+      "file": "question-desk-390-cleared.jpg",
+      "sha256": "1eaa6787c7d0523fa22c79467f400a1104e446f3fb21553cbec780d197d698af"
+    },
+    {
+      "file": "signup-390-attempt.jpg",
+      "sha256": "a413aad405b922d0a51e984c21062bd3f382f07dc8bed3fae53ea09caa69708f"
+    },
+    {
+      "file": "keyboard-390-skip-focus.jpg",
+      "sha256": "e201d142dc8b1a3ec5c48b0ca2a35dac2a90cac2e1d892cffe450ea06c5dfab9"
+    },
+    {
+      "file": "home-390-reduced-motion.jpg",
+      "sha256": "fd3866f4e1044b43d6f45d73ee24d40ad8f627521c6233864781f6b8fede447a"
+    },
+    {
+      "file": "home-768-full.jpg",
+      "sha256": "0bd075c56d7ba2b96da04121c9e26a1db86318d1e8c293378b12cc74b4819f25"
+    },
+    {
+      "file": "home-768-fold.jpg",
+      "sha256": "9c1f05904f4529853e07e96db4e05cb8e36967d1af6fd061cd9ba3ed47cb6a33"
+    },
+    {
+      "file": "home-768-section-1.jpg",
+      "sha256": "85d8435e40dac7b11fa4302351a06e38950931e6f7447e8b455c0de4a3f6648e"
+    },
+    {
+      "file": "home-768-section-2.jpg",
+      "sha256": "5934df9296437e2dfd27bfb7e27623af0102251c80d6e320d40b3c2dd45d76eb"
+    },
+    {
+      "file": "home-768-section-3.jpg",
+      "sha256": "f5fd1721a1665929e56e0f1f62934efaa995771feecee67530d84e35ce53a9d6"
+    },
+    {
+      "file": "home-768-section-4.jpg",
+      "sha256": "e9591892537b11eee81d53042666f4253be8558a1a9a9ec6c40b3b6bfa84c68c"
+    },
+    {
+      "file": "home-768-section-5.jpg",
+      "sha256": "68e1a5008c83863ea625e0b41774cab734fec6ca081d0946a4128952466ab242"
+    },
+    {
+      "file": "home-768-section-6.jpg",
+      "sha256": "e52312d9809361dc0f7c503610ca4e472ad229139e72da029b0a1572dc67643a"
+    },
+    {
+      "file": "explore-768-full.jpg",
+      "sha256": "631a9c322cb2de7743f51c46bec9e67cfede9cae68e0b7e4846bf289bc0816d9"
+    },
+    {
+      "file": "explore-768-fold.jpg",
+      "sha256": "2d0a1c1c5629db9ae311b7c99478e3976cf47cc0ee6f95555886f917dfa9bfd3"
+    },
+    {
+      "file": "learn-768-full.jpg",
+      "sha256": "973cb7b7fc0b0047eb5fe2d7a36631ba707a635e9f76a46b3df82ad241101cc6"
+    },
+    {
+      "file": "learn-768-fold.jpg",
+      "sha256": "03eff240c88db5967a12db18b636eafe4c1ec35db304334ea88fd98584572b3a"
+    },
+    {
+      "file": "practice-768-full.jpg",
+      "sha256": "3c551b48545563480afe793c28bb3cdc3e20e794f15893e1b1d9155dc767686f"
+    },
+    {
+      "file": "practice-768-fold.jpg",
+      "sha256": "e0651c401b9f91a314128f33b6f58cf62b1c3ea27f587ecb3abfaaa781d01901"
+    },
+    {
+      "file": "community-768-full.jpg",
+      "sha256": "13e8ad1fe4e8a5005a7bfe72d2b1f1489e6ceb21459345b128f06d3c5653ca7a"
+    },
+    {
+      "file": "community-768-fold.jpg",
+      "sha256": "338e5b9a21192168321bfb456fb0654121c1b423dc8560c2c207c96590d1b193"
+    },
+    {
+      "file": "my-corner-768-full.jpg",
+      "sha256": "ad8e0418bbc5e979eee6b96d79a04430d5d7fccabf8043e2e308c7dbde3559ae"
+    },
+    {
+      "file": "my-corner-768-fold.jpg",
+      "sha256": "ad8e0418bbc5e979eee6b96d79a04430d5d7fccabf8043e2e308c7dbde3559ae"
+    },
+    {
+      "file": "about-768-full.jpg",
+      "sha256": "e42a52040f716d4308622479d760ce7654c84ed14324ea4370dff2d5f3dccf90"
+    },
+    {
+      "file": "about-768-fold.jpg",
+      "sha256": "1ed47c576ae13335ebbe7e37935f14920da49218cf82d23284f2d2c0ea2c5430"
+    },
+    {
+      "file": "creator-768-full.jpg",
+      "sha256": "c198e67d3fcc3eb5fb296659acffda894ff979256630797bbb29ada49b3f9564"
+    },
+    {
+      "file": "creator-768-fold.jpg",
+      "sha256": "c198e67d3fcc3eb5fb296659acffda894ff979256630797bbb29ada49b3f9564"
+    },
+    {
+      "file": "studio-768-full.jpg",
+      "sha256": "c198e67d3fcc3eb5fb296659acffda894ff979256630797bbb29ada49b3f9564"
+    },
+    {
+      "file": "studio-768-fold.jpg",
+      "sha256": "c198e67d3fcc3eb5fb296659acffda894ff979256630797bbb29ada49b3f9564"
+    },
+    {
+      "file": "source-768-full.jpg",
+      "sha256": "631a9c322cb2de7743f51c46bec9e67cfede9cae68e0b7e4846bf289bc0816d9"
+    },
+    {
+      "file": "source-768-fold.jpg",
+      "sha256": "2d0a1c1c5629db9ae311b7c99478e3976cf47cc0ee6f95555886f917dfa9bfd3"
+    },
+    {
+      "file": "archive-768-full.jpg",
+      "sha256": "73496ec408f9d3c51f33bfa4382955c0efe7b8a337dfe23f0154b032f0e1685c"
+    },
+    {
+      "file": "archive-768-fold.jpg",
+      "sha256": "7d16422466b4b921e90ccfe18924d8fd178c3bbb1b803813464124d362eb8cf0"
+    },
+    {
+      "file": "session-notes-768-full.jpg",
+      "sha256": "73496ec408f9d3c51f33bfa4382955c0efe7b8a337dfe23f0154b032f0e1685c"
+    },
+    {
+      "file": "session-notes-768-fold.jpg",
+      "sha256": "7d16422466b4b921e90ccfe18924d8fd178c3bbb1b803813464124d362eb8cf0"
+    },
+    {
+      "file": "join-768-full.jpg",
+      "sha256": "ea4d29501db41038a3d19bd4f15e182fae173e7d83b4aaf09c2dcfc530be3a4f"
+    },
+    {
+      "file": "join-768-fold.jpg",
+      "sha256": "ea4d29501db41038a3d19bd4f15e182fae173e7d83b4aaf09c2dcfc530be3a4f"
+    },
+    {
+      "file": "onboarding-768-full.jpg",
+      "sha256": "ea4d29501db41038a3d19bd4f15e182fae173e7d83b4aaf09c2dcfc530be3a4f"
+    },
+    {
+      "file": "onboarding-768-fold.jpg",
+      "sha256": "ea4d29501db41038a3d19bd4f15e182fae173e7d83b4aaf09c2dcfc530be3a4f"
+    },
+    {
+      "file": "library-768-full.jpg",
+      "sha256": "7b0d38e2257413331d11eb6b213f1434072e68e0026b7cac7519d9fdf402e58b"
+    },
+    {
+      "file": "library-768-fold.jpg",
+      "sha256": "df7648a036a47d55f289e3dc45b3d789c80782f5329d3a8d8b2a8557d5114beb"
+    },
+    {
+      "file": "book-preview-768-full.jpg",
+      "sha256": "7b0d38e2257413331d11eb6b213f1434072e68e0026b7cac7519d9fdf402e58b"
+    },
+    {
+      "file": "book-preview-768-fold.jpg",
+      "sha256": "df7648a036a47d55f289e3dc45b3d789c80782f5329d3a8d8b2a8557d5114beb"
+    },
+    {
+      "file": "settings-768-full.jpg",
+      "sha256": "bd8e2632778e1a6526a7639b2fd102a510619f612d36ca2dcdecdc6e4e921316"
+    },
+    {
+      "file": "settings-768-fold.jpg",
+      "sha256": "bd8e2632778e1a6526a7639b2fd102a510619f612d36ca2dcdecdc6e4e921316"
+    },
+    {
+      "file": "journal-768-full.jpg",
+      "sha256": "98dd9d031cd1359c622299dfe828d3755be81f7263f63604d5c79321c94355a1"
+    },
+    {
+      "file": "journal-768-fold.jpg",
+      "sha256": "98dd9d031cd1359c622299dfe828d3755be81f7263f63604d5c79321c94355a1"
+    },
+    {
+      "file": "support-768-full.jpg",
+      "sha256": "22952dd68c50f3ec8a2adf6e356afe0728a2a310a906920f365947f3ea0b9bf4"
+    },
+    {
+      "file": "support-768-fold.jpg",
+      "sha256": "50a56a5d5a76173376693de6ce49c574d02bd246095c6d239c43fab4501d22ce"
+    },
+    {
+      "file": "faq-768-full.jpg",
+      "sha256": "e55807e4b59a24835e7d8349dadb1221cc2874fcb78f1ce05453c94a2e6e5c21"
+    },
+    {
+      "file": "faq-768-fold.jpg",
+      "sha256": "c353f6d974b14421ade1d68d808c538524f9e57cf376c1888e59a4a41c23a308"
+    },
+    {
+      "file": "privacy-768-full.jpg",
+      "sha256": "9603314a7d69a5010d2fc1925fbe8d13b12bdcafe54454c352894911e789eee2"
+    },
+    {
+      "file": "privacy-768-fold.jpg",
+      "sha256": "98f8047b2d63503469de1e233f8e9000a60cf00a6d02178a89355394bb36a16c"
+    },
+    {
+      "file": "terms-768-full.jpg",
+      "sha256": "95e966ddc5058a9a4bf1fef0160e986a9cb7da3f09dcae6e35b950e92629b93b"
+    },
+    {
+      "file": "terms-768-fold.jpg",
+      "sha256": "dbfb55025f62928b54a577acc9eed0dbde2cc6fb737f1c3538791e905466547b"
+    },
+    {
+      "file": "new-muslims-768-full.jpg",
+      "sha256": "b4708e10aeeb33429fe059367988f72684a87f48633ebba3d9b3b923e6751264"
+    },
+    {
+      "file": "new-muslims-768-fold.jpg",
+      "sha256": "0b3d5d7500d926163504de1751a58fc5cbd398a02c1f85e0e9e67b6fb5cbbffb"
+    },
+    {
+      "file": "home-1280-full.jpg",
+      "sha256": "e58efb2cf9dff2c57b8579532b6d33b64d3d2b1fe83c202de7e32b10f231e63d"
+    },
+    {
+      "file": "home-1280-fold.jpg",
+      "sha256": "8576eac95afbd271bd4e9846c03822a95f89fd00c176507058ca1ed66b07c6ec"
+    },
+    {
+      "file": "home-1280-section-1.jpg",
+      "sha256": "2786d142af97b88fd7d33032d77eb279291e0270132c5d085935f6867f2c03c1"
+    },
+    {
+      "file": "home-1280-section-2.jpg",
+      "sha256": "c347eec0bf463cd3fa82bd0831331f1ebb32a1a1c97f5f56974d2370d3ec9192"
+    },
+    {
+      "file": "home-1280-section-3.jpg",
+      "sha256": "05c65e03d2da4233c3d891ae10643bc4d6ac185c49bc9fea86c5a2c7d34a3278"
+    },
+    {
+      "file": "home-1280-section-4.jpg",
+      "sha256": "b74e3d939418d33f0bd143e2f3e0bc6228fd7271dad2558205c39204892ee881"
+    },
+    {
+      "file": "home-1280-section-5.jpg",
+      "sha256": "145208c9b6b377ac23f05a8ca6f1623ff0ea3cea7362e58b9c8e32205c5bffc6"
+    },
+    {
+      "file": "home-1280-section-6.jpg",
+      "sha256": "8f03c086fb54c54f990f3c81cb80c52ffefa858b7a55c4bb6459ebdaa37118b8"
+    },
+    {
+      "file": "explore-1280-full.jpg",
+      "sha256": "eeebd8a364e8329b6d5540abe5497eb494a0a342a9753df6922b56b6b53ed1c7"
+    },
+    {
+      "file": "explore-1280-fold.jpg",
+      "sha256": "d5a0c2d6afefb0ad0d75bed0c5e11da2391aa72eb790f042ec0596fd0475cf1a"
+    },
+    {
+      "file": "learn-1280-full.jpg",
+      "sha256": "5e92b610d3f834e5e5961f67baa77ec99e401de8321b2d41577af968af184a57"
+    },
+    {
+      "file": "learn-1280-fold.jpg",
+      "sha256": "b9f40d0acb4af339d1d5e254a35ca390c9adffefb08968f513a07e756cce2af2"
+    },
+    {
+      "file": "practice-1280-full.jpg",
+      "sha256": "b258e34ac50f9ecee4d1c51c4326d5622dce5a6a3fd9080670b00c711bde8a91"
+    },
+    {
+      "file": "practice-1280-fold.jpg",
+      "sha256": "dac48bfb791dda53081a348be220ec02fc97b7c82cdc28bc7a08d44421e4106d"
+    },
+    {
+      "file": "community-1280-full.jpg",
+      "sha256": "2279b75d94521f91913b95b146794c1bf87df11d1dec5c3c91af4147ec5dd5eb"
+    },
+    {
+      "file": "community-1280-fold.jpg",
+      "sha256": "640e135fc4dbda19e7f3647b4a51d6e60f10935c2a9f2f9524b94da1a0903a2b"
+    },
+    {
+      "file": "my-corner-1280-full.jpg",
+      "sha256": "b1b97f13c821b211004047beaa134bae7ed4fd9c7ecf2861da8b4a2a8f5d2b98"
+    },
+    {
+      "file": "my-corner-1280-fold.jpg",
+      "sha256": "b1b97f13c821b211004047beaa134bae7ed4fd9c7ecf2861da8b4a2a8f5d2b98"
+    },
+    {
+      "file": "about-1280-full.jpg",
+      "sha256": "e3cc8cf8d4377ddf7605aa9c89743b111f63c115c5f125a4b0f2752d2230513e"
+    },
+    {
+      "file": "about-1280-fold.jpg",
+      "sha256": "4cec8780176987b304e90b9756cfc33d22072875d991322e9fef31ec6f9d3805"
+    },
+    {
+      "file": "creator-1280-full.jpg",
+      "sha256": "07dc4f7307a03977db9e3d11ffb80530db090382accd75f0ae70efbe008a1344"
+    },
+    {
+      "file": "creator-1280-fold.jpg",
+      "sha256": "07dc4f7307a03977db9e3d11ffb80530db090382accd75f0ae70efbe008a1344"
+    },
+    {
+      "file": "studio-1280-full.jpg",
+      "sha256": "07dc4f7307a03977db9e3d11ffb80530db090382accd75f0ae70efbe008a1344"
+    },
+    {
+      "file": "studio-1280-fold.jpg",
+      "sha256": "07dc4f7307a03977db9e3d11ffb80530db090382accd75f0ae70efbe008a1344"
+    },
+    {
+      "file": "source-1280-full.jpg",
+      "sha256": "eeebd8a364e8329b6d5540abe5497eb494a0a342a9753df6922b56b6b53ed1c7"
+    },
+    {
+      "file": "source-1280-fold.jpg",
+      "sha256": "d5a0c2d6afefb0ad0d75bed0c5e11da2391aa72eb790f042ec0596fd0475cf1a"
+    },
+    {
+      "file": "archive-1280-full.jpg",
+      "sha256": "32940bcac2012b88aa660f595326efc5c7b47dacb28f8d96469cb2ef98181512"
+    },
+    {
+      "file": "archive-1280-fold.jpg",
+      "sha256": "dbc2dd6b397a57d3c268baa088c3f18e243b1a1ddb7a6bdd07fbb6ba56dd2195"
+    },
+    {
+      "file": "session-notes-1280-full.jpg",
+      "sha256": "32940bcac2012b88aa660f595326efc5c7b47dacb28f8d96469cb2ef98181512"
+    },
+    {
+      "file": "session-notes-1280-fold.jpg",
+      "sha256": "fb5a059517f1ef91a0d5b5d3bf1b6ba809eb4aaad4ec4b826e7afc2d1a3aa24d"
+    },
+    {
+      "file": "join-1280-full.jpg",
+      "sha256": "f7b7d6005dda0f2d3ba747f8b83afa700a3f39def4d2bad4a5290cacb4efd9a1"
+    },
+    {
+      "file": "join-1280-fold.jpg",
+      "sha256": "d34d9916ea44b8702e1ed2dcac2987693d16c4ff86efd15a65f41b13b4231797"
+    },
+    {
+      "file": "onboarding-1280-full.jpg",
+      "sha256": "f7b7d6005dda0f2d3ba747f8b83afa700a3f39def4d2bad4a5290cacb4efd9a1"
+    },
+    {
+      "file": "onboarding-1280-fold.jpg",
+      "sha256": "d34d9916ea44b8702e1ed2dcac2987693d16c4ff86efd15a65f41b13b4231797"
+    },
+    {
+      "file": "library-1280-full.jpg",
+      "sha256": "be69f54ef466b05f3bd2b717889051efdfb8bccfb7403c124b536842e000887a"
+    },
+    {
+      "file": "library-1280-fold.jpg",
+      "sha256": "c42d6cba3a94914bee2d7977e27a85fc3d3cad8c2b448ca412403702f41fbfb5"
+    },
+    {
+      "file": "book-preview-1280-full.jpg",
+      "sha256": "be69f54ef466b05f3bd2b717889051efdfb8bccfb7403c124b536842e000887a"
+    },
+    {
+      "file": "book-preview-1280-fold.jpg",
+      "sha256": "72c39650b328438cf3d284c4a92090c7a40cd24734cb083187acc7e4516d75d5"
+    },
+    {
+      "file": "settings-1280-full.jpg",
+      "sha256": "5b9825bec80b1e89292e8db9c17460e098431e75e903af8f0b0f236c50822832"
+    },
+    {
+      "file": "settings-1280-fold.jpg",
+      "sha256": "5b9825bec80b1e89292e8db9c17460e098431e75e903af8f0b0f236c50822832"
+    },
+    {
+      "file": "journal-1280-full.jpg",
+      "sha256": "d76e70d31912ecb0586cff404a55a912f32e01e99e2882064706ecc5ce5d5e1c"
+    },
+    {
+      "file": "journal-1280-fold.jpg",
+      "sha256": "d76e70d31912ecb0586cff404a55a912f32e01e99e2882064706ecc5ce5d5e1c"
+    },
+    {
+      "file": "support-1280-full.jpg",
+      "sha256": "24e425b9de7c77d02dd8837442e33f7b725743756219cf3e79cee4e9d1ed9364"
+    },
+    {
+      "file": "support-1280-fold.jpg",
+      "sha256": "23907bb9c4d9500f0cd9906c83bd7edc1bb425a6456e3200d619ba59a1cb1a37"
+    },
+    {
+      "file": "faq-1280-full.jpg",
+      "sha256": "029186da6db9539d6118f21c5a9d853377288d2a83c1bd9707889bcf8c4969b5"
+    },
+    {
+      "file": "faq-1280-fold.jpg",
+      "sha256": "708666b9ed0f5040e97313f7f54198d8dcbc4a5e4e21e28c380b11be7062e36f"
+    },
+    {
+      "file": "privacy-1280-full.jpg",
+      "sha256": "b3e3a4bd7a6efc77dd36ee5efbd04832d96d4b5e5f5203ac59d655bd39932ac6"
+    },
+    {
+      "file": "privacy-1280-fold.jpg",
+      "sha256": "b951c2d2c3b39e3942aa7eab349567220c02469d2716f9d5f272067dba321afb"
+    },
+    {
+      "file": "terms-1280-full.jpg",
+      "sha256": "9fe80025aa6ec4712a10a6cb9980f73e5bef46495e5f9983f1564c2a7cc1a3aa"
+    },
+    {
+      "file": "terms-1280-fold.jpg",
+      "sha256": "576f38081afe0c74f5d85f41737f3f961e267bac03986ee727b5d8f5ce925428"
+    },
+    {
+      "file": "new-muslims-1280-full.jpg",
+      "sha256": "5e92b610d3f834e5e5961f67baa77ec99e401de8321b2d41577af968af184a57"
+    },
+    {
+      "file": "new-muslims-1280-fold.jpg",
+      "sha256": "e69e2bae57c54499a8a432423b938ae6878532e12495cc567d4518e4cdcaeb81"
+    },
+    {
+      "file": "home-1440-full.jpg",
+      "sha256": "c8561d6a19c3709099988661b9446948f35dbd442c72e10c9eaec52cee006066"
+    },
+    {
+      "file": "home-1440-fold.jpg",
+      "sha256": "fbc90b422df3d1bd7efca47de795170e438c5fa17df200393803f7779b154ce7"
+    },
+    {
+      "file": "home-1440-section-1.jpg",
+      "sha256": "ed1bba096e4270807680280d295f2dd1a101376fd6b5b544a895c3dd76dd605f"
+    },
+    {
+      "file": "home-1440-section-2.jpg",
+      "sha256": "ac0bcfc34eb93f9dca2bc421c1f5be60687ed0d6d1b5c7922eedcd84bab73954"
+    },
+    {
+      "file": "home-1440-section-3.jpg",
+      "sha256": "5a7f5c9cfd8a03b96e23ae9cf41948e5229efb70fbcb5dc27ac6cfa4812d6a2c"
+    },
+    {
+      "file": "home-1440-section-4.jpg",
+      "sha256": "96d4b8c83ba9eb048d91b8467419680191faf782eb56f5fe562f1ce72c9dc067"
+    },
+    {
+      "file": "home-1440-section-5.jpg",
+      "sha256": "9a7ab54d9d7a4008bbed55a42c04f4af096928be7a6b66b0485ea38c1c994cc0"
+    },
+    {
+      "file": "home-1440-section-6.jpg",
+      "sha256": "859140c79dd11eedd6e2506df58d5c52db9e4ddd3d87b1734ca4816464a82d6f"
+    },
+    {
+      "file": "explore-1440-full.jpg",
+      "sha256": "48644564ab303fb60116f9a2c003548888d70040b3f8603dfafa5858c2c4ab31"
+    },
+    {
+      "file": "explore-1440-fold.jpg",
+      "sha256": "2458d60cca2feca40bf67521f121aa37e18440ca4075fdf6fca1199fa3129efc"
+    },
+    {
+      "file": "learn-1440-full.jpg",
+      "sha256": "86d918ad2c830cd1d39abd3f79262f6e296b4c113dd44d20dbf9089f95bcf87e"
+    },
+    {
+      "file": "learn-1440-fold.jpg",
+      "sha256": "4dd41d139bee82b7adf80e22b3c5cc92bd3dabfdceb4354577b35617384b7c30"
+    },
+    {
+      "file": "practice-1440-full.jpg",
+      "sha256": "e4c6a3435479594bfff901cae50356662062d034beaf40120f6008185e5e91f6"
+    },
+    {
+      "file": "practice-1440-fold.jpg",
+      "sha256": "4f34cf5cdca05b911ff86eee5f524f6a8fbe2263d83dded79bea35b777dd5478"
+    },
+    {
+      "file": "community-1440-full.jpg",
+      "sha256": "a5b5b7ced7de2a53bcfd9ce3bb42cb38177f77dc836590cf843978c1dfbd0b76"
+    },
+    {
+      "file": "community-1440-fold.jpg",
+      "sha256": "2ec5238b2a00f773c04b7d9e0d0dc3636b0651b24e510d95a5d2455f3c006339"
+    },
+    {
+      "file": "my-corner-1440-full.jpg",
+      "sha256": "b122d070f27eadb430695885726060e5abd2a53dc5f0f3e63e7acdb16877d56b"
+    },
+    {
+      "file": "my-corner-1440-fold.jpg",
+      "sha256": "b122d070f27eadb430695885726060e5abd2a53dc5f0f3e63e7acdb16877d56b"
+    },
+    {
+      "file": "about-1440-full.jpg",
+      "sha256": "54a2e85babe0523dfbe942f49490ad180967aaeab84128a0e66fe4ebef178949"
+    },
+    {
+      "file": "about-1440-fold.jpg",
+      "sha256": "f8a84f38e66916886b958ba2e3496a2b89cf82dd44ea1df497ae63f87a986d37"
+    },
+    {
+      "file": "creator-1440-full.jpg",
+      "sha256": "e9933567dcca65e42ae051a47c43f89cf708c273324a340255399cfc945b0644"
+    },
+    {
+      "file": "creator-1440-fold.jpg",
+      "sha256": "e9933567dcca65e42ae051a47c43f89cf708c273324a340255399cfc945b0644"
+    },
+    {
+      "file": "studio-1440-full.jpg",
+      "sha256": "e9933567dcca65e42ae051a47c43f89cf708c273324a340255399cfc945b0644"
+    },
+    {
+      "file": "studio-1440-fold.jpg",
+      "sha256": "e9933567dcca65e42ae051a47c43f89cf708c273324a340255399cfc945b0644"
+    },
+    {
+      "file": "source-1440-full.jpg",
+      "sha256": "48644564ab303fb60116f9a2c003548888d70040b3f8603dfafa5858c2c4ab31"
+    },
+    {
+      "file": "source-1440-fold.jpg",
+      "sha256": "071b8319e8cd24b16411f9b293a871bc2b9bacd4312379d78ae1dc5bd029837c"
+    },
+    {
+      "file": "archive-1440-full.jpg",
+      "sha256": "3f02a08d5917f836967e529829b94da3b586f54235103067e8f7fdaf605ca6d5"
+    },
+    {
+      "file": "archive-1440-fold.jpg",
+      "sha256": "1c6303d627d13017c1607a1c894278d562edf999337e2003fcf35c2067b57414"
+    },
+    {
+      "file": "session-notes-1440-full.jpg",
+      "sha256": "3f02a08d5917f836967e529829b94da3b586f54235103067e8f7fdaf605ca6d5"
+    },
+    {
+      "file": "session-notes-1440-fold.jpg",
+      "sha256": "1c6303d627d13017c1607a1c894278d562edf999337e2003fcf35c2067b57414"
+    },
+    {
+      "file": "join-1440-full.jpg",
+      "sha256": "044ba1b75c372bd98204bf615ad6c9adee5828264e51079351a7f70c9b0c0073"
+    },
+    {
+      "file": "join-1440-fold.jpg",
+      "sha256": "28a4296d4e63abd6bb51a168c21e94c03f189ba89feec602a3a8be23107405d5"
+    },
+    {
+      "file": "onboarding-1440-full.jpg",
+      "sha256": "044ba1b75c372bd98204bf615ad6c9adee5828264e51079351a7f70c9b0c0073"
+    },
+    {
+      "file": "onboarding-1440-fold.jpg",
+      "sha256": "acea62d8fd1d4af4412fd283505dc909d31cdbc5bab14af800ed9c3d71b8dca7"
+    },
+    {
+      "file": "library-1440-full.jpg",
+      "sha256": "0a62e78c64ce5311759e546261a6318e147dc2f247376ed62e2309019d49f3d2"
+    },
+    {
+      "file": "library-1440-fold.jpg",
+      "sha256": "7eeeb4659c064bdf6e8aa4d57b3649fd3797f6f67187fe59268b49064e4138ae"
+    },
+    {
+      "file": "book-preview-1440-full.jpg",
+      "sha256": "0a62e78c64ce5311759e546261a6318e147dc2f247376ed62e2309019d49f3d2"
+    },
+    {
+      "file": "book-preview-1440-fold.jpg",
+      "sha256": "f6e28b51844992580a4b5c2e4d107b0e80385573331702a314988033a9c0ed9e"
+    },
+    {
+      "file": "settings-1440-full.jpg",
+      "sha256": "eaace2c8c8d7a9c512ad400de430fda932d8cffe42893dc8ee830d98a2135b9c"
+    },
+    {
+      "file": "settings-1440-fold.jpg",
+      "sha256": "eaace2c8c8d7a9c512ad400de430fda932d8cffe42893dc8ee830d98a2135b9c"
+    },
+    {
+      "file": "journal-1440-full.jpg",
+      "sha256": "5f2b6355d8b26bb4d13e65c3f46db2d967c2ab35382dcab0c988270562930c69"
+    },
+    {
+      "file": "journal-1440-fold.jpg",
+      "sha256": "5f2b6355d8b26bb4d13e65c3f46db2d967c2ab35382dcab0c988270562930c69"
+    },
+    {
+      "file": "support-1440-full.jpg",
+      "sha256": "ee08534f495e32dc75174a3a1b003b898cc4169a87a5c2e048fed9fec6de345f"
+    },
+    {
+      "file": "support-1440-fold.jpg",
+      "sha256": "6a44a4f72e2abf627fdb47fb0a9514dff4cc0c590d17d3d68937e7e34941ba22"
+    },
+    {
+      "file": "faq-1440-full.jpg",
+      "sha256": "06953e2615ccce508674474755779ef80494424e47b64f5303d11121ead41b5d"
+    },
+    {
+      "file": "faq-1440-fold.jpg",
+      "sha256": "dc7adcda62564f46b5f8ffdb3d181130405b6d9563203fdbcf054f03c0346edf"
+    },
+    {
+      "file": "privacy-1440-full.jpg",
+      "sha256": "871e9f8ff3d9241071e2ee1bcb6716c0788e9a0ac2c1e38c7e750464ab43e006"
+    },
+    {
+      "file": "privacy-1440-fold.jpg",
+      "sha256": "9584700896aff93b7a1cc804819521c22fed3b04b73a62d3c5f9f93214dfe263"
+    },
+    {
+      "file": "terms-1440-full.jpg",
+      "sha256": "2ef4f968f224bdab76f7945a5975b8198ff9443de5ed00510ebd5ba798cffacb"
+    },
+    {
+      "file": "terms-1440-fold.jpg",
+      "sha256": "c6c32c56f1841c84476065698f6a556700e0083c4dfa330c9eec85298d04572a"
+    },
+    {
+      "file": "new-muslims-1440-full.jpg",
+      "sha256": "86d918ad2c830cd1d39abd3f79262f6e296b4c113dd44d20dbf9089f95bcf87e"
+    },
+    {
+      "file": "new-muslims-1440-fold.jpg",
+      "sha256": "d3a6d7991c1747375963dda6da5fac1ed607dbf20f39ad77df85adc1304b2a61"
+    },
+    {
+      "file": "disclosures-1440-open.jpg",
+      "sha256": "98b4eef19f84c427452acc04a0f673cfe1273724e4777ad5f895475c7df4cfe8"
+    },
+    {
+      "file": "question-desk-1440-editing.jpg",
+      "sha256": "e1c871b575e011e6d336b4814f31b9504a8e1829cbc817e77501dd61e1d07afe"
+    },
+    {
+      "file": "question-desk-1440-review.jpg",
+      "sha256": "05cc8691b87e6a751e34d8751e08467714f9460d70e4ff36105e825a48b91346"
+    },
+    {
+      "file": "question-desk-1440-cleared.jpg",
+      "sha256": "ee416d4d69b2f43b14b7b67cf248a2d71d9e881291cc0998174283e879af3aaa"
+    },
+    {
+      "file": "signup-1440-attempt.jpg",
+      "sha256": "044ba1b75c372bd98204bf615ad6c9adee5828264e51079351a7f70c9b0c0073"
+    },
+    {
+      "file": "keyboard-1440-skip-focus.jpg",
+      "sha256": "9f516328476b3d37aaeca8a5ba029f2f1e8c367659079567046930731f66746d"
+    },
+    {
+      "file": "home-1440-reduced-motion.jpg",
+      "sha256": "c8561d6a19c3709099988661b9446948f35dbd442c72e10c9eaec52cee006066"
+    },
+    {
+      "file": "rendered-audit.json",
+      "sha256": "5d28c198c9d7f9421cd6364a90708529671c62b956d3f56635e9d0ee03eeecc9"
+    }
+  ]
+}

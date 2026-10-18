@@ -1,0 +1,205 @@
+{
+  "phase": "after",
+  "capturedAt": "2026-10-18T02:38:50.458Z",
+  "browser": "154.0.8037.57",
+  "methodology": "Fresh contexts with disabled network cache, 800ms delay on each woff2 request, two animation frames after document.fonts.ready; all five required widths on Home and Explore. Layout shift excludes recent user input. Local regression check only.",
+  "threshold": 0.1,
+  "samples": [
+    {
+      "route": "/",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.028942945154412928,
+      "shifts": [
+        {
+          "value": 0.02862302746263701,
+          "time": 1076.2999999998137
+        },
+        {
+          "value": 0.000319917691775916,
+          "time": 1083.7000000001863
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": true
+    },
+    {
+      "route": "/explore",
+      "width": 360,
+      "height": 844,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.0076412188598888415,
+      "shifts": [
+        {
+          "value": 0.0076412188598888415,
+          "time": 1053.800000000745
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": null
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.03298531570010681,
+      "shifts": [
+        {
+          "value": 0.03298531570010681,
+          "time": 1043.199999999255
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": true
+    },
+    {
+      "route": "/explore",
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.008710143412587202,
+      "shifts": [
+        {
+          "value": 0.008710143412587202,
+          "time": 972.1000000005588
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": null
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.06938978773541749,
+      "shifts": [
+        {
+          "value": 0.06874099117703736,
+          "time": 1037.2000000001863
+        },
+        {
+          "value": 0.000648796558380127,
+          "time": 1050.8999999994412
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": true
+    },
+    {
+      "route": "/explore",
+      "width": 768,
+      "height": 1024,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.07094622783673307,
+      "shifts": [
+        {
+          "value": 0.07094622783673307,
+          "time": 1002.4000000003725
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": null
+    },
+    {
+      "route": "/",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.10131611709594726,
+      "shifts": [
+        {
+          "value": 0.10131611709594726,
+          "time": 996.2999999998137
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": true
+    },
+    {
+      "route": "/explore",
+      "width": 1280,
+      "height": 900,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.05119446840286255,
+      "shifts": [
+        {
+          "value": 0.05119446840286255,
+          "time": 973.2000000001863
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": null
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.08787812680844907,
+      "shifts": [
+        {
+          "value": 0.08756068049929269,
+          "time": 1027
+        },
+        {
+          "value": 0.00031744630915637865,
+          "time": 1052.5
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": true
+    },
+    {
+      "route": "/explore",
+      "width": 1440,
+      "height": 900,
+      "status": 200,
+      "fontDelayMs": 800,
+      "delayedFontRequests": 3,
+      "cls": 0.04052615267697349,
+      "shifts": [
+        {
+          "value": 0.0000704768511820559,
+          "time": 1286.8999999994412
+        },
+        {
+          "value": 0.04045567582579143,
+          "time": 1294.7999999998137
+        }
+      ],
+      "fontsReady": true,
+      "horizontalOverflow": 0,
+      "primaryWithinFirstFold": null
+    }
+  ]
+}
