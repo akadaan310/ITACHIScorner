@@ -3,5 +3,8 @@
   "type": "module",
   "engines": {
     "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "pg": "8.16.3"
   }
 }
