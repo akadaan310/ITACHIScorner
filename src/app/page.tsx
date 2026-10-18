@@ -1,53 +1,24 @@
-import { Arrow, GeoStar } from "@/components/art";
+import { Arrow } from "@/components/art";
 import Link from "next/link";
 import { Hero } from "@/components/hero";
+import { CreatorPortrait } from "@/components/creator-portrait";
 import { QuestionDesk } from "@/components/question-desk";
+import { QuestionJourney } from "@/components/question-journey";
+import { SourcePreview } from "@/components/source-preview";
 
 export default function Home() {
   return <>
     <Hero />
+    <section className="source-chapter" aria-labelledby="source-title"><div className="shell source-layout"><div className="chapter-heading"><p className="public-eyebrow">02 / Begin with a question</p><h2 id="source-title">Big questions.<br /><em>Original context.</em></h2><p>Follow the conversation back to its source. Keep the question, the speaker and the words around an answer together.</p><details className="source-disclosure"><summary>What belongs in this collection?<span className="disclosure-symbol" aria-hidden="true">+</span></summary><p>Published questions require original source links, permission and editorial review. Public video metadata is labelled separately; a listing alone is not a reviewed answer.</p></details></div><SourcePreview /></div></section>
 
-    <section className="source-chapter" aria-labelledby="source-title">
-      <div className="shell source-layout">
-        <div className="chapter-heading">
-          <p className="public-eyebrow">First, the conversation itself</p>
-          <h2 id="source-title">Real words.<br /><em>Real context.</em></h2>
-          <p>A question deserves more than a clipped answer. The words around it matter, too.</p>
-          <div className="source-stamp"><GeoStar size={24} /><span>The collection is empty.<br />The standard is already here.</span></div>
-        </div>
-        <div className="source-ledger">
-          <p className="ledger-intro">Original conversations will appear only after permission and review. Until then, there are no published source questions here.</p>
-          <details className="source-disclosure"><summary><span>Follow the original</span><span className="disclosure-symbol" aria-hidden="true">+</span></summary><p>Published questions will link to the original conversation and the exact source moment, with enough context to understand what was said.</p></details>
-          <details className="source-disclosure"><summary><span>Make permission visible</span><span className="disclosure-symbol" aria-hidden="true">+</span></summary><p>Having a conversation in an archive does not make it ready to share. Source rights and permission must be checked before excerpts are published.</p></details>
-          <details className="source-disclosure"><summary><span>Leave room for review</span><span className="disclosure-symbol" aria-hidden="true">+</span></summary><p>Source checks, editorial review and creator approval come before learning material. No lessons or teaching method are being attributed to Itachi here.</p></details>
-          <p className="ledger-footnote">Open a line to see what goes into the collection.</p>
-        </div>
-      </div>
-    </section>
+    <section id="question-journey" className="question-desk-section" aria-labelledby="desk-title"><div className="shell journey-chapter"><div className="chapter-heading"><p className="public-eyebrow">03 / Get your hands on an idea</p><h2 id="desk-title">Follow the question.<br /><em>Find your own words.</em></h2><p>A question is a beginning. Follow the steps, then leave yourself a thought to return to.</p></div><QuestionJourney /><div id="question-desk" className="desk-layout"><div className="desk-introduction"><p className="public-eyebrow">A little room to think</p><h3>Your question.<br /><em>Your own words.</em></h3><p>Put your question and reflection side by side. Review your words, copy what matters and come back with fresh eyes.</p><p className="desk-boundary">This scratchpad gives no religious answers or scores. Your writing stays in this visit until you copy it.</p><Link href="/practice" className="chapter-link">Try a focused practice <Arrow /></Link></div><QuestionDesk /></div></div></section>
 
-    <section id="question-desk" className="question-desk-section" aria-labelledby="desk-title">
-      <div className="shell desk-layout">
-        <div className="desk-introduction">
-          <p className="public-eyebrow">A small place to begin · available now</p>
-          <h2 id="desk-title">Your question.<br /><em>Your own words.</em></h2>
-          <p>You don&rsquo;t need a finished thought to start. Put what&rsquo;s on your mind into words, then give yourself room to reflect.</p>
-          <p className="desk-boundary">This is a scratchpad for your own writing. It gives no religious answers, feedback or scores. Your words are not Itachi&rsquo;s words or a teaching method.</p>
-          <div className="desk-mark" aria-hidden="true"><GeoStar size={72} /><span>Pause.<br />Think.<br />Put it into words.</span></div>
-        </div>
-        <QuestionDesk />
-      </div>
-    </section>
+    <section className="learning-chapter shell" aria-labelledby="learning-title"><div className="learning-heading"><p className="public-eyebrow">04 / Two ways to keep going</p><h2 id="learning-title">Make space<br /><em>for the next thought.</em></h2><p>Read with care. Then work with your own words. You choose the pace.</p></div><div className="pathway-grid"><article className="pathway pathway-learn"><span className="pathway-word" aria-hidden="true">Learn</span><div><p className="public-eyebrow">Follow your curiosity</p><h3>Stay with<br /><em>the question.</em></h3><p>Choose a starting point, find original sources and build a reading note. Creator-derived lessons await review.</p><Link href="/learn" className="chapter-link">Learn at your pace <Arrow /></Link></div></article><article className="pathway pathway-practice"><span className="pathway-word" aria-hidden="true">Practice</span><div><p className="public-eyebrow">Open your notebook</p><h3>Pause. Write.<br /><em>Try again.</em></h3><p>Clarify a question, rehearse a respectful reply or reflect on what changed. A writing workbench, with no automated verdict.</p><Link href="/practice" className="chapter-link">Practise with your own words <Arrow /></Link></div></article></div></section>
 
-    <section className="learning-chapter shell" aria-labelledby="learning-title">
-      <div className="learning-heading"><p className="public-eyebrow">Keep your curiosity moving</p><h2 id="learning-title">There&rsquo;s room<br /><em>to take your time.</em></h2><p>Learning and practice have different rhythms. Both begin with care for what is actually being said.</p></div>
-      <div className="pathway-grid">
-        <article className="pathway pathway-learn"><span className="pathway-word" aria-hidden="true">Learn</span><div><p className="public-eyebrow">Understand before moving on</p><h3>Make room<br />for <em>understanding.</em></h3><p>Source-based lessons are still being prepared. See what careful learning will require, with a welcoming place for new Muslims.</p><Link href="/learn" className="chapter-link">Learn at your pace <Arrow /></Link></div></article>
-        <article className="pathway pathway-practice"><span className="pathway-word" aria-hidden="true">Practice</span><div><p className="public-eyebrow">A little space to reflect</p><h3>Find the words.<br /><em>Then revisit them.</em></h3><p>Start with your own question in the desk above. The Practice page explains what you can do now and what awaits reviewed material.</p><Link href="/practice" className="chapter-link">Practise with your own words <Arrow /></Link></div></article>
-      </div>
-    </section>
+    <section className="personal-chapter" aria-labelledby="personal-title"><div className="shell personal-layout"><div><p className="public-eyebrow">05 / Your space in the Corner</p><h2 id="personal-title">Pick up where<br /><em>you left a thought.</em></h2><p>My Corner brings saved questions, private notes and account controls together. It shows account availability before you sign in.</p><Link href="/me" className="chapter-link">Visit My Corner <Arrow /></Link></div><div className="corner-notebook" aria-label="My Corner capabilities"><p className="notebook-label">Your Corner, at a glance</p><div><span aria-hidden="true">01</span><h3>Saved questions</h3><p>Return to the sources you choose to keep.</p></div><div><span aria-hidden="true">02</span><h3>Private notes</h3><p>Your writing, attached to your account.</p></div><div><span aria-hidden="true">03</span><h3>Your choices</h3><p>Consent, preferences and data controls in one place.</p></div><p className="notebook-footnote">Only your saved work. Never a score for faith.</p></div></div></section>
 
-    <section className="community-chapter" aria-labelledby="community-title"><div className="shell community-layout"><div className="community-arch" aria-hidden="true"><GeoStar size={56} /></div><div><p className="public-eyebrow">A conversation has people on both sides</p><h2 id="community-title">Bring curiosity.<br /><em>Leave room for others.</em></h2></div><div className="community-copy"><p>A welcoming Corner starts with listening, dignity and the freedom to keep something private.</p><p>Public discussion and mentorship are not open yet. You can read the participation principles while moderation is being prepared.</p><Link href="/community" className="chapter-link">Make room for each other <Arrow /></Link></div></div></section>
+    <section className="community-chapter" aria-labelledby="community-title"><div className="shell community-layout"><div><p className="public-eyebrow">06 / A person on both sides</p><h2 id="community-title">Bring curiosity.<br /><em>Leave room for others.</em></h2></div><div className="community-copy"><p>Listening, dignity and consent belong at the centre of a conversation. Your story is always yours to share, or keep private.</p><p>Public discussion opens only when moderation is ready. Read the participation principles and how boundaries will work.</p><Link href="/community" className="chapter-link">Make room for each other <Arrow /></Link></div></div></section>
 
-    <section className="shell corner-chapter" aria-labelledby="personal-title"><div className="corner-symbol" aria-hidden="true"><span /><GeoStar size={36} /></div><div><p className="public-eyebrow">Your own pace. Your own space.</p><h2 id="personal-title">A corner <em>of your own.</em></h2><p>Some thoughts belong in your own notebook. My Corner explains account availability, private notes and the controls for your own data.</p><Link href="/me" className="chapter-link">Visit My Corner <Arrow /></Link></div><p className="corner-aside">A place to return to.<br /><em>When you&rsquo;re ready.</em></p></section>
+    <section className="shell creator-closing" aria-labelledby="closing-title"><CreatorPortrait variant="editorial" /><div><p className="public-eyebrow">07 / Back to the person</p><h2 id="closing-title">It starts with<br /><em>a conversation.</em></h2><p>Itachi is the creator behind Da&rsquo;wah x Dialogues. This independent gift imagines a place to spend more time with the questions around her public conversations.</p><p className="closing-note">Her voice belongs to her. This concept does not speak on her behalf.</p><Link href="/about#channels" className="chapter-link">Meet Itachi &amp; her original channels <Arrow /></Link></div></section>
   </>;
 }

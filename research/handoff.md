@@ -1,6 +1,6 @@
 # Authorized corpus handoff
 
-This is the private import/analysis contract for future authorized corpus inputs. It does not acquire videos. The owner clarified that no task has been assigned to Dot; Codex has not assigned or contacted Dot or started acquisition. No compatible authorized archive was supplied during the foundation work. Verified imported real videos and transcript versions are both **0**. Any future acquisition must establish inventory ownership, acquisition permissions and the private destination.
+This is the private import/analysis contract for authorized corpus inputs. Codex now owns acquisition under [the V4 mission](../docs/MISSION_V4_CREATOR_FIRST.md); no task has been assigned to Dot. The V4 acquisition run verified the official hub/channel and imported nine quarantined provisional metadata records through this unchanged contract, with pending rights and no tracks. Verified official-channel memberships, imported transcripts and real findings remain **0**; the channel denominator is **unknown**. Official listing access is blocked. See [actual acquisition results](../docs/CORPUS_ACQUISITION_V4.md) for precise scope and the single authorized-manager export request. This CLI itself still performs no remote harvesting.
 
 ## Handoff package
 

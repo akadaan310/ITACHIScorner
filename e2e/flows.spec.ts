@@ -49,8 +49,12 @@ test("browser-controlled demo data cannot unlock the creator workspace", async (
   }
 });
 
-test("private editorial access is absent from the public footer", async ({ page }) => {
+test("secondary Creator Studio link preserves the private editorial access boundary", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator("footer a[href^='/studio']")).toHaveCount(0);
-  await expect(page.locator("footer")).not.toContainText(/Load demo|preview creator|Studio/i);
+  await expect(page.locator("footer")).not.toContainText(/Load demo|preview creator/i);
+  await page.locator("footer").getByRole("link", { name: "Creator Studio", exact: true }).click();
+  await expect(page).toHaveURL(/\/studio\/creator$/);
+  await expect(page.locator("main")).toContainText(/Creator access is unavailable|Staff access required|sign.in/i);
+  await expect(page.locator("main").getByRole("button", { name: /preview|unlock|publish|approve|load demo|enable/i })).toHaveCount(0);
+  await expect(page.locator("main")).not.toContainText(/editorial queue|approved claims/i);
 });

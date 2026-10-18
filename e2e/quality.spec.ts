@@ -79,8 +79,8 @@ for (const sample of [
       await page.evaluate(() => document.fonts.ready);
       await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
       const score = await page.evaluate(() => window.__fontLoadShift);
-      const directory = process.env.QUALITY_OUTPUT_DIR || "docs/screenshots/recovery/after";
-      if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
+      const directory = process.env.QUALITY_OUTPUT_DIR || "docs/screenshots/v4/suite-screens";
+      if (/(?:^|[\\/])(?:evidence-first|recovery)(?:[\\/]|$)/.test(directory)) throw new Error("Prior screenshot archives are immutable; use a new V4 directory.");
       await mkdir(directory, { recursive: true });
       await writeFile(`${directory}/${sample.output}`, JSON.stringify({ route: sample.route, viewport: { width: sample.width, height: sample.height }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
       expect(score).toBeLessThan(0.1);

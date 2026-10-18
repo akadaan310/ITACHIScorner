@@ -6,17 +6,17 @@ import { useEffect, useRef, useState } from "react";
 import { Arrow, Wordmark } from "@/components/art";
 
 const destinations = [
-  { href: "/", label: "Home" },
   { href: "/explore", label: "Explore" },
   { href: "/learn", label: "Learn" },
   { href: "/practice", label: "Practice" },
   { href: "/community", label: "Community" },
+  { href: "/me", label: "My Corner" },
 ];
 const secondary = [
-  { href: "/me", label: "My Corner" },
-  { href: "/about", label: "About" },
-  { href: "/library", label: "Library" },
+  { href: "/about", label: "About Itachi" },
+  { href: "/library", label: "Book / Library" },
   { href: "/support", label: "Support" },
+  { href: "/studio/creator", label: "Creator Studio" },
 ];
 const active = (path: string, href: string) => href === "/" ? path === "/" : path === href || path.startsWith(href + "/");
 
@@ -64,10 +64,10 @@ export function SiteHeader() {
           <ul className="flex gap-1">{destinations.map((item) => <li key={item.href}><Link href={item.href} aria-current={active(path, item.href) ? "page" : undefined} className="header-link">{item.label}</Link></li>)}</ul>
         </nav>
         <div className="flex items-center gap-3">
-          <Link href="/me" className="corner-link hidden sm:inline-flex">My Corner <Arrow /></Link>
           <button type="button" className="menu-toggle lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>☰</button>
         </div>
       </div>
+      <noscript><style>{".menu-toggle{display:none!important}"}</style></noscript>
       {open && <Menu onClose={() => setOpen(false)} />}
     </header>
   );

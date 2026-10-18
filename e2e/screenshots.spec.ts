@@ -3,8 +3,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { heightFor, settle, widths } from "./helpers";
 
-const directory = process.env.SCREENSHOT_DIR || "docs/screenshots/recovery/after";
-if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
+const directory = process.env.SCREENSHOT_DIR || "docs/screenshots/v4/suite-screens";
+if (/(?:^|[\\/])(?:evidence-first|recovery)(?:[\\/]|$)/.test(directory)) throw new Error("Prior screenshot archives are immutable; use a new V4 directory.");
 const pages: [string, string][] = [
   ["home", "/"], ["explore", "/explore"], ["learn", "/learn"], ["practice", "/practice"],
   ["community", "/community"], ["session-notes", "/session-notes"], ["library", "/library"],

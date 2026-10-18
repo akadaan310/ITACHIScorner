@@ -8,6 +8,7 @@ import "@fontsource/bebas-neue";
 import "@fontsource/jetbrains-mono/400.css";
 import "@fontsource/jetbrains-mono/500.css";
 import "./globals.css";
+import "./v4-interactions.css";
 import { SiteFooter } from "@/components/footer";
 import { MobileNav, SiteHeader } from "@/components/shell";
 import { creator } from "@/lib/config/creator";
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0B0A14",
+  themeColor: "#0B0B0D",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",

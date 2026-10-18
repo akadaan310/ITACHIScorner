@@ -26,7 +26,7 @@ test("phone menu supports touch, escape, focus return and all five destinations"
   await opener.click();
   const drawer = page.getByRole("dialog", { name: /menu/i });
   await expect(drawer).toBeVisible();
-  for (const label of ["Home", "Explore", "Learn", "Practice", "Community"]) await expect(drawer.getByRole("link", { name: label, exact: true })).toBeVisible();
+  await expect(drawer.getByRole("navigation", { name: "All sections", exact: true }).locator("a.menu-link")).toHaveText(["Explore", "Learn", "Practice", "Community", "My Corner"]);
   await page.keyboard.press("Escape");
   await expect(drawer).toBeHidden();
   await expect(opener).toBeFocused();

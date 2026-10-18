@@ -1,0 +1,154 @@
+{
+  "version": 4,
+  "kind": "hand-traced signature study",
+  "creatorApproved": false,
+  "endorsement": false,
+  "referenceRightsEstablished": false,
+  "sourcePixelsIncluded": false,
+  "assets": [
+    {
+      "filename": "brand-application-specimen.png",
+      "sha256": "8c3ff64e1d1e13c407d929b2433acbd2ba5ab848ac343587479be68b78d16b00",
+      "bytes": 115033,
+      "width": 1440,
+      "height": 900,
+      "hasAlpha": true
+    },
+    {
+      "filename": "brand-application-specimen.svg",
+      "sha256": "e9d15ae70811895a60a65ac20af73f3f7669311c54868167dfd963eec55da828",
+      "bytes": 5615,
+      "width": 1440,
+      "height": 900,
+      "hasAlpha": true
+    },
+    {
+      "filename": "brand-application-specimen.webp",
+      "sha256": "31e1880a37062cc1d840b8c306dda75accde2ac59911a95b06196fe18532d89b",
+      "bytes": 47664,
+      "width": 1440,
+      "height": 900,
+      "hasAlpha": false
+    },
+    {
+      "filename": "favicon-study.png",
+      "sha256": "34add16413bcc58c3f0b66591cf2fdbe21c7c01733b05d0794b577d23b00dec1",
+      "bytes": 3646,
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true
+    },
+    {
+      "filename": "favicon-study.svg",
+      "sha256": "965da18f0609a81e4ab6ea889df71d165986ffacd2b1deff06938b1a13d777bd",
+      "bytes": 879,
+      "width": 128,
+      "height": 128,
+      "hasAlpha": true
+    },
+    {
+      "filename": "favicon-study.webp",
+      "sha256": "f379aa2085d4b32a6edfeb522e7c9190386fba7b72fad2b385884952ad222a09",
+      "bytes": 1748,
+      "width": 128,
+      "height": 128,
+      "hasAlpha": false
+    },
+    {
+      "filename": "itachi-signature-dark.png",
+      "sha256": "3d215f427561c035fc2a36dbc7c19a286b1f4eaa081db83de475404029d5ce97",
+      "bytes": 56116,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-dark.svg",
+      "sha256": "091862cbedab6c237f1fdde5327e0f434d45efdab2d3ae17eb6b2d8d4922712e",
+      "bytes": 1462,
+      "width": 668,
+      "height": 256,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-dark.webp",
+      "sha256": "4012b6d7270bf4eda437ea2e3d0daad6fa13c829185898586d13f513f95bc2ae",
+      "bytes": 25612,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "filename": "itachi-signature-ivory.png",
+      "sha256": "1b18e4c74464524d8fa14599809e4f029b7fbb434438907533d5016664fc5581",
+      "bytes": 46410,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-ivory.svg",
+      "sha256": "8ca3534303325419552bbc81871b7de3e008c4d6bdb81a9753a613e307f04375",
+      "bytes": 1413,
+      "width": 668,
+      "height": 256,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-ivory.webp",
+      "sha256": "40df2fba4dddf1b32cedb332379a19e66769b21e36d718f5aa48b01fb8bad84d",
+      "bytes": 23638,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-light.png",
+      "sha256": "a2addb58cfd81c4772780c605ea46b694fba5ab41cacf8034a27c16e64cd74db",
+      "bytes": 58396,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-light.svg",
+      "sha256": "a83f6549e17abfe8809af135a963d8840dca10573cded8e31b014a9876e077a2",
+      "bytes": 1462,
+      "width": 668,
+      "height": 256,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-light.webp",
+      "sha256": "2c90bdc2db6705a3a1bdc7cc28a5f490643f0804b3e4545ea62565c3204f3901",
+      "bytes": 23276,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "filename": "itachi-signature-study.png",
+      "sha256": "ebdd7c34004db3850541aeb4e7ef05566c225d7e6c538d4d752fab6c9be12faa",
+      "bytes": 46504,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-study.svg",
+      "sha256": "5326c3247f58609bce6643c7fe21f61795de4b19365588d762c22b10cb103245",
+      "bytes": 1413,
+      "width": 668,
+      "height": 256,
+      "hasAlpha": true
+    },
+    {
+      "filename": "itachi-signature-study.webp",
+      "sha256": "efd8bd4768960577065975d316f8623457baccee487800ac4ee57332e6fc4335",
+      "bytes": 23440,
+      "width": 1336,
+      "height": 512,
+      "hasAlpha": true
+    }
+  ]
+}

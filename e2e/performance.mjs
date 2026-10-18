@@ -6,8 +6,8 @@ import { dirname } from "node:path";
 // Run against an otherwise idle production server; these are local lab samples,
 // not Lighthouse scores or measurements of deployed Core Web Vitals.
 const baseURL = process.env.PERF_BASE_URL || "http://127.0.0.1:3200";
-const output = process.env.PERF_OUTPUT || "docs/screenshots/recovery/after/performance.json";
-if (output.includes("evidence-first")) throw new Error("The evidence-first performance archive is immutable; use a recovery directory.");
+const output = process.env.PERF_OUTPUT || "docs/screenshots/v4/performance.json";
+if (/docs[\/]screenshots[\/](evidence-first|recovery)([\/]|$)/.test(output)) throw new Error("Earlier screenshot archives are immutable; use a V4 output path.");
 const phase = process.env.PERF_PHASE || "after";
 const routes = process.env.PERF_ROUTES?.split(",") || ["/", "/explore", "/practice", "/me"];
 const executablePath = process.env.PW_CHROMIUM || ["/usr/bin/chromium", "/usr/bin/chromium-browser"].find(existsSync);

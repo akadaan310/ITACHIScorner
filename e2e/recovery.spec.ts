@@ -21,6 +21,9 @@ test("homepage offers distinct contextual journeys throughout its story", async 
     ["Visit My Corner", "/me"],
   ] as const) await expect(main.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", href);
   await expect(main.locator("a[href='/about']")).toHaveCount(1);
+  await expect(main.locator(":scope > section")).toHaveCount(7);
+  await expect(main.getByTestId("question-journey")).toBeVisible();
+  await expect(main.getByRole("search")).toBeVisible();
   await expect(page.locator("#question-desk").getByRole("heading", { name: "Your question. Your own words.", exact: true })).toBeVisible();
 });
 
@@ -127,14 +130,23 @@ test("draft copy feedback stays fully above fixed phone navigation", async ({ pa
   }
 });
 
-test("gated learning, practice and community explain a useful next action", async ({ page }) => {
-  for (const route of ["/learn", "/practice", "/community"]) {
+test("Learn, Practice and Community offer distinct useful present actions", async ({ page }) => {
+  for (const [route, actions] of [
+    ["/learn", [["Explore a question", "/explore"], ["Open private notes", "/me/journal"], ["Put your question into words", "/practice"]]],
+    ["/community", [["Review your privacy choices", "/me/settings"], ["Practise a thoughtful reply", "/practice"]]],
+  ] as const) {
     await page.goto(route);
     const main = page.locator("main");
     await expect(main).toContainText(/review|approval|moderation|permission/i);
-    await expect(main.locator("a[href='/#question-desk']")).toHaveCount(1);
-    await main.locator("a[href='/#question-desk']").click();
-    await expect(page).toHaveURL(/\/#question-desk$/);
-    await expect(page.locator("#question-desk").getByRole("textbox", { name: "Your question", exact: true })).toBeVisible();
+    await expect(main.locator("a[href='/#question-desk']")).toHaveCount(0);
+    for (const [label, href] of actions) await expect(main.getByRole("link", { name: label, exact: true })).toHaveAttribute("href", href);
   }
+  await page.goto("/practice");
+  const main = page.locator("main");
+  await expect(main.getByTestId("practice-workbench")).toBeVisible();
+  await expect(main).toContainText(/review|approval|permission/i);
+  await expect(main.locator("a[href='/#question-desk']")).toHaveCount(1);
+  await main.locator("a[href='/#question-desk']").click();
+  await expect(page).toHaveURL(/\/#question-desk$/);
+  await expect(page.locator("#question-desk").getByRole("textbox", { name: "Your question", exact: true })).toBeVisible();
 });

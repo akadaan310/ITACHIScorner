@@ -3,7 +3,7 @@ import { expect, test } from "@playwright/test";
 test("public navigation offers five clear destinations", async ({ page }) => {
   await page.goto("/");
   const nav = page.getByRole("navigation", { name: "Primary", exact: true });
-  await expect(nav.getByRole("link")).toHaveText(["Home", "Explore", "Learn", "Practice", "Community"]);
+  await expect(nav.getByRole("link")).toHaveText(["Explore", "Learn", "Practice", "Community", "My Corner"]);
 });
 
 test("Explore cannot publish invented content when the source backend is unconfigured", async ({ page }) => {
@@ -14,7 +14,7 @@ test("Explore cannot publish invented content when the source backend is unconfi
   await expect(page.locator("main")).not.toContainText(/SAMPLE|Questions on oneness|Signs in the sky/);
 });
 
-test("unapproved practice remains a waiting state", async ({ page }) => {
+test("practice offers private writing while creator-derived teaching awaits review", async ({ page }) => {
   const response = await page.goto("/practice");
   expect(response?.status()).toBe(200);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();

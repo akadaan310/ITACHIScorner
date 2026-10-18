@@ -11,7 +11,9 @@ export function AccountUnavailable({ context }: { context: AccountContext }) {
   return <section className="card p-6 sm:p-8" aria-labelledby="account-state">
     <h2 id="account-state" className="text-3xl text-cream">{context.status === "unconfigured" ? "Your account is not connected yet." : context.status === "unavailable" ? "Your account could not be loaded." : "Make room for your questions."}</h2>
     <p className="mt-3 text-cream/75">{context.status === "unconfigured" ? "Account access is being prepared. You can explore the site while this becomes available." : context.status === "unavailable" ? "Please try again later. Your saved information has not been replaced." : "Sign in to keep a private profile and manage your preferences."}</p>
+    <dl className="account-capabilities"><div><dt>Keep</dt><dd>Private notes and reviewed questions you save.</dd></div><div><dt>Choose</dt><dd>Your nickname, preferences and separate community consent.</dd></div><div><dt>Control</dt><dd>Export your own records. Deletion is available only when securely configured.</dd></div></dl><p className="mt-4 text-sm text-cream/65">Free account features. Email delivery and the hosted member lifecycle have not been verified.</p>
     <Link className="btn btn-primary mt-6" href={context.status === "signed-out" ? "/join" : "/explore"}>{context.status === "signed-out" ? "Sign in" : "Explore the questions"}</Link>
+    <Link className="chapter-link ml-4" href="/practice">Try private writing now</Link>
   </section>;
 }
 
