@@ -33,3 +33,9 @@ npm run test:e2e
 ```
 
 Playwright discovers `/usr/bin/chromium` or `/usr/bin/chromium-browser`, accepts `PW_CHROMIUM`, and otherwise uses its installed browser. A fresh production server is used by default. `E2E_PORT=3400 E2E_REUSE_SERVER=1` explicitly reuses the verified server. `npm run screenshots` writes only the final review directory; original screenshots remain untouched.
+
+## Database installation and final branch checks
+
+Both SQL migrations passed 118 real PostgreSQL assertions, including the original 96 role/publication protections, FK covering-index/policy checks, and precise private episode annotations. [SQL log](screenshots/evidence-first/after/logs/rls-final.log) and [hosted checks](HOSTED_VERIFICATION.md) record the separate evidence. Hosted security advisories are empty; missing-FK and duplicate-policy notices are resolved. The only remaining performance result is 72 unused-index INFO observations on an empty database; retain required indexes ([explanation](https://supabase.com/docs/guides/database/database-linter?lint=0005_unused_index)). No hosted member identity/email/delete claim follows from SQL tests.
+
+Local migration filenames match the actual hosted migration versions while preserving their reviewed hashes. The current default branch was rechecked at original base b987ebb; the completed work is delivered on a separate feature branch. Final lint/typecheck also passed after integrating the delivery browser test. The final response records the verified pushed commit; no deployment was performed.

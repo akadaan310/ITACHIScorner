@@ -1,0 +1,119 @@
+NOTICE:  PASS: publication read model exists before exercising role policies
+NOTICE:  PASS: private exact-interval research schema exists
+NOTICE:  PASS: evidence excerpt must occur exactly in its referenced transcript segment
+NOTICE:  PASS: metadata alone cannot publish without creator and independent reviews
+NOTICE:  PASS: anonymous public collection starts empty
+NOTICE:  PASS: anonymous cannot read profiles
+NOTICE:  PASS: anonymous cannot read private transcripts
+NOTICE:  PASS: anonymous cannot invoke editorial queue
+NOTICE:  PASS: member A sees only own profile
+NOTICE:  PASS: member has no trusted staff roles
+NOTICE:  PASS: member cannot read transcripts even using SQL role
+NOTICE:  PASS: member receives no editorial queue rows
+NOTICE:  PASS: member cannot self-provision staff
+NOTICE:  PASS: member cannot forge OAuth verification
+NOTICE:  PASS: member cannot upgrade own verification
+NOTICE:  PASS: member cannot reassign profile ownership
+NOTICE:  PASS: member cannot insert another owner preferences
+NOTICE:  PASS: member cannot save an unpublished private research question
+NOTICE:  PASS: member cannot mint points
+NOTICE:  PASS: member cannot mint wallet credits
+NOTICE:  PASS: member cannot update another profile
+NOTICE:  PASS: member cannot fabricate a publication
+NOTICE:  PASS: member B cannot see member A account links
+NOTICE:  PASS: member B cannot see member A notes
+NOTICE:  PASS: reviewer can inspect source evidence
+NOTICE:  PASS: reviewer sees only own role
+NOTICE:  PASS: reviewer safe queue returns research status without transcript text
+NOTICE:  PASS: reviewer cannot impersonate creator approval
+NOTICE:  PASS: reviewer cannot attribute decision to another identity
+NOTICE:  PASS: reviewer cannot grant creator source permission
+NOTICE:  PASS: creator cannot supply independent editorial review
+NOTICE:  PASS: source permission requires a written authorization reference
+NOTICE:  PASS: admin can inspect source evidence
+NOTICE:  PASS: admin cannot impersonate another review actor
+NOTICE:  PASS: instantaneous intervals must be exactly 1 ms and within segment
+NOTICE:  PASS: relational real two-video reviewed contrast/falsification pack becomes eligible
+NOTICE:  PASS: derived candidate is eligible while parent input pack remains approved
+NOTICE:  PASS: unit without two linked evidence sources stays blocked
+NOTICE:  PASS: separately reviewed and creator-approved two-source curriculum unit passes gate
+NOTICE:  PASS: public source URL must match canonical YouTube video and timestamp
+NOTICE:  PASS: reviewer cannot replace creator-approved publication payload
+NOTICE:  PASS: reviewer cannot replace creator-approved curriculum wording
+NOTICE:  PASS: changing reviewed unit draft invalidates content snapshot
+NOTICE:  PASS: changing reviewed learning objective invalidates content snapshot
+NOTICE:  PASS: current rejecting unit review blocks older accepted review
+NOTICE:  PASS: changing evidence excerpt invalidates existing reviewer and creator snapshots
+NOTICE:  PASS: changing parent-only evidence invalidates derived candidate snapshots
+NOTICE:  PASS: changing hypothesis control invalidates existing reviewer and creator snapshots
+NOTICE:  PASS: changing parent-only hypothesis control invalidates derived candidates
+NOTICE:  PASS: reapproving changed draft cannot expose an older unmatched public payload
+NOTICE:  PASS: unit reapproval cannot expose an older unmatched public unit
+NOTICE:  PASS: creator can revoke own public wording approval
+NOTICE:  PASS: creator can renew own wording approval after fresh review
+NOTICE:  PASS: renewed creator authorization requires exact republish before public visibility
+NOTICE:  PASS: creator can revoke own candidate approval
+NOTICE:  PASS: parent creator withdrawal blocks derived candidate without changing its input snapshot
+NOTICE:  PASS: creator can revoke own curriculum approval
+NOTICE:  PASS: parent review rejection blocks derived candidate without changing input snapshot
+NOTICE:  PASS: anonymous sees approved safe publication
+NOTICE:  PASS: anonymous sees independently approved curriculum unit
+NOTICE:  PASS: database full-text search finds approved result
+NOTICE:  PASS: public publication never opens transcript evidence
+NOTICE:  PASS: stale source lineage immediately hides publication
+NOTICE:  PASS: stale source lineage immediately hides curriculum
+NOTICE:  PASS: reviewer SELECT cannot bypass live publication gate
+NOTICE:  PASS: synthetic evidence cannot satisfy cross-video support
+NOTICE:  PASS: rights revocation invalidates publication
+NOTICE:  PASS: two clips of one original recording do not count as independent corroboration
+NOTICE:  PASS: unverified recording independence blocks corroboration
+NOTICE:  PASS: failed falsification blocks publication despite review flags
+NOTICE:  PASS: unassessed evidence confidence cannot be replaced by speaker confidence
+NOTICE:  PASS: missing counterexample blocks publication
+NOTICE:  PASS: theological candidate requires qualified scholarly review
+NOTICE:  PASS: source segments require new versions instead of in-place corrections
+NOTICE:  PASS: candidate lineage cannot contain a cycle
+NOTICE:  PASS: new source checksum makes direct candidate stale
+NOTICE:  PASS: source correction propagates staleness through lineage DAG
+NOTICE:  PASS: clearing stale flag cannot resurrect superseded source hash approvals
+NOTICE:  PASS: correction of run control input marks candidate stale without selected evidence link
+NOTICE:  PASS: withdrawing publication removes saved-question references
+NOTICE:  PASS: withdrawing curriculum preserves notes without blocking deletion
+NOTICE:  PASS: auth deletion cascades to profiles
+NOTICE:  PASS: auth deletion cascades to member_preferences
+NOTICE:  PASS: auth deletion cascades to consents
+NOTICE:  PASS: auth deletion cascades to account_links
+NOTICE:  PASS: auth deletion cascades to privacy_requests
+NOTICE:  PASS: auth deletion cascades to saved_questions
+NOTICE:  PASS: auth deletion cascades to learning_notes
+NOTICE:  PASS: auth deletion cascades to learning_progress
+NOTICE:  PASS: auth deletion cascades to practice_attempts
+NOTICE:  PASS: auth deletion cascades to community_questions
+NOTICE:  PASS: auth deletion cascades to participation_events
+NOTICE:  PASS: auth deletion cascades to quest_ledger
+NOTICE:  PASS: auth deletion cascades to wallet_ledger
+NOTICE:  PASS: all public and research tables enable RLS
+NOTICE:  PASS: research storage buckets stay private
+NOTICE:  PASS: private debate episode grouping schema exists
+NOTICE:  PASS: debate episode accepts an exact one-millisecond interval
+NOTICE:  PASS: debate episode rejects an empty interval
+NOTICE:  PASS: debate episode rejects bounds beyond known video duration
+NOTICE:  PASS: episode provenance and segmentation require a new immutable annotation
+NOTICE:  PASS: anonymous cannot read debate episode annotations
+NOTICE:  PASS: member cannot read private debate episodes
+NOTICE:  PASS: source correction preserves episode attribution to its immutable original version
+NOTICE:  PASS: corrected-source episodes remain private to staff
+NOTICE:  PASS: every public/research foreign key has a valid covering index prefix
+NOTICE:  PASS: each role/action uses one permissive policy per public/research table
+NOTICE:  PASS: anonymous event visibility remains published only
+NOTICE:  PASS: member event visibility remains published only
+NOTICE:  PASS: member cannot read creator settings after policy consolidation
+NOTICE:  PASS: reviewer event visibility remains published only
+NOTICE:  PASS: reviewer retains staff settings read access
+NOTICE:  PASS: reviewer cannot mutate creator settings
+NOTICE:  PASS: creator retains published and draft event access
+NOTICE:  PASS: creator retains own settings update
+NOTICE:  PASS: creator cannot write another settings owner
+NOTICE:  PASS: admin retains published and draft event access
+NOTICE:  PASS: admin retains settings mutation across owners
+Postgres 17 RLS and relational publication gates passed.

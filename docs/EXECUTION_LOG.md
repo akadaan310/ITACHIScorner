@@ -26,12 +26,16 @@ Plan: `docs/superpowers/plans/2026-10-18-evidence-first-foundation.md`
 | Task 4 | no automatic pedagogy | Synthetic fixtures and stale/unreviewed evidence fail eligibility |
 | Task 5 | evidence before claims | Exact logs/screenshots/review and remote SHA required for completion |
 
-## Progress
+## Completed work
 
-- Repository resolved; clean base cloned, baseline lint/typecheck/Vitest/build pass.
-- Supplied mission, constitution, design and implementation plan committed as `b147f5e`.
-- Separate UI/data/research/QA branches created. No remote service modified.
-- Baseline fold/CTA capture and all four implementation workstreams are in progress.
-
-- User selected ACT AI Protocol for a separate project, free only. Supabase quote was $0/month on Free. Created `itachis-corner` (`frxufmwwbegconolevkw`, `eu-central-1`), healthy; migration awaits local security green. This supersedes the initial project-selection blocker. No unrelated project was modified.
-- UI task committed as d717953 (integrated f0ce4d6); QA baseline/suite committed as a500762 (integrated3acf5b3). Final integration checks pending data/research.
+- Task 1 complete: clean repository/base resolution and original rendered audit at all five widths, historical screenshot review, asset registry and source/CTA truth audit.
+- Task 2 complete: public routes/aliases, consolidated creator-first Home, truthful source/approval waiting states and deliberate masked concept qualification.
+- Task 3 complete: configurable SSR accounts, owned notes/saves/preferences/privacy APIs, trusted role queue and private/public schema foundations. Hosted email delivery and actual member lifecycle remain explicit external verification gates.
+- Task 4 complete: authorized archive contract/importer, precise immutable provenance, conservative deterministic baselines/controls, whole-input lineage and revalidation, exact supplied-index adapter and blocked editorial templates. Real corpus remains empty, inventory unknown.
+- Task 5 implementation/review/verification complete: default Turbopack build, lint/typecheck,105 unit tests,114 browser tests (18 axe plus delayed-font regression),118 real Postgres assertions. Screenshots/performance refreshed at app source ba6a706; subsequent changes are SQL, tests and documentation.
+- Independent SQL review reproduced mutable-publication and parent-lineage approval bypasses. Exact revision hashes, live payload/read binding, recursive parent eligibility and actor-bound review/creator renewal/revocation now close them. Both migration contents have independent clear reviews and matching checksums.
+- User selected ACT AI Protocol, free only. Supabase quoted $0/month on Free; separate itachis-corner project created and both migrations installed. The unrelated inactive project was not touched.
+- Hosted boundary: all60 application tables have RLS, corpus bucket private, safe anonymous collection200/empty, research REST406, account/editorial401, all real source/publication/staff counts zero. Security advisor0; performance missing-FK/duplicate-policy findings0. Empty-database unused-index INFO is expected.
+- Performance review reproduced Explore390 font-swap CLS0.151; one CSS emphasis rule reduced cold/delayed values below0.1 across five widths without changing Home geometry. Final cold median0.000; delayed-font full test0.008710.
+- MCP assigned migration history20261018013721 and20261018014553. Local filenames were aligned without changing reviewed SQL bytes.
+- Delivery boundary: feature branch feat/evidence-first-foundation; commit/push only, no default-branch merge or deployment. The final handoff verifies remote commit equality. Modal/model spend0, no billing activation or messages sent.

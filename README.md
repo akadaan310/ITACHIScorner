@@ -6,7 +6,7 @@ Public pages contain no fictional catalogue, course, book, practice scenarios, e
 
 ## Local development
 
-Use Node 22+ (Node 24 used for this branch).
+Use Node 22.18+ (Node 24 used for this branch).
 
 ```bash
 npm ci

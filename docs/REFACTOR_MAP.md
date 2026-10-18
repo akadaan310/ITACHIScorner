@@ -18,10 +18,10 @@ Base: `b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3`. Legacy URLs are aliases, not a
 | `/library`, `/library/preview` | `/library` Library | Honest source-review waiting state; no Method book text | Explore questions | before/book-preview-*, after/library-* |
 | `/membership` | `/support` Support | Inactive optional support; no public prices or checkout | About the Corner | before/membership-*, after/support-* |
 | `/join`, `/onboarding` | `/join` Sign in | Real configurable email Auth; no browser demo enrolment | Request sign-in / verify code when configured | before/onboarding-*, after/join-* |
-| `/me` | `/me` My Corner | Real owned account state, no seeded member | Sign in when available | before/member-profile-*, after/account-* |
-| `/me/constellation`, `/me/quests`, `/me/afterglow` | Account aliases | Remove synthetic achievements and attendance | My Corner | after/account-* |
-| `/me/settings`, `/me/journal` | Private account surfaces | Owned settings/data; no private shared cache | Save / manage own data when configured | after/account-* |
-| `/studio`, `/studio/creator` | Protected Creator workspace | Trusted staff-only private evidence/review status | Staff sign in when configured | after/creator-access-* |
+| `/me` | `/me` My Corner | Real owned account state, no seeded member | Sign in when available | before/member-*, after/my-corner-* and after/settings-* |
+| `/me/constellation`, `/me/quests`, `/me/afterglow` | Account aliases | Remove synthetic achievements and attendance | My Corner | after/my-corner-* and after/settings-* |
+| `/me/settings`, `/me/journal` | Settings & privacy / Private notes | Owned settings and real private notes CRUD; no private shared cache | Save / manage own data when configured | after/settings-*, after/private-notes-* |
+| `/studio`, `/studio/creator` | Protected Creator workspace | Trusted staff-only private evidence/review status | Staff sign in when configured | after/creator-denied-* |
 | `/about`, `/faq`, `/privacy`, `/terms` | About and trust | Accurate independent status, privacy and operational limits | Contextual navigation | after/about-*, after/privacy-* |
 
 The exact visible CTA can vary with real session/configuration state. An unconfigured page must not offer an apparently working submit or export/delete flow. The implementation and browser records are authoritative for final response codes and redirect destinations.

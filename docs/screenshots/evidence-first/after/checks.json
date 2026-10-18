@@ -80,5 +80,30 @@
     },
     "preFixPhoneColdLoadMedian": 0.151,
     "methodology": "Layout-shift observer, no recent-input entries, document.fonts.ready plus two animation frames; fresh contexts and 800ms delayed woff2 network responses."
+  },
+  "databaseVerification": {
+    "localPostgresVersion": "17.6",
+    "sqlAssertionsPassed": 118,
+    "script": "bash scripts/test-rls.sh",
+    "hostedProject": "frxufmwwbegconolevkw",
+    "migrations": [
+      "20261018013721",
+      "20261018014553"
+    ],
+    "tablesWithRls": 60,
+    "privateBucket": true,
+    "verifiedVideos": 0,
+    "verifiedTranscriptVersions": 0,
+    "publicCollectionAnonymousHttp": 200,
+    "publicCollectionRows": 0,
+    "researchSchemaHttp": 406,
+    "anonymousProfilesHttp": 401,
+    "anonymousEditorialHttp": 401,
+    "securityAdvisorFindings": 0,
+    "missingForeignKeyIndexFindings": 0,
+    "multiplePermissivePolicyFindings": 0,
+    "unusedIndexInfo": 72,
+    "hostedAuthDeliveryVerified": false,
+    "hostedAccountDeletionVerified": false
   }
 }

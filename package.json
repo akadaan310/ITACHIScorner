@@ -2,7 +2,7 @@
   "name": "itachis-corner",
   "version": "0.1.0",
   "private": true,
-  "description": "Itachi's Corner — The Celestial Majlis. Independent concept demo, unaffiliated and not yet endorsed.",
+  "description": "Itachi's Corner — evidence-first learning and dialogue foundation. Independent, unaffiliated and not yet endorsed.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
