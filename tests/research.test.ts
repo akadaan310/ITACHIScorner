@@ -11,6 +11,8 @@ import {
   type ManifestRecord, type Segment, type Feature, type LineageNode,
 } from "../research/pipeline";
 
+import { INDEX_ADAPTER_VERSION, hashSourceIndex, matchExactSourceIndex, type ApprovedSourceIndex } from "../research/adapters/isnaad";
+
 const temporary: string[] = [];
 function temp() { const root = mkdtempSync(path.join(os.tmpdir(), "itachi-research-test-")); temporary.push(root); return root; }
 afterEach(() => { for (const root of temporary.splice(0)) rmSync(root, { recursive: true, force: true }); });
@@ -314,5 +316,22 @@ describe("cross-run corrections and source identity", () => {
     const permission = { status: "creator_authorized" as const, reference: "supplied authorization reference; not independently authenticated" };
     expect(() => parseManifest(JSON.stringify(record("short", "", { synthetic: false, permission })))).toThrow(/video.*id/i);
     expect(() => parseManifest(JSON.stringify(record("abcdefghijk", "", { synthetic: false, permission })))).not.toThrow();
+  });
+});
+
+
+describe("versioned exact source-index boundary (non-scripture synthetic strings only)", () => {
+  const index: ApprovedSourceIndex = { schema_version: 1, adapter_version: INDEX_ADAPTER_VERSION, engine_version: "CONTROLLED-ENGINE-1", edition: "CONTROLLED-NON-SCRIPTURE-INDEX", review_status: "approved_index", review_reference: "internal test approval only", synthetic: true, entries: [{ locus: "synthetic:a", text: "ALPHA BETA" }, { locus: "synthetic:b", text: "CAFÉ" }] };
+  it("finds exact NFC/whitespace matches with original UTF-16 offsets and edition lineage", () => {
+    const text = "😀 ALPHA \t BETA! CAFE\u0301."; const index_sha256 = hashSourceIndex(index);
+    const matches = matchExactSourceIndex(text, index, { expected_engine_version: index.engine_version, expected_index_sha256: index_sha256 });
+    expect(matches).toHaveLength(2); expect(matches.map((match) => text.slice(match.start, match.end))).toEqual(["ALPHA \t BETA", "CAFE\u0301"]);
+    expect(matches[0]!.edition).toBe(index.edition); expect(matches[0]!.index_sha256).toBe(index_sha256); expect(matches[0]!.synthetic).toBe(true); expect(matches[0]!.verification_status).toBe("index_match_only");
+  });
+  it("refuses checksum/version drift and never broadens exact matching into interpretive similarity", () => {
+    const expected = { expected_engine_version: index.engine_version, expected_index_sha256: hashSourceIndex(index) };
+    expect(() => matchExactSourceIndex("ALPHA BETA", { ...index, engine_version: "OTHER" }, expected)).toThrow(/version/i);
+    expect(() => matchExactSourceIndex("ALPHA BETA", { ...index, entries: [{ locus: "synthetic:a", text: "changed" }] }, expected)).toThrow(/checksum/i);
+    expect(matchExactSourceIndex("ALPHA BETAS and alpha beta", index, expected)).toHaveLength(0);
   });
 });

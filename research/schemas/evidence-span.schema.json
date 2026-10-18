@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/evidence-span.schema.json",
+  "type": "object",
+  "properties": {
+    "source_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "video_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "recording_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "track_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "transcript_version": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "segment_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9_-]{1,128}$"
+    },
+    "start_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "end_ms": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "speaker_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "speaker_role": {
+      "enum": [
+        "creator",
+        "guest",
+        "moderator",
+        "unknown"
+      ]
+    },
+    "speaker_confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "evidence_confidence": {
+      "type": "null"
+    },
+    "evidence_confidence_status": {
+      "const": "unassessed"
+    },
+    "extraction_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "original_text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "synthetic": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "source_id",
+    "video_id",
+    "recording_id",
+    "track_id",
+    "transcript_version",
+    "segment_id",
+    "start_ms",
+    "end_ms",
+    "source_sha256",
+    "speaker_id",
+    "speaker_role",
+    "speaker_confidence",
+    "evidence_confidence",
+    "evidence_confidence_status",
+    "extraction_version",
+    "original_text",
+    "source_url",
+    "synthetic"
+  ],
+  "additionalProperties": false,
+  "description": "PRIVATE exact original transcript span. Speaker confidence is not evidence confidence. No public publishing authority."
+}

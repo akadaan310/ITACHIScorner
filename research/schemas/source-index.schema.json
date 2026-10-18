@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://itachis-corner.invalid/private-research/source-index.schema.json",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "adapter_version": {
+      "const": "isnaad-exact-index-v1"
+    },
+    "engine_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "edition": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_status": {
+      "const": "approved_index"
+    },
+    "review_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "synthetic": {
+      "type": "boolean"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "locus": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "locus",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "adapter_version",
+    "engine_version",
+    "edition",
+    "review_status",
+    "review_reference",
+    "synthetic",
+    "entries"
+  ],
+  "additionalProperties": false,
+  "description": "Optional supplied index. The repository supplies no approved real scripture text or index. Runtime binds expected engine version/checksum. No ISNAAD execution, interpretive verification or debate inference."
+}

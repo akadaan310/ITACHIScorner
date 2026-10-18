@@ -1,0 +1,9 @@
+# Real-corpus coverage at foundation handoff
+
+Verified real imported videos: **0**. Imported real transcript versions: **0**. Validated attributed discoveries: **0**. Inventory completeness: **unknown**; no exhaustive permitted channel inventory or authorized source archive was supplied. The empty [safe manifest](manifest.ndjson), [discovery registry](discovery_registry.jsonl) and [machine-readable report](coverage_report.json) are intentional.
+
+`verified_real_videos` in importer output means checksum/contract-validated non-synthetic imports with supplied authorization assertions. It does not independently verify that a platform source exists, that a transcript is accurate, or that a permission reference is authentic. No coverage percentage is reported against an unknown inventory denominator. Available/unavailable inventory status categories remain explicit; no inaccessible source is counted as transcribed.
+
+Bounded discovery on 2026-10-18 found no handoff reference in this repository. Owner repository metadata exposed one matching `akadaan310/ITACHIScorner` repository and one branch at preparation time. GitHub code searches `itachi user:akadaan310` and `dawah user:akadaan310` returned zero indexed results; indexing/visibility limits prevent treating that as proof no private corpus mission exists. No unrelated repository contents were acquired, no video harvesting began, and no private transcripts were supplied. The corpus owner's repository, safe manifest snapshot/hash, scoped project and private archive pointer remain required handoff inputs.
+
+Controlled synthetic data exists only in automated tests, generated in temporary private directories and removed after each test. Its runs demonstrate mechanics and do not populate these real-corpus registries. See [handoff](handoff.md), [methodology](methodology.md), [limitations](limitations.md) and the [inference plan](inference_cost_plan.md).
