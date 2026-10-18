@@ -2,6 +2,10 @@
 
 Controlling follow-up: [MISSION_RECOVERY_AND_CORPUS.md](docs/MISSION_RECOVERY_AND_CORPUS.md), extending [the evidence-first mission](docs/MISSION_EVIDENCE_FIRST.md). Repository `akadaan310/ITACHIScorner`; live default `ccr-cea0c280-gyikbx` remains at `b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3`. Recovery branch `feat/restore-corner-and-corpus-handoff` starts from the preserved foundation `674668b54f749ea2c7b9edce50fcc9dad61be888`. No deployment or spending is authorized.
 
+## Owner clarification after delivery
+
+The owner has never assigned a task to Dot. Codex has not assigned or contacted Dot. The attachment’s claim of an existing dispatched Dot mission was unverified; the previous forwardable archive request is withdrawn. No corpus acquisition job has been started by this session.
+
 ## Recovery implementation
 
 - Rich creator-first Home now has a source-review stage, visitor-owned question desk, distinct Learn/Practice/Community journeys and My Corner close. Six main navigation destinations have zero repeated destinations; three source disclosures and three temporary draft actions are counted separately. Hero retains one dominant Explore action and one contextual About link.
@@ -10,10 +14,10 @@ Controlling follow-up: [MISSION_RECOVERY_AND_CORPUS.md](docs/MISSION_RECOVERY_AN
 - The existing importer and reviewed migrations are preserved. A separate direct-TLS PostgreSQL phase revalidates immutable receipts, exact project/migrations/current policies and role helper, real operator/creator permissions, source versions and intervals. Transactions fail closed; replay cannot roll corrected inventory back, including after adapter revisions. No review or public content is created by import.
 - Verified implementation: lint, strict typecheck, **110 Vitest tests**, production build, **122 Playwright tests**, **118 existing PostgreSQL RLS assertions**, and **53 private persistence PostgreSQL assertions** pass. Local database fixtures are explicitly synthetic. [Current verification](docs/RECOVERY_VERIFICATION.md), [visual review](docs/RECOVERY_VISUAL_REVIEW.md), [code review](docs/RECOVERY_CODE_REVIEW.md), and [new screenshot archive](docs/screenshots/recovery/README.md) retain distinct evidence and limits.
 - All 146 older evidence-first screenshot hashes remain intact, as do both reviewed migration hashes, the original portrait, research engine and account implementation. Fresh five-width before/after captures and comparison sheets use a separate recovery directory.
-- Bounded authorized discovery found no complete corpus handoff. Live intended-project counts remain **0 videos, 0 transcript versions, 0 segments and 0 private corpus objects**. Inventory denominator is **unknown**; validated real discoveries are **0**. [Exact discovery scope](docs/CORPUS_DISCOVERY.md) and [one forwardable artifact request](docs/CORPUS_HANDOFF_NEEDED.md) are recorded. No harvester or message to Dot was launched.
+- Bounded authorized discovery found no complete corpus handoff. Live intended-project counts remain **0 videos, 0 transcript versions, 0 segments and 0 private corpus objects**. Inventory denominator is **unknown**; validated real discoveries are **0**. [Exact discovery scope](docs/CORPUS_DISCOVERY.md) and [withdrawal of the premature request](docs/CORPUS_HANDOFF_NEEDED.md) are recorded. No harvester or message to Dot was launched.
 - The intended ACT AI Protocol project remains healthy on the Free plan. Hosted security advisor is clear; only 72 unused-index INFO findings remain on the empty database. Anonymous approved collection is 200/empty, research schema is unexposed (406), and private account access is denied (401). Hosted private transfer remains unverified because there is no authorized corpus, private database credential or provisioned operator/source permission setup.
 
-Current implementation and public UI revision: `9f7be34`. The private persistence phase was independently accepted at `90d68aa`; the later scoped font fix was also accepted. Delivery documentation and verification artifacts may follow these source commits. [WHAT_HAPPENS_NEXT.md](docs/WHAT_HAPPENS_NEXT.md) gives the phone-owner handoff and single next action.
+Current implementation and public UI revision: `9f7be34`. The private persistence phase was independently accepted at `90d68aa`; the later scoped font fix was also accepted. Delivery documentation and verification artifacts may follow these source commits. [WHAT_HAPPENS_NEXT.md](docs/WHAT_HAPPENS_NEXT.md) gives the corrected phone-owner status.
 
 ## DONE — foundation history (`674668b`)
 
@@ -43,7 +47,7 @@ See [VERIFICATION.md](docs/VERIFICATION.md), [HOSTED_VERIFICATION.md](docs/HOSTE
 ## BLOCKED ON CORPUS
 
 - **Verified imported videos: 0. Verified imported transcripts: 0.** Known total inventory denominator: unknown. No claim of exhaustive discovery or completed coverage.
-- Compatible existing corpus mission's private manifest/archive locator, version/checksum and authorized source handoff have not been located/provided. No second harvester was launched.
+- No authorized corpus has been supplied, no acquisition job has been started by this session, and no task has been assigned to Dot. Initial permitted acquisition, inventory, source permissions and private archive inputs still need to be established.
 - Independent real-source replication, matched baseline evidence, editorial decisions, approved techniques and learning dependencies.
 - Substantive Itachi-derived curriculum, practical scenarios and the 300–400-page book remain blocked by Gates 2–4. No substantive manuscript or course has been written.
 

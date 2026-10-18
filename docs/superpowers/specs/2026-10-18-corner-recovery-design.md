@@ -1,5 +1,8 @@
 # Corner recovery design
 
+> **Owner correction after delivery:** no task had been assigned to Dot. The assumed existing Dot mission and prescribed forwardable archive request below are historical design assumptions, now superseded by [the corrected owner status](../../WHAT_HAPPENS_NEXT.md). Codex has not contacted Dot or started acquisition.
+
+
 The [owner's controlling amendment](../../MISSION_RECOVERY_AND_CORPUS.md) authorizes immediate execution, review, commit and push. It supersedes procedural approval pauses. Base: `674668b54f749ea2c7b9edce50fcc9dad61be888`, separate branch `feat/restore-corner-and-corpus-handoff`. Preserve the delivered foundation, reviewed migrations and screenshot archive.
 
 ## Product

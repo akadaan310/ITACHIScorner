@@ -1,6 +1,6 @@
 # Itachi's Corner
 
-**Independent concept — unaffiliated and not yet endorsed.** An undeployed creator-first application for da'wah, learning and dialogue, with a private evidence-first research foundation. Creator approval, an actual corpus handoff, editorial review and hosted account lifecycle verification remain release gates.
+**Independent concept — unaffiliated and not yet endorsed.** An undeployed creator-first application for da'wah, learning and dialogue, with a private evidence-first research foundation. Creator approval, authorized corpus inputs, editorial review and hosted account lifecycle verification remain release gates.
 
 Public pages contain no fictional catalogue, course, book, practice scenarios, event activity or members. Home combines the creator invitation, source-review disclosures, a temporary visitor-owned writing desk and contextual Learn, Practice, Community and My Corner journeys. The writing desk holds only the visitor's own words in memory; it supplies no religious answer or attributed method. Existing demo journeys redirect to truthful destinations. Accounts use real configurable Supabase Auth; browser demo profiles cannot sign in or unlock staff tools.
 
@@ -29,9 +29,9 @@ Playwright uses a production build on port 3200. The screenshot project captures
 
 ## Evidence workflow
 
-The corpus manifest is the source of truth. This repository does **not** acquire videos or replace the existing corpus-gathering mission. The offline importer accepts authorized private archives, validates versions/checksums/precise source intervals and records honest coverage. Deterministic discovery baselines produce traceable proposals and controls; human review and creator permission precede educational attribution and publication.
+The corpus manifest is the source of truth. This repository implements import and analysis; it has not started a corpus acquisition job. The owner has not assigned anything to Dot, and Codex has not assigned or contacted Dot. The offline importer accepts authorized private archives, validates versions/checksums/precise source intervals and records honest coverage. Deterministic discovery baselines produce traceable proposals and controls; human review and creator permission precede educational attribution and publication.
 
-Bounded recovery discovery also found no authorized handoff. Actual imported videos and transcript versions remain **0**; the complete inventory denominator is unknown. This does not mean the channel has no videos. [One forwardable request](docs/CORPUS_HANDOFF_NEEDED.md) asks Dot for the single bundled handoff receipt; the owner need not run commands. No Itachi-derived curriculum or book manuscript has been written.
+Bounded recovery discovery also found no authorized handoff. Actual imported videos and transcript versions remain **0**; the complete inventory denominator is unknown. This does not mean the channel has no videos. The earlier request to retrieve an existing Dot archive is [withdrawn](docs/CORPUS_HANDOFF_NEEDED.md). An initial authorized acquisition task still needs to be established; there is no confirmed Dot task to wait for. No Itachi-derived curriculum or book manuscript has been written.
 
 The existing offline importer remains authoritative. A separate Node-only, permission-aware PostgreSQL adapter adds private persistence without exposing the research schema or transcript bodies through public REST. Hosted transfer requires a verified private operator connection and current source permissions; local test success does not establish hosted transfer readiness. See [the adapter contract](research/adapters/README.md).
 

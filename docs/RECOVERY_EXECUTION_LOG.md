@@ -23,7 +23,7 @@ Richness comes from useful visitor input, contextual journeys and source-readine
 
 Private persistence consumes the existing import contract in a separate direct PostgreSQL phase. Existing source-permission decisions must authorize restricted processing; parsing a manifest is not permission authentication. Missing credentials or corpus block only dependent live operations. The public schema and both reviewed migrations remain intact.
 
-Corpus discovery is bounded and read-only. No compatible artifact was located; the exact checked resources are in [CORPUS_DISCOVERY.md](CORPUS_DISCOVERY.md). No duplicate collector or message to Dot was launched. The owner receives one forwardable artifact request.
+Corpus discovery is bounded and read-only. No compatible artifact was located; the exact checked resources are in [CORPUS_DISCOVERY.md](CORPUS_DISCOVERY.md). No duplicate collector or message to Dot was launched. The initial delivery included a forwardable artifact request; the owner correction below withdraws it.
 
 ## Implementation and review
 
@@ -49,3 +49,9 @@ The final five-width, 800ms delayed-font probe exposed Home at 1280px with CLS `
 `9f7be34` adds a hero-scoped metric-adjusted local fallback and `minmax(0, …)` grid tracks. No fixed clipping, hidden text or weakened threshold is used. The final production probe keeps the portrait at 460px, changes heading height by only 1px during the swap, and measures Home1280 CLS `0.007877`. All ten Home/Explore width probes pass; the maximum is `0.070946`. Settled hero geometry remains unchanged. The independent code reviewer accepted this scoped fix; final browser evidence adds the permanent desktop font guard to the prior suite.
 
 After the scoped font correction, the fresh production build, lint, strict typecheck, 110 Vitest tests and the expanded **122-test browser suite** passed. The browser result has zero failures, skips or flakes. Private database code and the previously verified 118 +53 PostgreSQL assertions are unchanged. Final captures and idle performance use the font-corrected source.
+
+## Owner correction: no existing Dot assignment
+
+After the delivery at `1467da6`, the owner clarified: “I've never given anything to Dot yet.” Codex has not assigned a task to Dot or sent it a message. The attached brief’s statement that a Dot/corpus mission had already been dispatched was treated as confirmed without evidence. That was an execution assumption error; a bounded search finding no archive did not establish that an assigned mission existed.
+
+The request for Dot to return an existing archive is withdrawn. Current operational notes now state that no authorized corpus has been supplied and this session has not started an acquisition job. An initial authorized collection task remains to be established; no forwarding action is required from the owner. This correction changes documentation only and does not launch collection, outreach, paid processing or deployment. Original supplied briefs and historical verification artifacts remain unchanged.

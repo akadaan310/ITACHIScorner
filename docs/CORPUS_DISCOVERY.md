@@ -1,8 +1,8 @@
-# Existing corpus handoff discovery
+# Corpus input discovery and corrected task status
 
-Checked on 2026-10-18 against `akadaan310/ITACHIScorner`, from foundation commit `674668b54f749ea2c7b9edce50fcc9dad61be888`. This was bounded, read-only discovery of the existing Dot mission, following the supplied recovery amendment and [the import contract](../research/handoff.md).
+Checked on 2026-10-18 against `akadaan310/ITACHIScorner`, from foundation commit `674668b54f749ea2c7b9edce50fcc9dad61be888`. This was bounded, read-only discovery based on the supplied recovery amendment and [the import contract](../research/handoff.md). The amendment claimed that an existing Dot mission had been dispatched; that claim was not independently established. The owner subsequently clarified that they have never assigned anything to Dot. Codex has not assigned or contacted Dot.
 
-**Result: awaiting private corpus handoff.** No accessible package combining a real inventory manifest, immutable private transcript archive, snapshot/checksums and source-permission assertion was located in the resources below. This does not establish that the corpus does not exist elsewhere.
+**Corrected status: no authorized corpus supplied; no Dot task assigned.** No accessible package combining a real inventory manifest, immutable private transcript archive, snapshot/checksums and source-permission assertion was located in the resources below. This does not establish that the corpus does not exist elsewhere.
 
 ## Searches and results
 
@@ -25,6 +25,6 @@ The Supabase findings were supplied by the integration operator’s separate liv
 - Real videos imported by this discovery: **0**. Real transcript versions imported: **0**. No import or analysis was attempted without authorized inputs.
 - Inventory completeness denominator: **unknown**; the empty foundation manifest is not a complete channel inventory, and coverage cannot be expressed as a percentage.
 - Safe current coverage report: [`research/coverage_report.json`](../research/coverage_report.json). No real private import receipt exists yet.
-- One external artifact is missing: the existing corpus owner’s handoff receipt bundling the safe inventory, immutable private archive location/snapshot/checksums, permission assertion and known gaps. [The single forwardable request](CORPUS_HANDOFF_NEEDED.md) states the return destination.
+- The earlier request for one existing Dot artifact was premature and is [withdrawn](CORPUS_HANDOFF_NEEDED.md). No acquisition task has been started by this session or assigned to Dot; an initial authorized acquisition task still needs to be established. These searches do not establish that an archive or assigned external mission exists.
 
-Once that receipt is supplied in this Codex conversation, the operator can resolve its authorized private inputs, validate them against `research/handoff.md`, and record immutable import receipts and honest coverage before attempting analysis. Transcript bodies, credentials and sensitive storage pointers remain outside public Git and public output. No duplicate harvesting, outreach, paid processing or deployment occurred. No message was sent to Dot.
+If authorized corpus inputs are supplied in the future, the operator can validate them against `research/handoff.md` and record immutable import receipts and honest coverage before attempting analysis. Transcript bodies, credentials and sensitive storage pointers remain outside public Git and public output. No duplicate harvesting, outreach, paid processing or deployment occurred. No message was sent to Dot.

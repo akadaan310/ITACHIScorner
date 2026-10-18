@@ -37,7 +37,7 @@ No existing appropriately scoped project was located at audit. The user then sel
 - Feature branch: `feat/evidence-first-foundation`; isolated UI, data, research and QA worktrees feed one integrator.
 - Supabase packages are pinned: JS `2.118.0`, SSR `0.12.7`, CLI `2.121.0`. Current changelog and docs were consulted: explicit Data API grants, Node 22+, new-project SMTP/template restrictions and SSR cache headers matter.
 - Public safe reads use least privilege. Private account/research responses are not shared-cacheable. Storage buckets are private by default.
-- The offline importer does not duplicate the existing corpus-gathering mission. Its handoff locator remains blocked until supplied. No transcript was acquired or added to git.
+- The offline importer accepts future authorized corpus inputs. No acquisition job has been started by this session, and the owner clarified that no task has been assigned to Dot. No transcript was acquired or added to git; there is no confirmed external mission to wait for.
 - Optional model adapters, payment features and credits are inactive. No Modal balance, Stripe resource, marketing channel or deployment was used.
 
 ## Delivery verification

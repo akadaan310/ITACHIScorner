@@ -1,5 +1,8 @@
 # Corner Recovery Implementation Plan
 
+> **Owner correction after delivery:** no task had been assigned to Dot. The assumed existing Dot mission and prescribed forwardable archive request below are historical design assumptions, now superseded by [the corrected owner status](../../WHAT_HAPPENS_NEXT.md). Codex has not contacted Dot or started acquisition.
+
+
 > **For agentic workers:** Use superpowers:subagent-driven-development for scoped tasks and independent review. The owner explicitly requests execution without planning/approval pauses.
 
 **Goal:** Restore a rich, honest homepage and connect the existing private corpus engine safely, while producing one actionable handoff when inputs are missing.
@@ -73,4 +76,4 @@
 
 ## Execution outcome
 
-Implemented and independently accepted through `9f7be34`; current evidence and exact final delivery checks are in [RECOVERY_VERIFICATION.md](../../RECOVERY_VERIFICATION.md) and the Git history. All real corpus counts remain zero with an unknown total inventory denominator. The authorized partial delivery includes one forwardable artifact request, not a fabricated import receipt. Shipping is a normal push to the separate recovery branch, with no merge, force push, deployment or spending.
+Implemented and independently accepted through `9f7be34`; current evidence and exact final delivery checks are in [RECOVERY_VERIFICATION.md](../../RECOVERY_VERIFICATION.md) and the Git history. All real corpus counts remain zero with an unknown total inventory denominator. The initial delivery included a forwardable artifact request based on the brief’s unverified existing-mission claim. That request is now withdrawn following the owner correction above; no real import receipt exists. Shipping is a normal push to the separate recovery branch, with no merge, force push, deployment or spending.

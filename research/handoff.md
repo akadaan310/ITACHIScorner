@@ -1,6 +1,6 @@
 # Authorized corpus handoff
 
-This is a compatible import/analysis layer for the existing corpus mission, not a new harvesting project. No compatible authorized archive was supplied during the foundation work. Verified imported real videos and transcript versions are both **0**. The corpus owner retains inventory ownership, acquisition permissions and the private destination.
+This is the private import/analysis contract for future authorized corpus inputs. It does not acquire videos. The owner clarified that no task has been assigned to Dot; Codex has not assigned or contacted Dot or started acquisition. No compatible authorized archive was supplied during the foundation work. Verified imported real videos and transcript versions are both **0**. Any future acquisition must establish inventory ownership, acquisition permissions and the private destination.
 
 ## Handoff package
 
