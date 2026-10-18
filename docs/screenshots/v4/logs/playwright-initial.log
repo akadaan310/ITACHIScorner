@@ -1,0 +1,97 @@
+
+Running 125 tests using 2 workers
+
+(node:96776) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:96777) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/request (874ms)
+  ✓    3 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/verify (276ms)
+  ✓    4 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/logout (620ms)
+  ✓    5 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/profile (185ms)
+  ✓    6 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/preferences (103ms)
+  ✓    7 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/consent (96ms)
+  ✓    8 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/links (152ms)
+  ✓    9 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/delete (464ms)
+  ✓   10 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/notes (186ms)
+  ✓   11 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/saved-questions (150ms)
+  ✓   12 [desktop] › e2e/account-api.spec.ts:36:5 › anonymous export fails closed and cannot be shared-cached (98ms)
+  ✓   13 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/profile reports unavailable without claiming success (414ms)
+  ✓   14 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/preferences reports unavailable without claiming success (524ms)
+  ✓   15 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/consent reports unavailable without claiming success (155ms)
+  ✓   16 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/links reports unavailable without claiming success (56ms)
+  ✓   17 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/delete reports unavailable without claiming success (44ms)
+  ✓   18 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/notes reports unavailable without claiming success (42ms)
+  ✓   19 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/saved-questions reports unavailable without claiming success (127ms)
+  ✓   20 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/request cannot create an authenticated success (90ms)
+  ✓   21 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/verify cannot create an authenticated success (58ms)
+  ✓   22 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/logout cannot create an authenticated success (47ms)
+  ✓   23 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=https://hostile-origin.invalid local and signed out (143ms)
+  ✓   24 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=//hostile-origin.invalid local and signed out (65ms)
+  ✓   25 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=/%2fhostile-origin.invalid local and signed out (40ms)
+  ✓   26 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=https://hostile-origin.invalid local and signed out (40ms)
+  ✓    2 [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations (4.2s)
+  ✓   27 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=//hostile-origin.invalid local and signed out (132ms)
+  ✓   29 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=/%2fhostile-origin.invalid local and signed out (201ms)
+  ✓   28 [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured (1.6s)
+  ✓   30 [desktop] › e2e/flows.spec.ts:3:5 › Learn publishes no curriculum before evidence and creator approval (2.8s)
+  ✓   31 [desktop] › e2e/evidence-first.spec.ts:17:5 › practice offers private writing while creator-derived teaching awaits review (2.6s)
+  ✓   32 [desktop] › e2e/flows.spec.ts:12:5 › unconfigured Community never claims to submit or publish a question (3.1s)
+  ✓   33 [desktop] › e2e/evidence-first.spec.ts:26:5 › empty search returns no invented sources or conversations (3.7s)
+  ✓   34 [desktop] › e2e/flows.spec.ts:19:5 › missing auth configuration disables sign-in honestly (1.6s)
+  ✓   35 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › / renders without browser errors or demo content (3.3s)
+  ✓   36 [desktop] › e2e/flows.spec.ts:26:5 › unconnected account and privacy controls expose no fabricated personal data (3.5s)
+  ✓   37 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /explore renders without browser errors or demo content (2.1s)
+  ✓   38 [desktop] › e2e/flows.spec.ts:36:5 › browser-controlled demo data cannot unlock the creator workspace (3.5s)
+  ✓   39 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /learn renders without browser errors or demo content (2.5s)
+  ✓   41 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /practice renders without browser errors or demo content (1.7s)
+  ✓   42 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /community renders without browser errors or demo content (1.3s)
+  ✓   43 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /session-notes renders without browser errors or demo content (1.6s)
+  ✓   44 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /library renders without browser errors or demo content (1.3s)
+  ✘   40 [desktop] › e2e/flows.spec.ts:52:5 › private editorial access is absent from the public footer (6.6s)
+Testing stopped early after 1 maximum allowed failures.
+  ✘   45 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /support renders without browser errors or demo content (750ms)
+
+
+  1) [desktop] › e2e/flows.spec.ts:52:5 › private editorial access is absent from the public footer 
+
+    Error: expect(locator).toHaveCount(expected) failed
+
+    Locator:  locator('footer a[href^=\'/studio\']')
+    Expected: 0
+    Received: 1
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toHaveCount" locator('footer a[href^=\'/studio\']') with timeout 5000ms
+      - waiting for locator('footer a[href^=\'/studio\']')
+        12 × locator resolved to 1 element
+           - unexpected value "1"
+
+
+      52 | test("private editorial access is absent from the public footer", async ({ page }) => {
+      53 |   await page.goto("/");
+    > 54 |   await expect(page.locator("footer a[href^='/studio']")).toHaveCount(0);
+         |                                                           ^
+      55 |   await expect(page.locator("footer")).not.toContainText(/Load demo|preview creator|Studio/i);
+      56 | });
+      57 |
+        at /workspace/itachi-recovery/e2e/flows.spec.ts:54:59
+
+    Error Context: test-results-v4/flows-private-editorial-ac-fde89-sent-from-the-public-footer-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results-v4/flows-private-editorial-ac-fde89-sent-from-the-public-footer-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results-v4/flows-private-editorial-ac-fde89-sent-from-the-public-footer-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › e2e/flows.spec.ts:52:5 › private editorial access is absent from the public footer ─
+  1 interrupted
+    [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /support renders without browser errors or demo content 
+  80 did not run
+  43 passed (32.0s)
+  1 error was not a part of any test, see above for details

@@ -1,0 +1,165 @@
+{
+  "capturedAt": "2026-10-18T04:04:42.032Z",
+  "note": "Clipboard-read/write explicitly granted locally for deterministic readback; earlier immediate status observation was asynchronous, not evidence of failure.",
+  "checks": [
+    {
+      "width": 390,
+      "check": "settled clipboard status",
+      "message": "Draft copied. Keep it somewhere you control.",
+      "clipboard": "My question\nQA clipboard verification only.\n\nMy reflection\n"
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Is this Itachi’s official website?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Where are the lessons and conversations?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Does the Corner host livestreams?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Can I create an account?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Can I join a discussion or find a mentor?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "FAQ disclosure",
+      "label": "Can I buy a membership?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "searchbox count",
+      "count": 1
+    },
+    {
+      "width": 390,
+      "check": "question search",
+      "url": "http://127.0.0.1:4000/explore?q=listening",
+      "main": "EXPLORE\n\nEVERY GOOD CONVERSATION\nBEGINS WITH\na question.\n\nFind questions in their original context, with a clear path back to the conversation.\n\nSearch questions and conversations\nSEARCH QUESTIONS\n\nAWAITING SOURCED CONVERSATIONS\n\nNO PUBLISHED QUESTIONS FOUND.\n\nThere are no reviewed conversations matching your search. Try another phrase, or return as the collection grows."
+    },
+    {
+      "width": 390,
+      "check": "skip link Enter",
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      },
+      "hash": "#main"
+    },
+    {
+      "width": 390,
+      "check": "quick navigation tap",
+      "href": "/",
+      "label": "Home",
+      "finalPath": "/"
+    },
+    {
+      "width": 390,
+      "check": "quick navigation tap",
+      "href": "/explore",
+      "label": "Explore",
+      "finalPath": "/"
+    },
+    {
+      "width": 390,
+      "check": "quick navigation tap",
+      "href": "/learn",
+      "label": "Learn",
+      "finalPath": "/explore"
+    },
+    {
+      "width": 390,
+      "check": "quick navigation tap",
+      "href": "/practice",
+      "label": "Practice",
+      "finalPath": "/learn"
+    },
+    {
+      "width": 390,
+      "check": "quick navigation tap",
+      "href": "/community",
+      "label": "Community",
+      "finalPath": "/practice"
+    },
+    {
+      "width": 1440,
+      "check": "settled clipboard status",
+      "message": "Draft copied. Keep it somewhere you control.",
+      "clipboard": "My question\nQA clipboard verification only.\n\nMy reflection\n"
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Is this Itachi’s official website?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Where are the lessons and conversations?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Does the Corner host livestreams?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Can I create an account?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Can I join a discussion or find a mentor?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "FAQ disclosure",
+      "label": "Can I buy a membership?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "searchbox count",
+      "count": 1
+    },
+    {
+      "width": 1440,
+      "check": "question search",
+      "url": "http://127.0.0.1:4000/explore?q=listening",
+      "main": "EXPLORE\n\nEVERY GOOD CONVERSATION\nBEGINS WITH\na question.\n\nFind questions in their original context, with a clear path back to the conversation.\n\nSearch questions and conversations\nSEARCH QUESTIONS\n✧\n\nAWAITING SOURCED CONVERSATIONS\n\nNO PUBLISHED QUESTIONS FOUND.\n\nThere are no reviewed conversations matching your search. Try another phrase, or return as the collection grows."
+    },
+    {
+      "width": 1440,
+      "check": "skip link Enter",
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      },
+      "hash": "#main"
+    }
+  ]
+}

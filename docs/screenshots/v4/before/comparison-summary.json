@@ -1,0 +1,784 @@
+{
+  "phase": "before",
+  "baselineCommit": "7a8ce5efda461ebab717a03ed1d9c73528f92c9d",
+  "widths": [
+    360,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "records": 115,
+  "allHTTP200": true,
+  "overflowRecords": 0,
+  "browserIssueCount": 0,
+  "homepage": [
+    {
+      "width": 360,
+      "pageHeight": 6108,
+      "counts": {
+        "main": {
+          "instances": 12,
+          "unique": 12,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        },
+        "all": {
+          "instances": 28,
+          "unique": 21,
+          "repeated": 7,
+          "disabled": 3,
+          "transient": 7,
+          "repeatedDestinations": [
+            {
+              "destination": "/",
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "labels": [
+                "Learn more",
+                "behind the Corner",
+                "About"
+              ]
+            },
+            {
+              "destination": "/explore",
+              "labels": [
+                "EXPLORE A QUESTION",
+                "Explore"
+              ]
+            },
+            {
+              "destination": "/learn",
+              "labels": [
+                "Learn at your pace",
+                "Learn"
+              ]
+            },
+            {
+              "destination": "/practice",
+              "labels": [
+                "Practise with your own words",
+                "Practice"
+              ]
+            },
+            {
+              "destination": "/community",
+              "labels": [
+                "Make room for each other",
+                "Community"
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 0,
+          "transient": 0,
+          "repeatedDestinations": []
+        },
+        "transient": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        }
+      },
+      "creatorImageCount": 1,
+      "headings": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 16,
+          "y": 191,
+          "width": 328,
+          "height": 210
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 16,
+          "y": 1235,
+          "width": 328,
+          "height": 98
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 3,
+          "x": 16,
+          "y": 2022,
+          "width": 328,
+          "height": 149
+        },
+        {
+          "text": "THERE\u2019S ROOM to take your time.",
+          "fold": 4,
+          "x": 16,
+          "y": 3176,
+          "width": 328,
+          "height": 149
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 5,
+          "x": 42,
+          "y": 3601,
+          "width": 276,
+          "height": 108
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 5,
+          "x": 42,
+          "y": 4088,
+          "width": 276,
+          "height": 110
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 6,
+          "x": 16,
+          "y": 4573,
+          "width": 328,
+          "height": 149
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 7,
+          "x": 16,
+          "y": 5203,
+          "width": 328,
+          "height": 100
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "pageHeight": 5975,
+      "counts": {
+        "main": {
+          "instances": 12,
+          "unique": 12,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        },
+        "all": {
+          "instances": 28,
+          "unique": 21,
+          "repeated": 7,
+          "disabled": 3,
+          "transient": 7,
+          "repeatedDestinations": [
+            {
+              "destination": "/",
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "labels": [
+                "Learn more",
+                "behind the Corner",
+                "About"
+              ]
+            },
+            {
+              "destination": "/explore",
+              "labels": [
+                "EXPLORE A QUESTION",
+                "Explore"
+              ]
+            },
+            {
+              "destination": "/learn",
+              "labels": [
+                "Learn at your pace",
+                "Learn"
+              ]
+            },
+            {
+              "destination": "/practice",
+              "labels": [
+                "Practise with your own words",
+                "Practice"
+              ]
+            },
+            {
+              "destination": "/community",
+              "labels": [
+                "Make room for each other",
+                "Community"
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 0,
+          "transient": 0,
+          "repeatedDestinations": []
+        },
+        "transient": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        }
+      },
+      "creatorImageCount": 1,
+      "headings": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 16,
+          "y": 175,
+          "width": 358,
+          "height": 227
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 16,
+          "y": 1270,
+          "width": 358,
+          "height": 98
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 3,
+          "x": 16,
+          "y": 2057,
+          "width": 358,
+          "height": 149
+        },
+        {
+          "text": "THERE\u2019S ROOM to take your time.",
+          "fold": 4,
+          "x": 16,
+          "y": 3161,
+          "width": 358,
+          "height": 149
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 5,
+          "x": 42,
+          "y": 3587,
+          "width": 306,
+          "height": 73
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 5,
+          "x": 42,
+          "y": 4038,
+          "width": 306,
+          "height": 73
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 6,
+          "x": 16,
+          "y": 4486,
+          "width": 358,
+          "height": 149
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 7,
+          "x": 16,
+          "y": 5089,
+          "width": 358,
+          "height": 100
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "pageHeight": 5467,
+      "counts": {
+        "main": {
+          "instances": 12,
+          "unique": 12,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        },
+        "all": {
+          "instances": 29,
+          "unique": 21,
+          "repeated": 8,
+          "disabled": 3,
+          "transient": 7,
+          "repeatedDestinations": [
+            {
+              "destination": "/",
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/me",
+              "labels": [
+                "My Corner",
+                "Visit My Corner"
+              ]
+            },
+            {
+              "destination": "/about",
+              "labels": [
+                "Learn more",
+                "behind the Corner",
+                "About"
+              ]
+            },
+            {
+              "destination": "/explore",
+              "labels": [
+                "EXPLORE A QUESTION",
+                "Explore"
+              ]
+            },
+            {
+              "destination": "/learn",
+              "labels": [
+                "Learn at your pace",
+                "Learn"
+              ]
+            },
+            {
+              "destination": "/practice",
+              "labels": [
+                "Practise with your own words",
+                "Practice"
+              ]
+            },
+            {
+              "destination": "/community",
+              "labels": [
+                "Make room for each other",
+                "Community"
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 0,
+          "transient": 0,
+          "repeatedDestinations": []
+        },
+        "transient": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        }
+      },
+      "creatorImageCount": 1,
+      "headings": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 24,
+          "y": 195,
+          "width": 720,
+          "height": 262
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 24,
+          "y": 1366,
+          "width": 720,
+          "height": 132
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 3,
+          "x": 24,
+          "y": 2195,
+          "width": 720,
+          "height": 132
+        },
+        {
+          "text": "THERE\u2019S ROOM to take your time.",
+          "fold": 4,
+          "x": 24,
+          "y": 3287,
+          "width": 720,
+          "height": 132
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 4,
+          "x": 53,
+          "y": 3689,
+          "width": 295,
+          "height": 136
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 4,
+          "x": 425,
+          "y": 3689,
+          "width": 290,
+          "height": 139
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 5,
+          "x": 24,
+          "y": 4227,
+          "width": 720,
+          "height": 117
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 5,
+          "x": 24,
+          "y": 4801,
+          "width": 720,
+          "height": 51
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "pageHeight": 4257,
+      "counts": {
+        "main": {
+          "instances": 12,
+          "unique": 12,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        },
+        "all": {
+          "instances": 28,
+          "unique": 20,
+          "repeated": 8,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": [
+            {
+              "destination": "/",
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/explore",
+              "labels": [
+                "Explore",
+                "EXPLORE A QUESTION"
+              ]
+            },
+            {
+              "destination": "/learn",
+              "labels": [
+                "Learn",
+                "Learn at your pace"
+              ]
+            },
+            {
+              "destination": "/practice",
+              "labels": [
+                "Practice",
+                "Practise with your own words"
+              ]
+            },
+            {
+              "destination": "/community",
+              "labels": [
+                "Community",
+                "Make room for each other"
+              ]
+            },
+            {
+              "destination": "/me",
+              "labels": [
+                "My Corner",
+                "Visit My Corner"
+              ]
+            },
+            {
+              "destination": "/about",
+              "labels": [
+                "Learn more",
+                "behind the Corner",
+                "About"
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 0,
+          "transient": 0,
+          "repeatedDestinations": []
+        },
+        "transient": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        }
+      },
+      "creatorImageCount": 1,
+      "headings": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 64,
+          "y": 245,
+          "width": 607,
+          "height": 271
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 64,
+          "y": 1010,
+          "width": 529,
+          "height": 171
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 2,
+          "x": 64,
+          "y": 1541,
+          "width": 504,
+          "height": 259
+        },
+        {
+          "text": "THERE\u2019S ROOM to take your time.",
+          "fold": 3,
+          "x": 64,
+          "y": 2289,
+          "width": 606,
+          "height": 259
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 4,
+          "x": 105,
+          "y": 2737,
+          "width": 440,
+          "height": 115
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 4,
+          "x": 693,
+          "y": 2737,
+          "width": 439,
+          "height": 115
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 4,
+          "x": 64,
+          "y": 3245,
+          "width": 625,
+          "height": 248
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 5,
+          "x": 186,
+          "y": 3703,
+          "width": 800,
+          "height": 80
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "pageHeight": 4257,
+      "counts": {
+        "main": {
+          "instances": 12,
+          "unique": 12,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        },
+        "all": {
+          "instances": 28,
+          "unique": 20,
+          "repeated": 8,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": [
+            {
+              "destination": "/",
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/explore",
+              "labels": [
+                "Explore",
+                "EXPLORE A QUESTION"
+              ]
+            },
+            {
+              "destination": "/learn",
+              "labels": [
+                "Learn",
+                "Learn at your pace"
+              ]
+            },
+            {
+              "destination": "/practice",
+              "labels": [
+                "Practice",
+                "Practise with your own words"
+              ]
+            },
+            {
+              "destination": "/community",
+              "labels": [
+                "Community",
+                "Make room for each other"
+              ]
+            },
+            {
+              "destination": "/me",
+              "labels": [
+                "My Corner",
+                "Visit My Corner"
+              ]
+            },
+            {
+              "destination": "/about",
+              "labels": [
+                "Learn more",
+                "behind the Corner",
+                "About"
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 0,
+          "transient": 0,
+          "repeatedDestinations": []
+        },
+        "transient": {
+          "instances": 6,
+          "unique": 6,
+          "repeated": 0,
+          "disabled": 3,
+          "transient": 6,
+          "repeatedDestinations": []
+        }
+      },
+      "creatorImageCount": 1,
+      "headings": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 144,
+          "y": 245,
+          "width": 607,
+          "height": 271
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 144,
+          "y": 1010,
+          "width": 529,
+          "height": 171
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 2,
+          "x": 144,
+          "y": 1541,
+          "width": 504,
+          "height": 259
+        },
+        {
+          "text": "THERE\u2019S ROOM to take your time.",
+          "fold": 3,
+          "x": 144,
+          "y": 2289,
+          "width": 606,
+          "height": 259
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 4,
+          "x": 185,
+          "y": 2737,
+          "width": 440,
+          "height": 115
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 4,
+          "x": 773,
+          "y": 2737,
+          "width": 439,
+          "height": 115
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 4,
+          "x": 144,
+          "y": 3245,
+          "width": 625,
+          "height": 248
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 5,
+          "x": 266,
+          "y": 3703,
+          "width": 800,
+          "height": 80
+        }
+      ]
+    }
+  ],
+  "after": null
+}

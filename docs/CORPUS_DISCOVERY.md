@@ -1,3 +1,5 @@
+> Historical recovery handoff search. V4 supersedes the acquisition-not-started status: Codex has now performed [permitted public discovery and private metadata import](CORPUS_ACQUISITION_V4.md). This document preserves the earlier bounded search evidence; it is not a request to Dot.
+
 # Corpus input discovery and corrected task status
 
 Checked on 2026-10-18 against `akadaan310/ITACHIScorner`, from foundation commit `674668b54f749ea2c7b9edce50fcc9dad61be888`. This was bounded, read-only discovery based on the supplied recovery amendment and [the import contract](../research/handoff.md). The amendment claimed that an existing Dot mission had been dispatched; that claim was not independently established. The owner subsequently clarified that they have never assigned anything to Dot. Codex has not assigned or contacted Dot.

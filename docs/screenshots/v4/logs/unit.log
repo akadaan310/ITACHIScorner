@@ -1,0 +1,30 @@
+
+> itachis-corner@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/itachi-recovery
+
+ ✓ tests/explore-states-v4.test.ts (1 test) 95ms
+ ✓ tests/auth.test.ts (9 tests) 1292ms
+   ✓ backend readiness > fails closed on query errors and malformed publication records  1138ms
+ ✓ tests/private-persistence.test.ts (5 tests) 518ms
+   ✓ private database persistence boundary > blocks the separate hosted command without echoing arguments or database credentials  372ms
+ ✓ tests/auth-routes.test.ts (9 tests) 77ms
+ ✓ tests/research.test.ts (50 tests) 2553ms
+   ✓ CLI and research boundary regressions > runs an empty import and analysis through the real Node CLI  1208ms
+   ✓ CLI and research boundary regressions > CLI rejects unknown flags and reports failure without transcript text  577ms
+ ✓ tests/account-readiness.test.ts (2 tests) 51ms
+ ✓ tests/account-notes.test.ts (7 tests) 64ms
+ ✓ tests/account-activity-quality.test.ts (3 tests) 57ms
+ ✓ tests/account-export.test.ts (1 test) 34ms
+ ✓ tests/research-acquisition-v4.test.ts (4 tests) 52ms
+ ✓ tests/progression.test.ts (12 tests) 9ms
+ ✓ tests/account-activity.test.ts (2 tests) 19ms
+ ✓ tests/content.test.ts (15 tests) 42ms
+
+ Test Files  13 passed (13)
+      Tests  120 passed (120)
+   Start at  04:15:24
+   Duration  8.53s (transform 3.78s, setup 0ms, collect 8.86s, tests 4.86s, environment 9ms, prepare 3.16s)
+

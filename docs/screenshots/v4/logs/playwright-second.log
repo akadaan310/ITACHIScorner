@@ -1,0 +1,95 @@
+
+Running 125 tests using 2 workers
+
+(node:99165) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99166) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/request (65ms)
+  ✓    3 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/verify (17ms)
+  ✓    4 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/logout (22ms)
+  ✓    5 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/profile (41ms)
+  ✓    6 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/preferences (16ms)
+  ✓    7 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/consent (31ms)
+  ✓    8 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/links (15ms)
+  ✓    9 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/delete (12ms)
+  ✓   10 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/notes (13ms)
+  ✓   11 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/saved-questions (35ms)
+  ✓   12 [desktop] › e2e/account-api.spec.ts:36:5 › anonymous export fails closed and cannot be shared-cached (33ms)
+  ✓   13 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/profile reports unavailable without claiming success (150ms)
+  ✓   14 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/preferences reports unavailable without claiming success (100ms)
+  ✓   15 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/consent reports unavailable without claiming success (124ms)
+  ✓   16 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/links reports unavailable without claiming success (144ms)
+  ✓   17 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/delete reports unavailable without claiming success (203ms)
+  ✓   18 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/notes reports unavailable without claiming success (61ms)
+  ✓   19 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/saved-questions reports unavailable without claiming success (24ms)
+  ✓   20 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/request cannot create an authenticated success (71ms)
+  ✓   21 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/verify cannot create an authenticated success (69ms)
+  ✓   22 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/logout cannot create an authenticated success (26ms)
+  ✓   23 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=https://hostile-origin.invalid local and signed out (112ms)
+  ✓   24 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=//hostile-origin.invalid local and signed out (89ms)
+  ✓   25 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=/%2fhostile-origin.invalid local and signed out (37ms)
+  ✓    2 [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations (1.6s)
+  ✓   26 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=https://hostile-origin.invalid local and signed out (38ms)
+  ✓   28 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=//hostile-origin.invalid local and signed out (23ms)
+  ✓   29 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=/%2fhostile-origin.invalid local and signed out (38ms)
+  ✓   27 [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured (1.4s)
+  ✓   30 [desktop] › e2e/flows.spec.ts:3:5 › Learn publishes no curriculum before evidence and creator approval (2.0s)
+  ✓   31 [desktop] › e2e/evidence-first.spec.ts:17:5 › practice offers private writing while creator-derived teaching awaits review (1.3s)
+  ✓   32 [desktop] › e2e/flows.spec.ts:12:5 › unconfigured Community never claims to submit or publish a question (2.2s)
+  ✓   33 [desktop] › e2e/evidence-first.spec.ts:26:5 › empty search returns no invented sources or conversations (3.5s)
+  ✓   34 [desktop] › e2e/flows.spec.ts:19:5 › missing auth configuration disables sign-in honestly (3.4s)
+  ✓   35 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › / renders without browser errors or demo content (2.8s)
+  ✓   37 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /explore renders without browser errors or demo content (2.5s)
+  ✓   36 [desktop] › e2e/flows.spec.ts:26:5 › unconnected account and privacy controls expose no fabricated personal data (3.3s)
+  ✓   38 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /learn renders without browser errors or demo content (1.5s)
+  ✓   39 [desktop] › e2e/flows.spec.ts:36:5 › browser-controlled demo data cannot unlock the creator workspace (2.3s)
+  ✓   40 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /practice renders without browser errors or demo content (1.2s)
+  ✓   42 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /community renders without browser errors or demo content (1.4s)
+  ✓   41 [desktop] › e2e/flows.spec.ts:52:5 › secondary Creator Studio link preserves the private editorial access boundary (3.2s)
+  ✓   43 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /session-notes renders without browser errors or demo content (2.1s)
+  ✓   45 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /library renders without browser errors or demo content (1.9s)
+  ✓   46 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /support renders without browser errors or demo content (1.5s)
+  ✘   44 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / (4.5s)
+Testing stopped early after 1 maximum allowed failures.
+  ✘   47 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /about renders without browser errors or demo content (2.0s)
+
+
+  1) [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "color-contrast: .pathway-learn > .pathway-word[aria-hidden=\"true\"], .pathway-practice > .pathway-word[aria-hidden=\"true\"]",
+    + ]
+
+      14 |     const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
+      15 |     expect(results.violations.filter(v => v.impact === "serious" || v.impact === "critical")
+    > 16 |       .map(v => `${v.id}: ${v.nodes.map(node => node.target.join(" ")).join(", ")}`)).toEqual([]);
+         |                                                                                       ^
+      17 |   });
+      18 | }
+      19 |
+        at /workspace/itachi-recovery/e2e/quality.spec.ts:16:87
+
+    Error Context: test-results-v4/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results-v4/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results-v4/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / 
+  1 interrupted
+    [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /about renders without browser errors or demo content 
+  78 did not run
+  45 passed (26.7s)
+  1 error was not a part of any test, see above for details

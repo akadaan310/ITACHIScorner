@@ -1,0 +1,8 @@
+{
+  "implementationCommit": "783a0180adb59f47b0393d154bbeb9223c086685",
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "renderedArchive": "after/manifest.json",
+  "testedAndRenderedCommittedSourceHashesMatch": true,
+  "matchedFiles": 131,
+  "methodology": "SHA-256 of exact git show implementationCommit:path bytes compared to immutable rendered capture sourceHashes; source was uncommitted during capture, and is now proven identical to this committed tree."
+}

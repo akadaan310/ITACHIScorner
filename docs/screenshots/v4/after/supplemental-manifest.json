@@ -1,0 +1,926 @@
+{
+  "capturedAt": "2026-10-18T04:24:34.532482+00:00",
+  "methodology": "Additional read-only comparisons, all remaining disclosures/filter/keyboard checks, and authoritative corrected viewport captures. Original production-run artifacts are unchanged. See settled-views/manifest.json for explicit smooth-scroll capture correction.",
+  "productSourceHashesUnchanged": true,
+  "postCaptureToolingChanges": [
+    {
+      "file": "scripts/capture-v4.mjs",
+      "captureExecutionSHA256": "0efa829b0a04ab17c4395356601b9c66d1ea00ec71fb51afdd3c95d04e26473e",
+      "correctedCurrentSHA256": "29d020e85d3027c3af272eb196defdcb3568b6c03eb8220b15d2a818acfcf9f8"
+    }
+  ],
+  "files": [
+    {
+      "file": "comparisons/about-1440-before-after-full.jpg",
+      "sha256": "fea1104df28e858a966878740028d358051c9b4255e7d1c1ae169607b8e4fc3d"
+    },
+    {
+      "file": "comparisons/about-390-before-after-full.jpg",
+      "sha256": "6bb704e2815d9723e6031892124baf018050a437b6f8485bbeba0d817ed7960e"
+    },
+    {
+      "file": "comparisons/after-routes-1440-1.jpg",
+      "sha256": "4f6029e4e899c4252193f3ce229de581a442f54505c990e164a34c4c137f903d"
+    },
+    {
+      "file": "comparisons/after-routes-1440-2.jpg",
+      "sha256": "0c377237833f77f1ed9739bed80f28cb1f204539cebf700c742c2af1b3b293f3"
+    },
+    {
+      "file": "comparisons/after-routes-1440-3.jpg",
+      "sha256": "4601282947ec42fcc1ab73c1d55a08e06416bc1ed2a50ba518bba7dcc1127c23"
+    },
+    {
+      "file": "comparisons/after-routes-1440-4.jpg",
+      "sha256": "a7b5ecbcc47ea44226d97bedb48baa684eaf0c225d1f20f6fea1f8f37caef664"
+    },
+    {
+      "file": "comparisons/after-routes-1440-5.jpg",
+      "sha256": "218534676d36b9ba3ec8833987b780a76422e0ca483989206af021f969e3d9da"
+    },
+    {
+      "file": "comparisons/after-routes-1440-6.jpg",
+      "sha256": "648372eeaec7fceaa4584b2191609b4a1dd4534c5a17866088e6b411c858d133"
+    },
+    {
+      "file": "comparisons/after-routes-390-1.jpg",
+      "sha256": "5fba7146e4f53de176aeb7a5bc5beabde9835fef41e7489021e09ed15af2ac48"
+    },
+    {
+      "file": "comparisons/after-routes-390-2.jpg",
+      "sha256": "7b49c720778d50b6a246d41a820df560d01231c0e2f8c59eba8636757c24857d"
+    },
+    {
+      "file": "comparisons/after-routes-390-3.jpg",
+      "sha256": "10534ef2967ce5703792e8c3c040df8866051a0a650fe089969e3c0820f0cf0d"
+    },
+    {
+      "file": "comparisons/after-routes-390-4.jpg",
+      "sha256": "e72b944003f8dc932112d507cdac046ed35d4eeac63bd30fba0c7e885feb6110"
+    },
+    {
+      "file": "comparisons/after-routes-390-5.jpg",
+      "sha256": "62ef770be6db34794b70394a4f0bed6d7abe2233bec145a8715641582dbb4b4f"
+    },
+    {
+      "file": "comparisons/after-routes-390-6.jpg",
+      "sha256": "be268fc91700af53e65cca25f9f7686b37e56558c09f99154a7dbef0819803d8"
+    },
+    {
+      "file": "comparisons/archive-1440-before-after-full.jpg",
+      "sha256": "75a0aae8be38c074a8aaac069af1ff76c7c249a6f525cb545665f2bc40b320ff"
+    },
+    {
+      "file": "comparisons/archive-390-before-after-full.jpg",
+      "sha256": "757eaf9d0a74327974d9bedf3855bcb510df5e9da9d5bae474f3ff069ec76c83"
+    },
+    {
+      "file": "comparisons/before-after-metrics.json",
+      "sha256": "1d25241c0fc8e7459578b2ace2754daff10f65393e9f13746f297125a34f54ac"
+    },
+    {
+      "file": "comparisons/book-preview-1440-before-after-full.jpg",
+      "sha256": "68d4f7e80c2dc0735291cab2321b9a1c06505f06b454e23752dac7de1a9b8798"
+    },
+    {
+      "file": "comparisons/book-preview-390-before-after-full.jpg",
+      "sha256": "1373fa08408a22afe5cdac0a7e7f17ad55f1f0afab3fc0731c8dda008801e5da"
+    },
+    {
+      "file": "comparisons/community-1440-before-after-full.jpg",
+      "sha256": "f428da43a8663ba0f94e5e291f2e7304f6c065595b29815ed80d556ff397b2f1"
+    },
+    {
+      "file": "comparisons/community-390-before-after-full.jpg",
+      "sha256": "1460cba944763a681f72553231c41692b2444bcdcac0502517e61d8c6577a999"
+    },
+    {
+      "file": "comparisons/creator-1440-before-after-full.jpg",
+      "sha256": "3ad84daf51c79155cb07c920a687335199152fea7587c77269c7bc57e714439f"
+    },
+    {
+      "file": "comparisons/creator-390-before-after-full.jpg",
+      "sha256": "8cd0bfc511dfa2494adf00bb33ecf18723a6166ea4fc7dd8a738f3c2df1b3429"
+    },
+    {
+      "file": "comparisons/explore-1440-before-after-full.jpg",
+      "sha256": "21a9dded204db542b989420b8f907dbdeca062a73f8b9c73c74af2e45e07bf96"
+    },
+    {
+      "file": "comparisons/explore-390-before-after-full.jpg",
+      "sha256": "400e491b6dee81f53d5919d72f98368ee0a0e6eb6dccb6657e82baa88317d80b"
+    },
+    {
+      "file": "comparisons/faq-1440-before-after-full.jpg",
+      "sha256": "a2d9ae36cc9c887a9bcee330052fffadb5cb1e49ac39752557dd3e599b81536d"
+    },
+    {
+      "file": "comparisons/faq-390-before-after-full.jpg",
+      "sha256": "765ec711f4964155e1ddbfb65ee77c8a3cd84083e68ce034165000bfadc791b2"
+    },
+    {
+      "file": "comparisons/home-1440-before-after-full.jpg",
+      "sha256": "574c26f38ff4ec583b8e90eb7cb81bcd3bbf346691f69232b4e55361f7dffb29"
+    },
+    {
+      "file": "comparisons/home-1440-history-fold.jpg",
+      "sha256": "14d5a036f3c48a1696642fbca2754c01e6b368c965ce547b09ee3a66db75011b"
+    },
+    {
+      "file": "comparisons/home-1440-history-full.jpg",
+      "sha256": "aa47016ba3cfbf0b2a184cbb5dc291af5bbb964efdb48a77df38041d9d35821d"
+    },
+    {
+      "file": "comparisons/home-390-before-after-full.jpg",
+      "sha256": "29c07606707f8d7e559352ed69f3a45b84b2a5330d880f51354ea2174463926d"
+    },
+    {
+      "file": "comparisons/home-390-history-fold.jpg",
+      "sha256": "753eeff8a370bb0bb141c8c568211e592a13d6a3ac78f62b01b8da0e00ca1654"
+    },
+    {
+      "file": "comparisons/home-390-history-full.jpg",
+      "sha256": "d74c9f4db1510d2f08ff658925df8bdc6b12a2e71ab2a082b6a59e1afee4ccb5"
+    },
+    {
+      "file": "comparisons/join-1440-before-after-full.jpg",
+      "sha256": "d95e539f511aaac69f08d12fc162e048163da2db5921ef536ef845c25a2b5ef2"
+    },
+    {
+      "file": "comparisons/join-390-before-after-full.jpg",
+      "sha256": "93d55d5e6af1dbe0dc8e67e071db5326c6646682dd313b69e24f8b0e918815dd"
+    },
+    {
+      "file": "comparisons/journal-1440-before-after-full.jpg",
+      "sha256": "d424927e0f2803574cbed2a0da70702477e3e039356990851132a808a63545dd"
+    },
+    {
+      "file": "comparisons/journal-390-before-after-full.jpg",
+      "sha256": "d704e7fd88f6cf20f2d4ce550bb3e1db06c14c5577d935de1ce178ddc4442532"
+    },
+    {
+      "file": "comparisons/learn-1440-before-after-full.jpg",
+      "sha256": "39dd52b6a3509835da73baab1c2af3cd37be87629cef27a29b429c668b2b2e25"
+    },
+    {
+      "file": "comparisons/learn-390-before-after-full.jpg",
+      "sha256": "818601bcc247b51eea25fd7a2ceaddec7f200da98d3215134e5260bd7fd88722"
+    },
+    {
+      "file": "comparisons/library-1440-before-after-full.jpg",
+      "sha256": "68d4f7e80c2dc0735291cab2321b9a1c06505f06b454e23752dac7de1a9b8798"
+    },
+    {
+      "file": "comparisons/library-390-before-after-full.jpg",
+      "sha256": "59b58bb4b127919ad5b778ecfc7b7b4417de61a9cbe8b29738e49b61c2614e0c"
+    },
+    {
+      "file": "comparisons/my-corner-1440-before-after-full.jpg",
+      "sha256": "b08e81f15a425a646e5783dd338294bd1cfbda0462e482c64610ae2d81fc00ff"
+    },
+    {
+      "file": "comparisons/my-corner-390-before-after-full.jpg",
+      "sha256": "37880c1d036ae6b294d55da60cdc0b614ba3ed5b5e9aea2a7c49fa348b833f44"
+    },
+    {
+      "file": "comparisons/new-muslims-1440-before-after-full.jpg",
+      "sha256": "39dd52b6a3509835da73baab1c2af3cd37be87629cef27a29b429c668b2b2e25"
+    },
+    {
+      "file": "comparisons/new-muslims-390-before-after-full.jpg",
+      "sha256": "c452ca80d709dcea763f7a91e86bbc2693002a7bc57e9f806c8cfb26a5d4c0f6"
+    },
+    {
+      "file": "comparisons/onboarding-1440-before-after-full.jpg",
+      "sha256": "d95e539f511aaac69f08d12fc162e048163da2db5921ef536ef845c25a2b5ef2"
+    },
+    {
+      "file": "comparisons/onboarding-390-before-after-full.jpg",
+      "sha256": "0f82b0ea2ab92995c798fc7da5178f08cfdaab6987c043359fa94cbd6a2cd97a"
+    },
+    {
+      "file": "comparisons/practice-1440-before-after-full.jpg",
+      "sha256": "9577341f39a762907d9e211dbfeb582d845903968fd84eac80b20106b0545f6c"
+    },
+    {
+      "file": "comparisons/practice-390-before-after-full.jpg",
+      "sha256": "64b08f925549ba131c9e958f86ba4dece075dbf4f951a10c33a28bc2c30c1fc3"
+    },
+    {
+      "file": "comparisons/privacy-1440-before-after-full.jpg",
+      "sha256": "da3d41b8b6f63491688dd9b71399fe33117ec09267afcb909ac0723982ae710f"
+    },
+    {
+      "file": "comparisons/privacy-390-before-after-full.jpg",
+      "sha256": "69693110eba8636599d37475e11d0e2996be22462f3177ec3b53881222d4c367"
+    },
+    {
+      "file": "comparisons/session-notes-1440-before-after-full.jpg",
+      "sha256": "75a0aae8be38c074a8aaac069af1ff76c7c249a6f525cb545665f2bc40b320ff"
+    },
+    {
+      "file": "comparisons/session-notes-390-before-after-full.jpg",
+      "sha256": "757eaf9d0a74327974d9bedf3855bcb510df5e9da9d5bae474f3ff069ec76c83"
+    },
+    {
+      "file": "comparisons/settings-1440-before-after-full.jpg",
+      "sha256": "3ec6ed510bf87dc424b7e90e464d3383a0f9fb217888fa79baeec09717b1b6fb"
+    },
+    {
+      "file": "comparisons/settings-390-before-after-full.jpg",
+      "sha256": "e6fe184bd548cdc2ee5bd80012966f2ccd3d5acf7bb4cc5280b75ab0c914c63d"
+    },
+    {
+      "file": "comparisons/source-1440-before-after-full.jpg",
+      "sha256": "21a9dded204db542b989420b8f907dbdeca062a73f8b9c73c74af2e45e07bf96"
+    },
+    {
+      "file": "comparisons/source-390-before-after-full.jpg",
+      "sha256": "40a5e38aa1ed5000613806d1f690b358bf1aa93a6d8181a889425ed50e998973"
+    },
+    {
+      "file": "comparisons/studio-1440-before-after-full.jpg",
+      "sha256": "3ad84daf51c79155cb07c920a687335199152fea7587c77269c7bc57e714439f"
+    },
+    {
+      "file": "comparisons/studio-390-before-after-full.jpg",
+      "sha256": "ffffd3333dbccd758b17103b4135280fa3946d33090f939b8d9e38acafba3259"
+    },
+    {
+      "file": "comparisons/support-1440-before-after-full.jpg",
+      "sha256": "fabdd938b75952848ec4e707119ebcd3e55b45ea3f26ebd833ebb1d5769caa7a"
+    },
+    {
+      "file": "comparisons/support-390-before-after-full.jpg",
+      "sha256": "5e81c422c393102a985533d6ef7d3e22da2af794571a43aeac02bddeced292be"
+    },
+    {
+      "file": "comparisons/terms-1440-before-after-full.jpg",
+      "sha256": "d2001b73f7d03e4833e6e57020296e6b29a0c3f9fe65d75bd7d22ecb01d95b73"
+    },
+    {
+      "file": "comparisons/terms-390-before-after-full.jpg",
+      "sha256": "790e9f028ca65dd54cd166057cd94af5fcb88815d281c3325e8b935bc4a4fd24"
+    },
+    {
+      "file": "settled-views/about-1280-fold.jpg",
+      "sha256": "ab9c2289d7b9684321cfe5adf7bb6150ba0912a891a99b02579310877e824359"
+    },
+    {
+      "file": "settled-views/about-1440-fold.jpg",
+      "sha256": "a509acc590e422342e7a474e999be82b0d2fb61599636466c5cac94a541be6c7"
+    },
+    {
+      "file": "settled-views/about-360-fold.jpg",
+      "sha256": "a91fd5a72803805f76d07178a3e260a5d82fbfc28dea63fdf63a27214cda590b"
+    },
+    {
+      "file": "settled-views/about-390-fold.jpg",
+      "sha256": "f2237b2cd698c2d3f38bb560de79eff5670ab93fefb23afdd1ec1721e6e1f127"
+    },
+    {
+      "file": "settled-views/about-768-fold.jpg",
+      "sha256": "29257b82a81d060934fa8b403caef99057c0c9b0805a57e7364695e82c9dfa3c"
+    },
+    {
+      "file": "settled-views/archive-1280-fold.jpg",
+      "sha256": "e13c40140c8c48a8d30067b3c3c477a541feb5ca26a54be5134fc74d02608818"
+    },
+    {
+      "file": "settled-views/archive-1440-fold.jpg",
+      "sha256": "1c4e857c9a586020db88047358f481ddf1044fa4978d8be14fced3ef08617a02"
+    },
+    {
+      "file": "settled-views/archive-360-fold.jpg",
+      "sha256": "ed485bdb1992dca95c9ec7841e03593bf4cc4a71375f9e92c8fb29e968f2c756"
+    },
+    {
+      "file": "settled-views/archive-390-fold.jpg",
+      "sha256": "06b96638b3e1fc7d0b5216440763bbc32009975611d1087ab1e3a4038678afda"
+    },
+    {
+      "file": "settled-views/archive-768-fold.jpg",
+      "sha256": "d15d96c8a8926d940566f699fc67345a0cfdf74d9cae926961227c36806a65cc"
+    },
+    {
+      "file": "settled-views/book-preview-1280-fold.jpg",
+      "sha256": "fc249e59d960e4a660c29dffca686aa6d0061fcfb10d972944e5f45d19a9f97e"
+    },
+    {
+      "file": "settled-views/book-preview-1440-fold.jpg",
+      "sha256": "7621e5d480f59ec2ddd8f1de6da69f739c3128c0bd7f672766816295f5e1bc0d"
+    },
+    {
+      "file": "settled-views/book-preview-360-fold.jpg",
+      "sha256": "d88b7acea6eaa00bac701f4ff2a0d22dfbefeb002d0e52668f27454337ff6d9c"
+    },
+    {
+      "file": "settled-views/book-preview-390-fold.jpg",
+      "sha256": "06e2d45b81f04c9fe5e5782474048ea0887b3bdb8f5767a60fe12c9aba3e2fb4"
+    },
+    {
+      "file": "settled-views/book-preview-768-fold.jpg",
+      "sha256": "667a7b58bcff22f53dddf3de94d91beb6d8f127c905cb15521576b55323d015f"
+    },
+    {
+      "file": "settled-views/capture-method.txt",
+      "sha256": "74dbe2bd3691546530b359b56d000331167938a80fd7bcac5e54425a82b0b0cf"
+    },
+    {
+      "file": "settled-views/community-1280-fold.jpg",
+      "sha256": "21c366943a16b28dd4174f1571164469ebc975a9e24cc69849c45d205584e6db"
+    },
+    {
+      "file": "settled-views/community-1440-fold.jpg",
+      "sha256": "ce7cfecf213fecec7e17a7c61ad2adddd73aac34af7363e26f89ff07bd396875"
+    },
+    {
+      "file": "settled-views/community-360-fold.jpg",
+      "sha256": "e9b6a99999d73c0623793dabef1ec6adb483339f702a12ee0b445d7675224f67"
+    },
+    {
+      "file": "settled-views/community-390-fold.jpg",
+      "sha256": "5b4dc4e677d5f162994ba80f5d31feba82700f9256cc4b47fab3303182fad178"
+    },
+    {
+      "file": "settled-views/community-768-fold.jpg",
+      "sha256": "597ece910a93fa393ba9bc75cf88a1090d0c0a9d74ccbc7c42c2b74aaeb2f7cb"
+    },
+    {
+      "file": "settled-views/creator-1280-fold.jpg",
+      "sha256": "489bdfe8397193a4cb1f158bc4a8161083412b439094c84d16615c62ad9fedc8"
+    },
+    {
+      "file": "settled-views/creator-1440-fold.jpg",
+      "sha256": "9debaa996099624eb207089665b08d6f2afa67bc8d03c0ba42221ca997df5751"
+    },
+    {
+      "file": "settled-views/creator-360-fold.jpg",
+      "sha256": "dccd53aa8bdd7f77966bec170559d62c4fa0674ca50e67ff2ba915d99c67b526"
+    },
+    {
+      "file": "settled-views/creator-390-fold.jpg",
+      "sha256": "641f83c9604946544e806616fcea3d7fe15b5182035efa52e25bf9265666d509"
+    },
+    {
+      "file": "settled-views/creator-768-fold.jpg",
+      "sha256": "169ab9883ea3caec1822e2fb48f328aa59ce0922276bd02f09c40132cee35126"
+    },
+    {
+      "file": "settled-views/explore-1280-fold.jpg",
+      "sha256": "2b0e01d36e30ce3f55255d63e369069c8b7dd628fca564fc401666fa800e2f74"
+    },
+    {
+      "file": "settled-views/explore-1440-fold.jpg",
+      "sha256": "8caff5d55004269376255e632f4559482aa89238ecf9885e64b5565c73996a55"
+    },
+    {
+      "file": "settled-views/explore-360-fold.jpg",
+      "sha256": "1ee5b2ace2c24322d56379d3d9a1a49ed8c032193405ad1816971b2dd1a1e6fd"
+    },
+    {
+      "file": "settled-views/explore-390-fold.jpg",
+      "sha256": "55deae4fa654929a415903671c07674c57e15603ee5878850f94235e3454a1fd"
+    },
+    {
+      "file": "settled-views/explore-768-fold.jpg",
+      "sha256": "a85795ef752f6b293621256480dfdd80919ef2741e32887568a8bc9a16f577d0"
+    },
+    {
+      "file": "settled-views/faq-1280-fold.jpg",
+      "sha256": "63d491107b4505bd61e6b85e17388f67aea2be465022833394b500f55ee4a580"
+    },
+    {
+      "file": "settled-views/faq-1440-fold.jpg",
+      "sha256": "e4bf4868d8cf608bcd0c69dea807d210122eee4daf14284e24c710a77647eb0d"
+    },
+    {
+      "file": "settled-views/faq-360-fold.jpg",
+      "sha256": "b76113214bb5d2d7ef9a0a3b3394059630cecac15060d99d380f2dbc5b627fa2"
+    },
+    {
+      "file": "settled-views/faq-390-fold.jpg",
+      "sha256": "abae7ec3d88e259dd5fa9acfd8173a6776dd4ba19cbf0cf9c22a0856d8bbeb27"
+    },
+    {
+      "file": "settled-views/faq-768-fold.jpg",
+      "sha256": "4a80c456518fb6db902bb8ddb52e9682dcde0aba785a87ccb4b6d6b6de95ed4c"
+    },
+    {
+      "file": "settled-views/home-1280-fold.jpg",
+      "sha256": "bb83b78a8919b66e1bff9956d14a767a2ed733b453a5b98b0ddec83df3efeb1b"
+    },
+    {
+      "file": "settled-views/home-1280-section-1.jpg",
+      "sha256": "dc1660391bf83efeec391e516f3f7613402b998f6dd62eaf3f33764e2fb565a6"
+    },
+    {
+      "file": "settled-views/home-1280-section-2.jpg",
+      "sha256": "6f38e44db85603b99a42ad4b447ec56206bf5fdd9e90808fc74ce8533a42f66c"
+    },
+    {
+      "file": "settled-views/home-1280-section-3.jpg",
+      "sha256": "07924ee5ff3b872b6475c52542cd32eb639b348968e4df7f6dd31754de5c3fcd"
+    },
+    {
+      "file": "settled-views/home-1280-section-4.jpg",
+      "sha256": "972703e92ac84d167335264a6618493118674f9e82f6b08f96f72a39cb23df64"
+    },
+    {
+      "file": "settled-views/home-1280-section-5.jpg",
+      "sha256": "f366f83bdcc7db582195cbdf78604134c8b7aa219d3c888c06e6aa5ebd6cb5fc"
+    },
+    {
+      "file": "settled-views/home-1280-section-6.jpg",
+      "sha256": "3688a5f043ee363d9e3c7256262cc8fec65387f2aa615f916f9b597e392d6882"
+    },
+    {
+      "file": "settled-views/home-1280-section-7.jpg",
+      "sha256": "7508dfdabe55fdd1d64993fb46b3c484e0cc9c757941121ebe2fdaffcf372841"
+    },
+    {
+      "file": "settled-views/home-1440-fold.jpg",
+      "sha256": "93f0a6acc66acf0bdb2d0c1d8528425c4e576dd3841f6d0c5c7f2f6c61cf7948"
+    },
+    {
+      "file": "settled-views/home-1440-section-1.jpg",
+      "sha256": "0dab5412e9d1e649bdd1903b78477cd5d178a3f6691abc038c2c64f573db2737"
+    },
+    {
+      "file": "settled-views/home-1440-section-2.jpg",
+      "sha256": "51ba33e80c3ebdf56858b907689b6eb2f85cac1a13ebfb6418e3d1a2d3bdcf7c"
+    },
+    {
+      "file": "settled-views/home-1440-section-3.jpg",
+      "sha256": "40279d88b5d4261ab80138b73579a16e47df376aa0ca646da6ef682e6daffb32"
+    },
+    {
+      "file": "settled-views/home-1440-section-4.jpg",
+      "sha256": "1a9bb69df56de1ddd2bc075c9c3550c30f1f2ae1aaf00aebd01393d3f3590ce6"
+    },
+    {
+      "file": "settled-views/home-1440-section-5.jpg",
+      "sha256": "fca623c172e8f75be6e16b3e1b0a089128c21547167e783e37e60b0140249476"
+    },
+    {
+      "file": "settled-views/home-1440-section-6.jpg",
+      "sha256": "8446a745aa9bde771fedd091398318ba274096308e3f596d6e8ab13830e68a9e"
+    },
+    {
+      "file": "settled-views/home-1440-section-7.jpg",
+      "sha256": "ea49d7dc7dbc8de50036181d3f872f8398f8ccbc8682017948a11075702d45af"
+    },
+    {
+      "file": "settled-views/home-360-fold.jpg",
+      "sha256": "f65481165a534736f32cbe34069b9b7666b79f1edc86c26d1b2a2d41ff099122"
+    },
+    {
+      "file": "settled-views/home-360-section-1.jpg",
+      "sha256": "0ee22f898bde054789779bfc101e4d82e7d3b4cdf510881297a9c3d589be313b"
+    },
+    {
+      "file": "settled-views/home-360-section-2.jpg",
+      "sha256": "60cae79eefa1f7a83db3f7bd2423e26f495007f96e331c3bebd9ffbc539e94f8"
+    },
+    {
+      "file": "settled-views/home-360-section-3.jpg",
+      "sha256": "38a666511c73446ada16643459f20a987ebcf478babfb9b4cc37255ef58582cc"
+    },
+    {
+      "file": "settled-views/home-360-section-4.jpg",
+      "sha256": "54c4c7e719422b98b303e84a140894c2b74aa7eccdd0e8a25b11ecb33bf7265a"
+    },
+    {
+      "file": "settled-views/home-360-section-5.jpg",
+      "sha256": "5d0176860cb0ff0fb0d6e4cd08ecd564a6eed46c3560d4a41471ce571c20ed8f"
+    },
+    {
+      "file": "settled-views/home-360-section-6.jpg",
+      "sha256": "00d25cc3f09e943d7ad489b578f2762537ad87a349d63c085caaa850b82b59ec"
+    },
+    {
+      "file": "settled-views/home-360-section-7.jpg",
+      "sha256": "5019bb960a838db57ae5f175227f5b25ecd33b5e8026b8d20893de629f4e601e"
+    },
+    {
+      "file": "settled-views/home-390-fold.jpg",
+      "sha256": "a80b6dbdd9d0d55fafcd4ec9a3a971f1b614a515114b93b74f51cd4193fa6b5e"
+    },
+    {
+      "file": "settled-views/home-390-section-1.jpg",
+      "sha256": "cb9e5ea2e2c49fb61408f4e21e05b5ccd9be65af7f7a468574b823de0fcb3d9a"
+    },
+    {
+      "file": "settled-views/home-390-section-2.jpg",
+      "sha256": "38e7646156ac5e09f39bc82a19d0e23138f74d98abad1710deb0159c8ad0e1bc"
+    },
+    {
+      "file": "settled-views/home-390-section-3.jpg",
+      "sha256": "d65e1efcb230e7d98dcbf72ca2e239ab220abb458174fe428d57ece42c86523a"
+    },
+    {
+      "file": "settled-views/home-390-section-4.jpg",
+      "sha256": "22e6d7fd2e180e8d21425aac4dc3e5b415e46208d6ccfc1f356aeb6105dead7c"
+    },
+    {
+      "file": "settled-views/home-390-section-5.jpg",
+      "sha256": "fb75bf0d44d65be7ac918b0770e65c4eb953be87b71660d01e81c20de842c768"
+    },
+    {
+      "file": "settled-views/home-390-section-6.jpg",
+      "sha256": "a69163fd8608c60b5749d2c521b9b0ac1f3a33d751af677c521d6d05d55a25f4"
+    },
+    {
+      "file": "settled-views/home-390-section-7.jpg",
+      "sha256": "c2eda2cde5425a07601012d80e0ed1aa617f9e251dc4c9b7e5a2c8274db2aed2"
+    },
+    {
+      "file": "settled-views/home-768-fold.jpg",
+      "sha256": "103d2ead9933bd2e8c2ed652cb62b6ed9dd86f8a4199ac7b66c025372dc74a24"
+    },
+    {
+      "file": "settled-views/home-768-section-1.jpg",
+      "sha256": "6ff185d0762cd0c005dc79fd2565a301660196e146a42e3eb4a1c1b993597533"
+    },
+    {
+      "file": "settled-views/home-768-section-2.jpg",
+      "sha256": "ae8d0a2d66ae0cbb3d39cce85a4f5239a391a3548522f9c17e6246277b2b2530"
+    },
+    {
+      "file": "settled-views/home-768-section-3.jpg",
+      "sha256": "2b8a72820e98617d6d6ee5e1acdf12daa24751574615d6cf74920b054ac8f36b"
+    },
+    {
+      "file": "settled-views/home-768-section-4.jpg",
+      "sha256": "9d8162f8077977ff6a3e8077b21d40feb5cb6242bdecc02f5655365f8fd16c8d"
+    },
+    {
+      "file": "settled-views/home-768-section-5.jpg",
+      "sha256": "330437f53d685f2dfaedb13540180d04921d7efb3dd825510d30e68ceef9e118"
+    },
+    {
+      "file": "settled-views/home-768-section-6.jpg",
+      "sha256": "1d11c07d9110f05c394d1dbce12784926280399a6cbb1ebc2123307efa77e879"
+    },
+    {
+      "file": "settled-views/home-768-section-7.jpg",
+      "sha256": "dd5bbca1aaa9663ae071ea2f308923baa7d9262de94c3677744b3b3e8f13fc3b"
+    },
+    {
+      "file": "settled-views/join-1280-fold.jpg",
+      "sha256": "6c895cdd807f37fc7e2ac29810432b887740b885370035983dd8e47b3b7d9fc6"
+    },
+    {
+      "file": "settled-views/join-1440-fold.jpg",
+      "sha256": "2a44fdee30cd04d6fbf44a2b6b6c12c0210c53b9c4785a885150f4209bf6f4d5"
+    },
+    {
+      "file": "settled-views/join-360-fold.jpg",
+      "sha256": "3ff7c3e244fe8999d441f338a722eab5a820e962c5148f0ba5249f226cebe943"
+    },
+    {
+      "file": "settled-views/join-390-fold.jpg",
+      "sha256": "c3e7896d0516c64c5410d8cd52373ce26b03c43f99fe93a138277f68d8f1cfb9"
+    },
+    {
+      "file": "settled-views/join-768-fold.jpg",
+      "sha256": "a2146dfdd746e9fbbc1d20b10fc0b4007b5557833f10725bdd53500c68630c95"
+    },
+    {
+      "file": "settled-views/journal-1280-fold.jpg",
+      "sha256": "3f6748aa98a885679b49091f23332c276fc4c58c231877e1143740b004129985"
+    },
+    {
+      "file": "settled-views/journal-1440-fold.jpg",
+      "sha256": "c1a836d78c55b74bf6ef8a69b9afcd1e9bd8101f95d851f8dfc3964567745a6e"
+    },
+    {
+      "file": "settled-views/journal-360-fold.jpg",
+      "sha256": "9c00ac3159848b385b047e48239daa225170a1a008aa279d50d5da8f661960f5"
+    },
+    {
+      "file": "settled-views/journal-390-fold.jpg",
+      "sha256": "1d410ad94f8d79659ddd110e9e45cec296ef3d9108f9d81dcb1ab5cf2c84ebc5"
+    },
+    {
+      "file": "settled-views/journal-768-fold.jpg",
+      "sha256": "d82ddc6129a9f1f64a30f2c154c59f57acb09a91b9a059ae8ca1dc8a96349dd2"
+    },
+    {
+      "file": "settled-views/learn-1280-fold.jpg",
+      "sha256": "301014bd58ade7ba7d0d45bfc038e3c758442c1a4d325013aa5da2c1f01da3f2"
+    },
+    {
+      "file": "settled-views/learn-1440-fold.jpg",
+      "sha256": "9c540db7ea9680415ee950556f16ee3ce27dd238c375ccf3f5bc4c2886d636eb"
+    },
+    {
+      "file": "settled-views/learn-360-fold.jpg",
+      "sha256": "e357c3d081c0160bb14f4e2a51048060aae728adba1ac70e42141576061bf8cc"
+    },
+    {
+      "file": "settled-views/learn-390-fold.jpg",
+      "sha256": "44be02facedc9f2d5f218aa885317cd289d83cf5b51e8d8b6ba76fa13b4284ee"
+    },
+    {
+      "file": "settled-views/learn-768-fold.jpg",
+      "sha256": "fb6483ef1aef268f86a1d8514bccfee5643bc795496ad46584e8045147b90503"
+    },
+    {
+      "file": "settled-views/library-1280-fold.jpg",
+      "sha256": "fc249e59d960e4a660c29dffca686aa6d0061fcfb10d972944e5f45d19a9f97e"
+    },
+    {
+      "file": "settled-views/library-1440-fold.jpg",
+      "sha256": "7621e5d480f59ec2ddd8f1de6da69f739c3128c0bd7f672766816295f5e1bc0d"
+    },
+    {
+      "file": "settled-views/library-360-fold.jpg",
+      "sha256": "d88b7acea6eaa00bac701f4ff2a0d22dfbefeb002d0e52668f27454337ff6d9c"
+    },
+    {
+      "file": "settled-views/library-390-fold.jpg",
+      "sha256": "06e2d45b81f04c9fe5e5782474048ea0887b3bdb8f5767a60fe12c9aba3e2fb4"
+    },
+    {
+      "file": "settled-views/library-768-fold.jpg",
+      "sha256": "667a7b58bcff22f53dddf3de94d91beb6d8f127c905cb15521576b55323d015f"
+    },
+    {
+      "file": "settled-views/manifest.json",
+      "sha256": "370fb7d2f1e4c7e2997af8ecfef92ff242aecad1a11cd92b2a867ce6ab917691"
+    },
+    {
+      "file": "settled-views/my-corner-1280-fold.jpg",
+      "sha256": "a4bdc7a630eb04fc50a3f8c821dbf12d3df3615bc83c84272ebc57a5ad53db4f"
+    },
+    {
+      "file": "settled-views/my-corner-1440-fold.jpg",
+      "sha256": "f3d789202926f8e631a256627e5a4dd65dedd8d795c3c3e611bccc2baafb6380"
+    },
+    {
+      "file": "settled-views/my-corner-360-fold.jpg",
+      "sha256": "4bd78b073a60ff7807910586b525a44bf8da774dfc315f7dc091155bda0cfbb4"
+    },
+    {
+      "file": "settled-views/my-corner-390-fold.jpg",
+      "sha256": "498047da1642d86e73c1003c50bdca2ae2c3ca3d8cc37aa1ba7f4b2bc3072171"
+    },
+    {
+      "file": "settled-views/my-corner-768-fold.jpg",
+      "sha256": "bd3ac107e55441d3c47a1b34a6283aa15043b0cf90590979317956252f6b732f"
+    },
+    {
+      "file": "settled-views/new-muslims-1280-fold.jpg",
+      "sha256": "301014bd58ade7ba7d0d45bfc038e3c758442c1a4d325013aa5da2c1f01da3f2"
+    },
+    {
+      "file": "settled-views/new-muslims-1440-fold.jpg",
+      "sha256": "9c540db7ea9680415ee950556f16ee3ce27dd238c375ccf3f5bc4c2886d636eb"
+    },
+    {
+      "file": "settled-views/new-muslims-360-fold.jpg",
+      "sha256": "e357c3d081c0160bb14f4e2a51048060aae728adba1ac70e42141576061bf8cc"
+    },
+    {
+      "file": "settled-views/new-muslims-390-fold.jpg",
+      "sha256": "44be02facedc9f2d5f218aa885317cd289d83cf5b51e8d8b6ba76fa13b4284ee"
+    },
+    {
+      "file": "settled-views/new-muslims-768-fold.jpg",
+      "sha256": "fb6483ef1aef268f86a1d8514bccfee5643bc795496ad46584e8045147b90503"
+    },
+    {
+      "file": "settled-views/onboarding-1280-fold.jpg",
+      "sha256": "6c895cdd807f37fc7e2ac29810432b887740b885370035983dd8e47b3b7d9fc6"
+    },
+    {
+      "file": "settled-views/onboarding-1440-fold.jpg",
+      "sha256": "2a44fdee30cd04d6fbf44a2b6b6c12c0210c53b9c4785a885150f4209bf6f4d5"
+    },
+    {
+      "file": "settled-views/onboarding-360-fold.jpg",
+      "sha256": "3ff7c3e244fe8999d441f338a722eab5a820e962c5148f0ba5249f226cebe943"
+    },
+    {
+      "file": "settled-views/onboarding-390-fold.jpg",
+      "sha256": "c3e7896d0516c64c5410d8cd52373ce26b03c43f99fe93a138277f68d8f1cfb9"
+    },
+    {
+      "file": "settled-views/onboarding-768-fold.jpg",
+      "sha256": "a2146dfdd746e9fbbc1d20b10fc0b4007b5557833f10725bdd53500c68630c95"
+    },
+    {
+      "file": "settled-views/practice-1280-fold.jpg",
+      "sha256": "52514f6e7342e0fea24573510870d9497143139b98e94be3d0a88ecc33f449f0"
+    },
+    {
+      "file": "settled-views/practice-1440-fold.jpg",
+      "sha256": "89cb1f71d460797b2a33ddb7860f4af5fd9437ca4a259019664afafb5ee9523e"
+    },
+    {
+      "file": "settled-views/practice-360-fold.jpg",
+      "sha256": "9b3c8e33ee0b683819476dc3642f115460cde2f4004d6bbebadd5f76ebc4269d"
+    },
+    {
+      "file": "settled-views/practice-390-fold.jpg",
+      "sha256": "632e11696f454688f4362c066d18ed1db55e9299409dce4b929f6ff90d1388ec"
+    },
+    {
+      "file": "settled-views/practice-768-fold.jpg",
+      "sha256": "d2b906874685cd9509c4530f28d1e0c7110b8876209c8ab725ff1e674360ca15"
+    },
+    {
+      "file": "settled-views/privacy-1280-fold.jpg",
+      "sha256": "a2ceca4453f89925ca2f508a367c17e286983458c51ffc4e1cd6d84f6f8ec677"
+    },
+    {
+      "file": "settled-views/privacy-1440-fold.jpg",
+      "sha256": "48261b36cc7fcd9d421ac26d11a153e68e1c486cebaad3b2d010ffb158f62887"
+    },
+    {
+      "file": "settled-views/privacy-360-fold.jpg",
+      "sha256": "a1fb5eb229d0734a87ea6a80ff5ec64e27bfc3e74a2a789c283ba72c4cda5ab1"
+    },
+    {
+      "file": "settled-views/privacy-390-fold.jpg",
+      "sha256": "096d770b6a52b4a70689a465079f60b7ff05a68b286a63e07f871b37a2cee4be"
+    },
+    {
+      "file": "settled-views/privacy-768-fold.jpg",
+      "sha256": "d6b4cf198e53804f406378fc737be03dbc49464e8ea7a40be47681041e2ec59c"
+    },
+    {
+      "file": "settled-views/session-notes-1280-fold.jpg",
+      "sha256": "e13c40140c8c48a8d30067b3c3c477a541feb5ca26a54be5134fc74d02608818"
+    },
+    {
+      "file": "settled-views/session-notes-1440-fold.jpg",
+      "sha256": "1c4e857c9a586020db88047358f481ddf1044fa4978d8be14fced3ef08617a02"
+    },
+    {
+      "file": "settled-views/session-notes-360-fold.jpg",
+      "sha256": "ed485bdb1992dca95c9ec7841e03593bf4cc4a71375f9e92c8fb29e968f2c756"
+    },
+    {
+      "file": "settled-views/session-notes-390-fold.jpg",
+      "sha256": "06b96638b3e1fc7d0b5216440763bbc32009975611d1087ab1e3a4038678afda"
+    },
+    {
+      "file": "settled-views/session-notes-768-fold.jpg",
+      "sha256": "d15d96c8a8926d940566f699fc67345a0cfdf74d9cae926961227c36806a65cc"
+    },
+    {
+      "file": "settled-views/settings-1280-fold.jpg",
+      "sha256": "86ceb6320fa796af1680512d9ab30bc3d591e88937c2c3798701fcf810b07ff0"
+    },
+    {
+      "file": "settled-views/settings-1440-fold.jpg",
+      "sha256": "215af091b552717db04f68590fc661e4fa77308c3a0bc1b80cd71f3abeadff45"
+    },
+    {
+      "file": "settled-views/settings-360-fold.jpg",
+      "sha256": "788d5eb6b9d99e5de16239acd95b460d4eafbae7c260567e3b41054459efa158"
+    },
+    {
+      "file": "settled-views/settings-390-fold.jpg",
+      "sha256": "289518d22c80228d2f00c26364ceb8b041b5b67715627cbe954dcba59a8c2020"
+    },
+    {
+      "file": "settled-views/settings-768-fold.jpg",
+      "sha256": "f4dc863c062a88618d79bd1807bdc66dd2754db60215dd328b400f4c17bc4dea"
+    },
+    {
+      "file": "settled-views/source-1280-fold.jpg",
+      "sha256": "2b0e01d36e30ce3f55255d63e369069c8b7dd628fca564fc401666fa800e2f74"
+    },
+    {
+      "file": "settled-views/source-1440-fold.jpg",
+      "sha256": "8caff5d55004269376255e632f4559482aa89238ecf9885e64b5565c73996a55"
+    },
+    {
+      "file": "settled-views/source-360-fold.jpg",
+      "sha256": "1ee5b2ace2c24322d56379d3d9a1a49ed8c032193405ad1816971b2dd1a1e6fd"
+    },
+    {
+      "file": "settled-views/source-390-fold.jpg",
+      "sha256": "55deae4fa654929a415903671c07674c57e15603ee5878850f94235e3454a1fd"
+    },
+    {
+      "file": "settled-views/source-768-fold.jpg",
+      "sha256": "a85795ef752f6b293621256480dfdd80919ef2741e32887568a8bc9a16f577d0"
+    },
+    {
+      "file": "settled-views/studio-1280-fold.jpg",
+      "sha256": "489bdfe8397193a4cb1f158bc4a8161083412b439094c84d16615c62ad9fedc8"
+    },
+    {
+      "file": "settled-views/studio-1440-fold.jpg",
+      "sha256": "9debaa996099624eb207089665b08d6f2afa67bc8d03c0ba42221ca997df5751"
+    },
+    {
+      "file": "settled-views/studio-360-fold.jpg",
+      "sha256": "dccd53aa8bdd7f77966bec170559d62c4fa0674ca50e67ff2ba915d99c67b526"
+    },
+    {
+      "file": "settled-views/studio-390-fold.jpg",
+      "sha256": "641f83c9604946544e806616fcea3d7fe15b5182035efa52e25bf9265666d509"
+    },
+    {
+      "file": "settled-views/studio-768-fold.jpg",
+      "sha256": "169ab9883ea3caec1822e2fb48f328aa59ce0922276bd02f09c40132cee35126"
+    },
+    {
+      "file": "settled-views/support-1280-fold.jpg",
+      "sha256": "103178a15252a8206e6bcb348ef303a59a64ae4f32351ee20b869c7db65c1087"
+    },
+    {
+      "file": "settled-views/support-1440-fold.jpg",
+      "sha256": "bddc7eca562ea27f141b7ff48ce00c9f21941113d1bed5a2143cbeedb0e25fce"
+    },
+    {
+      "file": "settled-views/support-360-fold.jpg",
+      "sha256": "1818467294e7719dff57b27d488257646b877c7a55d8c602907de54e49bef416"
+    },
+    {
+      "file": "settled-views/support-390-fold.jpg",
+      "sha256": "e45fd223d890ee1478ca205f1dd6a50548969eb1d0dfe65e136881a48b953ae4"
+    },
+    {
+      "file": "settled-views/support-768-fold.jpg",
+      "sha256": "d9910c4e8de4fa4f986b4e4569e2a97ec8f1f52c83f04f9b6aa7dd9cd4afbc3d"
+    },
+    {
+      "file": "settled-views/terms-1280-fold.jpg",
+      "sha256": "80d1ee1d576158958fa435e9380846a84feea03eff463f54b8645ceaf8ab9fe0"
+    },
+    {
+      "file": "settled-views/terms-1440-fold.jpg",
+      "sha256": "53e680d12cd0caae2463ee75f717e96e73f7689c61508a664264adb33824ca4e"
+    },
+    {
+      "file": "settled-views/terms-360-fold.jpg",
+      "sha256": "67990bd34cc09092c16564f9c22d61ff1c33535cbc49fd03386f9bb5de332ece"
+    },
+    {
+      "file": "settled-views/terms-390-fold.jpg",
+      "sha256": "7a2b30745f0c1991206ff2e32937d1a3fa4c0f8cd034e97b67e995632d8fef3b"
+    },
+    {
+      "file": "settled-views/terms-768-fold.jpg",
+      "sha256": "408247d71de2f4f0c23fcc0ae76f021359d49551b08a7ca6e26a03c25025528b"
+    },
+    {
+      "file": "supplemental-controls/community-1440-expanded.jpg",
+      "sha256": "7cb323355746b33cf348d8b15b872840771b2c5362c596df4b0026c8c559b213"
+    },
+    {
+      "file": "supplemental-controls/community-390-expanded.jpg",
+      "sha256": "0ed2732be6c9e5115481ebc832110ecce244abc65a500175bc1d064b16f9e1c9"
+    },
+    {
+      "file": "supplemental-controls/explore-1440-expanded.jpg",
+      "sha256": "a2bf013cb3d4c866f723485e385be8c0b24411c50a32c07850e17febe425ce48"
+    },
+    {
+      "file": "supplemental-controls/explore-1440-source-filter.jpg",
+      "sha256": "39accd2c7e3b3f5ee4e2c65dfc5a9b13e491a6c6329bbc275413a1a5f0bcbff0"
+    },
+    {
+      "file": "supplemental-controls/explore-1440-source-search-miss.jpg",
+      "sha256": "724eccc3a24efec65e1ec78bfa732a214a1d84484abdec153a983e514364cc4b"
+    },
+    {
+      "file": "supplemental-controls/explore-390-expanded.jpg",
+      "sha256": "21cd365eb9817875d5daf5fe493ec7672a0fa767880986342540abefb03eb164"
+    },
+    {
+      "file": "supplemental-controls/explore-390-source-filter.jpg",
+      "sha256": "c760c578308d0e882e73ff64e435938f47d50e53b9b5859b12fdca68002e40f2"
+    },
+    {
+      "file": "supplemental-controls/explore-390-source-search-miss.jpg",
+      "sha256": "4f9cbbc7605a4551398f0855fd9e05a3b4e4a6b67f4d224e69eec34fe0a697d0"
+    },
+    {
+      "file": "supplemental-controls/learn-1440-expanded.jpg",
+      "sha256": "58d8ed0e76a7b6a163e653dd17224cd406882397da5e79d7b9fc3bf32f2c7002"
+    },
+    {
+      "file": "supplemental-controls/learn-390-expanded.jpg",
+      "sha256": "1569ab6b7d6ebdf43b95a4aae1c2bddc5799ca04e18d6627ed12a6cc1c485930"
+    },
+    {
+      "file": "supplemental-controls/library-1440-expanded.jpg",
+      "sha256": "f82b05650ca408b918b96ac6ecc2e293236ce00b29263525960255ae54dadebb"
+    },
+    {
+      "file": "supplemental-controls/library-390-expanded.jpg",
+      "sha256": "cd8250825773bc6cd722479932df29bc9995a82ec96bfb00b4f5f14916f6307d"
+    },
+    {
+      "file": "supplemental-controls/manifest.json",
+      "sha256": "c0366e51369ebcf5eb544e8a805c52e86eac3e7609d2b9346624fe7eeb6a6702"
+    }
+  ]
+}

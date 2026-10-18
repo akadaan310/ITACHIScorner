@@ -1,0 +1,27 @@
+{
+  "command": "npm run lint && npm run typecheck && npm test && npm run build",
+  "observedExitCode": 0,
+  "observedUnitTests": {
+    "files": 13,
+    "passed": 120,
+    "failed": 0
+  },
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "observedBuild": {
+    "next": "16.4.2",
+    "bundler": "Turbopack",
+    "compiled": true,
+    "typecheckPassed": true,
+    "staticPagesGenerated": 55
+  },
+  "evidenceType": "Recorded result of executed tool command; condensed receipt, not a raw shell log",
+  "sourceHashes": {
+    "package-lock.json": "6180694655adbae34fcfa4c0640774632d4d2c058b91a04cfd785b4997f34685",
+    "src/app/page.tsx": "8f9679642d32bef049d9912c73ee899ea0c0d110fa17061b333e1722160577ea",
+    "src/app/globals.css": "e66dbe05dfa2490ca400500f313d4f7a0dbe15a69d696ede4decb96dab4641f3",
+    "src/app/explore/page.tsx": "e2b164b4905b4351dd81931d6fb735d993b95293f43a917819778c69b2073738",
+    "src/app/v4-interactions.css": "54a2933aabb743348eda54ea7abc29d38e1ba0efa6b445d3906a1e9d727f592a",
+    "src/components/question-journey.tsx": "56d628c14586e7a71c50bcd483a1772fdb3be71f742c09114b6f8f375575e605",
+    "src/components/practice-composer.tsx": "ff36a31eb8ff8a4c70f9a92340c3a6e2d238c50695cfa40547f1f5328831b660"
+  }
+}

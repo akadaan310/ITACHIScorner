@@ -1,0 +1,214 @@
+{
+  "capturedAt": "2026-10-18T04:20:19.681Z",
+  "baseURL": "http://127.0.0.1:4001",
+  "note": "Additional read-only controls, keyboard and reduced-motion verification on same frozen local production build. Query is generic visitor input; no catalogue or course is fabricated.",
+  "productionBuildId": "PAzNO4-Ap4lMyM9upxacU",
+  "checks": [
+    {
+      "width": 390,
+      "route": "/explore",
+      "check": "disclosure",
+      "label": "How a question reaches this collection\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "route": "/learn",
+      "check": "disclosure",
+      "label": "Where are the courses?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "route": "/library",
+      "check": "disclosure",
+      "label": "Is there a book to read or buy?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "Who can see my writing?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "How will discussion be moderated?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "Can I keep my faith journey private?\n+",
+      "open": true
+    },
+    {
+      "width": 390,
+      "check": "source-video filter",
+      "url": "http://127.0.0.1:4001/explore?q=&view=sources",
+      "selected": "sources",
+      "status": "SOURCE VIDEOS\n\nTHE FIRST QUESTIONS DESERVE CARE.\n\nNo reviewed source excerpts are published yet. Permission and editorial review come before a conversation appears here.\n\n01\nMEET THE ORIGINAL.\n\nHer videos stay on her own channel. Browse there while the reviewed collection takes shape.\n\nItachi on YouTube\n(opens a new tab)\n02\nCARRY YOUR QUESTION.\n\nGive it a little space in your own words. The writing desk sends nothing and gives no invented answer.\n\nWrite a question"
+    },
+    {
+      "width": 390,
+      "check": "filtered miss preserves catalogue uncertainty",
+      "url": "http://127.0.0.1:4001/explore?q=listening&view=sources",
+      "text": "SOURCE VIDEOS · SEARCH RESULTS\n\nNO PUBLISHED QUESTIONS FOUND.\n\nTry another phrase, or clear your search to browse all reviewed questions. This result does not establish that the whole collection is empty.\n\n01\nMEET THE ORIGINAL.\n\nHer videos stay on her own channel. Browse there while the reviewed collection takes shape.\n\nItachi on YouTube\n(opens a new tab)\n02\nCARRY YOUR QUESTION.\n\nGive it a little space in your own words. The writing desk sends nothing and gives no invented answer.\n\nWrite a question"
+    },
+    {
+      "width": 390,
+      "check": "journey keyboard Source step",
+      "pressed": "true",
+      "panel": "FOLLOW THE CONVERSATION\n\nSTART WITH THE ORIGINAL.\n\nA reviewed question will link to its source moment and the words around it. No source answer is attached to this walkthrough.\n\nSearch reviewed questions\nVisit the official YouTube channel\n(opens a new tab)"
+    },
+    {
+      "width": 390,
+      "check": "practice checkbox keyboard",
+      "checked": true
+    },
+    {
+      "width": 390,
+      "check": "practice review keyboard",
+      "headingFocused": true,
+      "draft": "QA keyboard visitor draft."
+    },
+    {
+      "width": 390,
+      "check": "practice reduced motion",
+      "active": true,
+      "animations": []
+    },
+    {
+      "width": 1440,
+      "route": "/explore",
+      "check": "disclosure",
+      "label": "How a question reaches this collection\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "route": "/learn",
+      "check": "disclosure",
+      "label": "Where are the courses?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "route": "/library",
+      "check": "disclosure",
+      "label": "Is there a book to read or buy?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "Who can see my writing?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "How will discussion be moderated?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "route": "/community",
+      "check": "disclosure",
+      "label": "Can I keep my faith journey private?\n+",
+      "open": true
+    },
+    {
+      "width": 1440,
+      "check": "source-video filter",
+      "url": "http://127.0.0.1:4001/explore?q=&view=sources",
+      "selected": "sources",
+      "status": "SOURCE VIDEOS\n\nTHE FIRST QUESTIONS DESERVE CARE.\n\nNo reviewed source excerpts are published yet. Permission and editorial review come before a conversation appears here.\n\n01\nMEET THE ORIGINAL.\n\nHer videos stay on her own channel. Browse there while the reviewed collection takes shape.\n\nItachi on YouTube\n(opens a new tab)\n02\nCARRY YOUR QUESTION.\n\nGive it a little space in your own words. The writing desk sends nothing and gives no invented answer.\n\nWrite a question"
+    },
+    {
+      "width": 1440,
+      "check": "filtered miss preserves catalogue uncertainty",
+      "url": "http://127.0.0.1:4001/explore?q=listening&view=sources",
+      "text": "SOURCE VIDEOS · SEARCH RESULTS\n\nNO PUBLISHED QUESTIONS FOUND.\n\nTry another phrase, or clear your search to browse all reviewed questions. This result does not establish that the whole collection is empty.\n\n01\nMEET THE ORIGINAL.\n\nHer videos stay on her own channel. Browse there while the reviewed collection takes shape.\n\nItachi on YouTube\n(opens a new tab)\n02\nCARRY YOUR QUESTION.\n\nGive it a little space in your own words. The writing desk sends nothing and gives no invented answer.\n\nWrite a question"
+    },
+    {
+      "width": 1440,
+      "check": "journey keyboard Source step",
+      "pressed": "true",
+      "panel": "FOLLOW THE CONVERSATION\n\nSTART WITH THE ORIGINAL.\n\nA reviewed question will link to its source moment and the words around it. No source answer is attached to this walkthrough.\n\nSearch reviewed questions\nVisit the official YouTube channel\n(opens a new tab)"
+    },
+    {
+      "width": 1440,
+      "check": "practice checkbox keyboard",
+      "checked": true
+    },
+    {
+      "width": 1440,
+      "check": "practice review keyboard",
+      "headingFocused": true,
+      "draft": "QA keyboard visitor draft."
+    },
+    {
+      "width": 1440,
+      "check": "practice reduced motion",
+      "active": true,
+      "animations": []
+    }
+  ],
+  "files": [
+    {
+      "file": "explore-390-expanded.jpg",
+      "sha256": "21cd365eb9817875d5daf5fe493ec7672a0fa767880986342540abefb03eb164"
+    },
+    {
+      "file": "learn-390-expanded.jpg",
+      "sha256": "1569ab6b7d6ebdf43b95a4aae1c2bddc5799ca04e18d6627ed12a6cc1c485930"
+    },
+    {
+      "file": "library-390-expanded.jpg",
+      "sha256": "cd8250825773bc6cd722479932df29bc9995a82ec96bfb00b4f5f14916f6307d"
+    },
+    {
+      "file": "community-390-expanded.jpg",
+      "sha256": "0ed2732be6c9e5115481ebc832110ecce244abc65a500175bc1d064b16f9e1c9"
+    },
+    {
+      "file": "explore-390-source-filter.jpg",
+      "sha256": "c760c578308d0e882e73ff64e435938f47d50e53b9b5859b12fdca68002e40f2"
+    },
+    {
+      "file": "explore-390-source-search-miss.jpg",
+      "sha256": "4f9cbbc7605a4551398f0855fd9e05a3b4e4a6b67f4d224e69eec34fe0a697d0"
+    },
+    {
+      "file": "explore-1440-expanded.jpg",
+      "sha256": "a2bf013cb3d4c866f723485e385be8c0b24411c50a32c07850e17febe425ce48"
+    },
+    {
+      "file": "learn-1440-expanded.jpg",
+      "sha256": "58d8ed0e76a7b6a163e653dd17224cd406882397da5e79d7b9fc3bf32f2c7002"
+    },
+    {
+      "file": "library-1440-expanded.jpg",
+      "sha256": "f82b05650ca408b918b96ac6ecc2e293236ce00b29263525960255ae54dadebb"
+    },
+    {
+      "file": "community-1440-expanded.jpg",
+      "sha256": "7cb323355746b33cf348d8b15b872840771b2c5362c596df4b0026c8c559b213"
+    },
+    {
+      "file": "explore-1440-source-filter.jpg",
+      "sha256": "39accd2c7e3b3f5ee4e2c65dfc5a9b13e491a6c6329bbc275413a1a5f0bcbff0"
+    },
+    {
+      "file": "explore-1440-source-search-miss.jpg",
+      "sha256": "724eccc3a24efec65e1ec78bfa732a214a1d84484abdec153a983e514364cc4b"
+    }
+  ]
+}

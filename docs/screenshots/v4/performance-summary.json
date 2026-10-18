@@ -1,0 +1,7 @@
+{
+  "samples": 60,
+  "maxLcpMs": 520,
+  "maxCls": 0.09319283227999146,
+  "maxBytes": 350269,
+  "methodology": "60 loopback cold-context local samples; no network/CPU throttling, shared cloud host; not deployed Core Web Vitals"
+}

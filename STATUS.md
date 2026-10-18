@@ -1,4 +1,20 @@
-# Mission status
+# V4 current status
+
+Controlling mission: [V4 creator-first](docs/MISSION_V4_CREATOR_FIRST.md), superseding the earlier Dot/acquisition and minimal-navigation assumptions below. Current successor: `feat/v4-creator-first`, based on recovery `7a8ce5efda461ebab717a03ed1d9c73528f92c9d`. Exact final Git/PR evidence is maintained in [the Vercel/GitHub report](docs/VERCEL_GITHUB_VERIFICATION_V4.md).
+
+- Entire current app inspected before product edits: 23 routes ×5 widths, full-page and first-fold captures, navigation/writing/search/keyboard/reduced-motion checks. Prior archives remain immutable. [Audit](docs/UX_ARCHITECTURE_AUDIT_V4.md).
+- Creator-visible mobile hero, signature vector study and six purposeful placements of one disclosed concept image; no new documentary photo family or endorsement claimed. All portraits can be withheld through `NEXT_PUBLIC_CREATOR_PORTRAITS=false` with intentional architecture/name fallback. [Brand](docs/BRAND_IDENTITY_V4.md).
+- Complete primary and secondary navigation, seven home movements, functional source search/view selection, four-step question journey, separate writing practice with reversible self-checks, and actual owned note/save counts. No fake lessons, live activity or community members. Creator Studio remains trusted-role, read-only.
+- Codex performed permitted acquisition: official hub/channel verified, 9 provisional indexed metadata records privately imported/analyzed, **0 verified official memberships, 0 transcripts, 0 findings**, denominator **unknown**. Public collection remains separately permission/review gated. No Dot task or owner terminal work. [Acquisition](docs/CORPUS_ACQUISITION_V4.md) · [private ZIP receipt](research/v4-corpus-private-receipt.json).
+- Existing Supabase project `frxufmwwbegconolevkw` healthy; 17 public +43 research tables all have RLS; bucket private; security advisor clear. Hosted corpus/public collection/staff remain empty. Reviewed migrations, importer, analysis engine and ownership boundaries preserved. Hosted member email/lifecycle and private persistence are not remotely verified.
+- [Current verification](docs/VERIFICATION_V4.md) distinguishes new local checks from historic evidence and hosted limitations. [Independent review](docs/CODE_REVIEW_V4.md) tracks actual findings/fixes.
+- Existing public Vercel URL displays the original demo. Authenticated GitHub checks identify historical Vercel previews; Vercel API configuration reads return missing-token 403. **Actual production branch and production SHA remain unverified.** Open a reviewable PR to actual GitHub default `ccr-cea0c280-gyikbx` as a review base; do not merge or claim it is the Vercel production branch. Creator/release gates remain unmet. No manual deploy or spending.
+
+The older status below is preserved as delivery history, not current acquisition ownership or V4 verification.
+
+---
+
+# Mission status — historical recovery below
 
 Controlling follow-up: [MISSION_RECOVERY_AND_CORPUS.md](docs/MISSION_RECOVERY_AND_CORPUS.md), extending [the evidence-first mission](docs/MISSION_EVIDENCE_FIRST.md). Repository `akadaan310/ITACHIScorner`; live default `ccr-cea0c280-gyikbx` remains at `b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3`. Recovery branch `feat/restore-corner-and-corpus-handoff` starts from the preserved foundation `674668b54f749ea2c7b9edce50fcc9dad61be888`. No deployment or spending is authorized.
 

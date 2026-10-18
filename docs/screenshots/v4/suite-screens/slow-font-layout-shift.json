@@ -1,0 +1,10 @@
+{
+  "route": "/explore",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fontDelayMs": 800,
+  "observedLayoutShift": 0.036414747277502,
+  "threshold": 0.1
+}

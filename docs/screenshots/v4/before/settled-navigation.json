@@ -1,0 +1,53 @@
+{
+  "capturedAt": "2026-10-18T04:05:04.847Z",
+  "note": "Corrects immediate URL reads in supplemental-interactions; waitForURL confirms actual route completion.",
+  "checks": [
+    {
+      "check": "quick navigation settled",
+      "href": "/",
+      "label": "Home",
+      "finalPath": "/"
+    },
+    {
+      "check": "quick navigation settled",
+      "href": "/explore",
+      "label": "Explore",
+      "finalPath": "/explore"
+    },
+    {
+      "check": "quick navigation settled",
+      "href": "/learn",
+      "label": "Learn",
+      "finalPath": "/learn"
+    },
+    {
+      "check": "quick navigation settled",
+      "href": "/practice",
+      "label": "Practice",
+      "finalPath": "/practice"
+    },
+    {
+      "check": "quick navigation settled",
+      "href": "/community",
+      "label": "Community",
+      "finalPath": "/community"
+    },
+    {
+      "check": "skip link Enter settled",
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      },
+      "scrollY": 105,
+      "hash": "#main"
+    },
+    {
+      "check": "next Tab after skip",
+      "focus": {
+        "tag": "A",
+        "label": "Explore a question ",
+        "href": "/explore"
+      }
+    }
+  ]
+}

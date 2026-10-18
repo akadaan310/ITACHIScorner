@@ -1,0 +1,81 @@
+{
+  "methodology": "Contact sheets derived read-only from original/recovery/current captures; additional settled interactions and summary extend original immutable run manifest. Capture script later corrected asynchronous status sampling for future phases.",
+  "files": [
+    {
+      "file": "comparison-summary.json",
+      "sha256": "e6d549450f11085bd9fee04b74a4101f81d53bbba63c063bc93046deeebb6a95"
+    },
+    {
+      "file": "contact-home-history-1440.jpg",
+      "sha256": "7ea9a083960bbd5f56fd3bb09e5ff8419b7be459c5db499045450721d6f844f8"
+    },
+    {
+      "file": "contact-home-history-360.jpg",
+      "sha256": "d7432c1f8c3faf52d6d788eb4d33866edd58fe10adeea875f0bb940acbe0fea6"
+    },
+    {
+      "file": "contact-home-history-390.jpg",
+      "sha256": "96ecfe349bd4635dee7945c89c0ffcfda988fe454943ec0cc148d3b4bafac0cb"
+    },
+    {
+      "file": "contact-routes-desktop-1.jpg",
+      "sha256": "634abdd03e3792d45e020c84bca81ef0fa64a447c147fd2d31d6afcf543929f4"
+    },
+    {
+      "file": "contact-routes-desktop-2.jpg",
+      "sha256": "e5c1c6016a092c949d667188521ac1107b03a3211afd91952eb1a905a1acd74f"
+    },
+    {
+      "file": "contact-routes-desktop-3.jpg",
+      "sha256": "aa46f574a2a0c042ffafdc5debd1fe1d890cf6ab94137d3f5ebacecc75bd1bbe"
+    },
+    {
+      "file": "contact-routes-desktop-4.jpg",
+      "sha256": "7f9c1a9be5bb00b5338edfffc039fafe1429e1e99c32da70636ae522bfe26676"
+    },
+    {
+      "file": "contact-routes-phone-1.jpg",
+      "sha256": "54c9b2da49e8b2358672a563e13ee4333c1ec31f870bf0581f875ff72bcdcf09"
+    },
+    {
+      "file": "contact-routes-phone-2.jpg",
+      "sha256": "c020f831c2e5ffb16482859689c5639c903b2e8013dd26805d4da09bb23d6449"
+    },
+    {
+      "file": "contact-routes-phone-3.jpg",
+      "sha256": "a368cac32b9d4b42c2445353224cac477a3ba6317217fc5701d643bdac96b7ec"
+    },
+    {
+      "file": "contact-routes-phone-4.jpg",
+      "sha256": "8ad18fbb4210e87b7f707ca1b7fdefe9663dcc776e5794010bb718d04c198d3a"
+    },
+    {
+      "file": "contact-routes-phone-5.jpg",
+      "sha256": "17dd1a5811330bf0fdbf197de225d6d2fdbcb1cb9f3e5ce3182d04363c3dfe5b"
+    },
+    {
+      "file": "explore-1440-search-empty.jpg",
+      "sha256": "c380d9c5122e40d9596d9201a8967de5422f34396e275b771568447a8522389d"
+    },
+    {
+      "file": "explore-390-search-empty.jpg",
+      "sha256": "b7834d11482d83ce008e95afea3f52166959579cbb1d5035eb5ce9ee9869f42c"
+    },
+    {
+      "file": "faq-1440-expanded.jpg",
+      "sha256": "a4e6b5b96bfc9420542b31d0c3706d867d3b4063b2a59ec9b609448d2621d44c"
+    },
+    {
+      "file": "faq-390-expanded.jpg",
+      "sha256": "f638199b617c3fab339200b32570619cc10253bf2b26a15b54ba9d773ba14f64"
+    },
+    {
+      "file": "settled-navigation.json",
+      "sha256": "16be40060306ba03f69275a337693f00c7b41ea97374ae2be47bfdd8f947064a"
+    },
+    {
+      "file": "supplemental-interactions.json",
+      "sha256": "ab4fe73a352b8c0de402087dd27dfb97ce2079e8ab4ea64ec617171e23d593de"
+    }
+  ]
+}

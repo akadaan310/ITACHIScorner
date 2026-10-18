@@ -1,0 +1,10 @@
+{
+  "route": "/",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "fontDelayMs": 800,
+  "observedLayoutShift": 0.0014269246419270833,
+  "threshold": 0.1
+}

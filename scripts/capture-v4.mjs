@@ -39,8 +39,10 @@ try {
   for (const [name,route] of routes) {
    const response = await page.goto(baseURL+route); await settle(page);
    // Traverse the full narrative before capture, allowing lazy images to decode.
-   await page.evaluate(async()=> {for(let y=0;y<document.documentElement.scrollHeight;y+=innerHeight) {scrollTo(0,y);await new Promise(r=>setTimeout(r,10));} await Promise.all([...document.images].map(image=>image.decode().catch(()=>null)));scrollTo(0,0);});
+   await page.evaluate(async()=> {for(let y=0;y<document.documentElement.scrollHeight;y+=innerHeight) {scrollTo({top:y,left:0,behavior:'instant'});await new Promise(r=>setTimeout(r,10));} await Promise.all([...document.images].map(image=>image.decode().catch(()=>null)));scrollTo({top:0,left:0,behavior:'instant'});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));});
    await screenshot(page,`${name}-${width}-full`);
+   await page.evaluate(async()=>{scrollTo({top:0,left:0,behavior:'instant'});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));});
+   if(await page.evaluate(()=>scrollY)!==0) throw new Error('First-fold scroll did not settle');
    await screenshot(page,`${name}-${width}-fold`,false);
    const audit = await page.evaluate(()=> {
     const norm = value => (value || '').replace(/\s+/g,' ').trim();
@@ -51,7 +53,7 @@ try {
     return {title:document.title,pageHeight:document.documentElement.scrollHeight,horizontalOverflow:Math.max(0,document.documentElement.scrollWidth-innerWidth),viewport:{width:innerWidth,height:innerHeight},headings:[...document.querySelectorAll('main h1,main h2,main h3')].filter(visible).map(el=>({text:norm(el.innerText),fold:Math.floor((el.getBoundingClientRect().top+scrollY)/innerHeight)+1,...box(el)})),sections:[...document.querySelectorAll('main section')].filter(visible).map(el=>({label:el.getAttribute('aria-labelledby')||norm(el.querySelector('h1,h2,h3')?.textContent),...box(el)})),images:[...document.images].filter(visible).map(el=>({src:el.getAttribute('src'),alt:el.alt,naturalWidth:el.naturalWidth,complete:el.complete,...box(el)})),actions,counts:{main:summarize(actions.filter(a=>a.main)),all:summarize(actions),navigation:summarize(actions.filter(a=>a.main&&a.kind==='navigation')),transient:summarize(actions.filter(a=>a.main&&['transient','disclosure','selection'].includes(a.kind)))},smallTargets:actions.filter(a=>a.width<44||a.height<44)};
    });
    records.push({name,route,finalPath:new URL(page.url()).pathname,status:response?.status(),width,...audit});
-   if(name==='home') for(const [i,section] of audit.sections.entries()) {await page.evaluate(y=>scrollTo(0,Math.max(0,y-86)),section.y);await screenshot(page,`home-${width}-section-${i+1}`,false);}
+   if(name==='home') for(const [i,section] of audit.sections.entries()) {await page.evaluate(async y=>{scrollTo({top:Math.max(0,y-86),left:0,behavior:'instant'});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));},section.y);await screenshot(page,`home-${width}-section-${i+1}`,false);}
   }
   if([390,1440].includes(width)) {
    await page.goto(baseURL+'/'); await settle(page);

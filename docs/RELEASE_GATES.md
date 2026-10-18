@@ -1,6 +1,6 @@
 # Release gates
 
-This branch is undeployed and unendorsed. Local tests do not grant creator rights, complete the corpus, validate theology or authorize spend. Keep noindex/disclosure until a separately authorized release.
+This branch is unendorsed; production deployment is unverified. Existing Vercel preview checks are documented separately. Local tests do not grant creator rights, complete the corpus, validate theology or authorize spend. Keep noindex/disclosure until a separately authorized release.
 
 ## Creator and assets
 
@@ -21,7 +21,7 @@ This branch is undeployed and unendorsed. Local tests do not grant creator right
 
 ## Accounts and moderation
 
-- [ ] Separate creator project selected; migrations/private storage/RLS checked on hosted configuration.
+- [x] Separate creator project selected; migrations/private storage/RLS checked on hosted configuration (`frxufmwwbegconolevkw`).
 - [ ] Actual email/callback/expiry/session/logout/export/delete tested with real accounts.
 - [ ] Trusted staff provisioning; anon/member/reviewer/creator/admin isolation verified. No user_metadata/localStorage authorization.
 - [ ] Moderation staffing, reporting/retention/deletion/consent ready before public participation.
