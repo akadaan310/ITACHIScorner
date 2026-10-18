@@ -9,3 +9,5 @@ next-env.d.ts
 playwright-report/
 test-results/
 .DS_Store
+/private/
+/.superpowers/
