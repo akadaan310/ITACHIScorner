@@ -1,52 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArchFrame, Mark, StarField } from "@/components/art";
-import { LEVEL_DISCLAIMER } from "@/lib/progression";
+import { redirect } from "next/navigation";
+import { AccountFrame, AccountNotice } from "@/components/account/frame";
+import { getAccountContext } from "@/lib/auth/session";
+import { safeNextPath } from "@/lib/auth/validation";
 
-export const metadata: Metadata = { title: "Join the Ranks", description: "A celestial invitation. Free forever — membership never gates learning." };
+export const metadata: Metadata = { title: "Sign in" };
 
-const perks = [
-  ["Your Explorer's Star Card", "A unique constellation that grows with your learning."],
-  ["Progress that's kept", "Quests, badges, saved moments and your journal — across visits."],
-  ["Truthful streaks", "In-app check-ins and self-reports, each labelled for what it is."],
-  ["Privacy controls", "Mute rankings, hide achievements, export or delete anytime."],
-];
-
-export default function JoinPage() {
-  return (
-    <div className="relative overflow-hidden pb-16">
-      <StarField seed={5} count={140} height={900} className="pointer-events-none absolute inset-0 h-full w-full opacity-70" />
-      <div className="shell relative grid gap-12 pt-14 lg:grid-cols-[1fr_1fr] lg:items-center">
-        <div className="portal-enter">
-          <p className="eyebrow">Join the ranks</p>
-          <h1 className="mt-4 text-7xl leading-[0.85] text-cream sm:text-8xl">An invitation <em className="text-gold">under the stars.</em></h1>
-          <p className="mt-5 max-w-lg text-lg text-cream/75">Free forever. Browse everything without an account — join only to keep your progress, your star card and your journal.</p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/onboarding" className="btn btn-primary min-h-[3.25rem] px-7" data-testid="begin-onboarding">Open your Star Card</Link>
-            <Link href="/membership" className="btn btn-ghost min-h-[3.25rem] px-7">Choose your rank</Link>
-          </div>
-          <p className="mt-4 text-xs text-cream/65">{LEVEL_DISCLAIMER}</p>
-        </div>
-        <div className="relative mx-auto w-full max-w-md">
-          <div className="hud card relative overflow-hidden p-8 text-center" style={{ background: "linear-gradient(160deg,#21183c,#0b0a14 60%,#3a1426)" }}>
-            <ArchFrame className="pointer-events-none absolute inset-x-0 -top-4 mx-auto h-[115%] opacity-30" stroke="#D7AD65" />
-            <div className="relative">
-              <Mark size={64} title="" />
-              <p className="mt-4 font-mono text-[0.62rem] uppercase tracking-[0.3em] text-coral">You are invited</p>
-              <p className="mt-2 font-display text-5xl leading-none text-cream">Itachi&rsquo;s Corner</p>
-              <p lang="ar" className="ar mt-1 text-2xl text-amber">كُلُّ سُؤَالٍ يَفْتَحُ سَمَاءً جَدِيدَةً</p>
-              <ul className="mt-6 space-y-3 text-left">
-                {perks.map(([t, b]) => (
-                  <li key={t} className="flex gap-3">
-                    <span className="mt-1 text-amber" aria-hidden="true">◆</span>
-                    <span><span className="block font-semibold text-cream">{t}</span><span className="text-sm text-cream/65">{b}</span></span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+export default async function JoinPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
+  const context = await getAccountContext(), params = await searchParams;
+  if (context.status === "authenticated") redirect("/me");
+  const ready = context.status === "signed-out";
+  return <AccountFrame title="Your corner starts here.">
+    <p className="max-w-xl text-lg text-cream/75">A private place to keep your profile and preferences as this corner grows. Browsing does not require an account.</p>
+    <AccountNotice code={params.notice} />
+    {!ready ? <section className="card p-6 sm:p-8"><h2 className="text-3xl text-cream">Sign-in is not available yet.</h2><p className="mt-3 text-cream/75">{context.status === "unavailable" ? "We could not reach the account service. Please try again later." : "Account access is being prepared. There is nothing you need to set up."}</p><Link href="/explore" className="btn btn-primary mt-6">Explore the questions</Link></section> : <>
+      <form action="/auth/request" method="post" className="card space-y-4 p-6 sm:p-8">
+        <h2 className="text-3xl text-cream">Sign in with email</h2>
+        <p className="text-sm text-cream/75">We will send a one-time sign-in link. Your first sign-in creates your account.</p>
+        <input type="hidden" name="next" value={safeNextPath(params.next)} />
+        <label className="block text-sm text-cream" htmlFor="sign-in-email">Email address</label>
+        <input id="sign-in-email" className="field" name="email" type="email" autoComplete="email" maxLength={254} required />
+        <button className="btn btn-primary" type="submit">Send sign-in email</button>
+        <p className="text-sm text-cream/65">Read how your information is used in our <Link className="underline" href="/privacy">privacy notice</Link>.</p>
+      </form>
+      <details className="card p-6"><summary className="cursor-pointer text-lg text-cream">Have a six digit code?</summary><form action="/auth/verify" method="post" className="mt-5 space-y-4">
+        <p className="text-sm text-cream/75">Use this if your sign-in email includes a code.</p><input type="hidden" name="next" value={safeNextPath(params.next)} />
+        <label className="block text-sm text-cream" htmlFor="code-email">Email address for the code</label><input id="code-email" name="email" type="email" className="field" autoComplete="email" maxLength={254} required />
+        <label className="block text-sm text-cream" htmlFor="sign-in-code">Six digit code</label><input id="sign-in-code" name="token" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]{6}" minLength={6} maxLength={6} className="field" required />
+        <button className="btn btn-primary" type="submit">Verify code</button>
+      </form></details>
+    </>}
+  </AccountFrame>;
 }
