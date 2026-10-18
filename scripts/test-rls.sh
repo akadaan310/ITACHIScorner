@@ -20,4 +20,5 @@ sql < supabase/tests/bootstrap.sql
 shopt -s nullglob
 for migration in supabase/migrations/*.sql; do sql < "$migration"; done
 sql < supabase/tests/rls.sql
+sql < supabase/tests/advisors.sql
 echo 'Postgres 17 RLS and relational publication gates passed.'

@@ -40,6 +40,7 @@ All external IDs are opaque `text`, including platform, video, track, transcript
 | `transcript_versions` | PK `(video_id,track_id,transcript_version)`; source hash FK and database import sequence; immutable updates |
 | `transcript_segments` | PK `(video_id,track_id,transcript_version,segment_id)`; exact text, interval, speaker ID and attributed role; immutable updates |
 | `video_intervals` | Exact source interval record with segment/version/hash FKs, speaker, confidence, source URL and `instantaneous` |
+| `debate_episodes` | Private grouping annotations tied to an immutable transcript version/hash; exact interval, segmentation version and review status; no transcript payload |
 | `speaker_turns`, `speech_acts` | Attributed turn, reply/diarization metadata and proposed structural speech-act labels with method/confidence |
 | `coverage_audits` | Covered/missing/partial/unavailable/rights-blocked/unknown status, reason, manifest hash and audit time |
 | `source_permissions` | Per-video scoped authorization and nonempty written authorization reference, creator actor and date |
@@ -126,3 +127,14 @@ The harness has local adapters for `auth.users`, `auth.uid()` and storage tables
 `supabase db advisors --local --type security --fail-on error` was attempted and could not connect to `127.0.0.1:54322`, because this harness runs isolated PostgreSQL rather than the full Supabase stack. Hosted advisors remain a separate installation check; no clean-advisor claim is made from these tests.
 
 Before a remote migration, independently review the SQL and the selected project. Apply only to the authorized project, keep `research` unexposed, and run hosted security/performance advisors and equivalent smoke tests after installation. The server secret must remain server-only. No remote project was changed by this database workstream.
+
+
+## Follow-up: query performance and episode grouping
+
+The separately CLI-generated `20261018013906_evidence_query_performance.sql` migration retains the foundation SQL unchanged. The hosted foundation advisors reported 59 missing FK indexes and redundant permissive policy evaluations. The follow-up adds 59 explicit indexes generated from the local catalog only where no existing valid index had the required FK prefix. Existing indexes remain intact; an unused-index notice on an empty database does not establish that an index is unnecessary.
+
+Research `operator_write` policies are split into insert, update and delete policies, leaving one staff SELECT policy per table. Creator settings combine own-creator writes and cross-owner admin writes into one policy for each mutation. Event visibility keeps anonymous/member/reviewer reads publication-only and preserves creator/admin draft reads. Event mutations retain their original role and actor checks. No API grants or publication gates are broadened.
+
+The same follow-up adds metadata-only `research.debate_episodes`, bringing the mission schema to 60 application tables (43 research and 17 public). Each episode has a stable text ID; a composite video/track/transcript-version/hash FK; nonnegative half-open millisecond bounds; a nonempty segmentation version; and pending/reviewed/rejected review status. Bounds must fit the source video's known duration. Source identity, timing and segmentation are immutable: corrections create a new annotation ID. A source correction leaves the old annotation tied to its exact original version. An interval index and a covering source-FK index support lookups. Staff may read; only admin/operator may create, change review status or delete. Anonymous/member reads are denied, and no production episode rows are seeded.
+
+`bash scripts/test-rls.sh` applies both migrations and passes 118 assertions: the original 96 plus advisor coverage/policy checks and episode/access regressions. Tests verify every public/research FK has an index prefix, no anonymous/authenticated action has overlapping permissive policies, existing event/settings role behavior is preserved, and one-millisecond episode intervals, invalid bounds, immutable provenance and post-correction privacy behave correctly. These local results do not replace the parent's hosted advisor rerun after installation. Migration filenames may be reconciled with hosted migration-history versions during integration without changing the reviewed SQL contents.
