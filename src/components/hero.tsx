@@ -1,3 +1,4 @@
+import { Arrow } from "@/components/art";
 import Image from "next/image";
 import Link from "next/link";
 import { creator } from "@/lib/config/creator";
@@ -10,7 +11,7 @@ export function Hero() {
           <p className="public-eyebrow">Da&rsquo;wah x Dialogues</p>
           <h1 id="hero-title">A little curiosity.<br /><em>A deeper</em><br /><span className="text-coral">conversation.</span></h1>
           <p className="hero-description">Welcome to Itachi&rsquo;s Corner. A space taking shape around da&rsquo;wah, learning and the questions worth asking.</p>
-          <div className="mt-7"><Link href="/explore" className="btn btn-primary" data-testid="home-primary">Explore questions <span aria-hidden="true">↗</span></Link></div>
+          <div className="mt-7"><Link href="/explore" className="btn btn-primary" data-testid="home-primary">Explore questions <Arrow /></Link></div>
           <p className="mt-4 text-sm text-cream/65">Get to know the idea <Link href="/about" className="inline-link">behind the Corner</Link>.</p>
         </div>
         <figure className="creator-figure">

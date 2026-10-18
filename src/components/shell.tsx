@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { Wordmark } from "@/components/art";
+import { Arrow, Wordmark } from "@/components/art";
 
 const destinations = [
   { href: "/", label: "Home" },
@@ -42,7 +42,7 @@ function Menu({ onClose }: { onClose: () => void }) {
         <button type="button" className="menu-toggle" onClick={onClose} aria-label="Close menu">✕</button>
       </div>
       <nav aria-label="All sections" className="py-5">
-        {destinations.map((item) => <Link key={item.href} href={item.href} onClick={onClose} aria-current={active(path, item.href) ? "page" : undefined} className="menu-link">{item.label}<span aria-hidden="true">↗</span></Link>)}
+        {destinations.map((item) => <Link key={item.href} href={item.href} onClick={onClose} aria-current={active(path, item.href) ? "page" : undefined} className="menu-link">{item.label}<Arrow /></Link>)}
         <div className="mt-5 border-t border-white/10 pt-4">
           {secondary.map((item) => <Link key={item.href} href={item.href} onClick={onClose} className="menu-secondary">{item.label}</Link>)}
         </div>
@@ -64,7 +64,7 @@ export function SiteHeader() {
           <ul className="flex gap-1">{destinations.map((item) => <li key={item.href}><Link href={item.href} aria-current={active(path, item.href) ? "page" : undefined} className="header-link">{item.label}</Link></li>)}</ul>
         </nav>
         <div className="flex items-center gap-3">
-          <Link href="/me" className="corner-link hidden sm:inline-flex">My Corner <span aria-hidden="true">↗</span></Link>
+          <Link href="/me" className="corner-link hidden sm:inline-flex">My Corner <Arrow /></Link>
           <button type="button" className="menu-toggle lg:hidden" onClick={() => setOpen(true)} aria-label="Open menu" aria-expanded={open}>☰</button>
         </div>
       </div>
