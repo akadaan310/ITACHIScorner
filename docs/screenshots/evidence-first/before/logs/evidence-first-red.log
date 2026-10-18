@@ -1,0 +1,95 @@
+
+Running 3 tests using 1 worker
+
+(node:5619) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  1 [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations (6.4s)
+(node:5908) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured (817ms)
+(node:6052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  3 [desktop] › e2e/evidence-first.spec.ts:17:5 › unapproved practice remains a waiting state (1.3s)
+
+
+  1) [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations ─
+
+    Error: expect(locator).toHaveText(expected) failed
+
+    Locator: getByRole('navigation', { name: 'Primary', exact: true }).getByRole('link')
+    Timeout: 5000ms
+    - Expected  - 5
+    + Received  + 7
+
+      Array [
+    -   "Home",
+    -   "Explore",
+    -   "Learn",
+    -   "Practice",
+    -   "Community",
+    +   "Arsenal",
+    +   "Afterglow",
+    +   "Simulator",
+    +   "Atlas",
+    +   "Reverts HQ",
+    +   "Shahadahs",
+    +   "Library",
+      ]
+
+    Call log:
+      - Expect "toHaveText" getByRole('navigation', { name: 'Primary', exact: true }).getByRole('link') with timeout 5000ms
+      - waiting for getByRole('navigation', { name: 'Primary', exact: true }).getByRole('link')
+        13 × locator resolved to 7 elements
+
+
+      4 |   await page.goto("/");
+      5 |   const nav = page.getByRole("navigation", { name: "Primary", exact: true });
+    > 6 |   await expect(nav.getByRole("link")).toHaveText(["Home", "Explore", "Learn", "Practice", "Community"]);
+        |                                       ^
+      7 | });
+      8 |
+      9 | test("Explore cannot publish invented content when the source backend is unconfigured", async ({ page }) => {
+        at /workspace/itachi-quality/e2e/evidence-first.spec.ts:6:39
+
+    Error Context: test-results/evidence-first-public-navi-04e53-ers-five-clear-destinations-desktop/error-context.md
+
+  2) [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 404
+
+       9 | test("Explore cannot publish invented content when the source backend is unconfigured", async ({ page }) => {
+      10 |   const response = await page.goto("/explore");
+    > 11 |   expect(response?.status()).toBe(200);
+         |                              ^
+      12 |   await expect(page.getByRole("heading", { level: 1 })).toContainText(/question|explore/i);
+      13 |   await expect(page.locator("main")).toContainText(/source|review|approved/i);
+      14 |   await expect(page.locator("main")).not.toContainText(/SAMPLE|Questions on oneness|Signs in the sky/);
+        at /workspace/itachi-quality/e2e/evidence-first.spec.ts:11:30
+
+    Error Context: test-results/evidence-first-Explore-can-d262e-rce-backend-is-unconfigured-desktop/error-context.md
+
+  3) [desktop] › e2e/evidence-first.spec.ts:17:5 › unapproved practice remains a waiting state ─────
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 404
+
+      17 | test("unapproved practice remains a waiting state", async ({ page }) => {
+      18 |   const response = await page.goto("/practice");
+    > 19 |   expect(response?.status()).toBe(200);
+         |                              ^
+      20 |   await expect(page.getByRole("heading", { level: 1 })).toContainText(/practice/i);
+      21 |   await expect(page.locator("main")).toContainText(/approval|review|pending/i);
+      22 |   await expect(page.locator("main")).not.toContainText(/Sami|Dana|Yusuf|Maya|START A PATH|difficulty/);
+        at /workspace/itachi-quality/e2e/evidence-first.spec.ts:19:30
+
+    Error Context: test-results/evidence-first-unapproved-practice-remains-a-waiting-state-desktop/error-context.md
+
+  3 failed
+    [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations ──
+    [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured 
+    [desktop] › e2e/evidence-first.spec.ts:17:5 › unapproved practice remains a waiting state ──────

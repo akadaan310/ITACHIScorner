@@ -1,56 +1,64 @@
 import { expect, test } from "@playwright/test";
-import { publicRoutes } from "./helpers";
+import { canonicalRoutes, expectTruthfulPage } from "./helpers";
 
-test.describe("navigation & routes", () => {
-  for (const route of publicRoutes) {
-    test(`renders ${route} without errors`, async ({ page }) => {
+test.describe("truthful public routes", () => {
+  for (const route of canonicalRoutes) {
+    test(`${route} renders without browser errors or demo content`, async ({ page }) => {
       const errors: string[] = [];
-      page.on("pageerror", (e) => errors.push(String(e)));
-      page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
-      const res = await page.goto(route);
-      expect(res?.status()).toBe(200);
-      await expect(page.locator("h1").first()).toBeVisible();
-      await expect(page.getByText("Independent concept — unaffiliated and not yet endorsed.").first()).toBeAttached();
-      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
-      expect(overflow).toBeLessThanOrEqual(0);
+      page.on("pageerror", error => errors.push(String(error)));
+      page.on("console", message => message.type() === "error" && errors.push(message.text()));
+      const response = await page.goto(route);
+      expect(response?.status()).toBe(200);
+      await expectTruthfulPage(page);
+      await expect(page.locator("body")).toContainText(/independent|unaffiliated|not.*endorsed/i);
       expect(errors).toEqual([]);
     });
   }
 
-  test("unknown routes show the 404 sky", async ({ page }) => {
-    const res = await page.goto("/does-not-exist");
-    expect(res?.status()).toBe(404);
-    await expect(page.getByRole("heading", { name: /No stars here/i })).toBeVisible();
+  test("unknown routes return a useful 404", async ({ page }) => {
+    expect((await page.goto("/does-not-exist"))?.status()).toBe(404);
+    await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
+    await expect(page.locator("main").getByRole("link").first()).toBeVisible();
   });
 
-  test("every internal link on key pages resolves", async ({ page, request }) => {
-    const seen = new Set<string>();
-    for (const route of ["/", "/discover", "/afterglow", "/atlas", "/me/settings"]) {
+  test("every internal public link resolves", async ({ page, request }) => {
+    const hrefs = new Set<string>();
+    for (const route of ["/", "/explore", "/learn", "/community", "/about", "/me/settings"]) {
       await page.goto(route);
-      const hrefs = await page.$$eval("a[href^='/']", (as) => as.map((a) => (a as HTMLAnchorElement).getAttribute("href")!));
-      for (const h of hrefs) seen.add(h.split("#")[0]!);
+      for (const href of await page.locator("a[href^='/']").evaluateAll(links => links.map(link => link.getAttribute("href")!))) {
+        hrefs.add(href.split("#")[0] || "/");
+      }
     }
-    for (const h of seen) {
-      const res = await request.get(h);
-      expect(res.status(), h).toBe(200);
-    }
+    for (const href of hrefs) expect((await request.get(href)).status(), href).toBe(200);
   });
 
-  test("header uses the v1 brand names", async ({ page }) => {
-    await page.goto("/");
-    const nav = page.getByRole("navigation", { name: "Primary" });
-    for (const name of ["Arsenal", "Afterglow", "Simulator", "Atlas", "Reverts HQ", "Shahadahs", "Library"]) await expect(nav.getByRole("link", { name })).toBeVisible();
-    await expect(page.getByRole("heading", { level: 1 })).toContainText(/Where truth/i);
-    await expect(page.getByRole("img", { name: /Itachi in her signature/ })).toBeVisible();
-  });
-
-  test("watch-live exits point to official channels in a new tab", async ({ page }) => {
-    await page.goto("/events");
-    const links = page.locator("a[href*='tiktok.com'], a[href*='youtube.com']");
-    expect(await links.count()).toBeGreaterThan(2);
-    for (const l of await links.all()) {
-      await expect(l).toHaveAttribute("target", "_blank");
-      await expect(l).toHaveAttribute("rel", /noopener/);
+  test("external official channels retain new-tab protections", async ({ page }) => {
+    await page.goto("/about");
+    const channels = page.locator("a[href*='tiktok.com'],a[href*='youtube.com']");
+    expect(await channels.count()).toBeGreaterThan(0);
+    for (const link of await channels.all()) {
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", /noopener/);
+      await expect(link).not.toHaveAttribute("href", /example|sample|pending/i);
     }
   });
 });
+
+const legacyRoutes: [string, string][] = [
+  ["/discover", "/explore"], ["/watch", "/explore"], ["/atlas", "/explore"],
+  ["/dojo", "/practice"], ["/dojo/path", "/practice"], ["/dojo/result", "/practice"],
+  ["/afterglow", "/session-notes"], ["/afterglow/before", "/session-notes"],
+  ["/afterglow/live", "/session-notes"], ["/afterglow/vault", "/session-notes"], ["/afterglow/gallery", "/session-notes"],
+  ["/afterglow/episodes/sample-episode-01", "/session-notes"], ["/afterglow/episodes/sample-episode-02", "/session-notes"],
+  ["/events", "/about"], ["/reverts", "/learn"], ["/reverts/ask/q-silly", "/community"], ["/stories", "/community"],
+  ["/library/preview?page=4", "/library"], ["/membership", "/support"], ["/onboarding", "/join"],
+  ["/me/constellation", "/me"], ["/me/quests", "/me"], ["/me/afterglow", "/me"],
+];
+
+for (const [from, to] of legacyRoutes) {
+  test(`legacy ${from} leads to truthful ${to}`, async ({ page }) => {
+    expect((await page.goto(from))?.status()).toBe(200);
+    expect(new URL(page.url()).pathname).toBe(to);
+    await expectTruthfulPage(page);
+  });
+}

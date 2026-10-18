@@ -1,0 +1,15 @@
+
+> itachis-corner@0.1.0 test
+> vitest run
+
+
+ RUN  v3.2.7 /workspace/ITACHIScorner
+
+ ✓ tests/progression.test.ts (12 tests) 7ms
+ ✓ tests/content.test.ts (15 tests) 9ms
+
+ Test Files  2 passed (2)
+      Tests  27 passed (27)
+   Start at  01:16:05
+   Duration  395ms (transform 171ms, setup 0ms, collect 232ms, tests 16ms, environment 0ms, prepare 132ms)
+
