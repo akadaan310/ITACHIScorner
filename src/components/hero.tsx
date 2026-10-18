@@ -6,12 +6,13 @@ import { creator } from "@/lib/config/creator";
 export function Hero() {
   return (
     <section className="creator-hero" aria-labelledby="hero-title">
+      <div className="hero-geometry" aria-hidden="true"><span /><span /><span /></div>
       <div className="shell hero-grid">
         <div className="hero-copy">
           <p className="public-eyebrow">Da&rsquo;wah x Dialogues</p>
           <h1 id="hero-title">A little curiosity.<br /><em>A deeper</em><br /><span className="text-coral">conversation.</span></h1>
           <p className="hero-description">Welcome to Itachi&rsquo;s Corner. A space taking shape around da&rsquo;wah, learning and the questions worth asking.</p>
-          <div className="mt-7"><Link href="/explore" className="btn btn-primary" data-testid="home-primary">Explore questions <Arrow /></Link></div>
+          <div className="mt-7"><Link href="/explore" className="btn btn-primary" data-testid="home-primary">Explore a question <Arrow /></Link></div>
           <p className="mt-4 text-sm text-cream/65">Get to know the idea <Link href="/about" className="inline-link">behind the Corner</Link>.</p>
         </div>
         <figure className="creator-figure">

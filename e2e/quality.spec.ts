@@ -22,7 +22,12 @@ test("public story and legacy navigation work without JavaScript", async ({ brow
   const page = await context.newPage();
   await page.goto("/");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await page.locator("main").getByRole("link", { name: /Explore questions/i }).click();
+  // Parent text matching intentionally skips noscript descendants in Playwright.
+  // Assert the actual visible fallback element directly.
+  await expect(page.locator("#question-desk .desk-nojs")).toContainText("This scratchpad needs JavaScript");
+  await expect(page.locator("#question-desk .desk-nojs")).toBeVisible();
+  await expect(page.locator("#question-desk").getByRole("textbox", { name: "Your question", exact: true })).toBeHidden();
+  await page.locator("main").getByRole("link", { name: "Explore a question", exact: true }).click();
   await expect(page).toHaveURL(/\/explore$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   await expect(page.locator("main")).toContainText(/source|review|approved/i);
@@ -70,8 +75,10 @@ test("Explore stays below 0.1 layout shift when phone fonts arrive late", async 
     await page.evaluate(() => document.fonts.ready);
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     const score = await page.evaluate(() => window.__fontLoadShift);
-    await mkdir("docs/screenshots/evidence-first/after", { recursive: true });
-    await writeFile("docs/screenshots/evidence-first/after/slow-font-layout-shift.json", JSON.stringify({ route: "/explore", viewport: { width: 390, height: 844 }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
+    const directory = process.env.QUALITY_OUTPUT_DIR || "docs/screenshots/recovery/after";
+    if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
+    await mkdir(directory, { recursive: true });
+    await writeFile(`${directory}/slow-font-layout-shift.json`, JSON.stringify({ route: "/explore", viewport: { width: 390, height: 844 }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
     expect(score).toBeLessThan(0.1);
   } finally {
     await context.close();

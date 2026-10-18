@@ -6,7 +6,7 @@ for (const width of widths) {
     const height = heightFor(width);
     await page.setViewportSize({ width, height });
     await page.goto("/");
-    const primary = page.locator("main").getByRole("link", { name: /Explore questions/i });
+    const primary = page.locator("main").getByRole("link", { name: "Explore a question", exact: true });
     await expect(primary).toBeVisible();
     const box = await primary.boundingBox();
     expect(box!.y).toBeGreaterThanOrEqual(0);

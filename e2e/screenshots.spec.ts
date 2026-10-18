@@ -3,7 +3,8 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { heightFor, settle, widths } from "./helpers";
 
-const directory = "docs/screenshots/evidence-first/after";
+const directory = process.env.SCREENSHOT_DIR || "docs/screenshots/recovery/after";
+if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
 const pages: [string, string][] = [
   ["home", "/"], ["explore", "/explore"], ["learn", "/learn"], ["practice", "/practice"],
   ["community", "/community"], ["session-notes", "/session-notes"], ["library", "/library"],
@@ -19,7 +20,7 @@ for (const width of widths) {
     for (const [name, route] of pages) {
       const response = await page.goto(route);
       await settle(page);
-      await page.screenshot({ path: join(directory, `${name}-${width}-fold.jpg`), type: "jpeg", quality: 80, animations: "disabled" });
+      await page.screenshot({ path: join(directory, `${name}-fold-${width}.jpg`), type: "jpeg", quality: 80, animations: "disabled" });
       if (name === "home") await page.screenshot({ path: join(directory, `home-${width}.jpg`), type: "jpeg", quality: 80, fullPage: true, animations: "disabled" });
       const audit = await page.evaluate(() => {
         const visible = (element: Element) => !!element.getClientRects().length && !element.closest('[aria-hidden="true"]') && getComputedStyle(element).visibility !== "hidden";

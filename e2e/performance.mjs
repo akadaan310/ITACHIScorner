@@ -6,17 +6,18 @@ import { dirname } from "node:path";
 // Run against an otherwise idle production server; these are local lab samples,
 // not Lighthouse scores or measurements of deployed Core Web Vitals.
 const baseURL = process.env.PERF_BASE_URL || "http://127.0.0.1:3200";
-const output = process.env.PERF_OUTPUT || "docs/screenshots/evidence-first/after/performance.json";
+const output = process.env.PERF_OUTPUT || "docs/screenshots/recovery/after/performance.json";
+if (output.includes("evidence-first")) throw new Error("The evidence-first performance archive is immutable; use a recovery directory.");
 const phase = process.env.PERF_PHASE || "after";
-const routes = phase === "before" ? ["/", "/discover", "/dojo", "/me"] : ["/", "/explore", "/practice", "/me"];
+const routes = process.env.PERF_ROUTES?.split(",") || ["/", "/explore", "/practice", "/me"];
 const executablePath = process.env.PW_CHROMIUM || ["/usr/bin/chromium", "/usr/bin/chromium-browser"].find(existsSync);
 const browser = await chromium.launch({ executablePath });
 const samples = [];
 try {
-  for (const width of [390, 1280]) {
+  for (const width of [360, 390, 768, 1280, 1440]) {
     for (const route of routes) {
       for (let run = 1; run <= 3; run++) {
-        const context = await browser.newContext({ viewport: { width, height: width === 390 ? 844 : 900 }, deviceScaleFactor: 1 });
+        const context = await browser.newContext({ viewport: { width, height: width < 768 ? 844 : width < 1280 ? 1024 : 900 }, deviceScaleFactor: 1 });
         const page = await context.newPage();
         const session = await context.newCDPSession(page);
         await session.send("Network.enable");
