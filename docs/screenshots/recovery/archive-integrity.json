@@ -1,0 +1,13 @@
+{
+  "methodology": "All image entries in the retained evidence-first SHA256SUMS files independently verified, without modifying the archive. Git diff for docs/screenshots/evidence-first was empty.",
+  "records": [
+    {
+      "archive": "docs/screenshots/evidence-first/before",
+      "verifiedImageHashes": 68
+    },
+    {
+      "archive": "docs/screenshots/evidence-first/after",
+      "verifiedImageHashes": 78
+    }
+  ]
+}

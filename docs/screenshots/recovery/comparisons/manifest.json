@@ -1,0 +1,85 @@
+{
+  "methodology": "Labeled side-by-side technical contact sheets of unaltered before/after production captures. Equal visual scale within each pair; full-page captures retain natural proportional height. Padding added below the shorter page. No source screenshot modified.",
+  "files": [
+    {
+      "file": "home-360-fold.jpg",
+      "sha256": "77f0b7ecea900c8d9b8772dc0e5ff5629250238a65da061573472d68add76081",
+      "sources": [
+        "docs/screenshots/recovery/before/home-fold-360.jpg",
+        "docs/screenshots/recovery/after/home-fold-360.jpg"
+      ]
+    },
+    {
+      "file": "home-360-full.jpg",
+      "sha256": "f04602dbaf639e6c9ec293b5088b6b43cd17f962e739a4bfc00ea641b3a155ab",
+      "sources": [
+        "docs/screenshots/recovery/before/home-360.jpg",
+        "docs/screenshots/recovery/after/home-360.jpg"
+      ]
+    },
+    {
+      "file": "home-390-fold.jpg",
+      "sha256": "656e8bfa08c1e29dec7b58b1c08c5df9f85ea990f85b99aa94f4505ebcb568f4",
+      "sources": [
+        "docs/screenshots/recovery/before/home-fold-390.jpg",
+        "docs/screenshots/recovery/after/home-fold-390.jpg"
+      ]
+    },
+    {
+      "file": "home-390-full.jpg",
+      "sha256": "607253293762a357c19bf169b740673797e83214978ea9a5c053448fc2a4a5ef",
+      "sources": [
+        "docs/screenshots/recovery/before/home-390.jpg",
+        "docs/screenshots/recovery/after/home-390.jpg"
+      ]
+    },
+    {
+      "file": "home-768-fold.jpg",
+      "sha256": "d30d9585832976434263618baa578c3915c67a783cf991fe9d4e54516c0cf886",
+      "sources": [
+        "docs/screenshots/recovery/before/home-fold-768.jpg",
+        "docs/screenshots/recovery/after/home-fold-768.jpg"
+      ]
+    },
+    {
+      "file": "home-768-full.jpg",
+      "sha256": "74182d46a84cb52e7f6594fc13d4771a3f92c479084f21891af0510e0ba98a5a",
+      "sources": [
+        "docs/screenshots/recovery/before/home-768.jpg",
+        "docs/screenshots/recovery/after/home-768.jpg"
+      ]
+    },
+    {
+      "file": "home-1280-fold.jpg",
+      "sha256": "9b4053b0ed30056b439a59e08aed90bcf62986b1cb3687b498d28336f26726e6",
+      "sources": [
+        "docs/screenshots/recovery/before/home-fold-1280.jpg",
+        "docs/screenshots/recovery/after/home-fold-1280.jpg"
+      ]
+    },
+    {
+      "file": "home-1280-full.jpg",
+      "sha256": "27a20f08a2cef93b6fa2e2510fc3e217ea70b5619196938f3885aafaa2e989a9",
+      "sources": [
+        "docs/screenshots/recovery/before/home-1280.jpg",
+        "docs/screenshots/recovery/after/home-1280.jpg"
+      ]
+    },
+    {
+      "file": "home-1440-fold.jpg",
+      "sha256": "cd0e0ede143aa9ce216212b7d9626e4b9f6abed018015297c910588b249ab02d",
+      "sources": [
+        "docs/screenshots/recovery/before/home-fold-1440.jpg",
+        "docs/screenshots/recovery/after/home-fold-1440.jpg"
+      ]
+    },
+    {
+      "file": "home-1440-full.jpg",
+      "sha256": "e6845afe6ca9161387ed6168670872b5ad8b286236b51ae45f61fbe4d64d50ad",
+      "sources": [
+        "docs/screenshots/recovery/before/home-1440.jpg",
+        "docs/screenshots/recovery/after/home-1440.jpg"
+      ]
+    }
+  ]
+}

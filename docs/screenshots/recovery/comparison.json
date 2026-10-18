@@ -1,0 +1,560 @@
+{
+  "methodology": "Initial-state visible action affordances; navigation, form submissions, transient interactions and global navigation are separate. Disabled draft controls remain in the visible inventory but are explicitly counted. Unique actions group by destination or control kind/label. A Review/Edit state variant is one workflow, not an extra simultaneous CTA. Global navigation is outside the main-story counts.",
+  "records": [
+    {
+      "width": 360,
+      "before": {
+        "pageHeight": 3287,
+        "sectionCount": 4,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 0,
+        "main": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "pageHeight": 6108,
+        "sectionCount": 6,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 3,
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "width": 390,
+      "before": {
+        "pageHeight": 3303,
+        "sectionCount": 4,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 0,
+        "main": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "pageHeight": 5975,
+        "sectionCount": 6,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 3,
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "width": 768,
+      "before": {
+        "pageHeight": 2743,
+        "sectionCount": 4,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 0,
+        "main": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 17,
+          "uniqueCount": 15,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "pageHeight": 5467,
+        "sectionCount": 6,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 3,
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 17,
+          "uniqueCount": 15,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "width": 1280,
+      "before": {
+        "pageHeight": 2171,
+        "sectionCount": 4,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 0,
+        "main": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "pageHeight": 4257,
+        "sectionCount": 6,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 3,
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "width": 1440,
+      "before": {
+        "pageHeight": 2171,
+        "sectionCount": 4,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 0,
+        "main": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 3,
+          "uniqueCount": 3,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "after": {
+        "pageHeight": 4257,
+        "sectionCount": 6,
+        "horizontalOverflow": 0,
+        "heroActionCount": 2,
+        "disabledMainActions": 3,
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner \u2014 home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

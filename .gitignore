@@ -11,3 +11,5 @@ test-results/
 .DS_Store
 /private/
 /.superpowers/
+__pycache__/
+*.pyc

@@ -58,34 +58,34 @@ for (const sample of [
   { title: "Explore stays below 0.1 layout shift when phone fonts arrive late", route: "/explore", width: 390, height: 844, output: "slow-font-layout-shift.json" },
   { title: "Home stays below 0.1 layout shift when desktop fonts arrive late", route: "/", width: 1280, height: 900, output: "home-slow-font-layout-shift.json" },
 ] as const) {
-test(sample.title, async ({ browser, baseURL }) => {
-  const context = await browser.newContext({ baseURL, viewport: { width: sample.width, height: sample.height } });
-  const page = await context.newPage();
-  await page.route("**/*woff2*", async route => {
-    await new Promise(resolve => setTimeout(resolve, 800));
-    await route.continue();
+  test(sample.title, async ({ browser, baseURL }) => {
+    const context = await browser.newContext({ baseURL, viewport: { width: sample.width, height: sample.height } });
+    const page = await context.newPage();
+    await page.route("**/*woff2*", async route => {
+      await new Promise(resolve => setTimeout(resolve, 800));
+      await route.continue();
+    });
+    await page.addInitScript(() => {
+      window.__fontLoadShift = 0;
+      new PerformanceObserver(list => {
+        for (const raw of list.getEntries()) {
+          const entry = raw as PerformanceEntry & { value: number; hadRecentInput: boolean };
+          if (!entry.hadRecentInput) window.__fontLoadShift += entry.value;
+        }
+      }).observe({ type: "layout-shift", buffered: true });
+    });
+    try {
+      await page.goto(sample.route);
+      await page.evaluate(() => document.fonts.ready);
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      const score = await page.evaluate(() => window.__fontLoadShift);
+      const directory = process.env.QUALITY_OUTPUT_DIR || "docs/screenshots/recovery/after";
+      if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
+      await mkdir(directory, { recursive: true });
+      await writeFile(`${directory}/${sample.output}`, JSON.stringify({ route: sample.route, viewport: { width: sample.width, height: sample.height }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
+      expect(score).toBeLessThan(0.1);
+    } finally {
+      await context.close();
+    }
   });
-  await page.addInitScript(() => {
-    window.__fontLoadShift = 0;
-    new PerformanceObserver(list => {
-      for (const raw of list.getEntries()) {
-        const entry = raw as PerformanceEntry & { value: number; hadRecentInput: boolean };
-        if (!entry.hadRecentInput) window.__fontLoadShift += entry.value;
-      }
-    }).observe({ type: "layout-shift", buffered: true });
-  });
-  try {
-    await page.goto(sample.route);
-    await page.evaluate(() => document.fonts.ready);
-    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
-    const score = await page.evaluate(() => window.__fontLoadShift);
-    const directory = process.env.QUALITY_OUTPUT_DIR || "docs/screenshots/recovery/after";
-    if (directory.includes("evidence-first")) throw new Error("The evidence-first screenshot archive is immutable; use a recovery directory.");
-    await mkdir(directory, { recursive: true });
-    await writeFile(`${directory}/${sample.output}`, JSON.stringify({ route: sample.route, viewport: { width: sample.width, height: sample.height }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
-    expect(score).toBeLessThan(0.1);
-  } finally {
-    await context.close();
-  }
-});
 }

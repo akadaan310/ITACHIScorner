@@ -1,0 +1,29 @@
+
+Running 13 tests using 2 workers
+
+(node:61180) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:61181) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/13] [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions
+[2/13] [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript
+[3/13] [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story
+[4/13] [desktop] › e2e/recovery.spec.ts:27:5 › visitor can review, edit, copy and clear only their own draft
+(node:61481) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[5/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 360px
+[6/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 390px
+[7/13] [desktop] › e2e/recovery.spec.ts:55:5 › draft never uses browser storage, sends visitor text or produces a server answer
+[8/13] [desktop] › e2e/recovery.spec.ts:81:5 › clipboard denial preserves the visitor draft and explains manual copying
+[9/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 768px
+[10/13] [desktop] › e2e/recovery.spec.ts:95:5 › gated learning, practice and community explain a useful next action
+[11/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1280px
+[12/13] [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1440px
+[13/13] [mobile] › e2e/mobile.spec.ts:22:5 › phone menu supports touch, escape, focus return and all five destinations
+  13 passed (15.0s)

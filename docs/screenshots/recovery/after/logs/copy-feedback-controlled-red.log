@@ -1,0 +1,40 @@
+
+Running 1 test using 1 worker
+
+(node:69032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] [desktop] › e2e/recovery.spec.ts:97:5 › draft copy feedback stays fully above fixed phone navigation
+  1) [desktop] › e2e/recovery.spec.ts:97:5 › draft copy feedback stays fully above fixed phone navigation 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 0
+    Received:    -33.515625
+
+    Call Log:
+    - Timeout 5000ms exceeded while waiting on the predicate
+
+      123 |       const navigationBox = await page.getByRole("navigation", { name: "Quick navigation", exact: true }).boundingBox();
+      124 |       return feedbackBox && navigationBox ? navigationBox.y - feedbackBox.y - feedbackBox.height : -1;
+    > 125 |     }).toBeGreaterThanOrEqual(0);
+          |        ^
+      126 |   }
+      127 | });
+      128 |
+        at /workspace/itachi-recovery/e2e/recovery.spec.ts:125:8
+
+    Error Context: test-results-recovery-copy-red/recovery-draft-copy-feedba-3c45a-bove-fixed-phone-navigation-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results-recovery-copy-red/recovery-draft-copy-feedba-3c45a-bove-fixed-phone-navigation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results-recovery-copy-red/recovery-draft-copy-feedba-3c45a-bove-fixed-phone-navigation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    [desktop] › e2e/recovery.spec.ts:97:5 › draft copy feedback stays fully above fixed phone navigation 

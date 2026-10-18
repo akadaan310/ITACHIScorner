@@ -1,0 +1,102 @@
+{
+  "verifiedAt": "2026-10-18T02:48:39.851166+00:00",
+  "implementationCommit": "9f7be34a5dfb407ed476d5cfc23a9340c62c4e02",
+  "productionBuildId": "VNjUchI-JwEZnwPHq6tmm",
+  "checks": [
+    {
+      "name": "dependency installation",
+      "result": "passed",
+      "command": "npm ci",
+      "scope": "Fresh integrated baseline; integrator-operated."
+    },
+    {
+      "name": "lint",
+      "result": "passed",
+      "command": "npm run lint",
+      "log": "after/logs/lint.log"
+    },
+    {
+      "name": "strict typecheck",
+      "result": "passed",
+      "command": "npm run typecheck",
+      "log": "after/logs/typecheck.log"
+    },
+    {
+      "name": "Vitest",
+      "result": "passed",
+      "passed": 110,
+      "log": "after/logs/vitest.log"
+    },
+    {
+      "name": "production build",
+      "result": "passed",
+      "command": "npm run build",
+      "log": "after/logs/build.log"
+    },
+    {
+      "name": "Playwright",
+      "result": "passed",
+      "command": "E2E_PORT=3900 E2E_REUSE_SERVER=1 npx playwright test --output=/tmp/itachi-recovery-font-fixed-full",
+      "stats": {
+        "startTime": "2026-10-18T02:43:27.014Z",
+        "duration": 68865.945,
+        "expected": 122,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "log": "after/logs/playwright-final.log"
+    },
+    {
+      "name": "real PostgreSQL relational/RLS checks",
+      "result": "passed",
+      "assertions": 118,
+      "log": "after/logs/rls.log"
+    },
+    {
+      "name": "real PostgreSQL private adapter checks",
+      "result": "passed",
+      "assertions": 53,
+      "fixtures": "synthetic only",
+      "log": "after/logs/private-postgres.log"
+    },
+    {
+      "name": "public client bundle isolation scan",
+      "result": "passed",
+      "scope": ".next/static",
+      "privateMarkersMatched": 0
+    },
+    {
+      "name": "cold-cache local production samples",
+      "result": "recorded",
+      "samples": 60,
+      "maximumObservedLcpMs": 264,
+      "maximumObservedCls": 0.07094622783673307,
+      "report": "after/performance.json"
+    },
+    {
+      "name": "delayed-font guard",
+      "result": "passed",
+      "samples": 10,
+      "fontDelayMs": 800,
+      "strictClsThreshold": 0.1,
+      "maximumCls": 0.07094622783673307,
+      "report": "after/slow-font-validation.json"
+    },
+    {
+      "name": "capture/comparison integrity",
+      "result": "passed",
+      "beforeFileHashes": 98,
+      "afterFileHashes": 117,
+      "comparisonImageHashes": 10,
+      "sourceFileHashes": 7,
+      "retainedArchiveImageHashes": 146
+    }
+  ],
+  "limits": [
+    "Local Chromium and PostgreSQL checks do not establish hosted email delivery, authenticated real-user CRUD or hosted account deletion.",
+    "Browser backend intentionally unconfigured; no valid email is sent.",
+    "No real corpus imported by QA; corpus handoff remains external.",
+    "No deployment, outreach or paid processing."
+  ]
+}

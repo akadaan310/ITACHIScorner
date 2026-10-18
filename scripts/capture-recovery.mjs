@@ -82,6 +82,8 @@ try {
       await settle();
       await page.getByRole("button", { name: /Open menu/i }).first().click();
       await capture("navigation-open");
+      await page.keyboard.press("Escape");
+      await page.getByRole("dialog", { name: /menu/i }).waitFor({ state: "hidden" });
     }
     if (phase === "after" && [390, 1280].includes(width)) {
       await page.goto(baseURL + "/#question-desk");
@@ -108,6 +110,9 @@ try {
     if (existsSync(file)) sourceHashes[file] = createHash("sha256").update(await readFile(file)).digest("hex");
   }
   const productionBuildId = existsSync(".next/BUILD_ID") ? (await readFile(".next/BUILD_ID", "utf8")).trim() : null;
+  for (const file of ["review-copy-failure-360-reduce.png", "review-arrow-360-reduce.png", "font-fallback-loaded-contact.jpg"]) {
+    if (phase === "after" && existsSync(join(directory, file))) files.push(file);
+  }
   const manifest = { phase, capturedAt: new Date().toISOString(), baseURL, sourceCommit: process.env.CAPTURE_COMMIT || null, productionBuildId, sourceHashes, browser: await browser.version(), widths, routes: pages, methodology: "Fresh local production rendering. One browser context per width; fonts and finite document animations settled; 1x device scale. Route first folds, full homepage, each home section transition and open mobile menus. Visible action instances, unique targets, repeated instances, navigation, form submissions and transient interactions counted separately. Disabled controls counted visibly and individually marked. After-phase draft state captures use explicitly labeled, generic QA visitor input; these are tool checks, never creator or corpus content.", files: [] };
   for (const file of files) manifest.files.push({ file, sha256: createHash("sha256").update(await readFile(join(directory, file))).digest("hex") });
   await writeFile(join(directory, "manifest.json"), JSON.stringify(manifest, null, 2) + "\n");

@@ -4,7 +4,9 @@ This supersedes the browser-only demo flows. The [constitution](PRODUCT_CONSTITU
 
 ## Visitor
 
-Home introduces the independent creator concept with one Explore questions action. Explore searches only approved source summaries. If none exist, it explains the missing verified conversations without fabricated results. Learn and Practice explain preparation/review status without lesson previews or pretend assessments. Community remains quiet until actual moderated participation is ready.
+Home introduces the independent creator concept with one dominant **Explore a question** hero action and a contextual About link. Its scroll explains source readiness, offers a temporary writing desk for the visitor's own question/reflection, and gives distinct contextual paths to Learn, Practice, Community and My Corner. The desk sends no input to a server, uses no browser storage, gives no answer/score and loses its draft when the page is left or refreshed; copying is an explicit visitor action. It is not an Itachi-derived exercise.
+
+Explore searches only approved source summaries. If none exist, it explains the missing verified conversations without fabricated results. Learn and Practice explain preparation/review status without lesson previews or pretend assessments and offer the visitor-owned question desk as something usable now. Community explains its principles and moderation readiness, with no invented people or open submission control.
 
 Primary navigation is Home · Explore · Learn · Practice · Community. My Corner is secondary. No persistent live banner or streaming host is present. About carries modest external public-channel links. Support describes inactive optional support without prices, ranks or fabricated creator benefits.
 

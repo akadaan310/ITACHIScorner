@@ -1,8 +1,21 @@
 # Mission status
 
-Controlling brief: [MISSION_EVIDENCE_FIRST.md](docs/MISSION_EVIDENCE_FIRST.md). Repository `akadaan310/ITACHIScorner`; base `b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3`, live default `ccr-cea0c280-gyikbx`; integration branch `feat/evidence-first-foundation`. No deployment or paid processing is authorized.
+Controlling follow-up: [MISSION_RECOVERY_AND_CORPUS.md](docs/MISSION_RECOVERY_AND_CORPUS.md), extending [the evidence-first mission](docs/MISSION_EVIDENCE_FIRST.md). Repository `akadaan310/ITACHIScorner`; live default `ccr-cea0c280-gyikbx` remains at `b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3`. Recovery branch `feat/restore-corner-and-corpus-handoff` starts from the preserved foundation `674668b54f749ea2c7b9edce50fcc9dad61be888`. No deployment or spending is authorized.
 
-## DONE
+## Recovery implementation
+
+- Rich creator-first Home now has a source-review stage, visitor-owned question desk, distinct Learn/Practice/Community journeys and My Corner close. Six main navigation destinations have zero repeated destinations; three source disclosures and three temporary draft actions are counted separately. Hero retains one dominant Explore action and one contextual About link.
+- The desk supports review/edit/copy/clear using page memory only. It never answers, scores, sends, saves or attributes the visitor's writing. Refresh loss, clipboard failure, no-JavaScript fallback, phone feedback visibility and reduced motion are explicit and tested.
+- Learn, Practice and Community explain both their gates and an action available now. Existing SSR Auth, private notes, export/deletion, trusted staff boundaries and legacy redirects remain intact.
+- The existing importer and reviewed migrations are preserved. A separate direct-TLS PostgreSQL phase revalidates immutable receipts, exact project/migrations/current policies and role helper, real operator/creator permissions, source versions and intervals. Transactions fail closed; replay cannot roll corrected inventory back, including after adapter revisions. No review or public content is created by import.
+- Verified implementation: lint, strict typecheck, **110 Vitest tests**, production build, **122 Playwright tests**, **118 existing PostgreSQL RLS assertions**, and **53 private persistence PostgreSQL assertions** pass. Local database fixtures are explicitly synthetic. [Current verification](docs/RECOVERY_VERIFICATION.md), [visual review](docs/RECOVERY_VISUAL_REVIEW.md), [code review](docs/RECOVERY_CODE_REVIEW.md), and [new screenshot archive](docs/screenshots/recovery/README.md) retain distinct evidence and limits.
+- All 146 older evidence-first screenshot hashes remain intact, as do both reviewed migration hashes, the original portrait, research engine and account implementation. Fresh five-width before/after captures and comparison sheets use a separate recovery directory.
+- Bounded authorized discovery found no complete corpus handoff. Live intended-project counts remain **0 videos, 0 transcript versions, 0 segments and 0 private corpus objects**. Inventory denominator is **unknown**; validated real discoveries are **0**. [Exact discovery scope](docs/CORPUS_DISCOVERY.md) and [one forwardable artifact request](docs/CORPUS_HANDOFF_NEEDED.md) are recorded. No harvester or message to Dot was launched.
+- The intended ACT AI Protocol project remains healthy on the Free plan. Hosted security advisor is clear; only 72 unused-index INFO findings remain on the empty database. Anonymous approved collection is 200/empty, research schema is unexposed (406), and private account access is denied (401). Hosted private transfer remains unverified because there is no authorized corpus, private database credential or provisioned operator/source permission setup.
+
+Current implementation and public UI revision: `9f7be34`. The private persistence phase was independently accepted at `90d68aa`; the later scoped font fix was also accepted. Delivery documentation and verification artifacts may follow these source commits. [WHAT_HAPPENS_NEXT.md](docs/WHAT_HAPPENS_NEXT.md) gives the phone-owner handoff and single next action.
+
+## DONE — foundation history (`674668b`)
 
 - Resolved real repository, clean base and separate UI/data/research/QA worktrees.
 - Preserved mission/design/plan, product constitution, asset provenance and truthful release boundaries.

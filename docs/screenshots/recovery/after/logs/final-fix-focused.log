@@ -1,0 +1,16 @@
+
+Running 4 tests using 2 workers
+
+(node:70623) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+(node:70624) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/4] [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /
+[2/4] [desktop] › e2e/recovery.spec.ts:27:5 › visitor can review, edit, copy and clear only their own draft
+[3/4] [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript
+[4/4] [desktop] › e2e/recovery.spec.ts:97:5 › draft copy feedback stays fully above fixed phone navigation
+  4 passed (5.6s)

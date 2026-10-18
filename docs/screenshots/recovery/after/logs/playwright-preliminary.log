@@ -1,0 +1,198 @@
+
+Running 120 tests using 2 workers
+
+(node:62100) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:62101) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓    1 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/request (86ms)
+  ✓    3 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/verify (18ms)
+  ✓    4 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /auth/logout (24ms)
+  ✓    5 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/profile (31ms)
+  ✓    6 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/preferences (18ms)
+  ✓    7 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/consent (28ms)
+  ✓    8 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/links (14ms)
+  ✓    9 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/delete (29ms)
+  ✓   10 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/notes (24ms)
+  ✓   11 [desktop] › e2e/account-api.spec.ts:24:7 › hostile Origin is rejected before mutation at /api/account/saved-questions (42ms)
+  ✓   12 [desktop] › e2e/account-api.spec.ts:36:5 › anonymous export fails closed and cannot be shared-cached (22ms)
+  ✓   13 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/profile reports unavailable without claiming success (37ms)
+  ✓   14 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/preferences reports unavailable without claiming success (25ms)
+  ✓   15 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/consent reports unavailable without claiming success (29ms)
+  ✓   16 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/links reports unavailable without claiming success (27ms)
+  ✓   17 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/delete reports unavailable without claiming success (23ms)
+  ✓   18 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/notes reports unavailable without claiming success (25ms)
+  ✓   19 [desktop] › e2e/account-api.spec.ts:47:7 › unconfigured same-origin /api/account/saved-questions reports unavailable without claiming success (25ms)
+  ✓   20 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/request cannot create an authenticated success (27ms)
+  ✓   21 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/verify cannot create an authenticated success (29ms)
+  ✓   22 [desktop] › e2e/account-api.spec.ts:62:7 › unconfigured same-origin /auth/logout cannot create an authenticated success (20ms)
+  ✓   23 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=https://hostile-origin.invalid local and signed out (34ms)
+  ✓    2 [desktop] › e2e/evidence-first.spec.ts:3:5 › public navigation offers five clear destinations (759ms)
+  ✓   24 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=//hostile-origin.invalid local and signed out (31ms)
+  ✓   26 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/callback keeps hostile next=/%2fhostile-origin.invalid local and signed out (17ms)
+  ✓   27 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=https://hostile-origin.invalid local and signed out (39ms)
+  ✓   28 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=//hostile-origin.invalid local and signed out (39ms)
+  ✓   29 [desktop] › e2e/account-api.spec.ts:86:9 › invalid /auth/confirm keeps hostile next=/%2fhostile-origin.invalid local and signed out (48ms)
+  ✓   25 [desktop] › e2e/evidence-first.spec.ts:9:5 › Explore cannot publish invented content when the source backend is unconfigured (637ms)
+  ✓   31 [desktop] › e2e/evidence-first.spec.ts:17:5 › unapproved practice remains a waiting state (946ms)
+  ✓   30 [desktop] › e2e/flows.spec.ts:3:5 › Learn publishes no curriculum before evidence and creator approval (1.0s)
+  ✓   33 [desktop] › e2e/flows.spec.ts:12:5 › unconfigured Community never claims to submit or publish a question (951ms)
+  ✓   32 [desktop] › e2e/evidence-first.spec.ts:26:5 › empty search returns no invented sources or conversations (1.2s)
+  ✓   34 [desktop] › e2e/flows.spec.ts:19:5 › missing auth configuration disables sign-in honestly (971ms)
+  ✓   35 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › / renders without browser errors or demo content (1.2s)
+  ✓   37 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /explore renders without browser errors or demo content (1.8s)
+  ✓   36 [desktop] › e2e/flows.spec.ts:26:5 › unconnected account and privacy controls expose no fabricated personal data (2.5s)
+  ✓   38 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /learn renders without browser errors or demo content (908ms)
+  ✓   40 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /practice renders without browser errors or demo content (742ms)
+  ✓   39 [desktop] › e2e/flows.spec.ts:36:5 › browser-controlled demo data cannot unlock the creator workspace (1.6s)
+  ✓   41 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /community renders without browser errors or demo content (907ms)
+  ✓   42 [desktop] › e2e/flows.spec.ts:52:5 › private editorial access is absent from the public footer (985ms)
+  ✓   43 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /session-notes renders without browser errors or demo content (914ms)
+  ✓   45 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /library renders without browser errors or demo content (746ms)
+  ✓   46 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /support renders without browser errors or demo content (695ms)
+  ✓   47 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /about renders without browser errors or demo content (582ms)
+  ✘   44 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / (2.7s)
+  ✓   48 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /faq renders without browser errors or demo content (636ms)
+(node:63057) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   49 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /privacy renders without browser errors or demo content (606ms)
+  ✓   50 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /terms renders without browser errors or demo content (739ms)
+  ✓   52 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /join renders without browser errors or demo content (1.3s)
+  ✓   53 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /me renders without browser errors or demo content (936ms)
+  ✓   54 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /me/journal renders without browser errors or demo content (1.5s)
+  ✓   51 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /explore (4.0s)
+  ✓   55 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /me/settings renders without browser errors or demo content (1.2s)
+  ✓   57 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /studio renders without browser errors or demo content (1.0s)
+  ✓   56 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /learn (2.8s)
+  ✓   58 [desktop] › e2e/navigation.spec.ts:6:9 › truthful public routes › /studio/creator renders without browser errors or demo content (825ms)
+  ✓   60 [desktop] › e2e/navigation.spec.ts:18:7 › truthful public routes › unknown routes return a useful 404 (1.2s)
+  ✓   59 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /practice (2.6s)
+  ✓   61 [desktop] › e2e/navigation.spec.ts:24:7 › truthful public routes › every internal public link resolves (3.3s)
+  ✓   63 [desktop] › e2e/navigation.spec.ts:35:7 › truthful public routes › the supplied public channel hub retains new-tab protections (1.8s)
+  ✓   62 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /community (4.4s)
+  ✓   64 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /discover leads to truthful /explore (2.7s)
+  ✓   66 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /watch leads to truthful /explore (1.1s)
+  ✓   65 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /session-notes (3.9s)
+  ✓   67 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /atlas leads to truthful /explore (1.1s)
+  ✓   69 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /dojo leads to truthful /practice (998ms)
+  ✓   68 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /library (2.3s)
+  ✓   70 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /dojo/path leads to truthful /practice (671ms)
+  ✓   72 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /dojo/result leads to truthful /practice (802ms)
+  ✓   73 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow leads to truthful /session-notes (666ms)
+  ✓   71 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /support (2.1s)
+  ✓   74 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/before leads to truthful /session-notes (730ms)
+  ✓   76 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/live leads to truthful /session-notes (810ms)
+  ✓   77 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/vault leads to truthful /session-notes (639ms)
+  ✓   75 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /about (1.9s)
+  ✓   78 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/gallery leads to truthful /session-notes (758ms)
+  ✓   80 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/episodes/sample-episode-01 leads to truthful /session-notes (708ms)
+  ✓   79 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /faq (2.0s)
+  ✓   81 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /afterglow/episodes/sample-episode-02 leads to truthful /session-notes (1.0s)
+  ✓   83 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /events leads to truthful /about (1.4s)
+  ✓   84 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /reverts leads to truthful /learn (679ms)
+  ✓   82 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /privacy (3.0s)
+  ✓   85 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /reverts/ask/q-silly leads to truthful /community (656ms)
+  ✓   87 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /stories leads to truthful /community (839ms)
+  ✓   88 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /library/preview?page=4 leads to truthful /library (679ms)
+  ✓   86 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /terms (1.9s)
+  ✓   89 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /membership leads to truthful /support (897ms)
+  ✓   91 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /onboarding leads to truthful /join (696ms)
+  ✓   90 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /join (1.9s)
+  ✓   92 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /me/constellation leads to truthful /me (647ms)
+  ✓   94 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /me/quests leads to truthful /me (848ms)
+  ✓   95 [desktop] › e2e/navigation.spec.ts:60:7 › legacy /me/afterglow leads to truthful /me (916ms)
+  ✓   93 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /me (2.4s)
+  ✓   96 [desktop] › e2e/recovery.spec.ts:3:5 › hero invites a question with no more than two competing actions (1.7s)
+  ✓   98 [desktop] › e2e/recovery.spec.ts:13:5 › homepage offers distinct contextual journeys throughout its story (1.4s)
+  ✓   97 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /me/journal (3.2s)
+  ✓  100 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /me/settings (2.3s)
+  ✓   99 [desktop] › e2e/recovery.spec.ts:27:5 › visitor can review, edit, copy and clear only their own draft (3.0s)
+  ✓  101 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /studio (2.1s)
+  ✓  102 [desktop] › e2e/recovery.spec.ts:55:5 › draft never uses browser storage, sends visitor text or produces a server answer (2.1s)
+  ✓  104 [desktop] › e2e/recovery.spec.ts:81:5 › clipboard denial preserves the visitor draft and explains manual copying (1.2s)
+  ✓  103 [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on /studio/creator (1.9s)
+  ✓  105 [desktop] › e2e/recovery.spec.ts:95:5 › gated learning, practice and community explain a useful next action (1.8s)
+  ✓  106 [desktop] › e2e/quality.spec.ts:20:5 › public story and legacy navigation work without JavaScript (1.4s)
+(node:66428) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  107 [desktop] › e2e/quality.spec.ts:40:5 › reduced motion prevents continuously animated decoration (754ms)
+  ✓  109 [desktop] › e2e/quality.spec.ts:49:5 › unapproved sacred text is absent from public learning surfaces (2.0s)
+  ✘  110 [desktop] › e2e/quality.spec.ts:57:5 › Explore stays below 0.1 layout shift when phone fonts arrive late (2.2s)
+  ✘  108 [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 360px (4.4s)
+(node:66832) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:66914) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  112 [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 390px (2.2s)
+  ✓  111 [screens] › e2e/screenshots.spec.ts:16:7 › capture reviewed public folds at 360px (4.7s)
+  ✓  113 [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 768px (2.0s)
+  ✓  115 [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1280px (1.9s)
+  ✓  116 [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 1440px (3.1s)
+  ✓  114 [screens] › e2e/screenshots.spec.ts:16:7 › capture reviewed public folds at 390px (6.2s)
+  ✓  117 [mobile] › e2e/mobile.spec.ts:22:5 › phone menu supports touch, escape, focus return and all five destinations (2.3s)
+  ✓  118 [screens] › e2e/screenshots.spec.ts:16:7 › capture reviewed public folds at 768px (4.1s)
+  ✓  119 [screens] › e2e/screenshots.spec.ts:16:7 › capture reviewed public folds at 1280px (3.3s)
+  ✓  120 [screens] › e2e/screenshots.spec.ts:16:7 › capture reviewed public folds at 1440px (4.6s)
+
+
+  1) [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / 
+
+    Error: expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 3
+
+    - Array []
+    + Array [
+    +   "color-contrast: .pathway-learn > .pathway-word[aria-hidden=\"true\"], .pathway-practice > .pathway-word[aria-hidden=\"true\"]",
+    + ]
+
+      14 |     const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
+      15 |     expect(results.violations.filter(v => v.impact === "serious" || v.impact === "critical")
+    > 16 |       .map(v => `${v.id}: ${v.nodes.map(node => node.target.join(" ")).join(", ")}`)).toEqual([]);
+         |                                                                                       ^
+      17 |   });
+      18 | }
+      19 |
+        at /workspace/itachi-recovery/e2e/quality.spec.ts:16:87
+
+    Error Context: test-results/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/quality-axe-no-serious-or--c9ec5-ccessibility-violations-on--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › e2e/quality.spec.ts:57:5 › Explore stays below 0.1 layout shift when phone fonts arrive late 
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, copyfile '/workspace/itachi-recovery/test-results/.playwright-artifacts-2/traces/f46baca133b10bf87db1-600fae899520e30c5566-recording41.network' -> '/workspace/itachi-recovery/test-results/.playwright-artifacts-2/traces/f46baca133b10bf87db1-600fae899520e30c5566-recording41-pwnetcopy-1.network'
+
+      82 |     expect(score).toBeLessThan(0.1);
+      83 |   } finally {
+    > 84 |     await context.close();
+         |                   ^
+      85 |   }
+      86 | });
+      87 |
+        at /workspace/itachi-recovery/e2e/quality.spec.ts:84:19
+
+    Error: browserContext._wrapApiCall: ENOENT: no such file or directory, open '/workspace/itachi-recovery/test-results/.playwright-artifacts-2/traces/f46baca133b10bf87db1-600fae899520e30c5566-recording40.network'
+
+    Error: ENOENT: no such file or directory, open '/workspace/itachi-recovery/test-results/.playwright-artifacts-2/04a185948476262bf996c2c99c54868c.zip'
+
+  3) [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 360px 
+
+    Error: browserContext.close: ENOENT: no such file or directory, open '/workspace/itachi-recovery/test-results/.playwright-artifacts-3/traces/e79c838550b25e92508e-5d9d0369a5086988d106.trace'
+
+    Error: ENOENT: no such file or directory, open '/workspace/itachi-recovery/test-results/.playwright-artifacts-3/1414eee187907f3f9de89bec5a24a1d7.zip'
+
+    Error Context: test-results/mobile-home-primary-action-7afb0-and-public-routes-fit-360px-mobile/error-context.md
+
+  3 failed
+    [desktop] › e2e/quality.spec.ts:11:7 › axe: no serious or critical accessibility violations on / 
+    [desktop] › e2e/quality.spec.ts:57:5 › Explore stays below 0.1 layout shift when phone fonts arrive late 
+    [mobile] › e2e/mobile.spec.ts:5:7 › home primary action fits the first fold and public routes fit 360px 
+  117 passed (1.5m)

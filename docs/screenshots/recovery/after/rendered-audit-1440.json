@@ -1,0 +1,4996 @@
+{
+  "capturedAt": "2026-10-18T02:45:26.957Z",
+  "records": [
+    {
+      "name": "home",
+      "route": "/",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 4257,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE A QUESTION",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 144,
+          "y": 620,
+          "width": 216,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "behind the Corner",
+          "href": "/about",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 284,
+          "y": 685,
+          "width": 119,
+          "height": 17
+        },
+        {
+          "tag": "summary",
+          "kind": "interaction",
+          "label": "Follow the original +",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 768,
+          "y": 1079,
+          "width": 529,
+          "height": 70
+        },
+        {
+          "tag": "summary",
+          "kind": "interaction",
+          "label": "Make permission visible +",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 768,
+          "y": 1150,
+          "width": 529,
+          "height": 70
+        },
+        {
+          "tag": "summary",
+          "kind": "interaction",
+          "label": "Leave room for review +",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 768,
+          "y": 1221,
+          "width": 529,
+          "height": 70
+        },
+        {
+          "tag": "button",
+          "kind": "interaction",
+          "label": "Review draft",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": true,
+          "region": "main",
+          "x": 770,
+          "y": 1998,
+          "width": 136,
+          "height": 44
+        },
+        {
+          "tag": "button",
+          "kind": "interaction",
+          "label": "Copy draft",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": true,
+          "region": "main",
+          "x": 1112,
+          "y": 1998,
+          "width": 71,
+          "height": 44
+        },
+        {
+          "tag": "button",
+          "kind": "interaction",
+          "label": "Clear draft",
+          "href": null,
+          "main": true,
+          "primary": false,
+          "disabled": true,
+          "region": "main",
+          "x": 1193,
+          "y": 1998,
+          "width": 71,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn at your pace",
+          "href": "/learn",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 185,
+          "y": 2954,
+          "width": 151,
+          "height": 59
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practise with your own words",
+          "href": "/practice",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 773,
+          "y": 2954,
+          "width": 216,
+          "height": 59
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Make room for each other",
+          "href": "/community",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 849,
+          "y": 3410,
+          "width": 194,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Visit My Corner",
+          "href": "/me",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 266,
+          "y": 3884,
+          "width": 131,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 4068,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 4068,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 4068,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 4068,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 4068,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 4181,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 4181,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 12,
+          "uniqueCount": 12,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 6,
+          "uniqueCount": 6,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "A LITTLE CURIOSITY. A deeper CONVERSATION.",
+          "fold": 1,
+          "x": 144,
+          "y": 245,
+          "width": 607,
+          "height": 271
+        },
+        {
+          "text": "REAL WORDS. Real context.",
+          "fold": 2,
+          "x": 144,
+          "y": 1010,
+          "width": 529,
+          "height": 171
+        },
+        {
+          "text": "YOUR QUESTION. Your own words.",
+          "fold": 2,
+          "x": 144,
+          "y": 1541,
+          "width": 504,
+          "height": 259
+        },
+        {
+          "text": "THERE’S ROOM to take your time.",
+          "fold": 3,
+          "x": 144,
+          "y": 2289,
+          "width": 606,
+          "height": 259
+        },
+        {
+          "text": "MAKE ROOM FOR understanding.",
+          "fold": 4,
+          "x": 185,
+          "y": 2737,
+          "width": 440,
+          "height": 115
+        },
+        {
+          "text": "FIND THE WORDS. Then revisit them.",
+          "fold": 4,
+          "x": 773,
+          "y": 2737,
+          "width": 439,
+          "height": 115
+        },
+        {
+          "text": "BRING CURIOSITY. Leave room for others.",
+          "fold": 4,
+          "x": 144,
+          "y": 3245,
+          "width": 625,
+          "height": 248
+        },
+        {
+          "text": "A CORNER of your own.",
+          "fold": 5,
+          "x": 266,
+          "y": 3703,
+          "width": 800,
+          "height": 80
+        }
+      ],
+      "sections": [
+        {
+          "label": "hero-title",
+          "x": 0,
+          "y": 106,
+          "width": 1440,
+          "height": 778
+        },
+        {
+          "label": "source-title",
+          "x": 0,
+          "y": 883,
+          "width": 1440,
+          "height": 536
+        },
+        {
+          "label": "desk-title",
+          "x": 0,
+          "y": 1419,
+          "width": 1440,
+          "height": 761
+        },
+        {
+          "label": "learning-title",
+          "x": 112,
+          "y": 2180,
+          "width": 1216,
+          "height": 947
+        },
+        {
+          "label": "community-title",
+          "x": 0,
+          "y": 3126,
+          "width": 1440,
+          "height": 451
+        },
+        {
+          "label": "personal-title",
+          "x": 112,
+          "y": 3577,
+          "width": 1216,
+          "height": 409
+        }
+      ]
+    },
+    {
+      "name": "explore",
+      "route": "/explore",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1213,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "button",
+          "kind": "form-submission",
+          "label": "SEARCH QUESTIONS",
+          "href": null,
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 812,
+          "y": 607,
+          "width": 182,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 1023,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 1023,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 1023,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 1023,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 1023,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1137,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1137,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "EVERY GOOD CONVERSATION BEGINS WITH a question.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 259
+        },
+        {
+          "text": "THE FIRST CONVERSATIONS ARE BEING PREPARED.",
+          "fold": 1,
+          "x": 243,
+          "y": 774,
+          "width": 672,
+          "height": 35
+        }
+      ],
+      "sections": [
+        {
+          "label": "The first conversations are being prepared.",
+          "x": 144,
+          "y": 691,
+          "width": 1152,
+          "height": 227
+        }
+      ]
+    },
+    {
+      "name": "learn",
+      "route": "/learn",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1780,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Write your own question",
+          "href": "/#question-desk",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 181,
+          "y": 946,
+          "width": 185,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 390,
+          "y": 1263,
+          "width": 80,
+          "height": 20
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 1590,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 1590,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 1590,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 1590,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 1590,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1704,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1704,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 2,
+          "uniqueCount": 2,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 2,
+          "uniqueCount": 2,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "UNDERSTANDING TAKES a little time.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "A THOUGHTFUL BEGINNING IS WORTH WAITING FOR.",
+          "fold": 1,
+          "x": 243,
+          "y": 571,
+          "width": 672,
+          "height": 35
+        },
+        {
+          "text": "START WITH WHAT YOU WANT TO UNDERSTAND.",
+          "fold": 1,
+          "x": 181,
+          "y": 816,
+          "width": 1078,
+          "height": 33
+        },
+        {
+          "text": "A GENTLE PLACE TO BEGIN.",
+          "fold": 2,
+          "x": 144,
+          "y": 1110,
+          "width": 700,
+          "height": 30
+        },
+        {
+          "text": "ORIGINAL CONTEXT",
+          "fold": 2,
+          "x": 144,
+          "y": 1379,
+          "width": 368,
+          "height": 30
+        },
+        {
+          "text": "CAREFUL REVIEW",
+          "fold": 2,
+          "x": 536,
+          "y": 1379,
+          "width": 368,
+          "height": 30
+        },
+        {
+          "text": "YOUR OWN PACE",
+          "fold": 2,
+          "x": 928,
+          "y": 1379,
+          "width": 368,
+          "height": 30
+        }
+      ],
+      "sections": [
+        {
+          "label": "A thoughtful beginning is worth waiting for.",
+          "x": 144,
+          "y": 488,
+          "width": 1152,
+          "height": 227
+        },
+        {
+          "label": "learn-now",
+          "x": 144,
+          "y": 748,
+          "width": 1152,
+          "height": 284
+        },
+        {
+          "label": "A gentle place to begin.",
+          "x": 144,
+          "y": 1031,
+          "width": 700,
+          "height": 285
+        }
+      ]
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1643,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Use the question desk",
+          "href": "/#question-desk",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 181,
+          "y": 1081,
+          "width": 172,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 144,
+          "y": 1295,
+          "width": 80,
+          "height": 20
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 1454,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 1454,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 1454,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 1454,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 1454,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1567,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1567,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 2,
+          "uniqueCount": 2,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 2,
+          "uniqueCount": 2,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "LISTEN CLOSELY. Respond thoughtfully.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "REAL CONVERSATIONS COME FIRST.",
+          "fold": 1,
+          "x": 243,
+          "y": 571,
+          "width": 672,
+          "height": 35
+        },
+        {
+          "text": "GIVE YOUR OWN WORDS A SECOND LOOK.",
+          "fold": 1,
+          "x": 181,
+          "y": 880,
+          "width": 1078,
+          "height": 33
+        },
+        {
+          "text": "CONTINUE IN YOUR OWN SPACE.",
+          "fold": 2,
+          "x": 144,
+          "y": 1245,
+          "width": 700,
+          "height": 30
+        }
+      ],
+      "sections": [
+        {
+          "label": "Real conversations come first.",
+          "x": 144,
+          "y": 488,
+          "width": 1152,
+          "height": 291
+        },
+        {
+          "label": "practice-now",
+          "x": 144,
+          "y": 812,
+          "width": 1152,
+          "height": 354
+        },
+        {
+          "label": "Continue in your own space.",
+          "x": 144,
+          "y": 1166,
+          "width": 700,
+          "height": 183
+        }
+      ]
+    },
+    {
+      "name": "community",
+      "route": "/community",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1767,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Reflect in your own words",
+          "href": "/#question-desk",
+          "main": true,
+          "primary": false,
+          "disabled": false,
+          "region": "main",
+          "x": 181,
+          "y": 1388,
+          "width": 195,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 1578,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 1578,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 1578,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 1578,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 1578,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1691,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1691,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "ROOM FOR QUESTIONS. Care for people.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "GOOD CONVERSATION NEEDS GOOD CARE.",
+          "fold": 1,
+          "x": 243,
+          "y": 571,
+          "width": 672,
+          "height": 35
+        },
+        {
+          "text": "MAKE SPACE FOR THE PERSON.",
+          "fold": 1,
+          "x": 144,
+          "y": 858,
+          "width": 700,
+          "height": 30
+        },
+        {
+          "text": "LISTEN WITH CARE",
+          "fold": 2,
+          "x": 144,
+          "y": 1025,
+          "width": 368,
+          "height": 30
+        },
+        {
+          "text": "RESPECT A BOUNDARY",
+          "fold": 2,
+          "x": 536,
+          "y": 1025,
+          "width": 368,
+          "height": 30
+        },
+        {
+          "text": "DISAGREE WITH DIGNITY",
+          "fold": 2,
+          "x": 928,
+          "y": 1025,
+          "width": 368,
+          "height": 30
+        },
+        {
+          "text": "A QUESTION CAN BEGIN WITH YOU.",
+          "fold": 2,
+          "x": 181,
+          "y": 1257,
+          "width": 1078,
+          "height": 33
+        }
+      ],
+      "sections": [
+        {
+          "label": "Good conversation needs good care.",
+          "x": 144,
+          "y": 488,
+          "width": 1152,
+          "height": 291
+        },
+        {
+          "label": "community-principles",
+          "x": 144,
+          "y": 780,
+          "width": 700,
+          "height": 183
+        },
+        {
+          "label": "community-now",
+          "x": 144,
+          "y": 1189,
+          "width": 1152,
+          "height": 284
+        }
+      ]
+    },
+    {
+      "name": "session-notes",
+      "route": "/session-notes",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1168,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE THE COLLECTION",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 243,
+          "y": 781,
+          "width": 250,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 979,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 979,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 979,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 979,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 979,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1092,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1092,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "KEEP THE CONTEXT. Return to the conversation.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 259
+        },
+        {
+          "text": "THE CONVERSATION WILL LEAD THE WAY.",
+          "fold": 1,
+          "x": 243,
+          "y": 658,
+          "width": 672,
+          "height": 35
+        }
+      ],
+      "sections": [
+        {
+          "label": "The conversation will lead the way.",
+          "x": 144,
+          "y": 575,
+          "width": 1152,
+          "height": 299
+        }
+      ]
+    },
+    {
+      "name": "library",
+      "route": "/library",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1082,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "VISIT LEARN",
+          "href": "/learn",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 243,
+          "y": 695,
+          "width": 153,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 893,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 893,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 893,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 893,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 893,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1006,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1006,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "A LITTLE SPACE for deeper reading.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "THE SHELVES ARE STILL BEING PREPARED.",
+          "fold": 1,
+          "x": 243,
+          "y": 571,
+          "width": 672,
+          "height": 35
+        }
+      ],
+      "sections": [
+        {
+          "label": "The shelves are still being prepared.",
+          "x": 144,
+          "y": 488,
+          "width": 1152,
+          "height": 299
+        }
+      ]
+    },
+    {
+      "name": "support",
+      "route": "/support",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1120,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "ABOUT THE PROJECT",
+          "href": "/about",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 243,
+          "y": 733,
+          "width": 212,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 931,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 931,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 931,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 931,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 931,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1044,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1044,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "A THOUGHTFUL IDEA. No pressure attached.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "NO SUBSCRIPTIONS. NO CHECKOUT.",
+          "fold": 1,
+          "x": 243,
+          "y": 571,
+          "width": 672,
+          "height": 35
+        }
+      ],
+      "sections": [
+        {
+          "label": "No subscriptions. No checkout.",
+          "x": 144,
+          "y": 488,
+          "width": 1152,
+          "height": 337
+        }
+      ]
+    },
+    {
+      "name": "join",
+      "route": "/join",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 927,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE THE QUESTIONS",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 369,
+          "y": 512,
+          "width": 218,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 738,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 738,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 738,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 738,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 738,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 851,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 851,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "YOUR CORNER STARTS HERE.",
+          "fold": 1,
+          "x": 336,
+          "y": 210,
+          "width": 768,
+          "height": 68
+        },
+        {
+          "text": "SIGN-IN IS NOT AVAILABLE YET.",
+          "fold": 1,
+          "x": 369,
+          "y": 423,
+          "width": 702,
+          "height": 29
+        }
+      ],
+      "sections": [
+        {
+          "label": "Sign-in is not available yet.",
+          "x": 336,
+          "y": 390,
+          "width": 768,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "name": "my-corner",
+      "route": "/me",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 900,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE THE QUESTIONS",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 369,
+          "y": 432,
+          "width": 218,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 658,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 658,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 658,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 658,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 658,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 771,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 771,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "MY CORNER",
+          "fold": 1,
+          "x": 336,
+          "y": 210,
+          "width": 768,
+          "height": 68
+        },
+        {
+          "text": "YOUR ACCOUNT IS NOT CONNECTED YET.",
+          "fold": 1,
+          "x": 369,
+          "y": 343,
+          "width": 702,
+          "height": 29
+        }
+      ],
+      "sections": [
+        {
+          "label": "account-state",
+          "x": 336,
+          "y": 310,
+          "width": 768,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "name": "private-notes",
+      "route": "/me/journal",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 900,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE THE QUESTIONS",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 369,
+          "y": 432,
+          "width": 218,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 658,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 658,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 658,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 658,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 658,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 771,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 771,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "PRIVATE NOTES",
+          "fold": 1,
+          "x": 336,
+          "y": 210,
+          "width": 768,
+          "height": 68
+        },
+        {
+          "text": "YOUR ACCOUNT IS NOT CONNECTED YET.",
+          "fold": 1,
+          "x": 369,
+          "y": 343,
+          "width": 702,
+          "height": 29
+        }
+      ],
+      "sections": [
+        {
+          "label": "account-state",
+          "x": 336,
+          "y": 310,
+          "width": 768,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "route": "/me/settings",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 900,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "EXPLORE THE QUESTIONS",
+          "href": "/explore",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 369,
+          "y": 432,
+          "width": 218,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 658,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 658,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 658,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 658,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 658,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 771,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 771,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "SETTINGS & PRIVACY",
+          "fold": 1,
+          "x": 336,
+          "y": 210,
+          "width": 768,
+          "height": 68
+        },
+        {
+          "text": "YOUR ACCOUNT IS NOT CONNECTED YET.",
+          "fold": 1,
+          "x": 369,
+          "y": 343,
+          "width": 702,
+          "height": 29
+        }
+      ],
+      "sections": [
+        {
+          "label": "account-state",
+          "x": 336,
+          "y": 310,
+          "width": 768,
+          "height": 203
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "route": "/about",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 1674,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "VISIT THE PUBLIC LINK HUB",
+          "href": "https://linktr.ee/dawahxdialogues",
+          "main": true,
+          "primary": true,
+          "disabled": false,
+          "region": "main",
+          "x": 144,
+          "y": 1287,
+          "width": 254,
+          "height": 48
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 1485,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 1485,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 1485,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 1485,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 1485,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 1598,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 1598,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 1,
+          "uniqueCount": 1,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "A SPACE FOR DIALOGUE. An idea taking shape.",
+          "fold": 1,
+          "x": 144,
+          "y": 215,
+          "width": 1000,
+          "height": 172
+        },
+        {
+          "text": "MEET THE IDEA",
+          "fold": 1,
+          "x": 144,
+          "y": 517,
+          "width": 760,
+          "height": 29
+        },
+        {
+          "text": "ORIGINAL CONVERSATIONS COME FIRST",
+          "fold": 1,
+          "x": 144,
+          "y": 728,
+          "width": 760,
+          "height": 29
+        },
+        {
+          "text": "CARE IN THE CONVERSATION",
+          "fold": 1,
+          "x": 144,
+          "y": 864,
+          "width": 760,
+          "height": 29
+        },
+        {
+          "text": "THE DESIGN EXPLORATION",
+          "fold": 2,
+          "x": 144,
+          "y": 1001,
+          "width": 760,
+          "height": 29
+        },
+        {
+          "text": "FIND THE ORIGINAL CHANNELS",
+          "fold": 2,
+          "x": 144,
+          "y": 1166,
+          "width": 760,
+          "height": 29
+        }
+      ],
+      "sections": []
+    },
+    {
+      "name": "creator-denied",
+      "route": "/studio/creator",
+      "status": 200,
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "pageHeight": 900,
+      "horizontalOverflow": 0,
+      "actions": [
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Skip to content",
+          "href": "#main",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": -10000,
+          "y": 0,
+          "width": 114,
+          "height": 24
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Itachi's Corner — home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 144,
+          "y": 19,
+          "width": 177,
+          "height": 34
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Home",
+          "href": "/",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 525,
+          "y": 14,
+          "width": 72,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Explore",
+          "href": "/explore",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 601,
+          "y": 14,
+          "width": 82,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn",
+          "href": "/learn",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 687,
+          "y": 14,
+          "width": 70,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Practice",
+          "href": "/practice",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 761,
+          "y": 14,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Community",
+          "href": "/community",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Primary",
+          "x": 852,
+          "y": 14,
+          "width": 109,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "My Corner",
+          "href": "/me",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 1166,
+          "y": 14,
+          "width": 130,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Learn more",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "global",
+          "x": 840,
+          "y": 82,
+          "width": 58,
+          "height": 13
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "About",
+          "href": "/about",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 970,
+          "y": 594,
+          "width": 36,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Library",
+          "href": "/library",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1028,
+          "y": 594,
+          "width": 42,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Session Notes",
+          "href": "/session-notes",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1092,
+          "y": 594,
+          "width": 87,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Support",
+          "href": "/support",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1201,
+          "y": 594,
+          "width": 48,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "FAQ",
+          "href": "/faq",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "More about the Corner",
+          "x": 1271,
+          "y": 594,
+          "width": 25,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Privacy",
+          "href": "/privacy",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1194,
+          "y": 707,
+          "width": 45,
+          "height": 44
+        },
+        {
+          "tag": "a",
+          "kind": "navigation",
+          "label": "Terms",
+          "href": "/terms",
+          "main": false,
+          "primary": false,
+          "disabled": false,
+          "region": "Legal",
+          "x": 1258,
+          "y": 707,
+          "width": 38,
+          "height": 44
+        }
+      ],
+      "actionSummary": {
+        "main": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "navigation": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "forms": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "interactions": {
+          "visibleCount": 0,
+          "uniqueCount": 0,
+          "repeatedInstanceCount": 0,
+          "repeatedActions": []
+        },
+        "siteNavigation": {
+          "visibleCount": 16,
+          "uniqueCount": 14,
+          "repeatedInstanceCount": 2,
+          "repeatedActions": [
+            {
+              "destination": "/",
+              "count": 2,
+              "labels": [
+                "Itachi's Corner — home",
+                "Home"
+              ]
+            },
+            {
+              "destination": "/about",
+              "count": 2,
+              "labels": [
+                "Learn more",
+                "About"
+              ]
+            }
+          ]
+        }
+      },
+      "foldMap": [
+        {
+          "text": "CREATOR WORKSPACE",
+          "fold": 1,
+          "x": 336,
+          "y": 210,
+          "width": 768,
+          "height": 68
+        },
+        {
+          "text": "CREATOR ACCESS IS UNAVAILABLE.",
+          "fold": 1,
+          "x": 361,
+          "y": 335,
+          "width": 718,
+          "height": 29
+        }
+      ],
+      "sections": [
+        {
+          "label": "Creator access is unavailable.",
+          "x": 336,
+          "y": 310,
+          "width": 768,
+          "height": 139
+        }
+      ]
+    }
+  ]
+}

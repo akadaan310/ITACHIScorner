@@ -1,0 +1,2 @@
+# Preserve terminal carriage returns and whitespace in recorded tool evidence.
+docs/screenshots/recovery/**/logs/*.log -whitespace

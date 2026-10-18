@@ -1,0 +1,37 @@
+
+Running 1 test using 1 worker
+
+(node:82150) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+
+[1/1] [desktop] › e2e/quality.spec.ts:61:5 › Home stays below 0.1 layout shift when desktop fonts arrive late
+  1) [desktop] › e2e/quality.spec.ts:61:5 › Home stays below 0.1 layout shift when desktop fonts arrive late 
+
+    Error: expect(received).toBeLessThan(expected)
+
+    Expected: < 0.1
+    Received:   0.10137086681789821
+
+      84 |     await mkdir(directory, { recursive: true });
+      85 |     await writeFile(`${directory}/${sample.output}`, JSON.stringify({ route: sample.route, viewport: { width: sample.width, height: sample.height }, fontDelayMs: 800, observedLayoutShift: score, threshold: 0.1 }, null, 2) + "\n");
+    > 86 |     expect(score).toBeLessThan(0.1);
+         |                   ^
+      87 |   } finally {
+      88 |     await context.close();
+      89 |   }
+        at /workspace/itachi-recovery/e2e/quality.spec.ts:86:19
+
+    Error Context: ../../tmp/itachi-home-font-red/quality-Home-stays-below-0-cd2f3-n-desktop-fonts-arrive-late-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ../../tmp/itachi-home-font-red/quality-Home-stays-below-0-cd2f3-n-desktop-fonts-arrive-late-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace ../../tmp/itachi-home-font-red/quality-Home-stays-below-0-cd2f3-n-desktop-fonts-arrive-late-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  1 failed
+    [desktop] › e2e/quality.spec.ts:61:5 › Home stays below 0.1 layout shift when desktop fonts arrive late 

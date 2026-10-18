@@ -12,7 +12,7 @@ The application does not broadcast or host livestreams. External platforms own d
 
 Primary destinations are Home, Explore, Learn, Practice, and Community. My Corner is secondary account navigation. About, Library, Session Notes, Support, and trust information belong in contextual or footer links. Legacy paths redirect without presenting legacy demo content.
 
-The narrative is: Meet Itachi → Explore a real question → Learn from sourced material → Practice thoughtfully → Keep your progress. Each page has one obvious primary action; secondary actions must serve the current task. A visitor should understand the purpose and readiness of a screen within about five seconds. Empty collections remain empty, with a useful explanation of what will make them available.
+The narrative is: Meet Itachi → Explore a real question → Learn from sourced material → Practice thoughtfully → Keep your progress. Each fold has one clear idea and locally dominant action; distinct contextual journeys may appear throughout a substantive page. The hero has one dominant action and at most one relevant secondary action. Do not chase a fixed total CTA count or remove useful interaction to achieve one. A visitor should understand the purpose and readiness of a screen within about five seconds. Empty collections remain empty, with a useful explanation of what will make them available.
 
 ## Content truth
 

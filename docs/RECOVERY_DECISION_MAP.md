@@ -100,3 +100,28 @@ The clean integrated foundation production server on `http://localhost:3600` was
 - Explore accepts the visitor's actual text `my own question & care`, correctly encodes it as `/explore?q=my+own+question+%26+care`, preserves the input and returns the honest No published questions found state. It does not invent results.
 
 Recovery UI behavior and fresh recovery screenshots still require their own production pass after implementation.
+
+## Recovery implementation review
+
+The independent design review of the recovery production working tree on port 3700 is recorded in [RECOVERY_VISUAL_REVIEW.md](RECOVERY_VISUAL_REVIEW.md). At review start, HEAD was `b5cc1f4`; the UI changes were uncommitted, so the review records file hashes rather than pretending that HEAD alone identifies the rendered source.
+
+The implemented hierarchy follows the accepted intent: two hero links; an honest source stage with three native disclosures; a visitor-owned, memory-only writing desk; contextual Learn and Practice routes; a distinct Community principles invitation; and My Corner. The collection remains empty, the portrait remains singly used and qualified, and no Itachi-derived lesson or teaching claim is supplied.
+
+At every required width the initial Home state contains **six unique navigation links, zero repeated navigation destinations, three source disclosures and three transient draft controls**. The draft controls start disabled until the visitor enters words. Two writing fields are counted separately. Review/Edit is one state-dependent action, not two simultaneous actions. There is no Home form submission. These categories explain decision hierarchy more accurately than either the original unqualified 37-action count or a new single total.
+
+| Final contextual control | Actual outcome |
+| --- | --- |
+| Explore a question | `/explore`: real publication-gated search, currently empty |
+| behind the Corner | `/about`: concept, creator context and unaffiliated status |
+| Learn at your pace | `/learn`: no-course readiness, New Muslims welcome and a real personal-writing handoff |
+| Practise with your own words | `/practice`: explains unavailable source-based exercises and links to the actual personal desk |
+| Make room for each other | `/community`: independent participation principles, explicit closed submissions/mentorship and a private-writing handoff |
+| Visit My Corner | `/me`: accurate account availability or the authenticated visitor's own account |
+| Follow the original / Make permission visible / Leave room for review | Three native disclosures explain source context, rights and publication review; none fabricates a conversation |
+| Review/Edit draft | Reformat the visitor's exact words for review, then return to editing; no answer or evaluation |
+| Copy draft | Request clipboard copying and show an honest visible success/failure outcome; no server persistence |
+| Clear draft | Remove the local draft and return keyboard focus to the question field |
+
+The independent browser/visual pass found the recovered scroll substantive and legible. It also demonstrated a 360px copy-feedback message hidden behind fixed navigation and a missing decorative arrow glyph. Both were reported for focused correction, with geometry and screenshot paths in the visual review.
+
+Both findings were independently verified **resolved** on the fresh port-3800 production build from `22cd2a69b12ead621a6bcb608315d8658753b49e` (`IicSNDd8EEfp-Y_jT8Nia`). At 360×844 the denied-copy message is fully above fixed navigation, the Copy button retains focus and the draft remains intact. The decorative arrow now uses SVG and renders correctly. The final design review accepts the recovered hierarchy and authentic visitor activity, while all corpus, creator and hosted-account gates remain unchanged.
