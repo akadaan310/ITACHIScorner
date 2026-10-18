@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { PublicHeader, PendingPanel } from "@/components/public-content";
+export const metadata: Metadata = { title: "Session Notes", description: "Reviewed notes from original conversations, when available." };
+export default function SessionNotesPage() { return <div className="public-page"><PublicHeader label="Session Notes" title={<>Keep the context.<br /><em>Return to the conversation.</em></>}><p>A future home for reviewed notes, references and source moments.</p></PublicHeader><div className="shell"><PendingPanel label="No published session notes" title="The conversation will lead the way." action={{ href: "/explore", label: "Explore the collection" }}><p>Notes will be published only when the original source is available and the material has been reviewed and approved.</p></PendingPanel></div></div>; }

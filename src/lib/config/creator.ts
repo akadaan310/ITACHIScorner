@@ -17,7 +17,7 @@ export const creator = {
    */
   portrait: {
     src: "/brand/itachi-masked-portrait.jpg",
-    alt: "Itachi in her signature black face covering, embroidered with her red Itachi script",
+    alt: "Masked portrait from an owner-supplied design exploration; creator approval pending",
     suppliedBy: "project owner (v1 design exploration)",
     creatorApproved: false,
   },

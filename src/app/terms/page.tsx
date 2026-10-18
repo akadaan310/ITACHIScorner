@@ -1,25 +1,4 @@
 import type { Metadata } from "next";
-import { ChapterHeader } from "@/components/ui";
-import { creator } from "@/lib/config/creator";
-
-export const metadata: Metadata = { title: "Concept terms" };
-
-export default function TermsPage() {
-  return (
-    <div className="pb-10">
-      <ChapterHeader eyebrow="Concept terms" title={<>The small print, <em className="text-gold">kindly.</em></>}>{creator.disclosure}</ChapterHeader>
-      <div className="shell">
-        <div className="prose-soft max-w-3xl">
-        <ul>
-          <li>This is a non-commercial concept demo. No purchases, subscriptions or billing exist.</li>
-          <li>Itachi, Da&rsquo;wah x Dialogues and related names belong to their owners. Their use here describes an unsolicited concept and implies no endorsement.</li>
-          <li>Sample content is fictional and labelled. It must not be quoted as the creator&rsquo;s words or views.</li>
-          <li>Educational content is not a religious ruling. Please consult qualified scholars for guidance.</li>
-          <li>Fonts are used under the SIL Open Font License. Qur&rsquo;an text: Tanzil Project (verbatim, attributed).</li>
-          <li>Be kind. The concept has no tolerance for harassment of anyone, including people of other faiths.</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  );
-}
+import { PublicHeader } from "@/components/public-content";
+export const metadata: Metadata = { title: "Project terms" };
+export default function TermsPage() { return <div className="public-page"><PublicHeader label="Project terms" title={<>A little clarity.<br /><em>Before you begin.</em></>}><p>Independent concept — unaffiliated and not yet endorsed.</p></PublicHeader><div className="shell"><article className="public-prose"><h2>A project under development</h2><p>This is a non-commercial creator gift. It is not Itachi&rsquo;s official website and does not speak for her. Names and related marks belong to their owners.</p><h2>Sources and learning</h2><p>No course or book is currently published. Material may appear only with appropriate rights, review and creator authorization. This project does not provide religious rulings; seek qualified guidance for personal questions.</p><h2>Respect for others</h2><p>Harassment, pressure to disclose personal identity and ranking religious worth have no place here. Community features require moderation before opening.</p><h2>Payments</h2><p>No purchases, subscriptions or billing are enabled.</p><h2>Assets</h2><p>The current portrait is an owner-supplied design exploration awaiting creator approval. Fonts are self-hosted under the SIL Open Font License. Original code-drawn geometry is concept artwork.</p><h2>Before release</h2><p>Final legal terms, creator authorization and privacy review are required before public launch.</p></article></div></div>; }

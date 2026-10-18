@@ -1,20 +1,16 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Itachi's Corner — Where Truth Meets Dialogue. Independent concept, not endorsed.";
+export const alt = "Itachi's Corner — da'wah, learning and thoughtful dialogue. Independent concept, not endorsed.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default function OpengraphImage() {
   return new ImageResponse(
-    (
-      <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: 80, background: "linear-gradient(180deg,#060509 0%,#1d1230 55%,#9b2a3f 100%)", color: "#F6EBDC" }}>
-        <div style={{ fontSize: 28, letterSpacing: 8, color: "#FA536D" }}>{"// ITACHI'S CORNER"}</div>
-        <div style={{ fontSize: 110, fontWeight: 800, lineHeight: 0.95, marginTop: 20 }}>WHERE TRUTH</div>
-        <div style={{ fontSize: 110, fontWeight: 800, lineHeight: 0.95, color: "#D7AD65" }}>MEETS DIALOGUE.</div>
-        <div style={{ fontSize: 26, letterSpacing: 6, marginTop: 30, color: "#F7C65B" }}>FAITH // KNOWLEDGE // REASON</div>
-        <div style={{ fontSize: 20, marginTop: 40, opacity: 0.7 }}>Independent concept — unaffiliated and not yet endorsed.</div>
-      </div>
-    ),
-    size,
+    <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "center", padding: 80, background: "#0c0b10", color: "#F6EBDC", borderLeft: "12px solid #FA536D" }}>
+      <div style={{ fontSize: 28, letterSpacing: 4, color: "#FA7C8F" }}>ITACHI'S CORNER</div>
+      <div style={{ fontSize: 84, fontWeight: 700, lineHeight: 1.1, marginTop: 30 }}>A little curiosity.</div>
+      <div style={{ fontSize: 84, fontWeight: 700, lineHeight: 1.1, color: "#E6D6CD" }}>A deeper conversation.</div>
+      <div style={{ fontSize: 22, marginTop: 48, color: "#B9B0B4" }}>Independent concept — unaffiliated and not yet endorsed.</div>
+    </div>, size,
   );
 }

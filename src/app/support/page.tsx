@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { PublicHeader, PendingPanel } from "@/components/public-content";
+export const metadata: Metadata = { title: "Support", description: "Membership and creator support are not active in this concept." };
+export default function SupportPage() { return <div className="public-page"><PublicHeader label="Support" title={<>A thoughtful idea.<br /><em>No pressure attached.</em></>}><p>The Corner is a creator gift under development.</p></PublicHeader><div className="shell"><PendingPanel label="Payments are not enabled" title="No subscriptions. No checkout." action={{ href: "/about", label: "About the project" }}><p>Membership support and optional paid features would require the creator&rsquo;s approval before they are offered. No tiers, prices or paid benefits are currently available.</p><p className="mt-3">Basic learning and guidance will remain free.</p></PendingPanel></div></div>; }

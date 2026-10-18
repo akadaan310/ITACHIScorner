@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { PublicHeader, PendingPanel } from "@/components/public-content";
+export const metadata: Metadata = { title: "Dialogue Practice", description: "Thoughtful dialogue practice, pending source review and approval." };
+export default function PracticePage() { return <div className="public-page"><PublicHeader label="Dialogue Practice" title={<>Listen closely.<br /><em>Respond thoughtfully.</em></>}><p>A place to practise clarity, careful listening and fair representation.</p></PublicHeader><div className="shell"><PendingPanel label="Awaiting reviewed material" title="Real conversations come first." action={{ href: "/explore", label: "Explore the collection" }}><p>Practice will be built from approved source material. Exercises are not available yet.</p><p className="mt-3">Future feedback will focus on reasoning and care in dialogue. It will never score faith, conversion or debate victory.</p></PendingPanel></div></div>; }

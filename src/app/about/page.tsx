@@ -1,38 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ChapterHeader } from "@/components/ui";
+import { PublicHeader } from "@/components/public-content";
 import { creator } from "@/lib/config/creator";
-
-export const metadata: Metadata = { title: "About this concept", description: creator.disclosureLong };
-
-export default function AboutPage() {
-  return (
-    <div className="pb-10">
-      <ChapterHeader eyebrow="About Itachi's Corner" title={<>An independent concept, <em className="text-gold">made as a gift.</em></>}>
-        {creator.disclosureLong}
-      </ChapterHeader>
-      <div className="shell">
-        <div className="prose-soft max-w-3xl">
-        <h2>What this is</h2>
-        <p>A fully navigable product demo imagining a companion for the community around Da&rsquo;wah x Dialogues: before, during and after the lives that happen on TikTok and YouTube. It is unaffiliated and has not been endorsed. It does not speak for Itachi and never invents her words.</p>
-        <h2>What is real, and what is demo</h2>
-        <ul>
-          <li>Real: links to her official public channels (checked {creator.linksCheckedAt}), the Qur&rsquo;an text (Tanzil) and translation (Saheeh International), all pending editorial review.</li>
-          <li>Demo: every event, episode, trivia set, catalogue entry, practice dialogue, persona, leaderboard name and number — each one labelled.</li>
-          <li>Not built: billing, accounts, OAuth, live-chat or attendance integrations, mentorship, the book.</li>
-        </ul>
-        <h2>The portrait</h2>
-        <p>The masked portrait used as the main image was supplied by the project owner from an earlier design exploration. It must be replaced with an original, high-resolution file and approved in writing by the creator before any public launch.</p>
-        <h2>Principles</h2>
-        <ul>
-          <li>Learning is free. Levels measure app participation — never faith, piety or conversions.</li>
-          <li>Truthful data: a typed handle proves nothing; attendance always names its evidence.</li>
-          <li>Dignity for sacred text: exact Arabic, no ornament over it, sources shown.</li>
-          <li>Kind dialogue: the Simulator rewards clarity, fairness, evidence and listening.</li>
-        </ul>
-        <p><Link href="/faq">Read the FAQ</Link> · <Link href="/privacy">Privacy</Link> · <Link href="/terms">Concept terms</Link></p>
-        </div>
-      </div>
-    </div>
-  );
-}
+export const metadata: Metadata = { title: "About", description: creator.disclosureLong };
+export default function AboutPage() { return <div className="public-page"><PublicHeader label="About the Corner" title={<>A space for dialogue.<br /><em>An idea taking shape.</em></>}><p>{creator.disclosureLong}</p></PublicHeader><div className="shell"><article className="public-prose"><h2>Meet the idea</h2><p>Itachi&rsquo;s Corner is a creative gift inspired by the public creator known as Itachi / Da&rsquo;wah x Dialogues. It imagines a considered space for da&rsquo;wah, learning and thoughtful conversation.</p><p>This is an independent project under development. It does not speak for Itachi. Creator permission is required before any public launch or use of her work.</p><h2>Original conversations come first</h2><p>Questions and resources will link to their original sources. Learning journeys, practice and publications will follow careful research, review and creator approval. There is no published course or book.</p><h2>Care in the conversation</h2><p>Curiosity, careful listening and fair representation guide this space. Participation will never be a measure of faith or piety. Personal religious guidance belongs with qualified teachers.</p><h2>The design exploration</h2><p>The masked image on the home page is an owner-supplied crop from an earlier design exploration. It is not an approved documentary photograph. An original creator-approved image and permission for name, likeness and branding are required before public release.</p><h2 id="channels" className="scroll-mt-24">Find the original channels</h2><p>Itachi&rsquo;s social platforms own livestream discovery and viewing. The Corner does not host, embed or rebroadcast streams.</p><a href={creator.links.hub} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-5">Visit the public link hub <span aria-hidden="true">↗</span></a><p className="mt-4 text-sm">The link hub is the reference supplied for this project. External destinations may change.</p></article></div></div>; }
