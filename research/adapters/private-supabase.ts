@@ -94,6 +94,67 @@ export type PrivateDatabase = { connectionParameters: { host: string; port: numb
 export type PersistenceTarget = { mode: "hosted" | "isolated-test"; projectRef: string; operatorId: string; databaseRole: string };
 const writtenTables = ["sources", "recordings", "videos", "source_checksums", "video_caption_tracks", "transcript_versions", "transcript_segments", "video_intervals", "coverage_audits", "discovery_runs", "discovery_run_sources", "graph_versions", "graph_nodes", "graph_edges"] as const;
 
+/** Current catalog definitions must match the reviewed policies; migration history is not DDL attestation. */
+async function verifyCurrentSecurity(db: PrivateDatabase, migrationSql: string[]) {
+  const tables = migrationSql.flatMap((sql) => [...sql.matchAll(/create table research\.([a-z_]+)\s*\(/g)].map((match) => match[1]!)).sort();
+  const actualTables = (await db.query("select tablename from pg_tables where schemaname='research' order by tablename")).rows.map((row) => row.tablename);
+  check(tables.length > 0 && canonicalJson(actualTables) === canonicalJson(tables), "preflight");
+  type Policy = { tablename: string; policyname: string; permissive: string; roles: string[]; cmd: string; qual: string | null; with_check: string | null };
+  const expected: Policy[] = [];
+  const role = (roles: string[]) => `( SELECT research.has_role(ARRAY[${roles.map((name) => `'${name}'::text`).join(", ")}]) AS has_role)`;
+  const owner = (column: string, roles: string[]) => `((${column} = ( SELECT auth.uid() AS uid)) AND ${role(roles)})`;
+  const add = (table: string, name: string, command: string, using: string | null, withCheck: string | null) => expected.push({ tablename: table, policyname: name, permissive: "PERMISSIVE", roles: ["authenticated"], cmd: command, qual: using, with_check: withCheck });
+  const writes = (table: string, prefix: string, predicate: string) => {
+    add(table, `${prefix}_insert`, "INSERT", null, predicate); add(table, `${prefix}_update`, "UPDATE", predicate, predicate); add(table, `${prefix}_delete`, "DELETE", predicate, null);
+  };
+  const separatelyAuthorized = ["review_decisions", "editorial_reviews", "creator_approvals", "unit_creator_approvals", "source_permissions", "question_publication_reviews", "question_creator_approvals"];
+  for (const table of tables) {
+    add(table, "staff_read", "SELECT", role(["reviewer", "creator", "admin"]), null);
+    if (table === "creator_settings") writes(table, "settings", `(${role(["admin"])} OR ${owner("creator_id", ["creator"])})`);
+    else if (!separatelyAuthorized.includes(table)) writes(table, "operator", role(["admin"]));
+  }
+  const reviewer = owner("reviewer_id", ["reviewer", "admin"]), creator = owner("creator_id", ["creator", "admin"]), rights = owner("approved_by", ["creator", "admin"]);
+  add("review_decisions", "reviewer_decision", "INSERT", null, reviewer); add("review_decisions", "reviewer_decision_update", "UPDATE", reviewer, reviewer);
+  for (const [table, name] of [["editorial_reviews", "unit_review"], ["question_publication_reviews", "question_review"]]) {
+    add(table!, name!, "INSERT", null, reviewer); add(table!, "reviewer_renew", "UPDATE", reviewer, reviewer);
+  }
+  for (const [table, name] of [["creator_approvals", "creator_approval"], ["unit_creator_approvals", "creator_unit_approval"], ["question_creator_approvals", "question_creator"]]) {
+    add(table!, name!, "INSERT", null, creator); add(table!, "creator_renew", "UPDATE", creator, creator); add(table!, "creator_revoke", "DELETE", creator, null);
+  }
+  add("source_permissions", "creator_rights", "INSERT", null, rights); add("source_permissions", "creator_rights_delete", "DELETE", rights, null);
+  const actual = (await db.query("select tablename,policyname,permissive,roles::text[] as roles,cmd,qual,with_check from pg_policies where schemaname='research'")).rows;
+  const normalized = (policies: Record<string, unknown>[]) => policies.map((policy) => ({
+    tablename: policy.tablename, policyname: policy.policyname, permissive: policy.permissive, roles: policy.roles, cmd: policy.cmd,
+    qual: policy.qual === null ? null : normalizeMigrationSql(String(policy.qual)),
+    with_check: policy.with_check === null ? null : normalizeMigrationSql(String(policy.with_check)),
+  })).sort((a, b) => String(a.tablename).localeCompare(String(b.tablename)) || String(a.policyname).localeCompare(String(b.policyname)));
+  check(canonicalJson(normalized(actual)) === canonicalJson(normalized(expected)), "preflight");
+
+  const trustedBody = /create function research\.has_role\(roles text\[\]\) returns boolean\s+language sql stable security definer set search_path = '' as \$\$([\s\S]*?)\$\$;/.exec(migrationSql[0]!)?.[1];
+  const helpers = (await db.query(`select p.prosrc,p.proconfig,p.provolatile,p.prosecdef,p.proretset,l.lanname,
+    p.prorettype::regtype::text as return_type,oidvectortypes(p.proargtypes) as argument_types,
+    not has_function_privilege('anon',p.oid,'EXECUTE') as anonymous_denied,
+    has_function_privilege('authenticated',p.oid,'EXECUTE') as authenticated_permitted
+    from pg_proc p join pg_namespace n on n.oid=p.pronamespace join pg_language l on l.oid=p.prolang
+    where n.nspname='research' and p.proname='has_role'`)).rows;
+  const helper = helpers[0];
+  check(trustedBody && helpers.length === 1 && helper && typeof helper.prosrc === "string" && normalizeMigrationSql(helper.prosrc) === normalizeMigrationSql(trustedBody) && helper.provolatile === "s" && helper.prosecdef === true && helper.proretset === false && helper.lanname === "sql" && helper.return_type === "boolean" && helper.argument_types === "text[]" && canonicalJson(helper.proconfig) === canonicalJson(['search_path=""']) && helper.anonymous_denied === true && helper.authenticated_permitted === true, "preflight");
+
+  // Exercise the transitive Auth identity boundary as an ordinary member, without inserting a user or fixture.
+  const probeId = (await db.query("select gen_random_uuid()::text as id")).rows[0]?.id;
+  check(typeof probeId === "string" && (await db.query("select user_id from public.creator_staff where user_id=$1::uuid", [probeId])).rows.length === 0, "preflight");
+  await db.query("savepoint private_member_probe");
+  await db.query("set local role authenticated");
+  await db.query("select set_config('request.jwt.claim.sub',$1,true),set_config('request.jwt.claims',$2,true)", [probeId, canonicalJson({ sub: probeId, role: "authenticated" })]);
+  const probe = (await db.query(`select auth.uid()::text as user_id,research.has_role(array['reviewer','creator','admin']) as staff,
+    exists(select 1 from research.transcript_segments) as corpus_visible,
+    exists(select 1 from research.source_permissions) as rights_visible,
+    exists(select 1 from research.moderation_actions) as moderation_visible`)).rows[0];
+  check(probe && probe.user_id === probeId && probe.staff === false && probe.corpus_visible === false && probe.rights_visible === false && probe.moderation_visible === false, "preflight");
+  await db.query("rollback to savepoint private_member_probe");
+  await db.query("release savepoint private_member_probe");
+}
+
 async function preflight(db: PrivateDatabase, imported: PrivateImport, target: PersistenceTarget) {
   check(["hosted", "isolated-test"].includes(target.mode) && uuidPattern.test(target.operatorId) && target.projectRef === INTENDED_PROJECT_REF, "preflight");
   if (target.mode === "hosted") check(!imported.records.some((record) => record.synthetic || record.permission.status === "synthetic_test"), "synthetic");
@@ -110,24 +171,26 @@ async function preflight(db: PrivateDatabase, imported: PrivateImport, target: P
   check(operator.rows.length === 1, "permission");
   const history = await db.query("select version,name,statements from supabase_migrations.schema_migrations order by version");
   check(history.rows.length === EXPECTED_MIGRATIONS.length, "preflight");
+  const migrationSql: string[] = [];
   for (const [index, migration] of EXPECTED_MIGRATIONS.entries()) {
     const file = readFileSync(new URL(`../../supabase/migrations/${migration.version}_${migration.name}.sql`, import.meta.url), "utf8");
     check(sha256(file) === migration.hash, "preflight");
     const applied = history.rows[index];
     check(applied && applied.version === migration.version && applied.name === migration.name && Array.isArray(applied.statements) && applied.statements.every((value) => typeof value === "string"), "preflight");
     check(normalizeMigrationSql((applied.statements as string[]).join(";\n")) === normalizeMigrationSql(file), "preflight");
+    migrationSql.push(file);
   }
+  await verifyCurrentSecurity(db, migrationSql);
   const security = (await db.query(`select
     not has_schema_privilege('anon','research','usage') as anonymous_denied,
     not exists(select 1 from pg_class c join pg_namespace n on n.oid=c.relnamespace where n.nspname='research' and c.relkind='r' and not c.relrowsecurity) as rls_enabled,
     not exists(select 1 from pg_policies where schemaname='research' and ('anon'=any(roles) or 'public'=any(roles))) as policies_private,
-    not exists(select 1 from pg_policies where schemaname='research' and ('authenticated'=any(roles)) and ((qual is not null and qual not like '%research.has_role%') or (with_check is not null and with_check not like '%research.has_role%'))) as member_denied,
     exists(select 1 from storage.buckets where id='private-corpus' and public=false) as bucket_private,
     coalesce(nullif(current_setting('pgrst.db_schemas',true),''),
       (select split_part(config,'=',2) from pg_db_role_setting s cross join lateral unnest(s.setconfig) as config
        where config like 'pgrst.db_schemas=%' and s.setrole=(select oid from pg_roles where rolname='authenticator') and s.setdatabase in (0,(select oid from pg_database where datname=current_database()))
        order by s.setdatabase desc limit 1)) as exposed_schemas`)).rows[0];
-  check(security && ["anonymous_denied", "rls_enabled", "policies_private", "member_denied", "bucket_private"].every((key) => security[key] === true), "preflight");
+  check(security && ["anonymous_denied", "rls_enabled", "policies_private", "bucket_private"].every((key) => security[key] === true), "preflight");
   check(typeof security.exposed_schemas === "string" && security.exposed_schemas.trim() && !security.exposed_schemas.split(",").some((value) => value.trim().replaceAll('"', "") === "research"), "preflight");
   for (const table of writtenTables) {
     const privileges = (await db.query("select has_table_privilege(current_user,$1,'SELECT') and has_table_privilege(current_user,$1,'INSERT') and has_table_privilege(current_user,$1,'UPDATE') as permitted", [`research.${table}`])).rows[0];
@@ -166,11 +229,21 @@ export async function persistPrivateImport(db: PrivateDatabase, options: { outpu
     await db.query("set local statement_timeout='30s'");
     await db.query("set local lock_timeout='10s'");
     await preflight(db, imported, target);
-    const config = { adapter_version: PRIVATE_ADAPTER_VERSION, adapter_sha256: sha256(readFileSync(new URL(import.meta.url))), local_import_run_id: imported.receipt.run_id, receipt_sha256: imported.receipt_sha256 };
-    const runId = `private-import-${sha256(canonicalJson(config)).slice(0, 32)}`;
+    const identity = { local_import_run_id: imported.receipt.run_id, receipt_sha256: imported.receipt_sha256 };
+    const verificationAdapterSha256 = sha256(readFileSync(new URL(import.meta.url)));
+    let config = { adapter_version: PRIVATE_ADAPTER_VERSION, adapter_sha256: verificationAdapterSha256, ...identity };
+    // Receipt identity survives adapter upgrades; a code revision cannot make an old receipt current again.
+    const runId = `private-import-${sha256(canonicalJson(identity)).slice(0, 32)}`;
     // The source corpus is shared: serialize adapter imports so correction/stale updates cannot race.
     await db.query("select pg_advisory_xact_lock(hashtextextended('itachi-private-corpus-import',0))");
-    const replayed = (await db.query("select id from research.discovery_runs where id=$1", [runId])).rows.length > 0;
+    const previous = (await db.query("select corpus_snapshot from research.discovery_runs where id=$1", [runId])).rows[0];
+    const replayed = previous !== undefined;
+    if (previous) {
+      check(typeof previous.corpus_snapshot === "string", "collision");
+      const prior = JSON.parse(previous.corpus_snapshot) as Record<string, unknown>;
+      check(prior.local_import_run_id === identity.local_import_run_id && prior.receipt_sha256 === identity.receipt_sha256 && typeof prior.adapter_version === "string" && /^private-postgres-import-[0-9.]+$/.test(prior.adapter_version) && typeof prior.adapter_sha256 === "string" && hashPattern.test(prior.adapter_sha256), "collision");
+      config = { adapter_version: prior.adapter_version, adapter_sha256: prior.adapter_sha256, ...identity };
+    }
     const put = (table: typeof writtenTables[number], row: Record<string, unknown>, keys: string[]) => immutable(db, table, row, keys, replayed);
     const previouslyValidCandidates = replayed ? [] : (await db.query("select id from research.motif_candidates where stale=false")).rows.map((row) => row.id);
     const snapshot = { schema_version: 1, ...config, import_receipt: imported.receipt, records: imported.records, coverage: imported.coverage, segment_annotations: imported.tracks.flatMap(({ record, track, segments }) => segments.map((segment) => ({ video_id: record.video_id, track_id: track.track_id, transcript_version: track.version, segment_id: segment.segment_id, languages: segment.languages, speaker_confidence: segment.speaker.confidence, instantaneous: segment.instantaneous ?? false, correction_of: segment.correction_of ?? null }))), reviewed: false, pedagogy_eligible: false };
@@ -200,7 +273,7 @@ export async function persistPrivateImport(db: PrivateDatabase, options: { outpu
         await put("video_intervals", { id: segmentKey(record, track, segment), video_id: record.video_id, track_id: track.track_id, transcript_version: track.version, segment_id: segment.segment_id, start_ms: segment.start_ms, end_ms: segment.end_ms, source_sha256: track.sha256, speaker_id: segment.speaker.speaker_id, speaker_role: segment.speaker.role, speaker_confidence: segment.speaker.confidence, evidence_confidence: null, evidence_confidence_status: "unassessed", source_url: sourceDeepLink(record, segment.start_ms), instantaneous: segment.instantaneous ?? false }, ["id"]);
       }
     }
-    await put("discovery_runs", { id: runId, code_commit: imported.receipt.code.code_commit, config_hash: sha256(canonicalJson(config)), data_manifest_hash: imported.receipt.manifest_hash, corpus_snapshot: canonicalJson(snapshot), algorithm: PRIVATE_ADAPTER_VERSION, is_synthetic: imported.records.some((record) => record.synthetic) }, ["id"]);
+    await put("discovery_runs", { id: runId, code_commit: imported.receipt.code.code_commit, config_hash: sha256(canonicalJson(config)), data_manifest_hash: imported.receipt.manifest_hash, corpus_snapshot: canonicalJson(snapshot), algorithm: config.adapter_version, is_synthetic: imported.records.some((record) => record.synthetic) }, ["id"]);
     for (const { record, track } of imported.tracks) await put("discovery_run_sources", { run_id: runId, video_id: record.video_id, track_id: track.track_id, transcript_version: track.version, source_sha256: track.sha256, source_role: "corpus" }, ["run_id", "video_id", "track_id", "transcript_version", "source_role"]);
     const graphId = `${runId}:provenance`;
     await put("graph_versions", { id: graphId, run_id: runId, graph_kind: "provenance", schema_version: "private-import-provenance-1", checksum: sha256(canonicalJson(snapshot)) }, ["id"]);
@@ -221,7 +294,7 @@ export async function persistPrivateImport(db: PrivateDatabase, options: { outpu
     // Existing correction triggers may already have invalidated dependent candidates earlier in this transaction.
     const invalidated = previouslyValidCandidates.length ? await db.query("select id from research.motif_candidates where id=any($1::text[]) and stale=true", [previouslyValidCandidates]) : { rowCount: 0 };
     await db.query("commit"); began = false;
-    return { adapter_version: PRIVATE_ADAPTER_VERSION, adapter_sha256: config.adapter_sha256, run_id: runId, import_run_id: imported.receipt.run_id, manifest_sha256: imported.receipt.manifest_hash, receipt_sha256: imported.receipt_sha256, replayed, videos: imported.records.length, transcript_versions: imported.tracks.length, stale_candidates: invalidated.rowCount ?? 0, reviewed: false, pedagogy_eligible: false };
+    return { adapter_version: config.adapter_version, adapter_sha256: config.adapter_sha256, verification_adapter_sha256: verificationAdapterSha256, run_id: runId, import_run_id: imported.receipt.run_id, manifest_sha256: imported.receipt.manifest_hash, receipt_sha256: imported.receipt_sha256, replayed, videos: imported.records.length, transcript_versions: imported.tracks.length, stale_candidates: invalidated.rowCount ?? 0, reviewed: false, pedagogy_eligible: false };
   } catch (error) {
     if (began) { try { await db.query("rollback"); } catch { /* Only the sanitized error crosses this boundary. */ } }
     if (error instanceof PrivatePersistenceError) throw error;

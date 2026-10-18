@@ -69,6 +69,21 @@ try {
   await db.query("update storage.buckets set public=true where id='private-corpus'");
   await blocked(() => initial.persist(), "preflight");
   await db.query("update storage.buckets set public=false where id='private-corpus'");
+  // Migration history stays unchanged while current policies/functions drift.
+  await db.query("alter policy staff_read on research.transcript_segments using(true or (select research.has_role(array['reviewer','creator','admin'])))");
+  await blocked(() => initial.persist(), "preflight");
+  ok(await count("research.transcript_segments") === 0 && await count("research.discovery_runs") === 0, "permissive current-policy drift causes zero corpus writes");
+  await db.query("alter policy staff_read on research.transcript_segments using((select research.has_role(array['reviewer','creator','admin'])))");
+  const trustedHasRole = (await db.query("select pg_get_functiondef('research.has_role(text[])'::regprocedure) as definition")).rows[0].definition;
+  await db.query("create or replace function research.has_role(roles text[]) returns boolean language sql stable security definer set search_path='' as $$ select true $$");
+  await blocked(() => initial.persist(), "preflight");
+  ok(await count("research.transcript_segments") === 0 && await count("research.discovery_runs") === 0, "role-helper drift causes zero corpus writes");
+  await db.query(trustedHasRole);
+  const trustedUid = (await db.query("select pg_get_functiondef('auth.uid()'::regprocedure) as definition")).rows[0].definition;
+  await db.query(`create or replace function auth.uid() returns uuid language sql stable as $$ select '${admin}'::uuid $$`);
+  await blocked(() => initial.persist(), "preflight");
+  ok(await count("research.transcript_segments") === 0 && await count("research.discovery_runs") === 0, "auth identity drift causes zero corpus writes");
+  await db.query(trustedUid);
   const first = await initial.persist();
   ok(first.reviewed === false && first.pedagogy_eligible === false && first.replayed === false, "import never grants review/publication");
   ok(await count("research.transcript_versions") === 1 && await count("research.transcript_segments") === 2, "actual PostgreSQL version and segment rows");
@@ -80,6 +95,11 @@ try {
   ok((await db.query("select status,reason from research.coverage_audits where video_id='missing0001'")).rows[0].status === "rights-blocked", "inventory rights gap preserved");
   const again = await initial.persist();
   ok(again.run_id === first.run_id && again.replayed && await count("research.transcript_versions") === 1 && await count("research.coverage_audits") === 2, "receipt reimport is idempotent");
+  // Simulate a receipt originally persisted by an older adapter source revision.
+  const olderConfig = { adapter_version: snapshot.adapter_version, adapter_sha256: "1".repeat(64), local_import_run_id: snapshot.local_import_run_id, receipt_sha256: snapshot.receipt_sha256 };
+  const olderSnapshot = { ...snapshot, ...olderConfig };
+  await db.query("update research.discovery_runs set config_hash=$1,corpus_snapshot=$2 where id=$3", [sha256(canonicalJson(olderConfig)), canonicalJson(olderSnapshot), first.run_id]);
+  await db.query("update research.graph_versions set checksum=$1 where run_id=$2", [sha256(canonicalJson(olderSnapshot)), first.run_id]);
   await db.query("insert into research.motif_candidates(id,run_id,label_internal,definition,hypothesis,uncertainty,confounders) values('old-synthetic-candidate',$1,'test','test','test','test','test')", [first.run_id]);
   const corrected = fixture("corrected", { version: "v2", text: sentinel + " CORRECTED", supersedes: initial.record.tracks[0].sha256, recording: "corrected-recording" });
   const second = await corrected.persist();
@@ -88,6 +108,7 @@ try {
   await db.query("insert into research.motif_candidates(id,run_id,label_internal,definition,hypothesis,uncertainty,confounders) values('new-synthetic-candidate',$1,'test','test','test','test','test')", [second.run_id]);
   const oldReplay = await initial.persist();
   ok(oldReplay.replayed && oldReplay.stale_candidates === 0 && (await db.query("select recording_id from research.videos where id='synthetic01'")).rows[0].recording_id === "corrected-recording", "old receipt replay cannot roll current inventory/grouping back");
+  ok(oldReplay.adapter_sha256 === olderConfig.adapter_sha256 && oldReplay.verification_adapter_sha256 === first.adapter_sha256, "adapter upgrades preserve original receipt identity and distinguish verification code");
   ok(!(await db.query("select stale from research.motif_candidates where id='new-synthetic-candidate'")).rows[0].stale, "old replay cannot invalidate newer findings");
   const collision = fixture("collision", { text: sentinel + " CONFLICT", extra: true });
   const before = await count("research.discovery_runs");
