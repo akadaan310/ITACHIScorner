@@ -6,6 +6,8 @@ New browser expectations were written before the replacement UI. Running the ini
 
 The replacement suite preserves route status/error/overflow checks, internal-link resolution, external-link protection, axe scans, no-JavaScript navigation and reduced-motion checks. It replaces obsolete demo gameplay assertions with legacy redirects, empty source search, source/approval gates, unavailable authentication and privacy controls, forged-browser-state creator denial, responsive CTA placement and accessible phone navigation.
 
+An additional 23 request-level browser checks cover hostile-Origin rejection on all account/auth POST routes, private no-store responses, unconfigured mutation/export failure, and invalid callback/confirmation redirects with hostile `next` values. The first check was run against the unchanged baseline and failed as expected (`/auth/request` returned 404 rather than the required 403). Auth payload tests first require a runtime 503 “not configured” response; a configured backend fails that prerequisite before any valid-looking email payload is sent.
+
 Final integrated verification is pending. This file does not claim remote Supabase auth, email delivery, deployed performance, real corpus coverage or creator approval.
 
 Reproduction after `npm ci`:
