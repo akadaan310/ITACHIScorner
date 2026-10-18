@@ -7,7 +7,7 @@ export interface PublishedQuestion {
 }
 export interface PublishedQuestionsResult { items: PublishedQuestion[]; status: "unconfigured" | "ready" | "unavailable" }
 
-function safeQuestion(row: Record<string, unknown>): PublishedQuestion | null {
+export function parsePublishedQuestion(row: Record<string, unknown>): PublishedQuestion | null {
   const { id, title, summary, source_url: sourceUrl, video_id: videoId, start_ms: startMs, end_ms: endMs, speaker, confidence, reviewed_at: reviewedAt } = row;
   if (![id, title, summary, sourceUrl, videoId, speaker, reviewedAt].every((v) => typeof v === "string" && v.trim().length > 0)) return null;
   if (typeof startMs !== "number" || typeof endMs !== "number" || !Number.isSafeInteger(startMs) || !Number.isSafeInteger(endMs) || startMs < 0 || endMs <= startMs) return null;
@@ -32,7 +32,7 @@ export async function getPublishedQuestions(query?: string): Promise<PublishedQu
     if (needle) request = request.textSearch("search_document", needle, { type: "websearch", config: "simple" });
     const { data, error } = await request.order("reviewed_at", { ascending: false }).limit(100).abortSignal(AbortSignal.timeout(8000));
     if (error || !data) return { items: [], status: "unavailable" };
-    const items = data.map((row) => safeQuestion(row as Record<string, unknown>));
+    const items = data.map((row) => parsePublishedQuestion(row as Record<string, unknown>));
     if (items.some((item) => item === null)) return { items: [], status: "unavailable" };
     return { items: items as PublishedQuestion[], status: "ready" };
   } catch { return { items: [], status: "unavailable" }; }

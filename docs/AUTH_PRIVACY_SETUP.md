@@ -61,6 +61,8 @@ Valid roles are `reviewer`, `creator`, `admin`; ordinary member credentials cann
 
 The authenticated owner can save a private nickname, language/motion/update preferences, self-entered YouTube/TikTok handles and publication consent. Account links remain explicitly self-entered; OAuth ownership, attendance and identities are not inferred. Update delivery remains off. Consent withdrawal appends a decision, and does not retroactively invent moderation/publication decisions.
 
+`/me/journal` supports real owner-only private note creation, editing, deletion and paged reading, without any curriculum content. `/api/account/saved-questions` saves only a currently RLS-visible approved question; removing a save remains possible after publication is withdrawn. My Corner joins saves to the approved public read model and never substitutes private drafts. These records are included in export and deletion cascades.
+
 No intention/religious-history question is collected. Browser legacy demo data is neither uploaded nor used as account data. There is no member upload interface. Reviewed public summaries are separate from research transcripts and owner account rows.
 
 `GET /api/account/export` revalidates the member and reads all supported owner tables in stable 500-row pages, with ownership predicates and RLS. It includes a limited Auth identity (ID, email, creation time), not sessions, access/refresh tokens, provider secrets, private research or another member's data. An error or a synchronous export with 50,000 or more records in one table fails without returning a misleading partial file. Large account export needs a future private background workflow.

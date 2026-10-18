@@ -16,6 +16,10 @@ export function AccountUnavailable({ context }: { context: AccountContext }) {
 }
 
 const notices: Record<string, string> = {
+  "note-saved": "Your private note was saved.", "note-deleted": "Your private note was deleted.",
+  "invalid-note": "Write a note between 1 and 10,000 characters.", "missing-note": "That note could not be found in your account.",
+  "question-saved": "The reviewed question was saved to My Corner.", "question-removed": "The question was removed from your saved list.",
+  "question-unavailable": "That question is not currently available to save.",
   saved: "Your changes were saved.", sent: "Check your email for a sign-in link. If your email includes a code, you can enter it below.",
   "send-failed": "We could not send your sign-in email. Please wait a moment and try again.",
   "expired-code": "That sign-in link or code could not be verified. It may have expired; request a new email.",
@@ -36,6 +40,6 @@ const notices: Record<string, string> = {
 export function AccountNotice({ code }: { code?: string | string[] }) {
   const text = typeof code === "string" ? notices[code] : undefined;
   if (!text) return null;
-  const success = ["saved", "sent", "signed-out", "deleted"].includes(code as string);
+  const success = ["saved", "sent", "signed-out", "deleted", "note-saved", "note-deleted", "question-saved", "question-removed"].includes(code as string);
   return <p role={success ? "status" : "alert"} className="rounded-lg border border-white/20 p-4 text-sm text-cream">{text}</p>;
 }
