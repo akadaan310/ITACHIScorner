@@ -32,3 +32,6 @@ Plan: `docs/superpowers/plans/2026-10-18-evidence-first-foundation.md`
 - Supplied mission, constitution, design and implementation plan committed as `b147f5e`.
 - Separate UI/data/research/QA branches created. No remote service modified.
 - Baseline fold/CTA capture and all four implementation workstreams are in progress.
+
+- User selected ACT AI Protocol for a separate project, free only. Supabase quote was $0/month on Free. Created `itachis-corner` (`frxufmwwbegconolevkw`, `eu-central-1`), healthy; migration awaits local security green. This supersedes the initial project-selection blocker. No unrelated project was modified.
+- UI task committed as d717953 (integrated f0ce4d6); QA baseline/suite committed as a500762 (integrated3acf5b3). Final integration checks pending data/research.

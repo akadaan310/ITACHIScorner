@@ -29,7 +29,7 @@ See `research/graph_schema.md`, `research/methodology.md`, and `research/limitat
 
 Without a selected Supabase project, account creation/sign-in shows unavailable configuration, Explore remains empty, and the console cannot be opened. Provider failure must not return fake success, synthetic questions or an authenticated local profile. Without moderation readiness the community does not accept public submissions. Without reviewed source evidence Learn and Practice publish no scenarios or course previews.
 
-No existing appropriately scoped Supabase project was located. The unrelated inactive project visible in the account was not queried or changed. Migrations and local role tests can be prepared without choosing it. Remote project provisioning, email delivery, OAuth, storage upload, account deletion and provider errors need verification against the selected project before a connected-integration claim.
+No existing appropriately scoped project was located at audit. The user then selected ACT AI Protocol, free only; Supabase quoted $0/month on Free and a separate `itachis-corner` project (`frxufmwwbegconolevkw`, `eu-central-1`) was created healthy. The unrelated inactive project was not queried or changed. Migrations are applied only after local security checks. Email delivery, OAuth, storage uploads, account deletion and provider errors require separate end-to-end verification; project creation is not evidence that those flows are ready.
 
 ## Versioning and operations
 
