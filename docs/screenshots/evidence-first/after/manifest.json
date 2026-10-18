@@ -1,8 +1,8 @@
 {
-  "verifiedAppCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+  "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
   "baselineAppCommit": "b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3",
   "server": "http://localhost:3400",
-  "productionBuildId": "vKQX1MkwnUlReNp9IAAbG",
+  "productionBuildId": "95D3DCsErJ-XAsdCKLmGu",
   "browser": "154.0.8037.57",
   "backendMode": "intentionally unconfigured; no email or remote account mutation",
   "captureMethod": "Playwright Chromium, scale1, entrance animations/fonts settled; first-fold at all five widths, full-page Home, phone/tablet menu",
@@ -31,12 +31,32 @@
     }
   ],
   "playwright": {
-    "startTime": "2026-10-18T01:33:10.009Z",
-    "duration": 69247.58399999999,
-    "expected": 113,
+    "startTime": "2026-10-18T01:41:04.381Z",
+    "duration": 79788.855,
+    "expected": 114,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   },
-  "performanceSamples": 24
+  "performanceSamples": 24,
+  "slowFontRegression": {
+    "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+    "route": "/explore",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "fontDelayMs": 800,
+    "threshold": 0.1,
+    "fullSuite": {
+      "passed": 114,
+      "observedLayoutShift": 0.008710143412587202
+    },
+    "focusedRecheck": {
+      "passed": 1,
+      "observedLayoutShift": 0.0033271481939666616
+    },
+    "preFixPhoneColdLoadMedian": 0.151,
+    "methodology": "Layout-shift observer, no recent-input entries, document.fonts.ready plus two animation frames; fresh contexts and 800ms delayed woff2 network responses."
+  }
 }

@@ -1,6 +1,6 @@
 # Final rendered review set
 
-Verified production app: `a45f4c2`. All five viewport widths use the same heights as the baseline: 360×844, 390×844, 768×1024, 1280×900 and 1440×900. Fourteen core routes produce 70 first-fold JPEGs, five complete Home captures and three open phone/tablet menu captures. Original baseline images are in `../before`; no original images were replaced.
+Verified production app: `ba6a706`. All five viewport widths use the same heights as the baseline: 360×844, 390×844, 768×1024, 1280×900 and 1440×900. Fourteen core routes produce 70 first-fold JPEGs, five complete Home captures and three open phone/tablet menu captures. Original baseline images are in `../before`; no original images were replaced.
 
 [Capture manifest](manifest.json) · [Checks](checks.json) · [CTA/fold comparison](comparison.json) · [Image hashes](SHA256SUMS)
 
@@ -24,3 +24,5 @@ Verified production app: `a45f4c2`. All five viewport widths use the same height
 The complete homepage captures use `home-{width}.jpg`. Fixed phone navigation appears at the original viewport boundary in full-page browser screenshots. The corresponding first-fold files show its actual viewport position.
 
 Each `rendered-audit-{width}.json` contains heading/section coordinates, action inventories, CTA grouping and overflow for all fourteen routes. Local cold-load timing and layout-shift samples are in `performance.json`; settled screenshot layouts are a different measurement.
+
+The delayed-font regression is recorded in [slow-font validation](slow-font-validation.json). The prior cold-load experiment is retained as `pre-font-fix-performance.json`, and the independent five-width heading/unchanged-Home comparison is in `heading-fix-proof.json`.

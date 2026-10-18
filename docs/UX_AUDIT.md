@@ -62,3 +62,5 @@ The final primary action is 48px tall and fits every first fold. The four home s
 Representative desktop/phone images, the complete 360px home page, Explore and private notes were visually inspected. An independent static visual review found no important clipping, overlap or readability failures in its reviewed images. Phone portrait qualification was also confirmed below the portrait in the full-page capture.
 
 Final outcomes and limits are recorded in [VERIFICATION.md](VERIFICATION.md). Original screenshots and numerical observations above remain unchanged.
+
+The final heading stability check at `ba6a706` also addresses the phone Explore font-swap shift: cold-load median CLS is 0.000 and the 800ms delayed-font regression remains below 0.1. Updated captures preserve the same Home CTA/geometry measurements. See [PERFORMANCE.md](PERFORMANCE.md) for the retained before-fix experiment and measured correction.

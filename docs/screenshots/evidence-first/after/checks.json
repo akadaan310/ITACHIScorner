@@ -1,5 +1,5 @@
 {
-  "verifiedAppCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+  "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
   "checks": [
     {
       "command": "npm run lint",
@@ -14,16 +14,17 @@
     {
       "command": "npm test",
       "exitCode": 0,
-      "testsPassed": 101,
-      "log": "logs/vitest-final.log"
+      "testsPassed": 105,
+      "log": "logs/vitest-final.log",
+      "verifiedBy": "integrator checkout at the verified app commit; authoritative log copied unchanged"
     },
     {
       "command": "E2E_PORT=3400 E2E_REUSE_SERVER=1 npm run test:e2e",
       "exitCode": 0,
-      "testsPassed": 113,
+      "testsPassed": 114,
       "skipped": 0,
       "flaky": 0,
-      "durationSeconds": 69.248,
+      "durationSeconds": 79.789,
       "log": "logs/playwright-final.log"
     },
     {
@@ -31,12 +32,19 @@
       "exitCode": 0,
       "samples": 24,
       "log": "logs/performance-final.log"
+    },
+    {
+      "command": "E2E_PORT=3400 E2E_REUSE_SERVER=1 npx playwright test e2e/quality.spec.ts --project=desktop --grep \"fonts arrive late\"",
+      "exitCode": 0,
+      "testsPassed": 1,
+      "log": "logs/slow-font-focused.log"
     }
   ],
   "productionBuild": {
     "command": "npm run build",
     "verifiedBy": "integrator production build; QA used that running build",
-    "appCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f"
+    "appCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+    "log": "logs/build-final.log"
   },
   "preliminaryRun": {
     "appCommit": "18c7513d49c43c9c6bbb760b473dc9835deee93d",
@@ -45,5 +53,32 @@
     "reason": "Stale test required direct TikTok/YouTube links; About correctly uses supplied public link hub. Selector fixed while retaining exact destination and new-tab protections.",
     "focusedRecheckPassed": 1,
     "log": "logs/playwright-initial.log"
+  },
+  "preHeadingFixRun": {
+    "appCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+    "passed": 113,
+    "phoneExploreMedianLayoutShift": 0.151,
+    "log": "logs/playwright-a45f4c2.log",
+    "performance": "pre-font-fix-performance.json"
+  },
+  "headingFixRegression": {
+    "verifiedAppCommit": "ba6a706f74cc70220127891b8499421c408c6db6",
+    "route": "/explore",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "fontDelayMs": 800,
+    "threshold": 0.1,
+    "fullSuite": {
+      "passed": 114,
+      "observedLayoutShift": 0.008710143412587202
+    },
+    "focusedRecheck": {
+      "passed": 1,
+      "observedLayoutShift": 0.0033271481939666616
+    },
+    "preFixPhoneColdLoadMedian": 0.151,
+    "methodology": "Layout-shift observer, no recent-input entries, document.fonts.ready plus two animation frames; fresh contexts and 800ms delayed woff2 network responses."
   }
 }

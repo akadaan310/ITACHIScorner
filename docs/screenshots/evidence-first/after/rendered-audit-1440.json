@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-10-18T01:34:19.093Z",
+  "capturedAt": "2026-10-18T01:42:24.025Z",
   "records": [
     {
       "name": "home",
@@ -364,7 +364,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1133,
+      "pageHeight": 1213,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -493,7 +493,7 @@
           "disabled": false,
           "region": "main",
           "x": 812,
-          "y": 526,
+          "y": 607,
           "width": 182,
           "height": 48
         },
@@ -506,7 +506,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 943,
+          "y": 1023,
           "width": 36,
           "height": 44
         },
@@ -519,7 +519,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 943,
+          "y": 1023,
           "width": 42,
           "height": 44
         },
@@ -532,7 +532,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 943,
+          "y": 1023,
           "width": 87,
           "height": 44
         },
@@ -545,7 +545,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 943,
+          "y": 1023,
           "width": 48,
           "height": 44
         },
@@ -558,7 +558,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 943,
+          "y": 1023,
           "width": 25,
           "height": 44
         },
@@ -571,7 +571,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1057,
+          "y": 1137,
           "width": 45,
           "height": 44
         },
@@ -584,7 +584,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1057,
+          "y": 1137,
           "width": 38,
           "height": 44
         }
@@ -601,13 +601,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 259
         },
         {
           "text": "THE FIRST CONVERSATIONS ARE BEING PREPARED.",
           "fold": 1,
           "x": 243,
-          "y": 694,
+          "y": 774,
           "width": 672,
           "height": 35
         }
@@ -616,7 +616,7 @@
         {
           "label": "The first conversations are being prepared.",
           "x": 144,
-          "y": 611,
+          "y": 691,
           "width": 1152,
           "height": 227
         }
@@ -631,7 +631,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1300,
+      "pageHeight": 1294,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -760,7 +760,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 701,
+          "y": 695,
           "width": 250,
           "height": 48
         },
@@ -773,7 +773,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 1110,
+          "y": 1104,
           "width": 36,
           "height": 44
         },
@@ -786,7 +786,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 1110,
+          "y": 1104,
           "width": 42,
           "height": 44
         },
@@ -799,7 +799,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 1110,
+          "y": 1104,
           "width": 87,
           "height": 44
         },
@@ -812,7 +812,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 1110,
+          "y": 1104,
           "width": 48,
           "height": 44
         },
@@ -825,7 +825,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 1110,
+          "y": 1104,
           "width": 25,
           "height": 44
         },
@@ -838,7 +838,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1224,
+          "y": 1218,
           "width": 45,
           "height": 44
         },
@@ -851,7 +851,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1224,
+          "y": 1218,
           "width": 38,
           "height": 44
         }
@@ -868,13 +868,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "A THOUGHTFUL BEGINNING IS WORTH WAITING FOR.",
           "fold": 1,
           "x": 243,
-          "y": 577,
+          "y": 571,
           "width": 672,
           "height": 35
         },
@@ -882,7 +882,7 @@
           "text": "A GENTLE PLACE TO BEGIN.",
           "fold": 1,
           "x": 144,
-          "y": 872,
+          "y": 866,
           "width": 700,
           "height": 30
         }
@@ -891,14 +891,14 @@
         {
           "label": "A thoughtful beginning is worth waiting for.",
           "x": 144,
-          "y": 494,
+          "y": 488,
           "width": 1152,
           "height": 299
         },
         {
           "label": "A gentle place to begin.",
           "x": 144,
-          "y": 794,
+          "y": 788,
           "width": 700,
           "height": 211
         }
@@ -913,7 +913,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1126,
+      "pageHeight": 1120,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -1042,7 +1042,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 739,
+          "y": 733,
           "width": 250,
           "height": 48
         },
@@ -1055,7 +1055,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 937,
+          "y": 931,
           "width": 36,
           "height": 44
         },
@@ -1068,7 +1068,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 937,
+          "y": 931,
           "width": 42,
           "height": 44
         },
@@ -1081,7 +1081,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 937,
+          "y": 931,
           "width": 87,
           "height": 44
         },
@@ -1094,7 +1094,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 937,
+          "y": 931,
           "width": 48,
           "height": 44
         },
@@ -1107,7 +1107,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 937,
+          "y": 931,
           "width": 25,
           "height": 44
         },
@@ -1120,7 +1120,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1050,
+          "y": 1044,
           "width": 45,
           "height": 44
         },
@@ -1133,7 +1133,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1050,
+          "y": 1044,
           "width": 38,
           "height": 44
         }
@@ -1150,13 +1150,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "REAL CONVERSATIONS COME FIRST.",
           "fold": 1,
           "x": 243,
-          "y": 577,
+          "y": 571,
           "width": 672,
           "height": 35
         }
@@ -1165,7 +1165,7 @@
         {
           "label": "Real conversations come first.",
           "x": 144,
-          "y": 494,
+          "y": 488,
           "width": 1152,
           "height": 337
         }
@@ -1180,7 +1180,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1152,
+      "pageHeight": 1146,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -1309,7 +1309,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 765,
+          "y": 759,
           "width": 219,
           "height": 48
         },
@@ -1322,7 +1322,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 963,
+          "y": 957,
           "width": 36,
           "height": 44
         },
@@ -1335,7 +1335,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 963,
+          "y": 957,
           "width": 42,
           "height": 44
         },
@@ -1348,7 +1348,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 963,
+          "y": 957,
           "width": 87,
           "height": 44
         },
@@ -1361,7 +1361,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 963,
+          "y": 957,
           "width": 48,
           "height": 44
         },
@@ -1374,7 +1374,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 963,
+          "y": 957,
           "width": 25,
           "height": 44
         },
@@ -1387,7 +1387,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1076,
+          "y": 1070,
           "width": 45,
           "height": 44
         },
@@ -1400,7 +1400,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1076,
+          "y": 1070,
           "width": 38,
           "height": 44
         }
@@ -1417,13 +1417,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "GOOD CONVERSATION NEEDS GOOD CARE.",
           "fold": 1,
           "x": 243,
-          "y": 577,
+          "y": 571,
           "width": 672,
           "height": 35
         }
@@ -1432,7 +1432,7 @@
         {
           "label": "Good conversation needs good care.",
           "x": 144,
-          "y": 494,
+          "y": 488,
           "width": 1152,
           "height": 363
         }
@@ -1447,7 +1447,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1180,
+      "pageHeight": 1168,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -1576,7 +1576,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 793,
+          "y": 781,
           "width": 250,
           "height": 48
         },
@@ -1589,7 +1589,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 991,
+          "y": 979,
           "width": 36,
           "height": 44
         },
@@ -1602,7 +1602,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 991,
+          "y": 979,
           "width": 42,
           "height": 44
         },
@@ -1615,7 +1615,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 991,
+          "y": 979,
           "width": 87,
           "height": 44
         },
@@ -1628,7 +1628,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 991,
+          "y": 979,
           "width": 48,
           "height": 44
         },
@@ -1641,7 +1641,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 991,
+          "y": 979,
           "width": 25,
           "height": 44
         },
@@ -1654,7 +1654,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1104,
+          "y": 1092,
           "width": 45,
           "height": 44
         },
@@ -1667,7 +1667,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1104,
+          "y": 1092,
           "width": 38,
           "height": 44
         }
@@ -1684,13 +1684,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 271
+          "height": 259
         },
         {
           "text": "THE CONVERSATION WILL LEAD THE WAY.",
           "fold": 1,
           "x": 243,
-          "y": 670,
+          "y": 658,
           "width": 672,
           "height": 35
         }
@@ -1699,7 +1699,7 @@
         {
           "label": "The conversation will lead the way.",
           "x": 144,
-          "y": 587,
+          "y": 575,
           "width": 1152,
           "height": 299
         }
@@ -1714,7 +1714,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1088,
+      "pageHeight": 1082,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -1843,7 +1843,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 701,
+          "y": 695,
           "width": 153,
           "height": 48
         },
@@ -1856,7 +1856,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 899,
+          "y": 893,
           "width": 36,
           "height": 44
         },
@@ -1869,7 +1869,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 899,
+          "y": 893,
           "width": 42,
           "height": 44
         },
@@ -1882,7 +1882,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 899,
+          "y": 893,
           "width": 87,
           "height": 44
         },
@@ -1895,7 +1895,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 899,
+          "y": 893,
           "width": 48,
           "height": 44
         },
@@ -1908,7 +1908,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 899,
+          "y": 893,
           "width": 25,
           "height": 44
         },
@@ -1921,7 +1921,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1012,
+          "y": 1006,
           "width": 45,
           "height": 44
         },
@@ -1934,7 +1934,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1012,
+          "y": 1006,
           "width": 38,
           "height": 44
         }
@@ -1951,13 +1951,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "THE SHELVES ARE STILL BEING PREPARED.",
           "fold": 1,
           "x": 243,
-          "y": 577,
+          "y": 571,
           "width": 672,
           "height": 35
         }
@@ -1966,7 +1966,7 @@
         {
           "label": "The shelves are still being prepared.",
           "x": 144,
-          "y": 494,
+          "y": 488,
           "width": 1152,
           "height": 299
         }
@@ -1981,7 +1981,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1126,
+      "pageHeight": 1120,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -2110,7 +2110,7 @@
           "disabled": false,
           "region": "main",
           "x": 243,
-          "y": 739,
+          "y": 733,
           "width": 212,
           "height": 48
         },
@@ -2123,7 +2123,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 937,
+          "y": 931,
           "width": 36,
           "height": 44
         },
@@ -2136,7 +2136,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 937,
+          "y": 931,
           "width": 42,
           "height": 44
         },
@@ -2149,7 +2149,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 937,
+          "y": 931,
           "width": 87,
           "height": 44
         },
@@ -2162,7 +2162,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 937,
+          "y": 931,
           "width": 48,
           "height": 44
         },
@@ -2175,7 +2175,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 937,
+          "y": 931,
           "width": 25,
           "height": 44
         },
@@ -2188,7 +2188,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1050,
+          "y": 1044,
           "width": 45,
           "height": 44
         },
@@ -2201,7 +2201,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1050,
+          "y": 1044,
           "width": 38,
           "height": 44
         }
@@ -2218,13 +2218,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "NO SUBSCRIPTIONS. NO CHECKOUT.",
           "fold": 1,
           "x": 243,
-          "y": 577,
+          "y": 571,
           "width": 672,
           "height": 35
         }
@@ -2233,7 +2233,7 @@
         {
           "label": "No subscriptions. No checkout.",
           "x": 144,
-          "y": 494,
+          "y": 488,
           "width": 1152,
           "height": 337
         }
@@ -3316,7 +3316,7 @@
         "width": 1440,
         "height": 900
       },
-      "pageHeight": 1680,
+      "pageHeight": 1674,
       "horizontalOverflow": 0,
       "actions": [
         {
@@ -3445,7 +3445,7 @@
           "disabled": false,
           "region": "main",
           "x": 144,
-          "y": 1293,
+          "y": 1287,
           "width": 254,
           "height": 48
         },
@@ -3458,7 +3458,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 970,
-          "y": 1491,
+          "y": 1485,
           "width": 36,
           "height": 44
         },
@@ -3471,7 +3471,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1028,
-          "y": 1491,
+          "y": 1485,
           "width": 42,
           "height": 44
         },
@@ -3484,7 +3484,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1092,
-          "y": 1491,
+          "y": 1485,
           "width": 87,
           "height": 44
         },
@@ -3497,7 +3497,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1201,
-          "y": 1491,
+          "y": 1485,
           "width": 48,
           "height": 44
         },
@@ -3510,7 +3510,7 @@
           "disabled": false,
           "region": "More about the Corner",
           "x": 1271,
-          "y": 1491,
+          "y": 1485,
           "width": 25,
           "height": 44
         },
@@ -3523,7 +3523,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1194,
-          "y": 1604,
+          "y": 1598,
           "width": 45,
           "height": 44
         },
@@ -3536,7 +3536,7 @@
           "disabled": false,
           "region": "Legal",
           "x": 1258,
-          "y": 1604,
+          "y": 1598,
           "width": 38,
           "height": 44
         }
@@ -3553,13 +3553,13 @@
           "x": 144,
           "y": 215,
           "width": 1000,
-          "height": 178
+          "height": 172
         },
         {
           "text": "MEET THE IDEA",
           "fold": 1,
           "x": 144,
-          "y": 523,
+          "y": 517,
           "width": 760,
           "height": 29
         },
@@ -3567,7 +3567,7 @@
           "text": "ORIGINAL CONVERSATIONS COME FIRST",
           "fold": 1,
           "x": 144,
-          "y": 734,
+          "y": 728,
           "width": 760,
           "height": 29
         },
@@ -3575,7 +3575,7 @@
           "text": "CARE IN THE CONVERSATION",
           "fold": 1,
           "x": 144,
-          "y": 870,
+          "y": 864,
           "width": 760,
           "height": 29
         },
@@ -3583,7 +3583,7 @@
           "text": "THE DESIGN EXPLORATION",
           "fold": 2,
           "x": 144,
-          "y": 1007,
+          "y": 1001,
           "width": 760,
           "height": 29
         },
@@ -3591,7 +3591,7 @@
           "text": "FIND THE ORIGINAL CHANNELS",
           "fold": 2,
           "x": 144,
-          "y": 1172,
+          "y": 1166,
           "width": 760,
           "height": 29
         }
