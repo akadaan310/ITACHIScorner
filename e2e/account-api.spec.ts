@@ -2,6 +2,7 @@ import { expect, test, type APIRequestContext, type APIResponse } from "@playwri
 
 const mutations = [
   "/api/account/profile", "/api/account/preferences", "/api/account/consent", "/api/account/links", "/api/account/delete",
+  "/api/account/notes", "/api/account/saved-questions",
 ];
 const authForms = ["/auth/request", "/auth/verify", "/auth/logout"];
 

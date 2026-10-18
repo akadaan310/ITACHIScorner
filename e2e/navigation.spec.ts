@@ -32,10 +32,11 @@ test.describe("truthful public routes", () => {
     for (const href of hrefs) expect((await request.get(href)).status(), href).toBe(200);
   });
 
-  test("external official channels retain new-tab protections", async ({ page }) => {
+  test("the supplied public channel hub retains new-tab protections", async ({ page }) => {
     await page.goto("/about");
-    const channels = page.locator("a[href*='tiktok.com'],a[href*='youtube.com']");
-    expect(await channels.count()).toBeGreaterThan(0);
+    await expect(page.getByRole("link", { name: /Visit the public link hub/i })).toHaveAttribute("href", "https://linktr.ee/dawahxdialogues");
+    const channels = page.locator("main a[href^='https://']");
+    expect(await channels.count()).toBeGreaterThanOrEqual(1);
     for (const link of await channels.all()) {
       await expect(link).toHaveAttribute("target", "_blank");
       await expect(link).toHaveAttribute("rel", /noopener/);

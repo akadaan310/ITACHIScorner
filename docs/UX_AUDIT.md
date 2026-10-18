@@ -47,4 +47,18 @@ All original route-width captures returned HTTP 200 with zero document-level hor
 
 The public story becomes Home → Explore → Learn → Practice → Community, with My Corner secondary. Explore may show only reviewed real source results. Learn, Practice and session notes wait for evidence and creator approval. Community waits for moderation/privacy readiness. Sign-in and private account actions report missing configuration, and browser state cannot unlock editorial access. Legacy routes lead to those truthful surfaces.
 
-Before/after screenshots and fold records use the same five widths and viewport heights. Final measurements and browser outcomes are recorded in [VERIFICATION.md](VERIFICATION.md) after the integrated production build is available. The original screenshots and numerical observations above remain unchanged.
+Before/after screenshots and fold records use the same five widths and viewport heights. The final production build has 3 main home actions, 3 distinct destinations and zero repeated entrances at every width. [Structured comparison](screenshots/evidence-first/after/comparison.json) retains the exact before/after section coordinates.
+
+| Width | Original height → final height | Original primary y → final primary y |
+|---:|---:|---:|
+| 360 | 11,147 → 3,287 | 1055 → 528 |
+| 390 | 10,758 → 3,303 | 1029 → 530 |
+| 768 | 9,074 → 2,743 | 1183 → 559 |
+| 1280 | 6,879 → 2,171 | 810 → 620 |
+| 1440 | 6,879 → 2,171 | 810 → 620 |
+
+The final primary action is 48px tall and fits every first fold. The four home sections provide introduction, source readiness, learning process and My Corner. Eighteen canonical pages and twenty-three legacy redirects pass browser checks; all 70 captured route-width combinations return 200 with no horizontal overflow.
+
+Representative desktop/phone images, the complete 360px home page, Explore and private notes were visually inspected. An independent static visual review found no important clipping, overlap or readability failures in its reviewed images. Phone portrait qualification was also confirmed below the portrait in the full-page capture.
+
+Final outcomes and limits are recorded in [VERIFICATION.md](VERIFICATION.md). Original screenshots and numerical observations above remain unchanged.

@@ -1,0 +1,42 @@
+{
+  "verifiedAppCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+  "baselineAppCommit": "b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3",
+  "server": "http://localhost:3400",
+  "productionBuildId": "vKQX1MkwnUlReNp9IAAbG",
+  "browser": "154.0.8037.57",
+  "backendMode": "intentionally unconfigured; no email or remote account mutation",
+  "captureMethod": "Playwright Chromium, scale1, entrance animations/fonts settled; first-fold at all five widths, full-page Home, phone/tablet menu",
+  "routeWidthRecords": 70,
+  "jpegCount": 78,
+  "viewports": [
+    {
+      "width": 360,
+      "height": 844
+    },
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "width": 1440,
+      "height": 900
+    }
+  ],
+  "playwright": {
+    "startTime": "2026-10-18T01:33:10.009Z",
+    "duration": 69247.58399999999,
+    "expected": 113,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "performanceSamples": 24
+}

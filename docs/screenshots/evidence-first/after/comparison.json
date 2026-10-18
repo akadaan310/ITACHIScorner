@@ -1,0 +1,583 @@
+{
+  "baselineAppCommit": "b987ebb58c649f0c724cc5ace545ea2e8f7ed1d3",
+  "verifiedAppCommit": "a45f4c21bc9e6440c28b4d6f00e6e3be504b0b7f",
+  "home": [
+    {
+      "width": 360,
+      "height": 844,
+      "before": {
+        "pageHeight": 11147,
+        "mainActions": 37,
+        "distinctDestinations": 20,
+        "repeatedEntrances": 17,
+        "primaryY": 1055,
+        "primaryHeight": 52,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 152,
+            "width": 360,
+            "height": 1271
+          },
+          {
+            "label": "arsenal-title",
+            "x": 0,
+            "y": 1483,
+            "width": 360,
+            "height": 1309
+          },
+          {
+            "label": "live-title",
+            "x": 0,
+            "y": 2792,
+            "width": 360,
+            "height": 1449
+          },
+          {
+            "label": "battles-title",
+            "x": 0,
+            "y": 4241,
+            "width": 360,
+            "height": 699
+          },
+          {
+            "label": "today-title",
+            "x": 0,
+            "y": 4940,
+            "width": 360,
+            "height": 1207
+          },
+          {
+            "label": "reverts-title",
+            "x": 0,
+            "y": 6147,
+            "width": 360,
+            "height": 646
+          },
+          {
+            "label": "sim-title",
+            "x": 0,
+            "y": 6793,
+            "width": 360,
+            "height": 973
+          },
+          {
+            "label": "rank-title",
+            "x": 0,
+            "y": 7766,
+            "width": 360,
+            "height": 1267
+          },
+          {
+            "label": "stories-title",
+            "x": 0,
+            "y": 9033,
+            "width": 360,
+            "height": 713
+          }
+        ]
+      },
+      "after": {
+        "pageHeight": 3287,
+        "mainActions": 3,
+        "distinctDestinations": 3,
+        "repeatedEntrances": 0,
+        "primaryY": 528,
+        "primaryHeight": 48,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 121,
+            "width": 360,
+            "height": 988
+          },
+          {
+            "label": "home-question",
+            "x": 0,
+            "y": 1109,
+            "width": 360,
+            "height": 489
+          },
+          {
+            "label": "process-title",
+            "x": 0,
+            "y": 1598,
+            "width": 360,
+            "height": 766
+          },
+          {
+            "label": "personal-title",
+            "x": 0,
+            "y": 2364,
+            "width": 360,
+            "height": 412
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "before": {
+        "pageHeight": 10758,
+        "mainActions": 37,
+        "distinctDestinations": 20,
+        "repeatedEntrances": 17,
+        "primaryY": 1029,
+        "primaryHeight": 52,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 152,
+            "width": 390,
+            "height": 1245
+          },
+          {
+            "label": "arsenal-title",
+            "x": 0,
+            "y": 1457,
+            "width": 390,
+            "height": 1235
+          },
+          {
+            "label": "live-title",
+            "x": 0,
+            "y": 2692,
+            "width": 390,
+            "height": 1427
+          },
+          {
+            "label": "battles-title",
+            "x": 0,
+            "y": 4118,
+            "width": 390,
+            "height": 687
+          },
+          {
+            "label": "today-title",
+            "x": 0,
+            "y": 4805,
+            "width": 390,
+            "height": 1087
+          },
+          {
+            "label": "reverts-title",
+            "x": 0,
+            "y": 5892,
+            "width": 390,
+            "height": 646
+          },
+          {
+            "label": "sim-title",
+            "x": 0,
+            "y": 6538,
+            "width": 390,
+            "height": 949
+          },
+          {
+            "label": "rank-title",
+            "x": 0,
+            "y": 7486,
+            "width": 390,
+            "height": 1203
+          },
+          {
+            "label": "stories-title",
+            "x": 0,
+            "y": 8689,
+            "width": 390,
+            "height": 687
+          }
+        ]
+      },
+      "after": {
+        "pageHeight": 3303,
+        "mainActions": 3,
+        "distinctDestinations": 3,
+        "repeatedEntrances": 0,
+        "primaryY": 530,
+        "primaryHeight": 48,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 106,
+            "width": 390,
+            "height": 1039
+          },
+          {
+            "label": "home-question",
+            "x": 0,
+            "y": 1144,
+            "width": 390,
+            "height": 489
+          },
+          {
+            "label": "process-title",
+            "x": 0,
+            "y": 1633,
+            "width": 390,
+            "height": 766
+          },
+          {
+            "label": "personal-title",
+            "x": 0,
+            "y": 2399,
+            "width": 390,
+            "height": 412
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "before": {
+        "pageHeight": 9074,
+        "mainActions": 37,
+        "distinctDestinations": 20,
+        "repeatedEntrances": 17,
+        "primaryY": 1183,
+        "primaryHeight": 52,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 137,
+            "width": 768,
+            "height": 1398
+          },
+          {
+            "label": "arsenal-title",
+            "x": 0,
+            "y": 1594,
+            "width": 768,
+            "height": 732
+          },
+          {
+            "label": "live-title",
+            "x": 0,
+            "y": 2326,
+            "width": 768,
+            "height": 1019
+          },
+          {
+            "label": "battles-title",
+            "x": 0,
+            "y": 3345,
+            "width": 768,
+            "height": 1016
+          },
+          {
+            "label": "today-title",
+            "x": 0,
+            "y": 4361,
+            "width": 768,
+            "height": 959
+          },
+          {
+            "label": "reverts-title",
+            "x": 0,
+            "y": 5320,
+            "width": 768,
+            "height": 569
+          },
+          {
+            "label": "sim-title",
+            "x": 0,
+            "y": 5888,
+            "width": 768,
+            "height": 859
+          },
+          {
+            "label": "rank-title",
+            "x": 0,
+            "y": 6747,
+            "width": 768,
+            "height": 706
+          },
+          {
+            "label": "stories-title",
+            "x": 0,
+            "y": 7453,
+            "width": 768,
+            "height": 844
+          }
+        ]
+      },
+      "after": {
+        "pageHeight": 2743,
+        "mainActions": 3,
+        "distinctDestinations": 3,
+        "repeatedEntrances": 0,
+        "primaryY": 559,
+        "primaryHeight": 48,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 106,
+            "width": 768,
+            "height": 1122
+          },
+          {
+            "label": "home-question",
+            "x": 0,
+            "y": 1228,
+            "width": 768,
+            "height": 476
+          },
+          {
+            "label": "process-title",
+            "x": 0,
+            "y": 1704,
+            "width": 768,
+            "height": 429
+          },
+          {
+            "label": "personal-title",
+            "x": 0,
+            "y": 2133,
+            "width": 768,
+            "height": 273
+          }
+        ]
+      }
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "before": {
+        "pageHeight": 6879,
+        "mainActions": 37,
+        "distinctDestinations": 20,
+        "repeatedEntrances": 17,
+        "primaryY": 810,
+        "primaryHeight": 52,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 137,
+            "width": 1280,
+            "height": 1025
+          },
+          {
+            "label": "arsenal-title",
+            "x": 0,
+            "y": 1222,
+            "width": 1280,
+            "height": 654
+          },
+          {
+            "label": "live-title",
+            "x": 0,
+            "y": 1877,
+            "width": 1280,
+            "height": 617
+          },
+          {
+            "label": "battles-title",
+            "x": 0,
+            "y": 2494,
+            "width": 1280,
+            "height": 595
+          },
+          {
+            "label": "today-title",
+            "x": 0,
+            "y": 3089,
+            "width": 1280,
+            "height": 785
+          },
+          {
+            "label": "reverts-title",
+            "x": 0,
+            "y": 3874,
+            "width": 1280,
+            "height": 569
+          },
+          {
+            "label": "sim-title",
+            "x": 0,
+            "y": 4443,
+            "width": 1280,
+            "height": 568
+          },
+          {
+            "label": "rank-title",
+            "x": 0,
+            "y": 5011,
+            "width": 1280,
+            "height": 634
+          },
+          {
+            "label": "stories-title",
+            "x": 0,
+            "y": 5645,
+            "width": 1280,
+            "height": 555
+          }
+        ]
+      },
+      "after": {
+        "pageHeight": 2171,
+        "mainActions": 3,
+        "distinctDestinations": 3,
+        "repeatedEntrances": 0,
+        "primaryY": 620,
+        "primaryHeight": 48,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 106,
+            "width": 1280,
+            "height": 730
+          },
+          {
+            "label": "home-question",
+            "x": 32,
+            "y": 835,
+            "width": 1216,
+            "height": 349
+          },
+          {
+            "label": "process-title",
+            "x": 0,
+            "y": 1185,
+            "width": 1280,
+            "height": 411
+          },
+          {
+            "label": "personal-title",
+            "x": 32,
+            "y": 1595,
+            "width": 1216,
+            "height": 305
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "before": {
+        "pageHeight": 6879,
+        "mainActions": 37,
+        "distinctDestinations": 20,
+        "repeatedEntrances": 17,
+        "primaryY": 810,
+        "primaryHeight": 52,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 137,
+            "width": 1440,
+            "height": 1025
+          },
+          {
+            "label": "arsenal-title",
+            "x": 0,
+            "y": 1222,
+            "width": 1440,
+            "height": 654
+          },
+          {
+            "label": "live-title",
+            "x": 0,
+            "y": 1877,
+            "width": 1440,
+            "height": 617
+          },
+          {
+            "label": "battles-title",
+            "x": 0,
+            "y": 2494,
+            "width": 1440,
+            "height": 595
+          },
+          {
+            "label": "today-title",
+            "x": 0,
+            "y": 3089,
+            "width": 1440,
+            "height": 785
+          },
+          {
+            "label": "reverts-title",
+            "x": 0,
+            "y": 3874,
+            "width": 1440,
+            "height": 569
+          },
+          {
+            "label": "sim-title",
+            "x": 0,
+            "y": 4443,
+            "width": 1440,
+            "height": 568
+          },
+          {
+            "label": "rank-title",
+            "x": 0,
+            "y": 5011,
+            "width": 1440,
+            "height": 634
+          },
+          {
+            "label": "stories-title",
+            "x": 0,
+            "y": 5645,
+            "width": 1440,
+            "height": 555
+          }
+        ]
+      },
+      "after": {
+        "pageHeight": 2171,
+        "mainActions": 3,
+        "distinctDestinations": 3,
+        "repeatedEntrances": 0,
+        "primaryY": 620,
+        "primaryHeight": 48,
+        "sections": [
+          {
+            "label": "hero-title",
+            "x": 0,
+            "y": 106,
+            "width": 1440,
+            "height": 730
+          },
+          {
+            "label": "home-question",
+            "x": 112,
+            "y": 835,
+            "width": 1216,
+            "height": 349
+          },
+          {
+            "label": "process-title",
+            "x": 0,
+            "y": 1185,
+            "width": 1440,
+            "height": 411
+          },
+          {
+            "label": "personal-title",
+            "x": 112,
+            "y": 1595,
+            "width": 1216,
+            "height": 305
+          }
+        ]
+      }
+    }
+  ],
+  "beforeRouteWidthRecords": 60,
+  "afterRouteWidthRecords": 70
+}

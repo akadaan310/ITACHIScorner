@@ -26,6 +26,7 @@ test("missing auth configuration disables sign-in honestly", async ({ page }) =>
 test("unconnected account and privacy controls expose no fabricated personal data", async ({ page }) => {
   for (const route of ["/me", "/me/settings", "/me/journal"]) {
     await page.goto(route);
+    if (route === "/me/journal") await expect(page.getByRole("heading", { level: 1 })).toContainText(/private notes/i);
     await expect(page.locator("main")).toContainText(/not connected|not available|sign.in|connect/i);
     await expect(page.locator("main")).not.toContainText(/Scout|Champion|credits|\bXP\b|Nightjar|Level \d/);
     await expect(page.locator("main button[type=submit]:enabled")).toHaveCount(0);

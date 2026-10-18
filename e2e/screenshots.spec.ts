@@ -7,7 +7,7 @@ const directory = "docs/screenshots/evidence-first/after";
 const pages: [string, string][] = [
   ["home", "/"], ["explore", "/explore"], ["learn", "/learn"], ["practice", "/practice"],
   ["community", "/community"], ["session-notes", "/session-notes"], ["library", "/library"],
-  ["support", "/support"], ["join", "/join"], ["my-corner", "/me"], ["settings", "/me/settings"],
+  ["support", "/support"], ["join", "/join"], ["my-corner", "/me"], ["private-notes", "/me/journal"], ["settings", "/me/settings"],
   ["about", "/about"], ["creator-denied", "/studio/creator"],
 ];
 
